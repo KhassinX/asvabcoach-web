@@ -2,3 +2,7 @@ title: ASVAB Coach — Legal
 description: Privacy Policy and Terms of Use for ASVAB Coach (iOS, iPadOS, watchOS app).
 theme: jekyll-theme-cayman
 markdown: kramdown
+plugins:
+  - jekyll-redirect-from
+exclude:
+  - README.md

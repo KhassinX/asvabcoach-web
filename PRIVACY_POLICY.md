@@ -1,3 +1,10 @@
+---
+title: Privacy Policy
+redirect_from:
+  - /privacy/
+  - /privacy
+---
+
 # Privacy Policy — ASVAB Coach
 
 **Effective date**: 2026-05-18
