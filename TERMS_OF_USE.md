@@ -1,3 +1,10 @@
+---
+title: Terms of Use
+redirect_from:
+  - /terms/
+  - /terms
+---
+
 # Terms of Use — ASVAB Coach
 
 **Effective date**: 2026-05-18
