@@ -89,7 +89,7 @@ We use a **one-time purchase** model — no recurring subscriptions, no auto-ren
 - No A/B testing platforms
 - No attribution SDKs (no AppsFlyer, no Adjust)
 
-Our `audit_question_bank.sh` CI gate enforces this: any pull request that imports a known analytics SDK is rejected.
+Our automated CI gates enforce this: any pull request that imports a known analytics SDK is rejected.
 
 ## Children
 
@@ -178,7 +178,7 @@ Modelo: **pago único** — sin suscripciones, sin renovación automática.
 
 ## SDKs de terceros
 
-**Cero.** Sin Firebase, sin Google Analytics, sin Facebook SDK, sin redes publicitarias, sin SDKs de atribución. El CI gate `audit_question_bank.sh` lo enforce.
+**Cero.** Sin Firebase, sin Google Analytics, sin Facebook SDK, sin redes publicitarias, sin SDKs de atribución. Nuestros CI gates automáticos lo enforce.
 
 ## Menores
 
