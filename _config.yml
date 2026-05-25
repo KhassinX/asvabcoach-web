@@ -1,8 +1,11 @@
-title: ASVAB Coach — Legal
-description: Privacy Policy and Terms of Use for ASVAB Coach (iOS, iPadOS, watchOS app).
+title: ASVAB Coach
+description: Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch, zero tracking. $4.99 once.
+url: https://asvab.khassinx.com
 theme: jekyll-theme-cayman
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
 exclude:
   - README.md
+  - CONTRIBUTING.md
+  - .gitignore
