@@ -1,12 +1,13 @@
 ---
+layout: prose
 title: Terms of Use
-layout: default
 permalink: /legal/terms/
 redirect_from:
   - /TERMS_OF_USE
   - /TERMS_OF_USE/
   - /terms
   - /terms/
+updated: 2026-05-25
 ---
 
 # Terms of Use — ASVAB Coach

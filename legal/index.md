@@ -1,7 +1,8 @@
 ---
+layout: prose
 title: ASVAB Coach — Legal
-layout: default
 permalink: /legal/
+updated: 2026-05-25
 ---
 
 # Legal
