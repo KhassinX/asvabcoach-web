@@ -1,18 +1,19 @@
 ---
 title: ASVAB Coach — Legal
 layout: default
+permalink: /legal/
 ---
 
-# ASVAB Coach — Legal
+# Legal
 
 Public legal documents for **[ASVAB Coach](https://apps.apple.com/us/app/asvab-coach/id6761384966)**.
 
-## Documents
+- **[Privacy Policy](/legal/privacy)** — what data we collect (spoiler: nothing)
+- **[Terms of Use](/legal/terms)** — terms of using the app
 
-- **[Privacy Policy](./PRIVACY_POLICY)** — what data we collect (spoiler: nothing)
-- **[Terms of Use](./TERMS_OF_USE)** — terms of using the app
+Short aliases: [/privacy](/privacy) · [/terms](/terms)
 
-Short aliases also available: [/privacy](./privacy) · [/terms](./terms)
+---
 
 ## Contact
 

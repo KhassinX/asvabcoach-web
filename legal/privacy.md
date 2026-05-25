@@ -1,8 +1,12 @@
 ---
 title: Privacy Policy
+layout: default
+permalink: /legal/privacy/
 redirect_from:
-  - /privacy/
+  - /PRIVACY_POLICY
+  - /PRIVACY_POLICY/
   - /privacy
+  - /privacy/
 ---
 
 # Privacy Policy — ASVAB Coach

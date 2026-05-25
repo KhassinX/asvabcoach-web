@@ -1,8 +1,12 @@
 ---
 title: Terms of Use
+layout: default
+permalink: /legal/terms/
 redirect_from:
-  - /terms/
+  - /TERMS_OF_USE
+  - /TERMS_OF_USE/
   - /terms
+  - /terms/
 ---
 
 # Terms of Use — ASVAB Coach
