@@ -17,6 +17,16 @@
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
+  {%- comment -%} hreflang for locale alternates (see WEB_PROPERTY_SPEC.md §7.5) {%- endcomment -%}
+  {% if page.canonical_en %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
+  {% if page.canonical_es %}<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.canonical_es }}">{% endif %}
+  {% if page.canonical_en %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
+
+  {%- comment -%}
+    CSP fallback via meta http-equiv. Real headers vienen de CF Transform Rules.
+  {%- endcomment -%}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
+
   {% if site.favicon_svg %}<link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg }}">{% endif %}
   {% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">{% endif %}
   {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
@@ -62,6 +72,17 @@
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
         {% endfor %}
       </nav>
+      <div class="locale-switcher" aria-label="Language selector">
+        {%- if page.lang == 'es' -%}
+          <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
+          <span aria-hidden="true">·</span>
+          <span aria-current="true" lang="es">ES</span>
+        {%- else -%}
+          <span aria-current="true" lang="en">EN</span>
+          <span aria-hidden="true">·</span>
+          <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
+        {%- endif -%}
+      </div>
       <small>Part of the <a href="https://khassinx.com">KhassinX ecosystem</a></small>
     </div>
   </footer>
