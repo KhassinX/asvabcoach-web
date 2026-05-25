@@ -2,6 +2,9 @@
 layout: prose
 title: Terms of Use
 permalink: /legal/terms/
+lang: en
+canonical_en: /legal/terms/
+canonical_es: /es/legal/terms/
 redirect_from:
   - /TERMS_OF_USE
   - /TERMS_OF_USE/
@@ -139,85 +142,4 @@ Expected response time: 7 business days.
 
 ---
 
-# Términos de Uso — ASVAB Coach (Español)
-
-**Fecha efectiva**: 2026-05-18
-**Desarrollador**: KhassinX
-
-Al descargar, instalar, o usar ASVAB Coach, aceptas estos términos. Si no estás de acuerdo, por favor no uses la app.
-
-## 1. Licencia de uso
-
-Te otorgamos una licencia **personal, no exclusiva, no transferible, revocable** para instalar y usar la app en dispositivos Apple que poseas o controles, conforme a los [Términos de Servicios de Apple Media](https://www.apple.com/legal/internet-services/itunes/).
-
-## 2. Propósito educativo · Sin afiliación · Sin garantías
-
-ASVAB Coach es una **herramienta educativa independiente**.
-
-- **NO estamos afiliados** con el U.S. Department of Defense, ninguna rama militar, ni autoridad oficial del ASVAB.
-- **ASVAB®** es marca registrada del U.S. DoD. Nuestro uso es puramente educativo.
-- **No garantizamos** que usar ASVAB Coach resulte en aprobar el ASVAB, calificar para una rama, MOS/rating específico, ni cualquier otro resultado.
-- Las preguntas son **modeladas según** formatos ASVAB pero **no** son preguntas oficiales del examen.
-
-## 3. Contenido generado por IA (Apple Intelligence)
-
-ASVAB Coach usa **Apple Intelligence** en tu dispositivo para explicaciones adaptadas. El contenido AI puede ser ocasionalmente inexacto. Trátalo como **complementario**, no autoritativo. La explicación "oficial" hand-curated es la verdad.
-
-## 4. Mínimos AFQT por rama
-
-Los mínimos AFQT mostrados reflejan política DoD vigente. La política cambia periódicamente. **Siempre verifica requisitos actuales con un reclutador oficial** antes de tomar decisiones de alistamiento.
-
-## 5. Prueba gratuita y compra
-
-- 7 días de prueba gratuita con acceso completo.
-- Día 5 y 6 disparan notificaciones locales (sin cargos sorpresa).
-- Acceso completo después: **pago único $4.99** (o equivalente local).
-- Sin suscripciones. Sin renovación automática.
-
-Reembolsos los maneja Apple directamente.
-
-## 6. Uso aceptable
-
-No puedes:
-
-- Hacer reverse-engineering, decompilar, o derivar código
-- Extraer el banco de preguntas para redistribución
-- Scrapear datos automatizadamente
-- Bypassear el trial gate o verificación de compra (incluye jailbreak, mods, IAP fraudulentos)
-
-Intentos de fraude resultan en revocación de acceso.
-
-## 7. Propiedad intelectual
-
-- App ASVAB Coach: **© 2026 KhassinX**, todos los derechos reservados
-- **ASVAB®**: marca DoD, uso nominativo
-- Apple, iPhone, iPad, Apple Watch, Apple Intelligence: marcas de Apple Inc.
-
-## 8. Sin garantía · Limitación de responsabilidad
-
-ASVAB Coach se provee **"TAL CUAL"** sin garantía de ningún tipo. KhassinX **no es responsable** por daños indirectos, incidentales, consecuentes, especiales, o punitivos.
-
-Responsabilidad total acumulada limitada al monto que pagaste por la app ($4.99 USD o equivalente local), o $0 si estás en trial.
-
-## 9. Terminación
-
-Podemos discontinuar la app en cualquier momento sin aviso. Puedes dejar de usarla borrándola de tu dispositivo.
-
-## 10. Cambios a estos términos
-
-Actualizaciones materiales se reflejan con nueva "Fecha efectiva" arriba. Uso continuado después de un cambio constituye aceptación.
-
-## 11. Ley aplicable y disputas
-
-Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.** Las disputas se resuelven en los tribunales del Estado de Florida. Ambas partes renuncian al juicio por jurado.
-
-Antes de acción legal formal, contactar hello@khassinx.com para resolución informal.
-
-## 12. Contacto
-
-- **Email**: hello@khassinx.com
-- **Respuesta esperada**: 7 días hábiles
-
----
-
-*Última revisión: 2026-05-18 · Versión 1.0*
+*Last updated: 2026-05-25 · Version 1.1*

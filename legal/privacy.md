@@ -2,6 +2,9 @@
 layout: prose
 title: Privacy Policy
 permalink: /legal/privacy/
+lang: en
+canonical_en: /legal/privacy/
+canonical_es: /es/legal/privacy/
 redirect_from:
   - /PRIVACY_POLICY
   - /PRIVACY_POLICY/
@@ -127,85 +130,4 @@ We aim to respond within 7 business days.
 
 ---
 
-# Política de Privacidad — ASVAB Coach (Español)
-
-**Fecha efectiva**: 2026-05-18
-**App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Desarrollador**: KhassinX
-**Contacto**: hello@khassinx.com
-
----
-
-## TL;DR
-
-**ASVAB Coach no recopila nada. Sin cuenta. Sin analytics. Sin tracking. Sin anuncios. Tus datos viven en tus dispositivos.**
-
-Somos una **app educativa independiente**. Tenemos cero servidores que almacenan datos de usuario. No tenemos tu email, tu nombre, tu teléfono, tu IP, tu ubicación, ni ningún identificador que pudiera rastrearte.
-
-## Qué recopilamos
-
-**Nada.** El manifesto `PrivacyInfo.xcprivacy` de la app declara `NSPrivacyTracking: false` y un array `NSPrivacyCollectedDataTypes` vacío. Apple lo verifica durante la revisión.
-
-## Dónde viven tus datos
-
-Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (opcionalmente) se sincroniza vía tu cuenta personal de **iCloud**:
-
-- Progreso de estudio → `UserDefaults` + `NSUbiquitousKeyValueStore` (iCloud KV)
-- Selección de rama militar → `UserDefaults` + iCloud KV
-- Tarjetas de repetición espaciada → `UserDefaults` + iCloud KV
-- Fecha de inicio del trial gratuito → **Keychain** de iOS (cifrado, sobrevive a desinstalación, NO sincroniza entre dispositivos)
-
-iCloud sync usa **tu** Apple ID. Nunca vemos, accedemos, ni podemos recuperar estos datos.
-
-## Apple Intelligence (tutor IA on-device)
-
-ASVAB Coach usa **Apple Intelligence (FoundationModels)** para generar explicaciones adaptadas y soluciones paso a paso de matemáticas.
-
-Este modelo corre **completamente en tu dispositivo**. Nunca enviamos tus preguntas, respuestas, o cualquier dato a OpenAI, Anthropic, Google, ni a ningún servicio de IA externo. Tampoco a un servidor nuestro — no tenemos.
-
-Apple Intelligence requiere iOS 26+ y iPhone 15 Pro o más reciente. En dispositivos sin Apple Intelligence, las funciones de tutor IA se ocultan silenciosamente y el resto de la app funciona normal.
-
-## Compras In-App
-
-Las compras las maneja **Apple StoreKit 2**. Solo vemos:
-
-- Un booleano: "este Apple ID ha pagado por acceso completo"
-- La fecha de revocación de la transacción (para reembolsos)
-
-No vemos tu Apple ID, tu nombre, tu método de pago, tu dirección de facturación, ni ninguna otra metadata de compra. Apple lo maneja todo.
-
-Modelo: **pago único** — sin suscripciones, sin renovación automática.
-
-## SDKs de terceros
-
-**Cero.** Sin Firebase, sin Google Analytics, sin Facebook SDK, sin redes publicitarias, sin SDKs de atribución. Nuestros CI gates automáticos lo enforce.
-
-## Menores
-
-ASVAB Coach está destinada a usuarios **17 años o más** (edad típica de candidatos a alistamiento militar US). No recopilamos datos de nadie menor de 17 porque — repetimos — no recopilamos datos de nadie, punto.
-
-## Tus derechos
-
-Como no tenemos datos sobre ti, no hay nada que borrar, exportar, corregir, o transferir de nuestro lado.
-
-Retienes control completo:
-
-- **Borrar todo**: desinstala la app. Settings → Apple ID → iCloud → Manage Storage → ASVAB Coach → Delete Data para borrar también la copia iCloud KV
-- **Reset in-app**: abre la app → Menú → Acerca de → "Reiniciar progreso" — borra local + iCloud KV de un toque
-
-## Cambios a esta política
-
-Si cambian materialmente nuestras prácticas de datos, actualizaremos este documento con nueva fecha efectiva y publicaremos aviso en la app. Al día de hoy (2026-05-18), no se planea cambio porque genuinamente no recopilamos datos.
-
-## Jurisdicción
-
-Esta política se rige por las leyes del **Estado de Florida, EE.UU.** Las disputas se resuelven en el Estado de Florida.
-
-## Contacto
-
-- **Email**: hello@khassinx.com
-- **Respuesta**: dentro de 7 días hábiles
-
----
-
-*Última revisión: 2026-05-18 · Versión 1.0*
+*Last updated: 2026-05-25 · Version 1.1*
