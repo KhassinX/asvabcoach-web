@@ -1,48 +1,53 @@
 /*
- * asvab-tokens.css — Layer 2 ASVAB Coach brand tokens
+ * asvab-tokens.css — Layer 2 ASVAB Coach brand tokens — Apple-canon
  *
- * Per-app brand for asvab.khassinx.com. Distinct de Layer 1 KhassinX umbrella.
- * Inspired by app interna: navy depth + cyan accent.
+ * Per-app brand for asvab.khassinx.com. Distinct de Layer 1 KhassinX umbrella
+ * (umbrella es neutral Apple blue, ASVAB Coach es Apple-canon + cyan signature).
  *
- * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §3 Layer 2 conventions
- * Mirrors (conceptually) categorical palette de DESIGN_SYSTEM.md de la app.
+ * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §3 (Layer 2 conventions)
+ * + §2 (Layer 1 Apple canon) + §4-5 (typography/spacing Apple-grade).
+ *
+ * Refactor 2026-05-25 PM: from dark navy heavy to Apple-canon light minimalism
+ * + cyan accent. Reason: marketing pages Apple-grade required for Editor's
+ * Choice nomination submit. Dark navy stays SOLO en app interna (study mode).
+ *
+ * App brand signature: cyan #00D4FF (vibrant decorative) + #0099BB (CTA/link
+ * WCAG-compliant on white). Mirrors Swift `Color.asvabCyan` etc en AppColors.
  */
 
 :root {
-  /* ─── Dark theme (default — ASVAB Coach es dark-leaning) ─── */
+  /* ─── Light theme (default — Apple canon) ─── */
 
-  /* Backgrounds */
-  --asvab-bg: #0D1B2A;            /* Navy deep */
-  --asvab-bg-card: #1B263B;       /* Navy mid (cards) */
-  --asvab-bg-elevated: #1E2A40;   /* Cards elevated, modals */
+  /* Backgrounds (Apple canon) */
+  --asvab-bg: #FFFFFF;
+  --asvab-bg-section: #F5F5F7;
+  --asvab-bg-card: #FBFBFD;
+  --asvab-bg-elevated: #FFFFFF;
 
-  /* Text */
-  --asvab-text-primary: #E0E1DD;
-  --asvab-text-secondary: #A8B2C1;
-  --asvab-text-tertiary: #6E7888;
-  --asvab-text-disabled: #3F4858;
+  /* Text (Apple canon) */
+  --asvab-text-primary: #1D1D1F;
+  --asvab-text-secondary: #6E6E73;
+  --asvab-text-tertiary: #86868B;
+  --asvab-text-disabled: #C7C7CC;
 
-  /* Accents */
-  --asvab-accent: #00D4FF;          /* Cyan vibrant (primary CTA) */
-  --asvab-accent-soft: #0099BB;
-  --asvab-accent-strong: #66E5FF;
-  --asvab-secondary: #FFB347;       /* Warm amber complement (badges, highlights) */
+  /* Accents — ASVAB Coach cyan signature */
+  --asvab-accent: #0099BB;            /* CTA/link cyan (WCAG AA on white: 4.5:1) */
+  --asvab-accent-strong: #007799;     /* Hover/active darker */
+  --asvab-accent-soft: #66E5FF;       /* Subtle backgrounds */
+  --asvab-accent-bright: #00D4FF;     /* Vibrant decorative (borders, hover bg) */
 
-  /* Borders */
-  --asvab-border: rgba(255, 255, 255, 0.08);
-  --asvab-border-strong: rgba(255, 255, 255, 0.16);
+  /* Borders (Apple hairline) */
+  --asvab-border: #D2D2D7;
+  --asvab-border-strong: #86868B;
 
-  /* Status */
-  --asvab-success: #4ADE80;
-  --asvab-warning: #FBBF24;
-  --asvab-danger: #FB7185;
+  /* Status (Apple system colors) */
+  --asvab-success: #34C759;
+  --asvab-warning: #FF9500;
+  --asvab-danger: #FF3B30;
 
-  /* ─── Map a Layer 1 token names so primitives.css works ─── */
-  /*
-   * primitives.css usa --khassinx-* tokens. We re-bind them al Layer 2 here.
-   * Esto permite primitives compartidos pero themed con app brand.
-   */
+  /* ─── Re-bind a Layer 1 token names so primitives.css works ─── */
   --khassinx-bg: var(--asvab-bg);
+  --khassinx-bg-section: var(--asvab-bg-section);
   --khassinx-bg-card: var(--asvab-bg-card);
   --khassinx-bg-elevated: var(--asvab-bg-elevated);
   --khassinx-text-primary: var(--asvab-text-primary);
@@ -50,16 +55,15 @@
   --khassinx-text-tertiary: var(--asvab-text-tertiary);
   --khassinx-text-disabled: var(--asvab-text-disabled);
   --khassinx-accent: var(--asvab-accent);
-  --khassinx-accent-soft: var(--asvab-accent-soft);
   --khassinx-accent-strong: var(--asvab-accent-strong);
-  --khassinx-blue: var(--asvab-secondary);
+  --khassinx-accent-soft: var(--asvab-accent-soft);
   --khassinx-border: var(--asvab-border);
   --khassinx-border-strong: var(--asvab-border-strong);
   --khassinx-success: var(--asvab-success);
   --khassinx-warning: var(--asvab-warning);
   --khassinx-danger: var(--asvab-danger);
 
-  /* Spacing scale (Layer 3 shared — heredamos exact umbrella scale) */
+  /* Spacing scale (Layer 3 — heredamos Apple-grade scale) */
   --space-xs: 4px;
   --space-s: 8px;
   --space-m: 12px;
@@ -70,39 +74,71 @@
   --space-3xl: 48px;
   --space-4xl: 64px;
   --space-5xl: 96px;
+  --space-6xl: 128px;
+  --space-7xl: 160px;
+  --space-8xl: 200px;
 
-  /* Container max-widths */
+  /* Container max-widths (Apple-canonical 980px) */
   --container-narrow: 640px;
-  --container-default: 920px;
-  --container-wide: 1200px;
+  --container-default: 980px;
+  --container-wide: 1280px;
 
-  /* Border radius */
+  /* Border radius (Apple soft corners) */
   --radius-s: 6px;
   --radius-m: 8px;
-  --radius-md: 10px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-2xl: 20px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 22px;
+  --radius-2xl: 28px;
   --radius-pill: 999px;
 
-  /* Typography (Layer 3 shared scale) */
+  /* Typography (Layer 3 Apple canon) */
   --font-stack: -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "SF Mono", Menlo, Consolas, monospace;
 
-  --fs-display-xl: 64px;
-  --fs-display-l: 48px;
-  --fs-display-m: 36px;
+  --fs-display-xl: 80px;
+  --fs-display-l: 56px;
+  --fs-display-m: 40px;
   --fs-h1: 32px;
-  --fs-h2: 24px;
-  --fs-h3: 20px;
-  --fs-body-l: 18px;
-  --fs-body: 16px;
+  --fs-h2: 28px;
+  --fs-h3: 22px;
+  --fs-body-l: 21px;
+  --fs-body: 17px;
   --fs-small: 14px;
   --fs-caption: 12px;
 
-  --transition-fast: 120ms ease;
-  --transition-base: 200ms ease;
-  --transition-slow: 320ms ease;
+  /* Transitions (Apple cubic-bezier) */
+  --transition-fast: 120ms cubic-bezier(0.32, 0, 0.67, 0);
+  --transition-base: 200ms cubic-bezier(0.32, 0, 0.67, 0);
+  --transition-slow: 320ms cubic-bezier(0.32, 0, 0.67, 0);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ─── Dark theme — Apple OLED + cyan dark ─── */
+
+    --asvab-bg: #000000;
+    --asvab-bg-section: #1D1D1F;
+    --asvab-bg-card: #1D1D1F;
+    --asvab-bg-elevated: #2C2C2E;
+
+    --asvab-text-primary: #F5F5F7;
+    --asvab-text-secondary: #A1A1A6;
+    --asvab-text-tertiary: #8E8E93;
+    --asvab-text-disabled: #48484A;
+
+    --asvab-accent: #66E5FF;            /* Bright cyan for dark bg (legibility) */
+    --asvab-accent-strong: #00D4FF;
+    --asvab-accent-soft: #0099BB;
+    --asvab-accent-bright: #66E5FF;
+
+    --asvab-border: #38383A;
+    --asvab-border-strong: #48484A;
+
+    --asvab-success: #30D158;
+    --asvab-warning: #FF9F0A;
+    --asvab-danger: #FF453A;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
