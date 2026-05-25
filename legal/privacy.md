@@ -1,12 +1,13 @@
 ---
+layout: prose
 title: Privacy Policy
-layout: default
 permalink: /legal/privacy/
 redirect_from:
   - /PRIVACY_POLICY
   - /PRIVACY_POLICY/
   - /privacy
   - /privacy/
+updated: 2026-05-25
 ---
 
 # Privacy Policy — ASVAB Coach

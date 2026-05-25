@@ -1,11 +1,39 @@
 title: ASVAB Coach
 description: Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch, zero tracking. $4.99 once.
 url: https://asvab.khassinx.com
-theme: jekyll-theme-cayman
+lang: en
+
+# Layer 2 brand tokens (ASVAB Coach specific) extending Layer 3 primitives
+app_tokens_css: /assets/css/asvab-tokens.css
+
+# Favicons (extracted from app icon)
+favicon_32: /assets/favicons/favicon-32.png
+favicon_16: /assets/favicons/favicon-16.png
+apple_touch_icon: /assets/favicons/apple-touch-icon.png
+
+# Navigation
+nav:
+  - title: Legal
+    url: /legal/
+  - title: App Store
+    url: https://apps.apple.com/us/app/asvab-coach/id6761384966
+    external: true
+
+footer_nav:
+  - title: Privacy
+    url: /legal/privacy
+  - title: Terms
+    url: /legal/terms
+  - title: Contact
+    url: mailto:hello@khassinx.com
+
+# Jekyll config
 markdown: kramdown
 plugins:
   - jekyll-redirect-from
+
 exclude:
   - README.md
   - CONTRIBUTING.md
   - .gitignore
+  - LICENSE
