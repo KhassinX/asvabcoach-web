@@ -13,7 +13,7 @@ App development repo: [khassinx/ASVABCoach](https://github.com/khassinx/ASVABCoa
 
 ## Hosting
 
-Served via **GitHub Pages** with custom domain `asvab.khassinx.com` (CNAME record in Cloudflare zone `khassinx.com`, proxy off for Let's Encrypt cert auto-issuance).
+Served via **GitHub Pages** with custom domain `asvab.khassinx.com`. CNAME record in Cloudflare zone `khassinx.com` with **proxy ON** — provides security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options) via Transform Rules, WAF, edge caching. SSL/TLS mode: Full (strict).
 
 ## Legacy URLs
 
@@ -27,8 +27,9 @@ This means in-app links in ASVAB Coach v2.2 (LIVE on App Store) keep working thr
 
 ## Contact
 
-- **Developer**: Abraham K. Alonso (KhassinX) · Tampa, FL · USA
-- **Email**: hello@khassinx.com
+- **General**: hello@khassinx.com
+- **Security**: security@khassinx.com (see `/security/` and `/.well-known/security.txt`)
+- **Support**: support@khassinx.com
 
 ## License
 
