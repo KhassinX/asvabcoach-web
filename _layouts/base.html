@@ -22,7 +22,13 @@
   {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
   {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
 
-  <link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">
+  {% comment %}
+    CSS loading order matters: Layer 1 (umbrella tokens) optional → Layer 3 (primitives,
+    uses Layer 1 token names) → Layer 2 (per-app tokens, rebinds Layer 1 names to app palette).
+    For per-app sites: skip Layer 1 (set site.umbrella_tokens = false). For umbrella sites
+    (apex khassinx.com): include Layer 1 (set site.umbrella_tokens = true).
+  {% endcomment %}
+  {% if site.umbrella_tokens %}<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">{% endif %}
   <link rel="stylesheet" href="{{ '/assets/css/primitives.css' | relative_url }}">
   {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css | relative_url }}">{% endif %}
   {% if page.extra_css %}{% for css in page.extra_css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
