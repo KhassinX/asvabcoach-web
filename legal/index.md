@@ -20,8 +20,9 @@ Short aliases: [/privacy](/privacy) · [/terms](/terms)
 
 For questions about privacy or terms:
 
-- **Developer**: Abraham K. Alonso (KhassinX) · Tampa, FL · USA
-- **Email**: [hello@khassinx.com](mailto:hello@khassinx.com)
+- **Developer**: KhassinX
+- **General**: [hello@khassinx.com](mailto:hello@khassinx.com)
+- **Security**: [security@khassinx.com](mailto:security@khassinx.com) ([disclosure policy](https://khassinx.com/security/))
 
 ## License
 
