@@ -2,6 +2,9 @@
 layout: prose
 title: ASVAB Coach — Legal
 permalink: /legal/
+lang: en
+canonical_en: /legal/
+canonical_es: /es/legal/
 updated: 2026-05-25
 ---
 
