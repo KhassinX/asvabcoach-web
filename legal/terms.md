@@ -14,7 +14,7 @@ updated: 2026-05-25
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Developer**: Abraham K. Alonso (KhassinX), Tampa, FL, USA
+**Developer**: KhassinX
 **Contact**: hello@khassinx.com
 
 By downloading, installing, or using ASVAB Coach, you agree to these terms. If you do not agree, please do not use the app.
@@ -82,7 +82,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ## 7. Intellectual property
 
-- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KhassinX (Abraham K. Alonso)**, all rights reserved
+- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KhassinX**, all rights reserved
 - **ASVAB®** is a trademark of the U.S. Department of Defense, used nominatively
 - Branch insignia, military terminology, and any official seal references are property of the respective branches, used for descriptive purposes only
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store, and related marks are trademarks of Apple Inc.
@@ -91,7 +91,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ASVAB Coach is provided **"AS IS"** without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy of information, or non-infringement.
 
-To the maximum extent permitted by law, KhassinX and Abraham K. Alonso shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
+To the maximum extent permitted by law, KhassinX shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
 
 - Failure to achieve a target AFQT score
 - Inability to enlist in a desired branch or MOS
@@ -122,7 +122,7 @@ Material changes will be reflected with a new "Effective date" at the top. Conti
 
 These terms are governed by the laws of the **State of Florida, USA**, without regard to conflict-of-laws principles.
 
-- Disputes shall be resolved in **Hillsborough County, Florida**
+- Disputes shall be resolved in the courts of the State of Florida
 - Both parties waive the right to a jury trial for any dispute
 - You agree to attempt informal resolution by emailing hello@khassinx.com **before** pursuing formal legal action
 
@@ -142,7 +142,7 @@ Expected response time: 7 business days.
 # Términos de Uso — ASVAB Coach (Español)
 
 **Fecha efectiva**: 2026-05-18
-**Desarrollador**: Abraham K. Alonso (KhassinX), Tampa, FL, EE.UU.
+**Desarrollador**: KhassinX
 
 Al descargar, instalar, o usar ASVAB Coach, aceptas estos términos. Si no estás de acuerdo, por favor no uses la app.
 
@@ -189,13 +189,13 @@ Intentos de fraude resultan en revocación de acceso.
 
 ## 7. Propiedad intelectual
 
-- App ASVAB Coach: **© 2026 KhassinX (Abraham K. Alonso)**, todos los derechos reservados
+- App ASVAB Coach: **© 2026 KhassinX**, todos los derechos reservados
 - **ASVAB®**: marca DoD, uso nominativo
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence: marcas de Apple Inc.
 
 ## 8. Sin garantía · Limitación de responsabilidad
 
-ASVAB Coach se provee **"TAL CUAL"** sin garantía de ningún tipo. KhassinX y Abraham K. Alonso **no son responsables** por daños indirectos, incidentales, consecuentes, especiales, o punitivos.
+ASVAB Coach se provee **"TAL CUAL"** sin garantía de ningún tipo. KhassinX **no es responsable** por daños indirectos, incidentales, consecuentes, especiales, o punitivos.
 
 Responsabilidad total acumulada limitada al monto que pagaste por la app ($4.99 USD o equivalente local), o $0 si estás en trial.
 
@@ -209,7 +209,7 @@ Actualizaciones materiales se reflejan con nueva "Fecha efectiva" arriba. Uso co
 
 ## 11. Ley aplicable y disputas
 
-Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.** Disputas se resuelven en Hillsborough County, Florida. Ambas partes renuncian al juicio por jurado.
+Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.** Las disputas se resuelven en los tribunales del Estado de Florida. Ambas partes renuncian al juicio por jurado.
 
 Antes de acción legal formal, contactar hello@khassinx.com para resolución informal.
 

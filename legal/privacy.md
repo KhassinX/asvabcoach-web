@@ -14,7 +14,7 @@ updated: 2026-05-25
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Developer**: Abraham K. Alonso (KhassinX), Tampa, FL, USA
+**Developer**: KhassinX
 **Contact**: hello@khassinx.com
 
 ---
@@ -114,7 +114,7 @@ If we ever materially change our data practices, we will update this document wi
 
 ## Jurisdiction
 
-This policy is governed by the laws of the **State of Florida, USA**. We are a sole proprietorship (Abraham K. Alonso, Tampa, FL). Disputes are resolved in Hillsborough County, Florida.
+This policy is governed by the laws of the **State of Florida, USA**. Disputes are resolved in the State of Florida.
 
 ## Contact
 
@@ -131,7 +131,7 @@ We aim to respond within 7 business days.
 
 **Fecha efectiva**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Desarrollador**: Abraham K. Alonso (KhassinX), Tampa, FL, EE.UU.
+**Desarrollador**: KhassinX
 **Contacto**: hello@khassinx.com
 
 ---
@@ -199,7 +199,7 @@ Si cambian materialmente nuestras prácticas de datos, actualizaremos este docum
 
 ## Jurisdicción
 
-Esta política se rige por las leyes del **Estado de Florida, EE.UU.** Somos sole proprietorship (Abraham K. Alonso, Tampa, FL). Disputas se resuelven en Hillsborough County, Florida.
+Esta política se rige por las leyes del **Estado de Florida, EE.UU.** Las disputas se resuelven en el Estado de Florida.
 
 ## Contacto
 
