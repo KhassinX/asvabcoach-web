@@ -23,7 +23,7 @@ Para preguntas sobre privacidad o términos:
 
 - **Desarrollador**: KhassinX
 - **General**: [hello@khassinx.com](mailto:hello@khassinx.com)
-- **Seguridad**: [security@khassinx.com](mailto:security@khassinx.com) ([política de disclosure](https://khassinx.com/security/))
+- **Seguridad**: [security@khassinx.com](mailto:security@khassinx.com) ([política de disclosure](https://khassinx.com/es/security/))
 
 ## Licencia
 
