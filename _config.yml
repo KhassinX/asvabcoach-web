@@ -11,21 +11,53 @@ favicon_32: /assets/favicons/favicon-32.png
 favicon_16: /assets/favicons/favicon-16.png
 apple_touch_icon: /assets/favicons/apple-touch-icon.png
 
-# Navigation
+# Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
-  - title: Legal
-    url: /legal/
-  - title: App Store
-    url: https://apps.apple.com/us/app/asvab-coach/id6761384966
-    external: true
+  en:
+    - title: Legal
+      url: /legal/
+    - title: App Store
+      url: https://apps.apple.com/us/app/asvab-coach/id6761384966
+      external: true
+  es:
+    - title: Legal
+      url: /es/legal/
+    - title: App Store
+      url: https://apps.apple.com/us/app/asvab-coach/id6761384966
+      external: true
 
 footer_nav:
-  - title: Privacy
-    url: /legal/privacy
-  - title: Terms
-    url: /legal/terms
-  - title: Contact
-    url: mailto:hello@khassinx.com
+  en:
+    - title: Privacy
+      url: /legal/privacy/
+    - title: Terms
+      url: /legal/terms/
+    - title: Security
+      url: /security/
+    - title: Contact
+      url: mailto:hello@khassinx.com
+  es:
+    - title: Privacidad
+      url: /es/legal/privacy/
+    - title: Términos
+      url: /es/legal/terms/
+    - title: Seguridad
+      url: /es/security/
+    - title: Contacto
+      url: mailto:hello@khassinx.com
+
+# Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
+ui_strings:
+  en:
+    skip_to_main: "Skip to main content"
+    part_of_ecosystem_prefix: "Part of the"
+    part_of_ecosystem_label: "KhassinX ecosystem"
+    ecosystem_url: "https://khassinx.com"
+  es:
+    skip_to_main: "Saltar al contenido principal"
+    part_of_ecosystem_prefix: "Parte del"
+    part_of_ecosystem_label: "ecosistema KhassinX"
+    ecosystem_url: "https://khassinx.com/es/"
 
 # Jekyll config
 markdown: kramdown
