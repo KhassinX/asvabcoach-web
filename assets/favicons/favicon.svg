@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="ASVAB Coach">
+  <defs>
+    <linearGradient id="asvab-bg" x1="0.5" y1="0" x2="0.5" y2="0.7">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#0F1F36"/>
+    </linearGradient>
+    <linearGradient id="asvab-gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#E5C079"/>
+      <stop offset="100%" stop-color="#C9A050"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#asvab-bg)"/>
+  <path d="M 512 184 L 840 840 L 727 840 L 512 410 L 297 840 L 184 840 Z" fill="url(#asvab-gold)"/>
+</svg>

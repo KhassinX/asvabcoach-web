@@ -6,7 +6,9 @@ lang: en
 # Layer 2 brand tokens (ASVAB Coach specific) extending Layer 3 primitives
 app_tokens_css: /assets/css/asvab-tokens.css
 
-# Favicons (extracted from app icon)
+# Favicons (derived from official Icon Composer .icon bundle 2026-05-27)
+# Apple-canon: navy gradient #1E3A5F→#0F1F36 background + gold A #E5C079→#C9A050
+favicon_svg: /assets/favicons/favicon.svg
 favicon_32: /assets/favicons/favicon-32.png
 favicon_16: /assets/favicons/favicon-16.png
 apple_touch_icon: /assets/favicons/apple-touch-icon.png
