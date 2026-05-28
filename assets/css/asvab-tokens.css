@@ -2,17 +2,19 @@
  * asvab-tokens.css — Layer 2 ASVAB Coach brand tokens — Apple-canon
  *
  * Per-app brand for asvab.khassinx.com. Distinct de Layer 1 KhassinX umbrella
- * (umbrella es neutral Apple blue, ASVAB Coach es Apple-canon + cyan signature).
+ * (umbrella es neutral Apple blue, ASVAB Coach es Apple-canon + navy/gold signature).
  *
  * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §3 (Layer 2 conventions)
  * + §2 (Layer 1 Apple canon) + §4-5 (typography/spacing Apple-grade).
  *
- * Refactor 2026-05-25 PM: from dark navy heavy to Apple-canon light minimalism
- * + cyan accent. Reason: marketing pages Apple-grade required for Editor's
- * Choice nomination submit. Dark navy stays SOLO en app interna (study mode).
+ * Refactor 2026-05-27: align accent to official Icon Composer .icon bundle.
+ * Background gradient navy #1E3A5F→#0F1F36 + gold "A" symbol #E5C079→#C9A050
+ * are the canonical app brand colors. Web accent now matches the icon visually
+ * for coherence between App Store presence + marketing site.
  *
- * App brand signature: cyan #00D4FF (vibrant decorative) + #0099BB (CTA/link
- * WCAG-compliant on white). Mirrors Swift `Color.asvabCyan` etc en AppColors.
+ * App brand signature: navy #1E3A5F (CTA/link, WCAG AAA on white at 11.2:1)
+ * + gold #C9A050 (decorative — borders, badges, hover bg; NOT for text body).
+ * Mirrors Swift `Color.asvabNavy` / `Color.asvabGold` en AppColors.
  */
 
 :root {
@@ -30,11 +32,11 @@
   --asvab-text-tertiary: #86868B;
   --asvab-text-disabled: #C7C7CC;
 
-  /* Accents — ASVAB Coach cyan signature */
-  --asvab-accent: #0099BB;            /* CTA/link cyan (WCAG AA on white: 4.5:1) */
-  --asvab-accent-strong: #007799;     /* Hover/active darker */
-  --asvab-accent-soft: #66E5FF;       /* Subtle backgrounds */
-  --asvab-accent-bright: #00D4FF;     /* Vibrant decorative (borders, hover bg) */
+  /* Accents — ASVAB Coach navy + gold signature (matches Icon Composer .icon bundle) */
+  --asvab-accent: #1E3A5F;            /* Navy CTA/link — matches icon bg top (WCAG AAA on white: 11.2:1) */
+  --asvab-accent-strong: #0F1F36;     /* Hover/active darker navy — matches icon bg bottom */
+  --asvab-accent-soft: #E3E8EF;       /* Pale blue-gray subtle backgrounds */
+  --asvab-accent-bright: #C9A050;     /* Gold decorative — matches icon symbol (borders/badges, NOT body text — does not pass AA) */
 
   /* Borders (Apple hairline) */
   --asvab-border: #D2D2D7;
@@ -127,10 +129,10 @@
     --asvab-text-tertiary: #8E8E93;
     --asvab-text-disabled: #48484A;
 
-    --asvab-accent: #66E5FF;            /* Bright cyan for dark bg (legibility) */
-    --asvab-accent-strong: #00D4FF;
-    --asvab-accent-soft: #0099BB;
-    --asvab-accent-bright: #66E5FF;
+    --asvab-accent: #6BA0D9;            /* Brighter navy for dark mode legibility (WCAG AAA on black: 7.8:1) */
+    --asvab-accent-strong: #4A82BD;     /* Medium navy hover */
+    --asvab-accent-soft: #1F2D45;       /* Deep navy subtle bg */
+    --asvab-accent-bright: #E5C079;     /* Brighter gold for dark — matches icon symbol top color */
 
     --asvab-border: #38383A;
     --asvab-border-strong: #48484A;
