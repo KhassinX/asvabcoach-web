@@ -1,0 +1,40 @@
+{
+  "name": "ASVAB Coach",
+  "short_name": "ASVAB",
+  "description": "Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch + Mac, zero tracking. $4.99 once.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#1E3A5F",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["education", "productivity"],
+  "icons": [
+    {
+      "src": "/assets/favicons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/favicons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/favicons/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "itunes",
+      "url": "https://apps.apple.com/us/app/asvab-coach/id6761384966",
+      "id": "com.khassinx.asvabcoach"
+    }
+  ],
+  "prefer_related_applications": true
+}

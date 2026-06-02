@@ -62,15 +62,35 @@ Everything you do in ASVAB Coach is stored **locally on your device** and (optio
 
 iCloud sync uses **your** Apple ID. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
 
-## Apple Intelligence (on-device AI tutor)
+## AI Tutor — Two Paths (NORMA 36 v2, updated 2026-05-31 for v2.7.0)
 
-ASVAB Coach uses **Apple Intelligence (FoundationModels)** to generate adaptive explanations and step-by-step math solutions for ASVAB practice questions.
+ASVAB Coach v2.7.0+ ships **two AI paths**. The default is identical to prior versions; the second is an opt-in feature for power users.
 
-This model runs **entirely on your device**. We never send your questions, answers, or any other data to OpenAI, Anthropic, Google, or any third-party AI service. We never send them to a server we control either — we don't have one.
+### Path 1 — Apple Intelligence on-device (DEFAULT for everyone)
 
-Apple Intelligence eligibility requires iOS 26+ and an iPhone 15 Pro or later. On devices without Apple Intelligence, the AI tutor features are silently hidden, and the rest of the app works normally.
+By default, ASVAB Coach uses **Apple Intelligence (FoundationModels)** to generate adaptive explanations and step-by-step math solutions for ASVAB practice questions.
 
-For Apple's own privacy commitments about Apple Intelligence, see Apple's [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) documentation. ASVAB Coach uses **only on-device** inference — never Private Cloud Compute.
+This model runs **entirely on your device**. We never send your questions, answers, or any other data to OpenAI, Anthropic, Google, or any third-party AI service in this path. We never send them to a server we control either — we don't have one.
+
+Apple Intelligence eligibility requires iOS 26+ and an iPhone 15 Pro or later. On devices without Apple Intelligence, the AI tutor features in this path are silently hidden.
+
+For Apple's own privacy commitments, see Apple's [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) documentation. ASVAB Coach uses **only on-device** Apple Intelligence inference — never Private Cloud Compute.
+
+### Path 2 — Power User Mode (BYOK, opt-in)
+
+If you choose to enable **Power User Mode** in Settings → AI Tutor, you can paste your own API key from Anthropic (Claude), OpenAI (ChatGPT), or Google (Gemini). When you do this:
+
+- **Your key stays in your iOS Keychain**, synced across your Apple ID devices via iCloud Keychain (so Apple Watch can use it too without re-entry).
+- **Your queries and responses go DIRECTLY from your device to the provider's API endpoint** (api.anthropic.com / api.openai.com / generativelanguage.googleapis.com). This is the ONE network path in the entire app that sends data to a third party.
+- **ASVAB Coach has zero proxy in the middle**. We never see your API key. We never see your queries. We never see the responses. The HTTPS connection is between your device and your chosen provider, exactly as if you were calling their API from any other app you wrote yourself.
+- **Your data sharing in this mode is governed by your chosen provider's privacy policy**, not ours. You agreed to those terms when you signed up for Claude / ChatGPT / Gemini. Read their policies:
+  - [Anthropic Privacy Policy](https://www.anthropic.com/legal/privacy)
+  - [OpenAI Privacy Policy](https://openai.com/policies/row-privacy-policy/)
+  - [Google AI Privacy](https://policies.google.com/privacy)
+- **Local-only token usage estimate**: We store per-day token counts (integers, no content) in `UserDefaults` on your device so you can see a rolling 30-day estimate. These counts never leave your device, never sync to iCloud, and are erased when you remove the key.
+- **You can disable Power User Mode at any time**: Settings → AI Tutor → Remove Key. This deletes the key from Keychain and clears the local usage counters.
+
+If you NEVER enable Power User Mode, ASVAB Coach makes ZERO outbound network requests beyond Apple StoreKit (for your one-time purchase) and Apple Intelligence on-device inference (which is local — no network).
 
 ## In-App Purchases
 
@@ -109,7 +129,9 @@ You retain full control through Apple's mechanisms:
 
 ## Apple App Privacy Nutrition Labels
 
-In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in all categories. This is verified against the in-app `PrivacyInfo.xcprivacy` manifest and against the actual code (zero analytics SDK imports, no network requests beyond StoreKit and Apple Intelligence on-device inference).
+In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in all categories. This is verified against the in-app `PrivacyInfo.xcprivacy` manifest and against the actual code (zero analytics SDK imports, no network requests beyond StoreKit and — if the user has enabled Power User Mode opt-in — direct calls from their device to the provider they chose using their own API key).
+
+**Why "Data Not Collected" remains valid even with Power User Mode**: in BYOK mode, we are not the data controller and we are not collecting anything. The user directs queries to the provider using the user's own key/account. ASVAB Coach functions as a thin client to the user's existing AI subscription. The provider may collect data per their own privacy policy (which the user agreed to when they signed up for Claude / ChatGPT / Gemini) — but that is the provider's collection, not ours. We never see the data in transit.
 
 ## Changes to this policy
 
