@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Crawl-delay (CF rate-limited anyway)
+Crawl-delay: 1
+
+# Sitemap reference
+Sitemap: https://asvab.khassinx.com/sitemap.xml
+
+# Host directive (Yandex respects)
+Host: asvab.khassinx.com
