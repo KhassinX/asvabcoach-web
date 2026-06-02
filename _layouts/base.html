@@ -10,10 +10,37 @@
   <meta name="theme-color" content="#0E0E11" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
 
+  <!-- Open Graph (Facebook, LinkedIn, iMessage, Slack) -->
+  <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+  {% assign og_image_path = page.og_image | default: site.og_image_default %}
+  {% if og_image_path %}
+  <meta property="og:image" content="{{ site.url }}{{ og_image_path }}">
+  <meta property="og:image:secure_url" content="{{ site.url }}{{ og_image_path }}">
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ page.og_image_alt | default: site.og_image_alt }}">
+  {% endif %}
+  {% if page.lang == 'es' %}
+  <meta property="og:locale" content="es_MX">
+  <meta property="og:locale:alternate" content="en_US">
+  {% else %}
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_MX">
+  {% endif %}
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  {% if og_image_path %}
+  <meta name="twitter:image" content="{{ site.url }}{{ og_image_path }}">
+  <meta name="twitter:image:alt" content="{{ page.og_image_alt | default: site.og_image_alt }}">
+  {% endif %}
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 
@@ -31,6 +58,65 @@
   {% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">{% endif %}
   {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
   {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
+
+  <!-- PWA manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- Apple PWA / iOS web-app -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="ASVAB">
+  <meta name="application-name" content="ASVAB Coach">
+
+  <!-- Microsoft Tile (legacy but cheap) -->
+  <meta name="msapplication-TileColor" content="#1E3A5F">
+
+  <!-- Sitemap discovery hint -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+
+  <!-- JSON-LD structured data — MobileApplication (Google Rich Results) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MobileApplication",
+    "name": "ASVAB Coach",
+    "alternateName": "ASVAB Coach — Private AI Tutor",
+    "operatingSystem": "iOS 26.5, iPadOS 26.5, watchOS 26.5, macOS 26.5",
+    "applicationCategory": "EducationalApplication",
+    "applicationSubCategory": "Test Prep",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "downloadUrl": "https://apps.apple.com/us/app/asvab-coach/id6761384966",
+    "installUrl": "https://apps.apple.com/us/app/asvab-coach/id6761384966",
+    "image": "{{ site.url }}{{ site.og_image_default }}",
+    "offers": {
+      "@type": "Offer",
+      "price": "4.99",
+      "priceCurrency": "USD",
+      "category": "OneTimePurchase"
+    },
+    "inLanguage": ["en-US", "es-MX"],
+    "isAccessibleForFree": false,
+    "publisher": {
+      "@type": "Organization",
+      "name": "KhassinX",
+      "url": "https://khassinx.com",
+      "logo": "https://khassinx.com/assets/favicons/icon-512.png"
+    },
+    "featureList": [
+      "Apple Intelligence on-device AI tutor",
+      "Native Apple Watch app — Quick 10 on your wrist",
+      "Native Mac app — not Catalyst",
+      "743 verified questions across 9 ASVAB subtests",
+      "Spaced repetition (SM-2 algorithm, per-category calibrated)",
+      "AFQT Sprint timed practice",
+      "Smart Exam (full CAT-ASVAB simulation)",
+      "Math step-by-step solver",
+      "Zero tracking · no account required",
+      "Family Sharing included"
+    ]
+  }
+  </script>
 
   {% comment %}
     CSS loading order matters: Layer 1 (umbrella tokens) optional → Layer 3 (primitives,
