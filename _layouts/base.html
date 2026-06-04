@@ -58,6 +58,7 @@
   {% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">{% endif %}
   {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
   {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
 
   <!-- PWA manifest -->
   <link rel="manifest" href="/manifest.json">
@@ -70,6 +71,7 @@
 
   <!-- Microsoft Tile (legacy but cheap) -->
   <meta name="msapplication-TileColor" content="#1E3A5F">
+  <meta name="msapplication-TileImage" content="/assets/favicons/mstile-150x150.png">
 
   <!-- Sitemap discovery hint -->
   <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
@@ -100,8 +102,10 @@
     "publisher": {
       "@type": "Organization",
       "name": "KhassinX",
+      "legalName": "KhassinX LLC",
       "url": "https://khassinx.com",
-      "logo": "https://khassinx.com/assets/favicons/icon-512.png"
+      "logo": "https://khassinx.com/assets/favicons/icon-512.png",
+      "foundingDate": "2026-06-01"
     },
     "featureList": [
       "Apple Intelligence on-device AI tutor",
@@ -169,7 +173,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <div>© {{ 'now' | date: '%Y' }} KhassinX</div>
+      <div>© {{ 'now' | date: '%Y' }} KhassinX LLC</div>
       <nav aria-label="Footer">
         {% for item in footer_items %}
           <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
