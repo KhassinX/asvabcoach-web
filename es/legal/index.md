@@ -21,7 +21,7 @@ Documentos legales públicos de **[ASVAB Coach](https://apps.apple.com/us/app/as
 
 Para preguntas sobre privacidad o términos:
 
-- **Desarrollador**: KhassinX
+- **Operador**: KhassinX LLC (una sociedad de responsabilidad limitada de Florida)
 - **General**: [hello@khassinx.com](mailto:hello@khassinx.com)
 - **Seguridad**: [security@khassinx.com](mailto:security@khassinx.com) ([política de disclosure](https://khassinx.com/es/security/))
 
