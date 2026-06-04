@@ -12,7 +12,7 @@ updated: 2026-05-25
 
 **Fecha de vigencia**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Desarrollador**: KhassinX
+**Operador**: KhassinX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: hello@khassinx.com
 
 Al descargar, instalar o usar ASVAB Coach aceptás estos términos. Si no estás de acuerdo, por favor no uses la app.
@@ -50,7 +50,7 @@ Aplicamos un wrapper `TutorSafety` a toda salida de IA que rechaza respuestas qu
 
 ## 4. Puntajes por rama (mínimos AFQT)
 
-ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, Marines: 32, Space Force: 60"). Estos reflejan la **política vigente del DoD** a la fecha de la última actualización de la app.
+ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, Marines: 32, Space Force: 36"). Estos reflejan la **política vigente del DoD** a la fecha de la última actualización de la app.
 
 - La política del DoD sobre mínimos AFQT **cambia periódicamente**. Actualizamos la app trimestralmente para reflejar los cambios, pero puede haber un retraso entre el cambio de política y nuestra actualización.
 - Los mínimos mostrados son **requisitos base**. Los trabajos específicos (MOS/rating) dentro de cada rama tienen requisitos adicionales (line scores) que pueden ser más altos.
@@ -80,7 +80,7 @@ Los intentos de saltar el trial o la verificación IAP disparan nuestra revisió
 
 ## 7. Propiedad intelectual
 
-- La app ASVAB Coach (código, diseño, assets, curaduría del banco de preguntas) es **copyright © 2026 KhassinX**, todos los derechos reservados
+- La app ASVAB Coach (código, diseño, assets, curaduría del banco de preguntas) es **copyright © 2026 KhassinX LLC**, todos los derechos reservados
 - **ASVAB®** es marca registrada del Departamento de Defensa de EE.UU., usada de manera nominativa
 - Las insignias de rama, terminología militar y cualquier referencia a sellos oficiales son propiedad de las respectivas ramas, usadas solo para fines descriptivos
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store y marcas relacionadas son marcas de Apple Inc.
@@ -89,7 +89,7 @@ Los intentos de saltar el trial o la verificación IAP disparan nuestra revisió
 
 ASVAB Coach se provee **"TAL CUAL"** sin garantía de ningún tipo, expresa o implícita, incluyendo pero sin limitarse a garantías de comerciabilidad, idoneidad para un propósito específico, precisión de la información o no infracción.
 
-En la máxima extensión permitida por la ley, KhassinX **no será responsable** por daños indirectos, incidentales, consecuentes, especiales o punitivos derivados del uso de la app, incluyendo pero sin limitarse a:
+En la máxima extensión permitida por la ley, KhassinX LLC **no será responsable** por daños indirectos, incidentales, consecuentes, especiales o punitivos derivados del uso de la app, incluyendo pero sin limitarse a:
 
 - No alcanzar un puntaje AFQT objetivo
 - Imposibilidad de enlistarse en una rama o MOS deseado
@@ -122,7 +122,7 @@ Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.**, sin co
 
 - Las disputas se resolverán en los tribunales del Estado de Florida
 - Ambas partes renuncian al derecho a juicio por jurado para cualquier disputa
-- Aceptás intentar resolución informal escribiendo a hello@khassinx.com **antes** de iniciar acción legal formal
+- Aceptas intentar resolución informal escribiendo a hello@khassinx.com **antes** de iniciar acción legal formal
 
 Si alguna provisión de estos términos resulta inejecutable, el resto permanece en vigor.
 

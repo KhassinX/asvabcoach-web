@@ -17,7 +17,7 @@ updated: 2026-05-25
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Developer**: KhassinX
+**Operator**: KhassinX LLC, a Florida limited liability company
 **Contact**: hello@khassinx.com
 
 By downloading, installing, or using ASVAB Coach, you agree to these terms. If you do not agree, please do not use the app.
@@ -55,7 +55,7 @@ We apply a `TutorSafety` wrapper to all AI output that rejects responses violati
 
 ## 4. Branch-specific scores (AFQT minimums)
 
-ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 32, Space Force: 60"). These reflect **current DoD policy** as of the app's last update.
+ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 32, Space Force: 36"). These reflect **current DoD policy** as of the app's last update.
 
 - DoD policy on minimum AFQT scores **changes periodically**. We update the app quarterly to track changes, but there may be a lag between a policy change and our update.
 - The displayed minimums are **baseline requirements**. Specific jobs (MOS/rating) within each branch have their own additional score requirements (line scores) that may be higher.
@@ -85,7 +85,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ## 7. Intellectual property
 
-- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KhassinX**, all rights reserved
+- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KhassinX LLC**, all rights reserved
 - **ASVAB®** is a trademark of the U.S. Department of Defense, used nominatively
 - Branch insignia, military terminology, and any official seal references are property of the respective branches, used for descriptive purposes only
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store, and related marks are trademarks of Apple Inc.
@@ -94,7 +94,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ASVAB Coach is provided **"AS IS"** without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy of information, or non-infringement.
 
-To the maximum extent permitted by law, KhassinX shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
+To the maximum extent permitted by law, KhassinX LLC shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
 
 - Failure to achieve a target AFQT score
 - Inability to enlist in a desired branch or MOS

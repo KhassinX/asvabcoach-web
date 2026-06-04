@@ -3,18 +3,22 @@ description: Private AI tutor for the ASVAB. Apple Intelligence on-device, nativ
 url: https://asvab.khassinx.com
 lang: en
 
+# Legal entity (KHASSINX LLC — Florida single-member LLC, filed 2026-06-01)
+org_legal_name: "KhassinX LLC"
+org_founding_date: "2026-06-01"
+
 # Layer 2 brand tokens (ASVAB Coach specific) extending Layer 3 primitives
 app_tokens_css: /assets/css/asvab-tokens.css
 
-# Favicons (derived from official Icon Composer .icon bundle 2026-05-27)
-# Apple-canon: navy gradient #1E3A5F→#0F1F36 background + gold A #E5C079→#C9A050
+# Favicons (derived from official Icon Composer .icon bundle — brand pack 2026-06)
+# Brand icon: navy gradient #1E3A5F→#0F1F36 background + gold service star + R/W/B ribbon (Icon Composer .icon)
 favicon_svg: /assets/favicons/favicon.svg
 favicon_32: /assets/favicons/favicon-32.png
 favicon_16: /assets/favicons/favicon-16.png
 apple_touch_icon: /assets/favicons/apple-touch-icon.png
 
 # Open Graph image (1200×630 Apple-canon white + icon + tagline) — overridable per page
-og_image_default: /assets/og/og-image-en.png
+og_image_default: /assets/social/EN/og-image.png
 og_image_alt: "ASVAB Coach app icon on Apple-canon white background — Private AI Tutor for the ASVAB"
 
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
