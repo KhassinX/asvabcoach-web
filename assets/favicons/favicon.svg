@@ -1,19 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-label="ASVAB Coach">
   <defs>
-    <linearGradient id="bg" x1="0.5" y1="0" x2="0.5" y2="1">
-      <stop offset="0%" stop-color="#1E3A5F"/>
-      <stop offset="100%" stop-color="#0F1F36"/>
-    </linearGradient>
+    <linearGradient id="ic_bg" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0%" stop-color="#1E3A5F"/><stop offset="100%" stop-color="#0F1F36"/></linearGradient>
+    <clipPath id="ic_clip"><rect width="1024" height="1024" rx="224" ry="224"/></clipPath>
   </defs>
-  <rect width="1024" height="1024" rx="224" ry="224" fill="url(#bg)"/>
-  <!-- Ribbon stripes (rendered first = behind star) -->
-  <rect x="380" y="550" width="80" height="280" rx="40" ry="40" fill="#B22234"/>
-  <rect x="472" y="550" width="80" height="280" rx="40" ry="40" fill="#F5F5F5"/>
-  <rect x="564" y="550" width="80" height="280" rx="40" ry="40" fill="#3C3B6E"/>
-  <!-- Service star -->
-  <path d="M 512 120 L 559.02 255.28 L 702.21 258.20 L 588.08 344.72 L 629.56 481.80 L 512 400 L 394.44 481.80 L 435.92 344.72 L 321.79 258.20 L 464.98 255.28 Z"
-        fill="#C9A050"
-        stroke="#C9A050"
-        stroke-width="24"
-        stroke-linejoin="round"/>
-</svg>
+  <g clip-path="url(#ic_clip)">
+    <rect width="1024" height="1024" fill="url(#ic_bg)"/>
+    <rect x="380" y="550" width="80" height="280" rx="40" ry="40" fill="#B22234"/>
+    <rect x="472" y="550" width="80" height="280" rx="40" ry="40" fill="#F5F5F5"/>
+    <rect x="564" y="550" width="80" height="280" rx="40" ry="40" fill="#3C3B6E"/>
+    <path d="M 512 120 L 559.02 255.28 L 702.21 258.20 L 588.08 344.72 L 629.56 481.80 L 512 400 L 394.44 481.80 L 435.92 344.72 L 321.79 258.20 L 464.98 255.28 Z" fill="#C9A050" stroke="#C9A050" stroke-width="24" stroke-linejoin="round"/>
+  </g></svg>

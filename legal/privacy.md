@@ -17,7 +17,7 @@ updated: 2026-05-25
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Developer**: KhassinX
+**Operator / Data controller**: KhassinX LLC, a Florida limited liability company
 **Contact**: hello@khassinx.com
 
 ---
@@ -140,6 +140,8 @@ If we ever materially change our data practices, we will update this document wi
 ## Jurisdiction
 
 This policy is governed by the laws of the **State of Florida, USA**. Disputes are resolved in the State of Florida.
+
+The operator and data controller for ASVAB Coach is **KhassinX LLC**, a Florida limited liability company. To the extent any data-protection law applies, KhassinX LLC is the controller — though in practice the app processes no personal data (see above).
 
 ## Contact
 
