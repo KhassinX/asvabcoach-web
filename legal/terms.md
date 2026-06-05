@@ -17,7 +17,7 @@ updated: 2026-05-25
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
-**Operator**: KhassinX LLC, a Florida limited liability company
+**Operator**: KHASSINX LLC, a Florida limited liability company
 **Contact**: hello@khassinx.com
 
 By downloading, installing, or using ASVAB Coach, you agree to these terms. If you do not agree, please do not use the app.
@@ -85,7 +85,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ## 7. Intellectual property
 
-- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KhassinX LLC**, all rights reserved
+- The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KHASSINX LLC**, all rights reserved
 - **ASVAB®** is a trademark of the U.S. Department of Defense, used nominatively
 - Branch insignia, military terminology, and any official seal references are property of the respective branches, used for descriptive purposes only
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store, and related marks are trademarks of Apple Inc.
@@ -94,7 +94,7 @@ Attempts to circumvent the trial or IAP verification trigger our `Transaction.cu
 
 ASVAB Coach is provided **"AS IS"** without warranty of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, accuracy of information, or non-infringement.
 
-To the maximum extent permitted by law, KhassinX LLC shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
+To the maximum extent permitted by law, KHASSINX LLC shall **not be liable** for any indirect, incidental, consequential, special, or punitive damages arising from your use of the app, including but not limited to:
 
 - Failure to achieve a target AFQT score
 - Inability to enlist in a desired branch or MOS
