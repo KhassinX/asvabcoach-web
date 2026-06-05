@@ -23,7 +23,7 @@ Short aliases: [/privacy](/privacy) · [/terms](/terms)
 
 For questions about privacy or terms:
 
-- **Operator**: KhassinX LLC (a Florida limited liability company)
+- **Operator**: KHASSINX LLC (a Florida limited liability company)
 - **General**: [hello@khassinx.com](mailto:hello@khassinx.com)
 - **Security**: [security@khassinx.com](mailto:security@khassinx.com) ([disclosure policy](https://khassinx.com/security/))
 
