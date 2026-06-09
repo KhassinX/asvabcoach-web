@@ -18,7 +18,7 @@ updated: 2026-06-08
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator / Data controller**: KHASSINX LLC, a Florida limited liability company
-**Contact**: hello@khassinx.com
+**Contact**: legal@khassinx.com
 
 ---
 
@@ -101,9 +101,9 @@ ASVAB Coach is intended for users **17 and older** (typical age of U.S. military
 
 ## Your rights
 
-Because we hold no data about you, there is nothing to delete, export, correct, or transfer at our end.
+For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGDD, California's CCPA/CPRA, other US state laws, and elsewhere — and how to exercise them — see KhassinX's [Privacy Rights center](https://khassinx.com/legal/your-rights/).
 
-You retain full control through Apple's mechanisms:
+Because we hold no data about you, most such requests are moot: there is nothing to delete, export, correct, or transfer at our end. To exercise any right for ASVAB Coach, reset your data in-app or email legal@khassinx.com. You also retain full control through Apple's mechanisms:
 
 - **Delete all app data**: delete the app from your device. Open Settings → Apple ID → iCloud → Manage Storage → ASVAB Coach → Delete Data to also remove the iCloud KV copy
 - **In-app reset**: open the app → Menu → About → "Reset all progress" — wipes local + iCloud KV in one tap
@@ -128,7 +128,7 @@ The operator and data controller for ASVAB Coach is **KHASSINX LLC**, a Florida 
 
 If you have any privacy concerns or questions, reach out:
 
-- **Email**: hello@khassinx.com
+- **Email**: legal@khassinx.com
 - **Mail**: Available on request
 
 We aim to respond within 7 business days.

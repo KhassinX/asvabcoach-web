@@ -13,9 +13,9 @@ updated: 2026-06-08
 **Fecha de vigencia**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
-**Contacto**: hello@khassinx.com
+**Contacto**: legal@khassinx.com
 
-Al descargar, instalar o usar ASVAB Coach aceptás estos términos. Si no estás de acuerdo, por favor no uses la app.
+Al descargar, instalar o usar ASVAB Coach aceptas estos términos. Si no estás de acuerdo, por favor no uses la app.
 
 ---
 
@@ -44,7 +44,7 @@ El contenido generado por IA puede ocasionalmente:
 - Diferir de la explicación "oficial" mostrada en la misma pregunta
 - Reflejar las limitaciones de un modelo de lenguaje pequeño en el dispositivo
 
-Tratá las explicaciones de IA como una **herramienta de estudio complementaria**, no como autoridad. La explicación "oficial" hecha a mano en cada pregunta es la verdad de referencia. Si una explicación de IA parece equivocada o contradice la oficial, confiá en la oficial.
+Trata las explicaciones de IA como una **herramienta de estudio complementaria**, no como autoridad. La explicación "oficial" hecha a mano en cada pregunta es la verdad de referencia. Si una explicación de IA parece equivocada o contradice la oficial, confía en la oficial.
 
 Aplicamos un wrapper `TutorSafety` a toda salida de IA que rechaza respuestas que violan restricciones de seguridad, pero ningún filtro automático es perfecto.
 
@@ -54,7 +54,7 @@ ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, 
 
 - La política del DoD sobre mínimos AFQT **cambia periódicamente**. Actualizamos la app trimestralmente para reflejar los cambios, pero puede haber un retraso entre el cambio de política y nuestra actualización.
 - Los mínimos mostrados son **requisitos base**. Los trabajos específicos (MOS/rating) dentro de cada rama tienen requisitos adicionales (line scores) que pueden ser más altos.
-- **Verificá siempre los requisitos vigentes con un reclutador oficial** de tu rama elegida antes de tomar decisiones de alistamiento basadas en datos de la app.
+- **Verifica siempre los requisitos vigentes con un reclutador oficial** de tu rama elegida antes de tomar decisiones de alistamiento basadas en datos de la app.
 
 ## 5. Tier gratuito y desbloqueo único
 
@@ -63,11 +63,11 @@ ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, 
 - La compra es una **compra in-app no consumible** — una vez adquirida, persiste para el mismo Apple ID para siempre, restaurable con el botón "Restaurar compras", y se comparte mediante **Compartir en familia**.
 - **Sin suscripción**. Sin renovación automática. Sin prueba que se convierta en cargo. Quien ya haya comprado el Acceso Completo conserva todo su acceso.
 
-Los reembolsos los rige Apple en su totalidad — solicitalos a través de tu historial de compras del App Store. No tenemos la capacidad de aprobar ni denegar reembolsos directamente porque no procesamos pagos.
+Los reembolsos los rige Apple en su totalidad — solicítalos a través de tu historial de compras del App Store. No tenemos la capacidad de aprobar ni denegar reembolsos directamente porque no procesamos pagos.
 
 ## 6. Uso aceptable
 
-Aceptás usar ASVAB Coach solo para fines educativos personales y lícitos. **No** podés:
+Aceptas usar ASVAB Coach solo para fines educativos personales y lícitos. **No** puedes:
 
 - Hacer ingeniería inversa, decompilar, desensamblar ni intentar derivar el código fuente de la app
 - Extraer el banco de preguntas para redistribución
@@ -96,13 +96,13 @@ En la máxima extensión permitida por la ley, KHASSINX LLC **no será responsab
 - Daños al dispositivo atribuidos a la app
 - Pérdida de datos (tus datos viven en tu iCloud — no tenemos copia para perder ni para entregar)
 
-Nuestra responsabilidad acumulada total ante vos por cualquier reclamo derivado de estos términos o de tu uso de ASVAB Coach está **limitada al monto que pagaste por la app** (el precio de la compra única fijado por Apple, o equivalente local), o $0 si no realizaste la compra dentro de la app.
+Nuestra responsabilidad acumulada total ante ti por cualquier reclamo derivado de estos términos o de tu uso de ASVAB Coach está **limitada al monto que pagaste por la app** (el precio de la compra única fijado por Apple, o equivalente local), o $0 si no realizaste la compra dentro de la app.
 
 ## 9. Terminación
 
-Podemos discontinuar o modificar ASVAB Coach en cualquier momento sin aviso. Si la app es retirada del App Store por completo, conservás el derecho de seguir usando tu copia instalada en tu(s) dispositivo(s) existente(s) por el tiempo que Apple permita (según los Términos de Servicios de Apple Media). No estamos obligados a otorgar reembolsos por una app que compraste y que fue retirada de venta posteriormente.
+Podemos discontinuar o modificar ASVAB Coach en cualquier momento sin aviso. Si la app es retirada del App Store por completo, conservas el derecho de seguir usando tu copia instalada en tu(s) dispositivo(s) existente(s) por el tiempo que Apple permita (según los Términos de Servicios de Apple Media). No estamos obligados a otorgar reembolsos por una app que compraste y que fue retirada de venta posteriormente.
 
-Podés dejar de usar ASVAB Coach en cualquier momento eliminando la app de tu dispositivo.
+Puedes dejar de usar ASVAB Coach en cualquier momento eliminando la app de tu dispositivo.
 
 ## 10. Cambios a estos términos
 
@@ -121,7 +121,7 @@ Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.**, sin co
 
 - Las disputas se resolverán en los tribunales del Estado de Florida
 - Ambas partes renuncian al derecho a juicio por jurado para cualquier disputa
-- Aceptas intentar resolución informal escribiendo a hello@khassinx.com **antes** de iniciar acción legal formal
+- Aceptas intentar resolución informal escribiendo a legal@khassinx.com **antes** de iniciar acción legal formal
 
 Si alguna provisión de estos términos resulta inejecutable, el resto permanece en vigor.
 
@@ -129,7 +129,7 @@ Si alguna provisión de estos términos resulta inejecutable, el resto permanece
 
 Preguntas, inquietudes, disputas de reembolso (después de agotar el proceso de Apple) o feedback de accesibilidad:
 
-- **Correo**: hello@khassinx.com
+- **Correo**: legal@khassinx.com
 - **Correo postal**: disponible bajo solicitud escrita por correo electrónico
 
 Tiempo de respuesta esperado: 7 días hábiles.
