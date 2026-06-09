@@ -5,7 +5,7 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-05-25
+updated: 2026-06-08
 ---
 
 # Política de Privacidad — ASVAB Coach
@@ -52,7 +52,6 @@ Todo lo que hacés en ASVAB Coach se guarda **localmente en tu dispositivo** y (
 | Tu progreso de estudio (conteo de aciertos/errores por categoría) | `UserDefaults` en el dispositivo + `NSUbiquitousKeyValueStore` (iCloud Key-Value Store) para sincronizar entre tu iPhone, iPad y Apple Watch |
 | Tu selección de rama militar (Army, Navy, etc.) | `UserDefaults` + iCloud KV |
 | Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas) | `UserDefaults` + iCloud KV |
-| Fecha de inicio del trial gratuito (anti-fraude) | **Keychain** de iOS (cifrado, sobrevive desinstalación, **no** se sincroniza entre dispositivos) |
 | Resultados del diagnóstico | `UserDefaults` + iCloud KV |
 
 La sincronización iCloud usa **tu** Apple ID. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borrás la app y deshabilitás iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
@@ -131,4 +130,4 @@ Procuramos responder dentro de 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-05-25 · Versión 1.1*
+*Última actualización: 2026-06-08 · Versión 1.2*
