@@ -26,12 +26,16 @@ nav:
   en:
     - title: Legal
       url: /legal/
+    - title: Support
+      url: /support/
     - title: App Store
       url: https://apps.apple.com/us/app/asvab-coach/id6761384966
       external: true
   es:
     - title: Legal
       url: /es/legal/
+    - title: Soporte
+      url: /es/support/
     - title: App Store
       url: https://apps.apple.com/us/app/asvab-coach/id6761384966
       external: true
@@ -44,8 +48,8 @@ footer_nav:
       url: /legal/terms/
     - title: Security
       url: /security/
-    - title: Contact
-      url: mailto:hello@khassinx.com
+    - title: Support
+      url: /support/
   es:
     - title: Privacidad
       url: /es/legal/privacy/
@@ -53,8 +57,8 @@ footer_nav:
       url: /es/legal/terms/
     - title: Seguridad
       url: /es/security/
-    - title: Contacto
-      url: mailto:hello@khassinx.com
+    - title: Soporte
+      url: /es/support/
 
 # Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
 ui_strings:
