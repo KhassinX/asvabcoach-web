@@ -94,4 +94,22 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Support -->
+  <url>
+    <loc>https://asvab.khassinx.com/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asvab.khassinx.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asvab.khassinx.com/es/support/"/>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://asvab.khassinx.com/es/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://asvab.khassinx.com/support/"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://asvab.khassinx.com/es/support/"/>
+    <lastmod>2026-06-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
 </urlset>

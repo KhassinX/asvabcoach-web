@@ -1,7 +1,7 @@
 {
   "name": "ASVAB Coach",
   "short_name": "ASVAB",
-  "description": "Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch + Mac, zero tracking. $4.99 once.",
+  "description": "Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch + Mac, zero tracking. Free to start, one-time unlock.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FFFFFF",
