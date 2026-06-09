@@ -18,7 +18,7 @@ updated: 2026-06-08
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator**: KHASSINX LLC, a Florida limited liability company
-**Contact**: hello@khassinx.com
+**Contact**: legal@khassinx.com
 
 By downloading, installing, or using ASVAB Coach, you agree to these terms. If you do not agree, please do not use the app.
 
@@ -126,7 +126,7 @@ These terms are governed by the laws of the **State of Florida, USA**, without r
 
 - Disputes shall be resolved in the courts of the State of Florida
 - Both parties waive the right to a jury trial for any dispute
-- You agree to attempt informal resolution by emailing hello@khassinx.com **before** pursuing formal legal action
+- You agree to attempt informal resolution by emailing legal@khassinx.com **before** pursuing formal legal action
 
 If any provision of these terms is found unenforceable, the rest remains in effect.
 
@@ -134,7 +134,7 @@ If any provision of these terms is found unenforceable, the rest remains in effe
 
 Questions, concerns, refund disputes (after exhausting Apple's process), or accessibility feedback:
 
-- **Email**: hello@khassinx.com
+- **Email**: legal@khassinx.com
 - **Mail**: Available on written request via email
 
 Expected response time: 7 business days.

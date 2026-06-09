@@ -46,19 +46,27 @@ footer_nav:
       url: /legal/privacy/
     - title: Terms
       url: /legal/terms/
+    - title: Legal
+      url: /legal/
     - title: Security
       url: /security/
     - title: Support
       url: /support/
+    - title: Contact
+      url: mailto:hello@khassinx.com
   es:
     - title: Privacidad
       url: /es/legal/privacy/
     - title: Términos
       url: /es/legal/terms/
+    - title: Legal
+      url: /es/legal/
     - title: Seguridad
       url: /es/security/
     - title: Soporte
       url: /es/support/
+    - title: Contacto
+      url: mailto:hello@khassinx.com
 
 # Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
 ui_strings:

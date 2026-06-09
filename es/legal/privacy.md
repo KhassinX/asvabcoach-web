@@ -13,7 +13,7 @@ updated: 2026-06-08
 **Fecha de vigencia**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador / Responsable del tratamiento**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
-**Contacto**: hello@khassinx.com
+**Contacto**: legal@khassinx.com
 
 ---
 
@@ -38,14 +38,14 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 | Datos de salud | ❌ No |
 | Información financiera | ❌ No (las compras las maneja Apple StoreKit) |
 | Analytics de uso | ❌ No |
-| Registros de fallos (crash logs) | ❌ No (el reporte opcional de fallos de Apple lo controlás vos en Ajustes de iOS, no nosotros) |
+| Registros de fallos (crash logs) | ❌ No (el reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros) |
 | Cookies / píxeles de tracking | ❌ N/A (somos una app nativa, no un sitio web) |
 
 El manifiesto `PrivacyInfo.xcprivacy` de la app declara `NSPrivacyTracking: false` y un arreglo `NSPrivacyCollectedDataTypes` vacío. Apple lo verifica durante la revisión de la app.
 
 ## Dónde viven tus datos
 
-Todo lo que hacés en ASVAB Coach se guarda **localmente en tu dispositivo** y (opcionalmente) se sincroniza vía tu cuenta personal de **iCloud**:
+Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (opcionalmente) se sincroniza vía tu cuenta personal de **iCloud**:
 
 | Qué | Dónde |
 |---|---|
@@ -54,7 +54,7 @@ Todo lo que hacés en ASVAB Coach se guarda **localmente en tu dispositivo** y (
 | Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas) | `UserDefaults` + iCloud KV |
 | Resultados del diagnóstico | `UserDefaults` + iCloud KV |
 
-La sincronización iCloud usa **tu** Apple ID. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borrás la app y deshabilitás iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
+La sincronización iCloud usa **tu** Apple ID. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
 
 ## Tutor de IA — solo Apple Intelligence en el dispositivo
 
@@ -96,12 +96,14 @@ ASVAB Coach está pensada para usuarios de **17 años o más** (edad típica de 
 
 ## Tus derechos
 
-Como no tenemos ningún dato sobre vos, no hay nada que borrar, exportar, corregir ni transferir de nuestro lado.
+Para los derechos de privacidad que tienes bajo el RGPD (UE/EEE), el RGPD del Reino Unido, la LOPDGDD de España, la CCPA/CPRA de California, otras leyes estatales de EE.UU. y demás — y cómo ejercerlos — consulta el [centro de Derechos de Privacidad](https://khassinx.com/es/legal/your-rights/) de KhassinX.
 
-Mantenés control total a través de los mecanismos de Apple:
+Como no tenemos ningún dato sobre ti, la mayoría de esas solicitudes son irrelevantes: no hay nada que borrar, exportar, corregir ni transferir de nuestro lado. Para ejercer cualquier derecho sobre ASVAB Coach, reinicia tus datos en la app o escribe a legal@khassinx.com.
 
-- **Borrar todos los datos de la app**: borrá la app de tu dispositivo. Abrí Ajustes → Apple ID → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
-- **Reinicio dentro de la app**: abrí la app → Menú → Acerca de → "Reiniciar todo el progreso" — borra local + iCloud KV en un toque
+También mantienes control total a través de los mecanismos de Apple:
+
+- **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → Apple ID → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
+- **Reinicio dentro de la app**: abre la app → Menú → Acerca de → "Reiniciar todo el progreso" — borra local + iCloud KV en un toque
 
 ## Etiquetas de Privacidad del App Store de Apple
 
@@ -121,10 +123,10 @@ El operador y responsable del tratamiento de datos de ASVAB Coach es **KHASSINX 
 
 ## Contacto
 
-Si tenés preocupaciones o preguntas sobre privacidad, escribinos:
+Si tienes preocupaciones o preguntas sobre privacidad, escríbenos:
 
-- **Correo**: hello@khassinx.com
-- **Correo postal**: disponible si lo solicitás
+- **Correo**: legal@khassinx.com
+- **Correo postal**: disponible si lo solicitas
 
 Procuramos responder dentro de 7 días hábiles.
 
