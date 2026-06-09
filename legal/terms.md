@@ -10,7 +10,7 @@ redirect_from:
   - /TERMS_OF_USE/
   - /terms
   - /terms/
-updated: 2026-05-25
+updated: 2026-06-08
 ---
 
 # Terms of Use — ASVAB Coach
@@ -28,7 +28,7 @@ By downloading, installing, or using ASVAB Coach, you agree to these terms. If y
 
 ASVAB Coach grants you a **personal, non-exclusive, non-transferable, revocable** license to install and use the app on Apple devices you own or control, in accordance with the [Apple Media Services Terms](https://www.apple.com/legal/internet-services/itunes/) governing App Store purchases.
 
-This license is contingent on payment of the one-time in-app purchase ($4.99, after the 7-day free trial) or being within the free-trial period.
+The app is **free to download and use** with a permanent free tier. Unlocking full access is contingent on the **one-time in-app purchase** (non-consumable, the price as listed on the App Store). No subscription, no trial period.
 
 ## 2. Educational purpose · No affiliation · No guarantees
 
@@ -61,13 +61,12 @@ ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., 
 - The displayed minimums are **baseline requirements**. Specific jobs (MOS/rating) within each branch have their own additional score requirements (line scores) that may be higher.
 - Always **verify current requirements with an official recruiter** of your chosen branch before making enlistment decisions based on app data.
 
-## 5. Free trial and purchase
+## 5. Free tier and one-time unlock
 
-- New users receive a **7-day free trial** with full access to all features.
-- Day 5 and day 6 of the trial trigger local notifications (no surprise charges).
-- After the trial, full access requires a **one-time purchase of $4.99** (or local equivalent set by Apple).
-- The purchase is a **non-consumable in-app purchase** — once bought, it persists for the same Apple ID forever, restorable via the "Restore Purchase" button.
-- **No subscription**. No auto-renewal. No "free trial that converts at midnight day 6" pattern.
+- ASVAB Coach is **free to download and use**, with a **permanent free tier** — no account, no trial, no countdown clock. The free tier includes one full question-bank category, one full diagnostic (estimated AFQT), one trial of the on-device AI Tutor, and the per-branch AFQT minimums table.
+- Full access is unlocked by a **single one-time purchase** (product `com.khassinx.asvabcoach.fullaccess`) at the one-time purchase price as listed on the App Store (or local equivalent set by Apple). It unlocks the entire 743-question bank, the mock CAT-ASVAB, unlimited AI Tutor, SM-2 spaced repetition, Apple Watch, and Mac.
+- The purchase is a **non-consumable in-app purchase** — once bought, it persists for the same Apple ID forever, restorable via the "Restore Purchases" button, and shared through **Family Sharing**.
+- **No subscription**. No auto-renewal. No trial that converts to a charge. Anyone who previously purchased Full Access keeps all of their access.
 
 Refunds are governed entirely by Apple — request them through your App Store purchase history. We have no ability to grant or deny refunds directly because we do not process payments.
 
@@ -78,10 +77,10 @@ You agree to use ASVAB Coach for personal, lawful educational purposes only. You
 - Reverse-engineer, decompile, disassemble, or attempt to derive the source code of the app
 - Extract the question bank for redistribution
 - Use any automated system to scrape, mine, or extract data from the app
-- Bypass the trial gate or purchase verification (e.g., by jailbreak, app modification, or fraudulent IAP receipts)
+- Bypass the full-access feature gate or purchase verification (e.g., by jailbreak, app modification, or fraudulent IAP receipts)
 - Use the app in any way that violates Apple's App Store policies
 
-Attempts to circumvent the trial or IAP verification trigger our `Transaction.currentEntitlements` check + `revocationDate` honoring + Keychain-backed `firstLaunchDate` (anti-uninstall-reset). Detected fraud results in access revocation and is reported to Apple.
+Attempts to circumvent the in-app purchase verification trigger our `Transaction.currentEntitlements` check + `revocationDate` honoring. Detected fraud results in access revocation and is reported to Apple.
 
 ## 7. Intellectual property
 
@@ -102,7 +101,7 @@ To the maximum extent permitted by law, KHASSINX LLC shall **not be liable** for
 - Device damage attributed to the app
 - Loss of data (your data lives in your iCloud — we have no copy to lose or to provide)
 
-Our total cumulative liability to you for any claim arising from these terms or your use of ASVAB Coach is **limited to the amount you paid for the app** ($4.99 USD or local equivalent), or $0 if you are within the free trial.
+Our total cumulative liability to you for any claim arising from these terms or your use of ASVAB Coach is **limited to the amount you paid for the app** (the one-time purchase price set by Apple, or local equivalent), or $0 if you have not made the in-app purchase.
 
 ## 9. Termination
 
@@ -142,4 +141,4 @@ Expected response time: 7 business days.
 
 ---
 
-*Last updated: 2026-05-25 · Version 1.1*
+*Last updated: 2026-06-08 · Version 1.2*
