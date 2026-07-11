@@ -10,7 +10,7 @@ redirect_from:
   - /TERMS_OF_USE/
   - /terms
   - /terms/
-updated: 2026-06-08
+updated: 2026-07-11
 ---
 
 # Terms of Use — ASVAB Coach
@@ -129,6 +129,18 @@ These terms are governed by the laws of the **State of Florida, USA**, without r
 - You agree to attempt informal resolution by emailing legal@khassinx.com **before** pursuing formal legal action
 
 If any provision of these terms is found unenforceable, the rest remains in effect.
+
+## Availability and unofficial installs
+
+ASVAB Coach is distributed exclusively through the App Store, and only in the territories where we choose to offer it. If you obtain, install, or use the app through any other channel — including sideloading, jailbroken devices, or circumventing App Store security or regional restrictions — that use is unauthorized and unsupported: we are not responsible for it, we provide no warranty or support for it, and complying with the laws that apply to you is solely your responsibility.
+
+## Indemnification
+
+You agree to indemnify and hold KHASSINX LLC harmless from claims, damages, and reasonable attorneys' fees arising from your violation of these terms or your misuse of the app, to the extent permitted by the law that applies to you.
+
+## General terms
+
+If part of these terms is found unenforceable, the rest remains in effect. Our failure to enforce a provision is not a waiver. You may not assign these terms; we may assign them as part of a reorganization or transfer of the service. We are not responsible for delay or failure caused by events beyond our reasonable control. These terms are published in English and Español; if the versions ever conflict, the English version controls.
 
 ## 12. Contact
 
