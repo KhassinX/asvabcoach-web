@@ -105,7 +105,7 @@ También mantienes control total a través de los mecanismos de Apple:
 - **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → Apple ID → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
 - **Reinicio dentro de la app**: abre la app → Menú → Acerca de → "Reiniciar todo el progreso" — borra local + iCloud KV en un toque
 
-## Etiquetas de Privacidad del App Store de Apple
+## Etiquetas de Privacidad del App Store
 
 En la página de ASVAB Coach en el App Store declaramos **"Datos no recopilados"** en todas las categorías. Esto se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app y contra el código mismo (cero importaciones de SDK de analytics, sin llamadas de red más allá de StoreKit; el tutor de IA es Apple Intelligence on-device, que es local y no hace llamadas de red).
 

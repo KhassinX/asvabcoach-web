@@ -73,7 +73,7 @@ Aceptas usar ASVAB Coach solo para fines educativos personales y lícitos. **No*
 - Extraer el banco de preguntas para redistribución
 - Usar cualquier sistema automatizado para scrapear, minar o extraer datos de la app
 - Saltar el feature gate de acceso completo o la verificación de compra (ej. por jailbreak, modificación de la app o recibos IAP fraudulentos)
-- Usar la app de cualquier manera que viole las políticas del App Store de Apple
+- Usar la app de cualquier manera que viole las políticas del App Store
 
 Los intentos de saltar la verificación de la compra in-app disparan nuestra revisión vía `Transaction.currentEntitlements` + `revocationDate`. El fraude detectado resulta en revocación de acceso y se reporta a Apple.
 
@@ -109,7 +109,7 @@ Puedes dejar de usar ASVAB Coach en cualquier momento eliminando la app de tu di
 Podemos actualizar estos términos cuando:
 
 - Agregamos funciones nuevas que cambien materialmente la experiencia
-- Reflejamos cambios en las políticas del App Store de Apple
+- Reflejamos cambios en las políticas del App Store
 - Reflejamos cambios en las políticas del DoD sobre el ASVAB que afecten el contenido de la app
 - Corregimos errores legales o de hecho
 
