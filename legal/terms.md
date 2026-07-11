@@ -114,7 +114,7 @@ You may stop using ASVAB Coach at any time by deleting the app from your device.
 We may update these terms when:
 
 - Adding new features that materially change the experience
-- Reflecting changes in Apple App Store policies
+- Reflecting changes in App Store policies
 - Reflecting changes in DoD ASVAB policies that affect app content
 - Correcting legal or factual errors
 
