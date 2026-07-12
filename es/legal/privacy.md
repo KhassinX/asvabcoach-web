@@ -54,7 +54,7 @@ Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (o
 | Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas) | `UserDefaults` + iCloud KV |
 | Resultados del diagnóstico | `UserDefaults` + iCloud KV |
 
-La sincronización iCloud usa **tu** Apple ID. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
+La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
 
 ## Tutor de IA — solo Apple Intelligence en el dispositivo
 
@@ -72,10 +72,10 @@ La **única** solicitud de red saliente que la app hace es a Apple StoreKit (par
 
 Las compras las maneja **Apple StoreKit 2**. Solo vemos:
 
-- Un valor booleano: "este Apple ID pagó por acceso completo" (vía `Transaction.currentEntitlements`)
+- Un valor booleano: "esta Cuenta de Apple pagó por acceso completo" (vía `Transaction.currentEntitlements`)
 - La fecha de revocación de la transacción (para reembolsos)
 
-**No** vemos tu Apple ID, tu nombre, tu método de pago, tu dirección de facturación ni ningún otro metadato de la compra. Apple lo maneja todo. Los reembolsos y la gestión de suscripciones pasan directamente por Apple.
+**No** vemos tu Cuenta de Apple, tu nombre, tu método de pago, tu dirección de facturación ni ningún otro metadato de la compra. Apple lo maneja todo. Los reembolsos y la gestión de suscripciones pasan directamente por Apple.
 
 Usamos un modelo de **pago único** — sin suscripciones recurrentes, sin renovaciones automáticas.
 
@@ -110,7 +110,7 @@ Como no tenemos ningún dato sobre ti, la mayoría de esas solicitudes son irrel
 
 También mantienes control total a través de los mecanismos de Apple:
 
-- **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → Apple ID → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
+- **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → tu nombre → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
 - **Reinicio dentro de la app**: abre la app → Menú → Acerca de → "Reiniciar todo el progreso" — borra local + iCloud KV en un toque
 
 ## Etiquetas de Privacidad del App Store
