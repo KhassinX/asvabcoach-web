@@ -68,17 +68,15 @@ footer_nav:
     - title: Contacto
       url: /es/contact/
 
-# Skip-link y "Part of ecosystem" copy por locale (lo consume base.html)
+# Skip-link y nota de ecosistema del footer, copy por locale (lo consume base.html)
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
-    part_of_ecosystem_prefix: "Part of the"
-    part_of_ecosystem_label: "KhassinX ecosystem"
+    ecosystem_label: "A KhassinX app"
     ecosystem_url: "https://khassinx.com"
   es:
     skip_to_main: "Saltar al contenido principal"
-    part_of_ecosystem_prefix: "Parte del"
-    part_of_ecosystem_label: "ecosistema KhassinX"
+    ecosystem_label: "Una app de KhassinX"
     ecosystem_url: "https://khassinx.com/es/"
 
 # Jekyll config
