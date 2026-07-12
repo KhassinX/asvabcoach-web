@@ -59,7 +59,7 @@ Everything you do in ASVAB Coach is stored **locally on your device** and (optio
 | Spaced-repetition cards (which questions you've missed, when to review) | `UserDefaults` + iCloud KV |
 | Diagnostic results | `UserDefaults` + iCloud KV |
 
-iCloud sync uses **your** Apple ID. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
+iCloud sync uses **your** Apple Account. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
 
 ## AI Tutor — Apple Intelligence on-device only
 
@@ -77,10 +77,10 @@ The **only** outbound network request the app ever makes is to Apple StoreKit (f
 
 Purchases are handled by **Apple StoreKit 2**. We see only:
 
-- A boolean: "this Apple ID has paid for full access" (via `Transaction.currentEntitlements`)
+- A boolean: "this Apple Account has paid for full access" (via `Transaction.currentEntitlements`)
 - The transaction's revocation date (for refunds)
 
-We do **not** see your Apple ID, your name, your payment method, your billing address, or any other purchase metadata. Apple handles all of that. Refunds and subscription management go through Apple directly.
+We do **not** see your Apple Account, your name, your payment method, your billing address, or any other purchase metadata. Apple handles all of that. Refunds and subscription management go through Apple directly.
 
 We use a **one-time purchase** model — no recurring subscriptions, no auto-renewals.
 
@@ -113,7 +113,7 @@ For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGD
 
 Because we hold no data about you, most such requests are moot: there is nothing to delete, export, correct, or transfer at our end. To exercise any right for ASVAB Coach, reset your data in-app or email legal@khassinx.com. You also retain full control through Apple's mechanisms:
 
-- **Delete all app data**: delete the app from your device. Open Settings → Apple ID → iCloud → Manage Storage → ASVAB Coach → Delete Data to also remove the iCloud KV copy
+- **Delete all app data**: delete the app from your device. Open Settings → your name → iCloud → Manage Storage → ASVAB Coach → Delete Data to also remove the iCloud KV copy
 - **In-app reset**: open the app → Menu → About → "Reset all progress" — wipes local + iCloud KV in one tap
 
 ## Apple App Privacy Nutrition Labels
