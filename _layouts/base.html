@@ -140,7 +140,7 @@
     Locale-aware navigation:
     - lang_key resuelve a 'en' o 'es' (fallback a 'en')
     - site.nav y site.footer_nav están keyed por locale
-    - site.ui_strings provee strings cortos (skip link, "Part of ecosystem")
+    - site.ui_strings provee strings cortos (skip link, nota de ecosistema del footer)
     - logo_home apunta al home del locale actual
   {%- endcomment -%}
   {%- assign lang_key = page.lang | default: 'en' -%}
@@ -192,7 +192,7 @@
           <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
         {%- endif -%}
       </div>
-      <small>{{ ui.part_of_ecosystem_prefix }} <a href="{{ ui.ecosystem_url }}">{{ ui.part_of_ecosystem_label }}</a></small>
+      <small class="footer-ecosystem"><a href="{{ ui.ecosystem_url }}">{{ ui.ecosystem_label }}</a></small>
     </div>
   </footer>
 </body>
