@@ -60,7 +60,7 @@ ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, 
 
 - ASVAB Coach es **gratuita de descargar y usar**, con un **tier gratuito permanente** — sin cuenta, sin prueba, sin reloj de cuenta regresiva. El tier gratuito incluye una categoría completa del banco de preguntas, un diagnóstico completo (estimado AFQT), una prueba del Tutor de IA en el dispositivo y la tabla de mínimos AFQT por rama.
 - El acceso completo se desbloquea con una **única compra** (producto `com.khassinx.asvabcoach.fullaccess`) al precio de la compra única indicado en el App Store (o el equivalente local fijado por Apple). Desbloquea el banco completo de 743 preguntas, el simulacro CAT-ASVAB, el Tutor de IA ilimitado, la repetición espaciada SM-2, Apple Watch y Mac.
-- La compra es una **compra in-app no consumible** — una vez adquirida, persiste para el mismo Apple ID para siempre, restaurable con el botón "Restaurar compras", y se comparte mediante **Compartir en familia**.
+- La compra es una **compra in-app no consumible** — una vez adquirida, persiste para la misma Cuenta de Apple para siempre, restaurable con el botón "Restaurar compras", y se comparte mediante **Compartir en familia**.
 - **Sin suscripción**. Sin renovación automática. Sin prueba que se convierta en cargo. Quien ya haya comprado el Acceso Completo conserva todo su acceso.
 
 Los reembolsos los rige Apple en su totalidad — solicítalos a través de tu historial de compras del App Store. No tenemos la capacidad de aprobar ni denegar reembolsos directamente porque no procesamos pagos.
