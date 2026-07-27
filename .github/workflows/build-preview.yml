@@ -8,9 +8,19 @@ on:
 permissions:
   contents: read
 
+# Sin esto, cada push a una rama con PR abierto deja corriendo el run
+# anterior hasta el final: varios builds completos para un solo resultado
+# util, el ultimo. En main no se cancela — ahi cada commit merece su
+# verificacion — por eso el grupo incluye la ref.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
   build:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
 
