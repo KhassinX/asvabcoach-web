@@ -160,7 +160,7 @@
     <div class="container">
       <a href="{{ logo_home | relative_url }}" class="logo">
         {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
-        <span>{{ site.title }}</span>
+        <span>{{ site.title }}<span class="tm" aria-hidden="true">™</span></span>
       </a>
       <nav class="site-nav" aria-label="Primary">
         {% for item in nav_items %}

@@ -5,7 +5,7 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-07-11
+updated: 2026-08-23
 ---
 
 # Política de Privacidad — ASVAB Coach
@@ -38,7 +38,7 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 | Datos de salud | ❌ No |
 | Información financiera | ❌ No (las compras las maneja Apple StoreKit) |
 | Analytics de uso | ❌ No |
-| Registros de fallos (crash logs) | ❌ No (el reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros) |
+| Registros de fallos (crash logs) | ❌ No — no nos llega nada. El reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos. |
 | Cookies / píxeles de tracking | ❌ N/A (somos una app nativa, no un sitio web) |
 
 El manifiesto `PrivacyInfo.xcprivacy` de la app declara `NSPrivacyTracking: false` y un arreglo `NSPrivacyCollectedDataTypes` vacío. Apple lo verifica durante la revisión de la app.
@@ -60,13 +60,36 @@ La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni 
 
 ASVAB Coach usa **Apple Intelligence (FoundationModels)** para generar explicaciones adaptativas y soluciones de matemática paso a paso para las preguntas de práctica del ASVAB.
 
-Este modelo corre **enteramente en tu dispositivo**. Nunca enviamos tus preguntas, respuestas ni ningún otro dato a OpenAI, Anthropic, Google ni a ningún servicio de IA de terceros. Tampoco los enviamos a un servidor nuestro — no tenemos uno. **Nada sale de tu dispositivo.** No hay claves API ni IA en la nube — la IA es on-device, punto.
+Este modelo corre **enteramente en tu dispositivo**. Nunca enviamos tus preguntas, respuestas ni ningún otro dato a OpenAI, Anthropic, Google ni a ningún servicio de IA de terceros. Tampoco los enviamos a un servidor nuestro — no tenemos uno. **Ninguna pregunta que le hagas al tutor, ni ninguna respuesta que te dé, sale jamás de tu dispositivo.** No hay claves API ni IA en la nube — la IA es on-device, punto.
 
 Apple Intelligence requiere un dispositivo Apple reciente con Apple Intelligence habilitado, en una región donde Apple lo ofrezca. Donde no está disponible, las funciones del tutor de IA se ocultan en silencio y la explicación oficial revisada de cada pregunta (siempre presente) sostiene la experiencia.
 
 Para los compromisos de privacidad de Apple, ver la documentación de [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/). ASVAB Coach usa **solo** inferencia de Apple Intelligence on-device — nunca Private Cloud Compute, y nunca IA en la nube.
 
-La **única** solicitud de red saliente que la app hace es a Apple StoreKit (para tu compra única). La inferencia de Apple Intelligence es local — sin red.
+La inferencia de Apple Intelligence es local — sin red. La app abre por su cuenta exactamente un tipo de conexión de red: **Apple StoreKit**, para tu compra única. Nunca abre una hacia nosotros, porque no tenemos servidor. El único caso en que algo sí viaja por internet es la búsqueda web opcional que se describe abajo — y ahí quien se conecta es Safari, sobre una búsqueda que vos escribiste y tocaste.
+
+## Búsqueda web — opcional, y quien se conecta es Safari
+
+ASVAB Coach incluye una pantalla opcional de **Búsqueda web**. Vos escribís una pregunta, la app le
+antepone `ASVAB` y le entrega todo a **Safari** como una búsqueda de Google. En iPhone y iPad se abre
+en una vista de Safari dentro de la app; en Mac se abre en tu navegador predeterminado.
+
+Lo decimos derecho, porque es el único lugar donde algo sale de tu dispositivo:
+
+- **Google recibe lo que escribiste y tu dirección IP**, exactamente como si hubieras abierto Safari
+  y buscado vos. Lo que pase con eso allá lo rige la
+  [política de privacidad de Google](https://policies.google.com/privacy), no la nuestra.
+- **Nosotros no recibimos nada.** La app le pasa una URL a Safari y se hace a un lado. No hace la
+  solicitud, no ve los resultados, no registra la búsqueda ni guarda historial. Tus búsquedas no
+  quedan almacenadas en ningún lugar de la app.
+- **Sólo ocurre cuando vos lo pedís.** No se busca nada en segundo plano, ni automáticamente. Si
+  nunca abrís esa pantalla, no se envía ninguna búsqueda.
+- **Todo lo demás sigue siendo local.** El banco de preguntas, las sesiones de práctica, el tutor de
+  IA y tu progreso viven en el dispositivo y nunca usan esta vía.
+
+Lo mismo vale para cualquier enlace externo que toques en la app (nuestro sitio, páginas oficiales de
+reclutamiento militar): la app le pide al sistema que lo abra, y de ahí en adelante quien se conecta
+es tu navegador.
 
 ## Compras dentro de la app
 
@@ -115,13 +138,13 @@ También mantienes control total a través de los mecanismos de Apple:
 
 ## Etiquetas de Privacidad del App Store
 
-En la página de ASVAB Coach en el App Store declaramos **"Datos no recopilados"** en todas las categorías. Esto se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app y contra el código mismo (cero importaciones de SDK de analytics, sin llamadas de red más allá de StoreKit; el tutor de IA es Apple Intelligence on-device, que es local y no hace llamadas de red).
+En la página de ASVAB Coach en el App Store declaramos **"Datos no recopilados"** en todas las categorías. Eso se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app (`NSPrivacyTracking: false`, `NSPrivacyCollectedDataTypes` vacío) y contra el código mismo: cero SDKs de terceros de cualquier tipo, y la única conexión de red que la app abre por su cuenta es Apple StoreKit. El tutor de IA es Apple Intelligence on-device y no hace ninguna llamada de red.
 
-Esto se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app y el código mismo: cero SDKs de analytics, y la única llamada de red saliente es Apple StoreKit. El tutor de IA es Apple Intelligence on-device — nada sale de tu dispositivo, no hay terceros.
+La búsqueda web opcional no cambia esto. Apple define "recopilar" como transmitir datos fuera del dispositivo **de un modo en que el desarrollador o sus socios puedan acceder a ellos**. Ahí es Safari quien se conecta a Google, sobre una búsqueda que vos escribiste, y nosotros nunca la recibimos — así que de nuestro lado no hay nada recopilado. Igual lo describimos completo más arriba, porque merecés saber a dónde van tus palabras, no sólo quién tiene permitido leerlas.
 
 ## Cambios a esta política
 
-Si alguna vez modificamos materialmente nuestras prácticas de datos, actualizaremos este documento con una nueva fecha de vigencia y publicaremos un aviso dentro de la app. Al día de hoy (2026-05-18), no hay cambios previstos porque genuinamente no recopilamos datos y nuestro modelo de negocio (pago único, sin publicidad) no se beneficia de recopilarlos.
+Si alguna vez modificamos materialmente nuestras prácticas de datos, actualizaremos este documento con una nueva fecha de vigencia y publicaremos un aviso dentro de la app. Al día de esta revisión (2026-08-23), no hay cambios previstos porque genuinamente no recopilamos datos y nuestro modelo de negocio (pago único, sin publicidad) no se beneficia de recopilarlos.
 
 ## Jurisdicción
 
@@ -140,4 +163,10 @@ Procuramos responder dentro de 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-06-08 · Versión 1.2*
+*Última actualización: 2026-08-23 · Versión 1.3*
+
+*Qué cambió en la 1.3 — nada sobre cómo se comporta la app.* Describimos la búsqueda web opcional,
+que siempre estuvo en la app pero faltaba en este documento, y retiramos tres frases que afirmaban de
+más: un absoluto que no podemos sostener es peor que un límite honesto. También corregimos la fila de
+registros de fallos para mencionar los diagnósticos que la app guarda en el dispositivo y nunca
+envía, y arreglamos tres fechas contradictorias y un párrafo duplicado.
