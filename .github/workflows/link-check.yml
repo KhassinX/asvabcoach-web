@@ -1,8 +1,8 @@
 name: Link check
 
 on:
-  schedule:
-    - cron: '0 14 * * 1'
+  # Sin cron: la pausa de Actions del portafolio la decide una persona, no un
+  # schedule. Se dispara a mano cuando hace falta revisar los enlaces.
   workflow_dispatch:
 
 permissions:

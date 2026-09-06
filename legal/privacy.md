@@ -10,7 +10,7 @@ redirect_from:
   - /PRIVACY_POLICY/
   - /privacy
   - /privacy/
-updated: 2026-08-23
+updated: 2026-09-05
 ---
 
 # Privacy Policy — ASVAB Coach
@@ -71,29 +71,34 @@ Apple Intelligence requires a recent Apple device with Apple Intelligence enable
 
 For Apple's own privacy commitments, see Apple's [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) documentation. ASVAB Coach uses **only on-device** Apple Intelligence inference — never Private Cloud Compute, and never any cloud AI.
 
-Apple Intelligence inference is local — no network. The app itself opens exactly one kind of network connection on its own: **Apple StoreKit**, for your one-time purchase. It never opens one to us, because we have no server. The one case where something does travel over the internet is the optional web search described below — and there it is Safari that connects, on a search you typed and tapped.
+Apple Intelligence inference is local — no network. The app itself opens exactly two kinds of network connection on its own: **Apple StoreKit**, for your one-time purchase, and **iCloud key-value storage**, which carries your progress and your branch between your own devices under your own Apple Account. It never opens one to us, because we have no server. Anything else that reaches the internet does so because you tapped a link and your browser followed it — see below.
 
-## Web Search — optional, and it's Safari that connects
+## Search — it runs on your device
 
-ASVAB Coach includes an optional **Web Search** screen. You type a question, the app prefixes it with
-`ASVAB` and hands the whole thing to **Safari** as a Google search. On iPhone and iPad it opens in a
-Safari view inside the app; on Mac it opens in your default browser.
+ASVAB Coach has a **Search** screen. It searches the content the app already ships with: the study
+guide sections and the question bank. **Nothing is sent anywhere.** There is no search engine
+behind it, no third party, and no network call of any kind — what you type never leaves the device.
 
-Being straight about what that means, because it is the one place where something leaves your device:
+Up to version 3.3.3 this screen worked the other way: it prefixed what you typed with `ASVAB` and
+handed it to Safari as a Google search. **That stopped in 3.4.0, and this policy kept describing
+the old behaviour until 2026-09-05.** We are naming the gap rather than quietly deleting the
+paragraph, because the old screen also carried a footer promising your searches were private while
+your text was travelling to Google — and a privacy policy that only ever gets more flattering is
+not one you can check.
 
-- **Google receives what you typed and your IP address**, exactly as if you had opened Safari and
-  searched yourself. What happens to it there is governed by
-  [Google's privacy policy](https://policies.google.com/privacy), not ours.
-- **We receive nothing.** The app hands a URL to Safari and steps out. It does not make the request,
-  does not see the results, does not log the search, and keeps no history of it. Your searches are
-  not stored anywhere in the app.
-- **It only happens when you ask for it.** Nothing is searched in the background, and never
-  automatically. If you never open that screen, no search is ever sent.
-- **Everything else stays local.** The question bank, the practice sessions, the AI tutor and your
-  progress are all on-device and never use this path.
+The one thing that still reaches the internet on your behalf is a link **you** tap:
 
-The same applies to any external link you tap in the app (our website, official military recruiting
-pages): the app asks the system to open it, and from there your browser is doing the connecting.
+- **Our own website** — this policy and the terms of use, at `asvab.khassinx.com`. It is a static
+  site on GitHub Pages; it has no accounts, no analytics and no cookies, and it sees only what any
+  web server sees when a browser asks it for a page.
+- **The official recruiting page of the branch you picked** — `goarmy.com`, `navy.com`,
+  `marines.com`, `airforce.com`, `gocoastguard.com` or `spaceforce.com`. These are run by the
+  United States armed forces, not by us, and what happens there is governed by their privacy
+  policies.
+
+In both cases the app asks the system to open the link and steps out: from there your browser is
+doing the connecting, exactly as if you had typed the address yourself. Nothing is opened in the
+background, and nothing is opened without a tap.
 
 ## In-App Purchases
 
@@ -119,7 +124,16 @@ Our automated CI gates enforce this: any pull request that imports a known analy
 
 ## This website
 
-This site is static. It sets no cookies of its own, runs no analytics or tracking of any kind, embeds no third-party scripts or pixels, and has no forms. We do not track anyone, so there is nothing for a "Do Not Track" signal to turn off, and no third party is permitted to collect information about your activity across sites through this website. The site is served by GitHub Pages with DNS and delivery by Cloudflare; like any web host, those providers process standard technical request data (such as your IP address) to deliver and protect the site, as independent companies under their own privacy policies. We do not receive, keep, or use that data.
+This site is static and has no forms. We add no analytics, no tracking, no pixels and no third-party scripts of our own, and we set no cookies of our own. We do not track anyone, so there is nothing for a "Do Not Track" signal to turn off, and no third party is permitted to collect information about your activity across sites through this website.
+
+Now, here is what you will see if you open "View Source" on this very page: **Cloudflare inserts two scripts of its own as it delivers it.** They are not in the HTML we write — Cloudflare adds them on the way out — and they are served from this same domain, under `/cdn-cgi/`:
+
+- `/cdn-cgi/challenge-platform/scripts/jsd/main.js` — Cloudflare's bot detection. It runs checks in your browser to tell a person apart from automated traffic, and in that process Cloudflare may set a technical security cookie. It is site protection: not analytics, not advertising, and it does not follow your activity across other sites.
+- `/cdn-cgi/scripts/…/cloudflare-static/email-decode.min.js` — it decodes the email addresses Cloudflare obfuscates on the page, so spam harvesters cannot lift them.
+
+Neither one is ours, neither reports anything to us, and we receive no data from either. We spell it out in this detail because a policy that denies what anyone can check with "View Source" is worth nothing.
+
+The site is served by GitHub Pages, with DNS and delivery by Cloudflare; like any web host, those providers process standard technical request data (such as your IP address) to deliver and protect the site, as independent companies under their own privacy policies. We do not receive, keep, or use that data.
 
 ## Email you send us
 
@@ -127,7 +141,9 @@ If you email us, we receive your email address and your message. We use them onl
 
 ## Children
 
-ASVAB Coach is intended for users **17 and older** (typical age of U.S. military enlistment candidates). The App Store rating is set accordingly. We do not knowingly collect data from anyone under 17 because — to repeat — we do not collect data from anyone, period.
+ASVAB Coach is rated **4+** in the App Store. It contains no age-restricted material and shows no advertising. What it teaches from — the study guide and the question bank — ships inside the app and is matched on your device. Search runs on your device too, over that same content. Nothing reaches the open web unless you tap a link yourself — our website, or the official recruiting page of the branch you picked — and then it is your browser that opens it. The app is built for people preparing for the ASVAB, typically high school students and older, but nothing inside it is gated by age.
+
+We collect no data from anyone, at any age. That includes children under 13: there is no account, no sign-up, no analytics, and nothing that leaves your device and reaches us — so there is no personal information from a child for us to collect, knowingly or otherwise, and none to disclose to anyone. Because we collect nothing, there is nothing for which COPPA's verifiable parental consent would be required.
 
 ## Your rights
 
@@ -140,13 +156,13 @@ Because we hold no data about you, most such requests are moot: there is nothing
 
 ## Apple App Privacy Nutrition Labels
 
-In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in every category. That is verified against the in-app `PrivacyInfo.xcprivacy` manifest (`NSPrivacyTracking: false`, empty `NSPrivacyCollectedDataTypes`) and against the code itself: zero third-party SDKs of any kind, and the only network connection the app opens on its own is Apple StoreKit. The AI tutor is on-device Apple Intelligence and makes no network calls.
+In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in every category. That is verified against the in-app `PrivacyInfo.xcprivacy` manifest (`NSPrivacyTracking: false`, empty `NSPrivacyCollectedDataTypes`) and against the code itself: zero third-party SDKs of any kind, and the only network connections the app opens on its own are Apple StoreKit and iCloud key-value storage, which carries your progress between your own devices under your own Apple Account and which we can never read. The AI tutor is on-device Apple Intelligence and makes no network calls.
 
-The optional web search does not change this. Apple defines "collect" as transmitting data off the device **in a way the developer or its partners can access**. There, Safari makes the connection to Google on a search you typed, and we never receive it — so there is nothing collected on our side. We describe it in full above anyway, because you deserve to know where your words go, not only who is allowed to read them.
+Until version 3.3.3 this section also covered an optional web search that handed what you typed to Safari as a Google search. **That screen now searches on your device and opens no network connection at all**, so there is nothing left to carve out. Apple defines "collect" as transmitting data off the device **in a way the developer or its partners can access**; the links you tap still open in your browser, and we never receive those either. We keep describing them in full above anyway, because you deserve to know where your words go, not only who is allowed to read them.
 
 ## Changes to this policy
 
-If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. As of this revision (2026-08-23), no change is planned because we genuinely do not collect data and we have no business model that benefits from collecting it (one-time purchase, no advertising).
+If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. As of this revision (2026-09-05), no change is planned because we genuinely do not collect data and we have no business model that benefits from collecting it (one-time purchase, no advertising).
 
 ## Jurisdiction
 
@@ -165,7 +181,21 @@ We aim to respond within 7 business days.
 
 ---
 
-*Last updated: 2026-08-23 · Version 1.3*
+*Last updated: 2026-09-05 · Version 1.5*
+
+*What changed in 1.5 — the app stopped doing something, and this document was three
+versions late in saying so.* Up to 3.3.3 the Search screen handed what you typed to Safari as a
+Google search. Version 3.4.0 moved it on-device, and this policy went on describing the old
+behaviour — in four places, including the Children section and the nutrition-label carve-out. Every
+one of them made us look better than we were entitled to, which is the direction an error in a
+privacy policy must never take. They are corrected here, and the old behaviour is named rather than
+quietly deleted. We also corrected the count of network connections the app opens on its own: it
+was one, and iCloud key-value sync makes it two.
+
+*What changed in 1.4 — nothing about how the app behaves or what data reaches us.* We corrected the
+"This website" section. It said the site embeds no third-party scripts, and the page that is served
+carries two that Cloudflare inserts on the way out: they are now named one by one, with what each
+one does. The previous claim was false at exactly the point anyone can check for themselves.
 
 *What changed in 1.3 — nothing about how the app behaves.* We described the optional web search,
 which has always been in the app but was missing from this document, and we retired three sentences

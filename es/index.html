@@ -54,7 +54,8 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
       Para graduados de secundaria y adultos que apuntan a las seis ramas militares de EE.UU.: Army, Navy, Marines, Air Force, Coast Guard y Space Force.
     </p>
     <p style="color: var(--asvab-text-secondary); margin-top: var(--space-md);">
-      Neutral por diseño — sin sesgo hacia ninguna rama. Ya sea que apuntes al mínimo AFQT (Army 31, Navy 31, Marines 32, Air Force 31, Coast Guard 40, Space Force 36) o estés persiguiendo un puntaje competitivo para un MOS o rating específico, la app se adapta a tu nivel vía repetición espaciada y explicaciones generadas con Apple Intelligence.
+    <!-- audit-allow:N22 superficie publica: el numero se imprime a proposito. Verificado contra ASVABCoach/BranchManager.swift el 2026-09-01. Si cambia un piso, esta linea se reescribe a mano. -->
+      Neutral por diseño — sin sesgo hacia ninguna rama. Ya sea que apuntes al mínimo AFQT (Army 31, Navy 31, Marines 31, Air Force 31, Coast Guard 32) o estés persiguiendo un puntaje competitivo para un MOS o rating específico, la app se adapta a tu nivel vía repetición espaciada y explicaciones generadas con Apple Intelligence.
     </p>
   </div>
 </section>
@@ -66,7 +67,7 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">Diagnóstico adaptativo — 20 preguntas para estimar tu nivel base AFQT</li>
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">Momentum — un único anillo de meta diaria (Suave, Estándar o Intensa), rachas respetuosas con día de gracia, 17 logros y una cuenta regresiva opcional para tu examen. Crea el hábito sin presión.</li>
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">Plan de estudio con repetición espaciada (algoritmo SM-2, calibrado por categoría ASVAB) — repasa lo que olvidas, no lo que ya dominas</li>
-      <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">743 preguntas verificadas en los 9 subtests, con soluciones explicadas paso a paso y contenido alineado con fuentes oficiales del DoD</li>
+      <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">743 preguntas verificadas en las 9 áreas de score del ASVAB, con soluciones explicadas paso a paso y contenido alineado con fuentes oficiales del DoD</li>
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">AFQT Sprint — práctica cronometrada para entrenar resistencia de examen</li>
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">Smart Exam — simulacro CAT-ASVAB completo</li>
       <li style="padding: var(--space-md) 0; border-bottom: 1px solid var(--asvab-border);">Apple Watch — repaso de vocabulario y sesiones rápidas de 10 preguntas en la muñeca</li>
@@ -96,16 +97,17 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
     <h2 style="text-align: left;">Preguntas frecuentes</h2>
 
     <h3 style="margin-top: var(--space-xl);">¿Qué puntaje AFQT necesito para enlistarme?</h3>
-    <p style="color: var(--asvab-text-secondary);">El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos y Conocimiento de Matemáticas. Los mínimos por rama son Army 31, Navy 31, Marine Corps 32, Air Force 31, Coast Guard 40 y Space Force 36; los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias.</p>
+    <!-- audit-allow:N22 FAQ publica: la respuesta enumera los pisos a proposito (rich result de Google). Verificada contra BranchManager.swift el 2026-09-01. -->
+    <p style="color: var(--asvab-text-secondary);">El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos y Conocimiento de Matemáticas. Los mínimos por rama son Army 31, Navy 31, Marine Corps 31, Air Force 31 y Coast Guard 32 (verificados contra el sitio de reclutamiento de cada rama, agosto 2026); los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias.</p>
 
     <h3 style="margin-top: var(--space-xl);">¿ASVAB Coach es gratis?</h3>
-    <p style="color: var(--asvab-text-secondary);">Sí — gratis para empezar, sin cuenta y sin suscripción. Puedes estudiar una categoría completa de preguntas, hacer un diagnóstico completo y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 743 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido.</p>
+    <p style="color: var(--asvab-text-secondary);">Sí — gratis para empezar, sin cuenta y sin suscripción. Puedes responder 50 preguntas de cualquier categoría, hacer un diagnóstico completo y el Quick 10 (ninguno descuenta de las 50), y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 743 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido.</p>
 
     <h3 style="margin-top: var(--space-xl);">¿Cuánto tiempo debo estudiar para el ASVAB?</h3>
     <p style="color: var(--asvab-text-secondary);">Depende de tu punto de partida y tu puntaje objetivo, pero la mayoría se prepara durante algunas semanas. ASVAB Coach arma un plan de repetición espaciada (el algoritmo SM-2) que trae de vuelta lo que estás por olvidar, y el sistema Momentum — un anillo de meta diaria y rachas que perdonan con día de gracia — te ayuda a mantener un hábito constante en vez de estudiar a último momento.</p>
 
     <h3 style="margin-top: var(--space-xl);">¿Qué cubre el ASVAB?</h3>
-    <p style="color: var(--asvab-text-secondary);">El ASVAB tiene nueve subtests. Cuatro forman tu AFQT (Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos, Conocimiento de Matemáticas); los demás — Ciencia General, Información Electrónica, Información de Autos y Taller, Comprensión Mecánica y Ensamblaje de Objetos — definen los line scores para empleos específicos. ASVAB Coach cubre los nueve con 743 preguntas verificadas y soluciones explicadas.</p>
+    <p style="color: var(--asvab-text-secondary);">El ASVAB son 10 tests cronometrados por separado, y se reportan como nueve scores: Información de Automóviles e Información de Taller se rinden aparte y se combinan en un único score de Auto y Taller (AS). Cuatro de esos scores forman tu AFQT (Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos, Conocimiento de Matemáticas); los demás — Ciencia General, Información Electrónica, Información de Autos y Taller, Comprensión Mecánica y Ensamblaje de Objetos — definen los line scores para empleos específicos. ASVAB Coach cubre los nueve con 743 preguntas verificadas y soluciones explicadas.</p>
 
     <h3 style="margin-top: var(--space-xl);">¿Mis datos de estudio son privados?</h3>
     <p style="color: var(--asvab-text-secondary);">Por completo. ASVAB Coach no tiene cuenta, ni SDKs de analytics, ni rastreo. El tutor de IA corre por completo en el dispositivo con Apple Intelligence — tus preguntas y tu progreso nunca salen de tu iPhone. No hay servidor que pueda filtrar nada; la privacidad está en la arquitectura.</p>
@@ -126,7 +128,8 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
       "name": "¿Qué puntaje AFQT necesito para enlistarme?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos y Conocimiento de Matemáticas. Los mínimos por rama son Army 31, Navy 31, Marine Corps 32, Air Force 31, Coast Guard 40 y Space Force 36; los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias."
+        "_auditAllow": "audit-allow:N22 superficie publica: la respuesta enumera los pisos a proposito (rich result). Verificada contra ASVABCoach/BranchManager.swift el 2026-09-01.",
+        "text": "El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos y Conocimiento de Matemáticas. Los mínimos por rama son Army 31, Navy 31, Marine Corps 31, Air Force 31 y Coast Guard 32 (verificados contra el sitio de reclutamiento de cada rama, agosto 2026); los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias."
       }
     },
     {
@@ -134,7 +137,7 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
       "name": "¿ASVAB Coach es gratis?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí — gratis para empezar, sin cuenta y sin suscripción. Puedes estudiar una categoría completa de preguntas, hacer un diagnóstico completo y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 743 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido."
+        "text": "Sí — gratis para empezar, sin cuenta y sin suscripción. Puedes responder 50 preguntas de cualquier categoría, hacer un diagnóstico completo y el Quick 10 (ninguno descuenta de las 50), y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 743 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido."
       }
     },
     {
@@ -150,7 +153,7 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
       "name": "¿Qué cubre el ASVAB?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El ASVAB tiene nueve subtests. Cuatro forman tu AFQT (Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos, Conocimiento de Matemáticas); los demás — Ciencia General, Información Electrónica, Información de Autos y Taller, Comprensión Mecánica y Ensamblaje de Objetos — definen los line scores para empleos específicos. ASVAB Coach cubre los nueve con 743 preguntas verificadas y soluciones explicadas."
+        "text": "El ASVAB son 10 tests cronometrados por separado, y se reportan como nueve scores: Información de Automóviles e Información de Taller se rinden aparte y se combinan en un único score de Auto y Taller (AS). Cuatro de esos scores forman tu AFQT (Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos, Conocimiento de Matemáticas); los demás — Ciencia General, Información Electrónica, Información de Autos y Taller, Comprensión Mecánica y Ensamblaje de Objetos — definen los line scores para empleos específicos. ASVAB Coach cubre los nueve con 743 preguntas verificadas y soluciones explicadas."
       }
     },
     {
@@ -177,7 +180,7 @@ og_image_alt: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA pri
   <div class="container" style="text-align: center;">
     <h2>Lista cuando tú lo estés</h2>
     <p class="text-secondary" style="font-size: var(--fs-body-l); max-width: 540px; margin: 0 auto var(--space-2xl);">
-      Gratis para empezar — estudia una categoría completa, un diagnóstico completo y el tutor de IA privado. Desbloquea todo una vez, tuyo para siempre — sin suscripción. Funciona en iPhone, iPad, Apple Watch y Mac. Family Sharing incluido.
+      Gratis para empezar — 50 preguntas de cualquier categoría, un diagnóstico completo y el tutor de IA privado. Desbloquea todo una vez, tuyo para siempre — sin suscripción. Funciona en iPhone, iPad, Apple Watch y Mac. Family Sharing incluido.
     </p>
     <a class="btn btn-primary" href="https://apps.apple.com/us/app/asvab-coach/id6761384966" target="_blank" rel="noopener">Descárgala en el App Store</a>
   </div>
