@@ -54,7 +54,7 @@ Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (o
 | Tu selección de rama militar (Army, Navy, etc.) | `UserDefaults` + iCloud KV |
 | Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas) | `UserDefaults` + iCloud KV |
 | Resultados del diagnóstico | `UserDefaults` + iCloud KV |
-| Momentum — tu nivel de meta diaria, los créditos de hoy, los días de gracia acumulados, si el anillo se muestra, y **tu fecha de examen si la cargaste** (es opcional; si la dejás vacía, Momentum es un hábito diario y nada más) | `UserDefaults` + iCloud KV |
+| Momentum — tu nivel de meta diaria, los créditos de hoy, los días de gracia acumulados, si el anillo se muestra, y **tu fecha de examen si la cargaste** (es opcional; si la dejas vacía, Momentum es un hábito diario y nada más) | `UserDefaults` + iCloud KV |
 | Cuáles de los 17 logros conseguiste | `UserDefaults` + iCloud KV |
 
 La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
@@ -233,7 +233,7 @@ acumulados, ni cuáles de los 17 logros conseguiste, ni **la fecha de tu examen,
 Todo eso vive en `UserDefaults` con espejo en iCloud, igual que las cuatro filas que ya estaban —
 nada nuevo nos llega, y nada de la app cambió. Lo que estaba mal era la lista. La fecha del examen
 merece nombrarse aparte: es lo único que la app guarda que es un hecho de tu vida y no un registro
-de cómo estudiás, y una tabla que la omitía hacía parecer que esta app tiene menos tuyo del que
+de cómo estudias, y una tabla que la omitía hacía parecer que esta app tiene menos tuyo del que
 tiene. Ésa es la dirección favorable, que es en la que este documento no tiene permitido
 equivocarse.
 
@@ -242,7 +242,7 @@ en decirlo.* Hasta la 3.3.3 la pantalla de Búsqueda le entregaba a Safari lo qu
 búsqueda de Google. La versión 3.4.0 la movió al dispositivo, y esta política siguió describiendo el
 comportamiento viejo — en cuatro lugares, incluidas la sección de Menores y la salvedad de las
 etiquetas de privacidad. Todos ellos nos hacían quedar mejor de lo que nos correspondía, que es la
-dirección que un error en una política de privacidad no puede tomar nunca. Acá quedan corregidos, y
+dirección que un error en una política de privacidad no puede tomar nunca. Aquí quedan corregidos, y
 el comportamiento viejo se nombra en vez de borrarse sin más. También corregimos el conteo de
 conexiones de red que la app abre por su cuenta: decía una, y la sincronización clave-valor de
 iCloud la vuelve dos.
