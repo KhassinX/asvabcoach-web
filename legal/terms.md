@@ -66,7 +66,7 @@ ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., 
 ## 5. Free tier and one-time unlock
 
 - ASVAB Coach is **free to download and use**, with a **permanent free tier** — no account, no trial, no countdown clock. The free tier includes **50 questions from any category** of the question bank, each with the on-device AI Tutor's explanation; one full diagnostic (estimated AFQT) and the Quick 10, neither of which counts against those 50; and the per-branch AFQT minimums table.
-- Full access is unlocked by a **single one-time purchase** (product `com.khassinx.asvabcoach.fullaccess`) at the one-time purchase price as listed on the App Store (or local equivalent set by Apple). It unlocks the entire 743-question bank, the mock CAT-ASVAB, unlimited AI Tutor, SM-2 spaced repetition, Apple Watch, and Mac.
+- Full access is unlocked by a **single one-time purchase** (product `com.khassinx.asvabcoach.fullaccess`) at the one-time purchase price as listed on the App Store (or local equivalent set by Apple). It unlocks the entire 725-question bank, the mock CAT-ASVAB, unlimited AI Tutor, SM-2 spaced repetition, Apple Watch, and Mac.
 - The purchase is a **non-consumable in-app purchase** — once bought, it persists for the same Apple Account forever, restorable via the "Restore Purchases" button, and shared through **Family Sharing**.
 - **No subscription**. No auto-renewal. No trial that converts to a charge. Anyone who previously purchased Full Access keeps all of their access.
 
