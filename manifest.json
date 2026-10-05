@@ -4,8 +4,8 @@
   "description": "Private AI tutor for the ASVAB. Apple Intelligence on-device, native Apple Watch + Mac, zero tracking. Free to start, one-time unlock.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#1E3A5F",
+  "background_color": "#060607",
+  "theme_color": "#060607",
   "scope": "/",
   "lang": "en",
   "categories": [
