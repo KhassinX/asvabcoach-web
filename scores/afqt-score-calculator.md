@@ -13,8 +13,6 @@ extra_js:
   - /assets/js/afqt-calculator.js
 ---
 
-# AFQT Score Calculator
-
 {%- assign escala = site.data.afqt_scale %}
 {%- assign tabla = site.data.afqt_official_conversion %}
 
@@ -115,4 +113,4 @@ ASVAB Coach drills Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge a
 Paragraph Comprehension, and estimates where you stand after each run — on iPhone, iPad,
 Apple Watch and Mac. Everything runs on your device.
 
-[See ASVAB Coach](/){:.button}
+[See ASVAB Coach](/){:.action}

@@ -12,8 +12,6 @@ updated: 2026-09-29
 {% assign cat = site.data.cat_subtests -%}
 {% assign s = cat.summary -%}
 
-# Secciones del ASVAB y límites de tiempo
-
 Alrededor del 70 % de los postulantes militares rinde el **CAT-ASVAB**, la versión por
 computadora, según la hoja informativa oficial del ASVAB. El CAT-ASVAB tiene {{ s.printed_rows }} secciones,
 {{ s.total_questions }} preguntas y {{ s.total_minutes }} minutos de examen — poco más de
@@ -30,11 +28,16 @@ cuyo contenido sabías.
 
 Verificado el {{ cat.verified }} contra el Fact Sheet oficial.
 
-| Sección | Preguntas | Minutos | Segundos por pregunta | Cuenta para el AFQT |
-|---|---|---|---|---|
+<table>
+<thead>
+<tr><th>Sección</th><th>Preguntas</th><th>Minutos</th><th>Segundos por pregunta</th><th>Cuenta para el AFQT</th></tr>
+</thead>
+<tbody>
 {% for t in cat.printed -%}
-| {{ t.name_es }} ({{ t.name_en }}, {{ t.abbr }}) | {{ t.questions }} | {{ t.minutes }} | {{ t.seconds_per_question }} | {% if t.is_afqt %}Sí{% else %}No{% endif %} |
+<tr><td data-label="Sección" markdown="span">{{ t.name_es }} ({{ t.name_en }}, {{ t.abbr }})</td><td data-label="Preguntas" markdown="span">{{ t.questions }}</td><td data-label="Minutos" markdown="span">{{ t.minutes }}</td><td data-label="Segundos por pregunta" markdown="span">{{ t.seconds_per_question }}</td><td data-label="Cuenta para el AFQT" markdown="span">{% if t.is_afqt %}Sí{% else %}No{% endif %}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 
 **Fuente.** [{{ cat.source_title }}]({{ cat.source_url }}) — columna CAT-ASVAB. El examen
 se rinde en inglés y la hoja de resultados llega con los nombres y las siglas en inglés;
@@ -99,4 +102,4 @@ dónde estás parado, en iPhone, iPad, Apple Watch y Mac. Todo corre en tu dispo
 cuenta, sin rastreo. Tu progreso vive en tus dispositivos y, si usas iCloud, en tu propio
 iCloud — nunca en nuestros servidores.
 
-[Ver ASVAB Coach](/es/){:.button}
+[Ver ASVAB Coach](/es/){:.action}

@@ -7,9 +7,18 @@ lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
 updated: 2026-09-06
+h1: "Política de Privacidad — ASVAB Coach"
+version: "1.6"
+related:
+  - /es/legal/terms/
+  - /es/contact/
+summary:
+  - "ASVAB Coach no recopila nada: sin cuenta, sin analytics, sin tracking y sin anuncios."
+  - "Tu progreso se guarda en tu dispositivo y, de forma opcional, se sincroniza por tu propio iCloud. No hay copia en ningún servidor controlado por nosotros."
+  - "El tutor de IA corre en tu dispositivo con Apple Intelligence. Ninguna pregunta que le hagas, ni ninguna respuesta que te dé, sale de tu dispositivo."
+  - "La app no tiene ninguna dependencia de terceros."
+  - "Si nos escribes, recibimos tu dirección y tu mensaje y los usamos solo para responderte y arreglar lo que reportaste; puedes pedirnos borrarlos."
 ---
-
-# Política de Privacidad — ASVAB Coach
 
 **Fecha de vigencia**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
@@ -30,17 +39,22 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 
 **Nada.** Específicamente:
 
-| Categoría de datos | ¿Recopilamos? |
-|---|---|
-| Identificadores personales (nombre, correo, teléfono, dirección) | ❌ No |
-| Identificadores de dispositivo (IDFA, IDFV, ID del dispositivo) | ❌ No |
-| Ubicación | ❌ No |
-| Contactos | ❌ No |
-| Datos de salud | ❌ No |
-| Información financiera | ❌ No (las compras las maneja Apple StoreKit) |
-| Analytics de uso | ❌ No |
-| Registros de fallos (crash logs) | ❌ No — no nos llega nada. El reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos. |
-| Cookies / píxeles de tracking | ❌ N/A (somos una app nativa, no un sitio web) |
+<table>
+<thead>
+<tr><th>Categoría de datos</th><th>¿Recopilamos?</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="Categoría de datos" markdown="span">Identificadores personales (nombre, correo, teléfono, dirección)</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Identificadores de dispositivo (IDFA, IDFV, ID del dispositivo)</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Ubicación</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Contactos</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Datos de salud</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Información financiera</td><td data-label="¿Recopilamos?" markdown="span">❌ No (las compras las maneja Apple StoreKit)</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Analytics de uso</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Registros de fallos (crash logs)</td><td data-label="¿Recopilamos?" markdown="span">❌ No — no nos llega nada. El reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos.</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Cookies / píxeles de tracking</td><td data-label="¿Recopilamos?" markdown="span">❌ N/A (somos una app nativa, no un sitio web)</td></tr>
+</tbody>
+</table>
 
 El manifiesto `PrivacyInfo.xcprivacy` de la app declara `NSPrivacyTracking: false` y un arreglo `NSPrivacyCollectedDataTypes` vacío. Apple lo verifica durante la revisión de la app.
 
@@ -48,14 +62,19 @@ El manifiesto `PrivacyInfo.xcprivacy` de la app declara `NSPrivacyTracking: fals
 
 Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (opcionalmente) se sincroniza vía tu cuenta personal de **iCloud**:
 
-| Qué | Dónde |
-|---|---|
-| Tu progreso de estudio (conteo de aciertos/errores por categoría) | `UserDefaults` en el dispositivo + `NSUbiquitousKeyValueStore` (iCloud Key-Value Store) para sincronizar entre tu iPhone, iPad y Apple Watch |
-| Tu selección de rama militar (Army, Navy, etc.) | `UserDefaults` + iCloud KV |
-| Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas) | `UserDefaults` + iCloud KV |
-| Resultados del diagnóstico | `UserDefaults` + iCloud KV |
-| Momentum — tu nivel de meta diaria, los créditos de hoy, los días de gracia acumulados, si el anillo se muestra, y **tu fecha de examen si la cargaste** (es opcional; si la dejas vacía, Momentum es un hábito diario y nada más) | `UserDefaults` + iCloud KV |
-| Cuáles de los 17 logros conseguiste | `UserDefaults` + iCloud KV |
+<table>
+<thead>
+<tr><th>Qué</th><th>Dónde</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="Qué" markdown="span">Tu progreso de estudio (conteo de aciertos/errores por categoría)</td><td data-label="Dónde" markdown="span">`UserDefaults` en el dispositivo + `NSUbiquitousKeyValueStore` (iCloud Key-Value Store) para sincronizar entre tu iPhone, iPad y Apple Watch</td></tr>
+<tr><td data-label="Qué" markdown="span">Tu selección de rama militar (Army, Navy, etc.)</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="Qué" markdown="span">Tarjetas de repetición espaciada (qué preguntas fallaste, cuándo revisarlas)</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="Qué" markdown="span">Resultados del diagnóstico</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="Qué" markdown="span">Momentum — tu nivel de meta diaria, los créditos de hoy, los días de gracia acumulados, si el anillo se muestra, y **tu fecha de examen si la cargaste** (es opcional; si la dejas vacía, Momentum es un hábito diario y nada más)</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="Qué" markdown="span">Cuáles de los 17 logros conseguiste</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+</tbody>
+</table>
 
 La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
 

@@ -13,8 +13,6 @@ extra_js:
   - /assets/js/afqt-calculator.js
 ---
 
-# Calculadora de puntaje AFQT
-
 {%- assign escala = site.data.afqt_scale %}
 {%- assign tabla = site.data.afqt_official_conversion %}
 
@@ -115,4 +113,4 @@ ASVAB Coach entrena Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge 
 Paragraph Comprehension, y estima dónde estás parado después de cada corrida: en iPhone,
 iPad, Apple Watch y Mac. Todo corre en tu dispositivo.
 
-[Ver ASVAB Coach](/es/){:.button}
+[Ver ASVAB Coach](/es/){:.action}

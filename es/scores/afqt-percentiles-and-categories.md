@@ -9,8 +9,6 @@ canonical_es: /es/scores/afqt-percentiles-and-categories/
 updated: 2026-09-29
 ---
 
-# Percentiles y categorías del AFQT
-
 {%- assign escala = site.data.afqt_scale %}
 {%- assign minimos = site.data.afqt_minimums %}
 {%- assign tabla = site.data.afqt_official_conversion %}
@@ -46,11 +44,16 @@ sobre 100.
 El DoD ordena los percentiles AFQT en categorías. Los reclutadores las usan como atajo, y
 algunos incentivos están escritos en términos de ellas y no del percentil crudo.
 
-| Categoría | Percentil | Qué significa |
-|---|---|---|
+<table>
+<thead>
+<tr><th>Categoría</th><th>Percentil</th><th>Qué significa</th></tr>
+</thead>
+<tbody>
 {% for c in escala.categories -%}
-| **{{ c.name }}** | {{ c.min }}–{{ c.max }} | {{ c.description_es }} |
+<tr><td data-label="Categoría" markdown="span">**{{ c.name }}**</td><td data-label="Percentil" markdown="span">{{ c.min }}–{{ c.max }}</td><td data-label="Qué significa" markdown="span">{{ c.description_es }}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 
 Dos aclaraciones sobre cómo leer esa tabla.
 
@@ -100,14 +103,19 @@ pide {{ minimos.summary.floor_max }}. Un punto separa «cinco ramas» de «todas
 **¿Para qué trabajo?** Eso no lo decide el AFQT. Lo deciden las line scores, que se arman
 con subtests que el AFQT ni toca.
 
-| Tu percentil | Qué te abre |
-|---|---|
-| Menos de {{ minimos.summary.floor_min }} | Ninguna rama, con diploma. |
+<table>
+<thead>
+<tr><th>Tu percentil</th><th>Qué te abre</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="Tu percentil" markdown="span">Menos de {{ minimos.summary.floor_min }}</td><td data-label="Qué te abre" markdown="span">Ninguna rama, con diploma.</td></tr>
 {% if minimos.summary.floor_is_uniform == false -%}
-| {% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %} | {{ ramas_al_piso }} de {{ ramas_total }}. {% for b in ramas_altas_lista %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless forloop.last %} y {% endunless %}{% endfor %} todavía fuera de alcance. |
+<tr><td data-label="Tu percentil" markdown="span">{% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %}</td><td data-label="Qué te abre" markdown="span">{{ ramas_al_piso }} de {{ ramas_total }}. {% for b in ramas_altas_lista %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless forloop.last %} y {% endunless %}{% endfor %} todavía fuera de alcance.</td></tr>
 {% endif -%}
-| {{ minimos.summary.floor_max }} o más | Las {{ ramas_total }} ramas te aceptan acá. |
-| {{ minimos.summary.recommended_min }} o más{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} en algunas ramas){% endunless %} | Competitivo: una observación, no un requisito publicado — y donde los incentivos empiezan a aparecer en la conversación. |
+<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.floor_max }} o más</td><td data-label="Qué te abre" markdown="span">Las {{ ramas_total }} ramas te aceptan acá.</td></tr>
+<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.recommended_min }} o más{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} en algunas ramas){% endunless %}</td><td data-label="Qué te abre" markdown="span">Competitivo: una observación, no un requisito publicado — y donde los incentivos empiezan a aparecer en la conversación.</td></tr>
+</tbody>
+</table>
 
 Dos cosas que esa tabla no te puede decir, y ninguna tabla puede.
 
@@ -167,4 +175,4 @@ resultado es una estimación.
 Todo corre en tu dispositivo: sin cuenta, sin rastreo. Tu progreso vive en tus dispositivos
 y, si usas iCloud, en tu propio iCloud — nunca en nuestros servidores.
 
-[Ver ASVAB Coach](/es/){:.button}
+[Ver ASVAB Coach](/es/){:.action}

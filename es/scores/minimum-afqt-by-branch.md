@@ -9,8 +9,6 @@ canonical_es: /es/scores/minimum-afqt-by-branch/
 updated: 2026-09-26
 ---
 
-# Puntaje mínimo del ASVAB por rama
-
 Lo primero que mira un reclutador no es tu puntaje del ASVAB. Es tu **AFQT**: un
 percentil del 1 al 99 que sale de cuatro de los diez subtests. Un AFQT de 50 significa
 que igualaste o superaste al 50 % de una muestra nacional de referencia — no que
@@ -37,11 +35,16 @@ Cada rama pone su propio piso. Aquí está dónde quedó cada una, y de dónde s
 {%- assign sufijo = site.data.afqt_minimums.estimate_spoken_suffix.es %}
 Verificado el {{ site.data.afqt_minimums.verified }}{% if estimadas.size > 0 %}<span aria-hidden="true">, salvo los valores marcados con {{ marca }}</span><span class="visually-hidden">, salvo los valores estimados</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} de las {{ ramas.size }} fuentes son regulaciones de servicio, no páginas de reclutamiento: {% for b in bloqueadas %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless n_es == b.name %} ({{ b.name }}){% endunless %}{% unless forloop.last %} y {% endunless %}{% endfor %} llevan la fecha en que el número se confirmó por última vez contra la regulación.{% endif %}
 
-| Rama | Con diploma de secundaria | Con GED | Competitivo |
-|---|---|---|---|
+<table>
+<thead>
+<tr><th>Rama</th><th>Con diploma de secundaria</th><th>Con GED</th><th>Competitivo</th></tr>
+</thead>
+<tbody>
 {% for b in site.data.afqt_minimums.branches -%}
-| {% assign nombre_es = site.branch_names_es[b.id] | default: b.name %}{{ nombre_es }}{% unless nombre_es == b.name %} ({{ b.name }}){% endunless %} | {{ b.min_afqt }} | {% if b.min_afqt_ged_is_estimate %}<span aria-hidden="true">{{ marca }}</span>{{ b.min_afqt_ged }}<span class="visually-hidden">{{ sufijo }}</span>{% else %}{{ b.min_afqt_ged }}{% endif %} | {{ b.recommended_afqt }} |
+<tr><td data-label="Rama" markdown="span">{% assign nombre_es = site.branch_names_es[b.id] | default: b.name %}{{ nombre_es }}{% unless nombre_es == b.name %} ({{ b.name }}){% endunless %}</td><td data-label="Con diploma de secundaria" markdown="span">{{ b.min_afqt }}</td><td data-label="Con GED" markdown="span">{% if b.min_afqt_ged_is_estimate %}<span aria-hidden="true">{{ marca }}</span>{{ b.min_afqt_ged }}<span class="visually-hidden">{{ sufijo }}</span>{% else %}{{ b.min_afqt_ged }}{% endif %}</td><td data-label="Competitivo" markdown="span">{{ b.recommended_afqt }}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 {%- for b in estimadas %}
 
 {% assign n_es = site.branch_names_es[b.id] | default: b.name %}<span aria-hidden="true">{{ marca }}</span> {{ n_es }}{% unless n_es == b.name %} ({{ b.name }}){% endunless %} no publica su mínimo para quienes tienen GED; el {{ b.min_afqt_ged }} es una estimación. Confírmalo con tu reclutador.
@@ -149,4 +152,4 @@ ASVAB Coach entrena los cuatro subtests del AFQT y estima dónde estás parado, 
 iPad, Apple Watch y Mac. Todo corre en tu dispositivo: sin cuenta, sin rastreo. Tu progreso
 vive en tus dispositivos y, si usas iCloud, en tu propio iCloud — nunca en nuestros servidores.
 
-[Ver ASVAB Coach](/es/){:.button}
+[Ver ASVAB Coach](/es/){:.action}

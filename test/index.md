@@ -9,8 +9,6 @@ canonical_es: /es/test/
 updated: 2026-09-13
 ---
 
-# The ASVAB Test
-
 Before you can study for it, it helps to know what it is: how many sections, how long
 they run, and which ones actually decide something.
 

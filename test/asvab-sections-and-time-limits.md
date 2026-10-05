@@ -12,8 +12,6 @@ updated: 2026-09-29
 {% assign cat = site.data.cat_subtests -%}
 {% assign s = cat.summary -%}
 
-# ASVAB Sections and Time Limits
-
 About 70% of military applicants take the **CAT-ASVAB**, the computer version, according
 to the official ASVAB Fact Sheet. The CAT-ASVAB
 has {{ s.printed_rows }} sections, {{ s.total_questions }} questions and
@@ -31,11 +29,16 @@ material for.
 
 Verified {{ cat.verified }} against the official Fact Sheet.
 
-| Section | Questions | Minutes | Seconds per question | Counts toward AFQT |
-|---|---|---|---|---|
+<table>
+<thead>
+<tr><th>Section</th><th>Questions</th><th>Minutes</th><th>Seconds per question</th><th>Counts toward AFQT</th></tr>
+</thead>
+<tbody>
 {% for t in cat.printed -%}
-| {{ t.name_en }} ({{ t.abbr }}) | {{ t.questions }} | {{ t.minutes }} | {{ t.seconds_per_question }} | {% if t.is_afqt %}Yes{% else %}No{% endif %} |
+<tr><td data-label="Section" markdown="span">{{ t.name_en }} ({{ t.abbr }})</td><td data-label="Questions" markdown="span">{{ t.questions }}</td><td data-label="Minutes" markdown="span">{{ t.minutes }}</td><td data-label="Seconds per question" markdown="span">{{ t.seconds_per_question }}</td><td data-label="Counts toward AFQT" markdown="span">{% if t.is_afqt %}Yes{% else %}No{% endif %}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 
 **Source.** [{{ cat.source_title }}]({{ cat.source_url }}) — CAT-ASVAB column.
 
@@ -98,4 +101,4 @@ where you stand, on iPhone, iPad, Apple Watch and Mac. Everything runs on your d
 account, no tracking. Your progress lives on your devices and, if you use iCloud, in your
 own iCloud — never on our servers.
 
-[See ASVAB Coach](/){:.button}
+[See ASVAB Coach](/){:.action}

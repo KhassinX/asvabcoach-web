@@ -9,8 +9,6 @@ canonical_es: /es/scores/
 updated: 2026-09-13
 ---
 
-# ASVAB Scores
-
 The ASVAB produces more than one number, and they answer different questions. The AFQT
 decides whether you can enlist; the line scores decide what you can do once you are in.
 

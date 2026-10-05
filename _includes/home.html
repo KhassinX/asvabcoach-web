@@ -1,0 +1,119 @@
+{%- assign L = page.lang | default: 'en' -%}
+{%- assign h = site.data.home[L] -%}
+{%- assign ui = site.ui_strings[L] -%}
+{%- if L == 'es' %}{% assign policy_url = '/es/legal/privacy/' %}{% else %}{% assign policy_url = '/legal/privacy/' %}{% endif -%}
+{%- assign pp = site.pages | where: "url", policy_url | first -%}
+<section class="hero wrap" aria-labelledby="hero-h">
+  <img class="icon" src="/assets/favicons/icon-512.png" width="512" height="512" alt="" fetchpriority="high">
+  <p class="app-name">{{ site.title }}</p>
+  <h1 id="hero-h">{{ h.h1 }}</h1>
+  <p class="lead measure quiet">{{ h.lead }}</p>
+  <a class="store" href="{{ site.app_store_url }}"><img src="/assets/badges/app-store-{{ L }}.svg" width="120" height="40" alt="{{ h.badge_alt }}"></a>
+</section>
+<section class="split wrap" aria-labelledby="privacy-h">
+  <h2 id="privacy-h">{{ h.privacy_h }}</h2>
+  <div>
+    <dl class="manifest">
+      {%- for r in h.manifest %}
+      <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+      {%- endfor %}
+    </dl>
+    <p class="policy meta"><a class="more" href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include legal-date.html d=pp.updated lang=L %}</span><span>{{ ui.version }} {{ pp.version }}</span></p>
+    <p class="reach">{{ h.reach }}</p>
+  </div>
+</section>
+<section class="split wrap" aria-labelledby="inside-h">
+  <h2 id="inside-h">{{ h.inside_h }}</h2>
+  <ul class="rows">
+    {%- for item in h.inside %}
+    <li>{{ item }}</li>
+    {%- endfor %}
+  </ul>
+</section>
+<section class="split wrap" aria-labelledby="recruits-h">
+  <h2 id="recruits-h">{{ h.recruits_h }}</h2>
+  <div class="measure">
+    <p>{{ h.recruits_lead }}</p>
+    <p class="quiet">{{ h.recruits_body }}</p>
+  </div>
+</section>
+<section class="split wrap" id="faq" aria-labelledby="faq-h">
+  <h2 id="faq-h">{{ h.faq_h }}</h2>
+  <div class="faq">
+    {%- for f in h.faq %}
+    <h3>{{ f.q }}</h3>
+    <p class="quiet">{{ f.a }}</p>
+    {%- endfor %}
+  </div>
+</section>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "ASVAB Coach: AFQT Practice",
+  "alternateName": ["ASVAB Coach", "ASVAB Coach — Private AI Tutor"],
+  "operatingSystem": "iOS 26.4, iPadOS 26.4, watchOS 26.4, macOS 26.4",
+  "applicationCategory": "EducationalApplication",
+  "applicationSubCategory": "Test Prep",
+  "description": {{ site.description | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "downloadUrl": {{ site.app_store_url | jsonify }},
+  "installUrl": {{ site.app_store_url | jsonify }},
+  "image": {{ site.url | append: site.og_image_default.en | jsonify }},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "category": "FreeWithInAppPurchase"
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "ratingCount": "1",
+    "bestRating": "5",
+    "worstRating": "1"
+  },
+  "inLanguage": ["en-US", "es-MX"],
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "KHASSINX",
+    "legalName": {{ site.org_legal_name | jsonify }},
+    "url": "https://khassinx.com",
+    "logo": "https://khassinx.com/assets/favicons/icon-512.png",
+    "foundingDate": {{ site.org_founding_date | jsonify }}
+  },
+  "featureList": [
+    "Apple Intelligence on-device AI tutor",
+    "Momentum — Daily Goal ring, forgiving streaks with a grace day, 17 achievements, exam-date countdown",
+    "Native Apple Watch app — Quick 10 on your wrist",
+    "Native Mac app — not Catalyst",
+    "725 curated questions across 9 ASVAB subtests",
+    "Smart Review (SM-2 algorithm, per-category calibrated)",
+    "AFQT Sprint timed practice",
+    "Smart Exam (full CAT-ASVAB simulation)",
+    "Math step-by-step solver",
+    "Zero tracking · no account required",
+    "Family Sharing included"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "inLanguage": {% if L == 'es' %}"es-MX"{% else %}"en-US"{% endif %},
+  "mainEntity": [
+    {%- for f in h.faq %}
+    {
+      "@type": "Question",
+      "name": {{ f.q | replace: "‑", "-" | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ f.a | replace: "‑", "-" | jsonify }}
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor %}
+  ]
+}
+</script>

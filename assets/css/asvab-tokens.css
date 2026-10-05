@@ -1,161 +1,21 @@
-/*
- * asvab-tokens.css — Layer 2 ASVAB Coach brand tokens — Apple-canon
- *
- * Per-app brand for asvab.khassinx.com. Distinct de Layer 1 KhassinX umbrella
- * (umbrella es neutral Apple blue, ASVAB Coach es Apple-canon + navy/gold signature).
- *
- * Source: ~/KhassinX/_template/BRAND_SYSTEM.md §3 (Layer 2 conventions)
- * + §2 (Layer 1 Apple canon) + §4-5 (typography/spacing Apple-grade).
- *
- * Refactor 2026-05-27: align accent to official Icon Composer .icon bundle.
- * Background gradient navy #1E3A5F→#0F1F36 + gold "A" symbol #E5C079→#C9A050
- * are the canonical app brand colors. Web accent now matches the icon visually
- * for coherence between App Store presence + marketing site.
- *
- * App brand signature: navy #1E3A5F (CTA/link, WCAG AAA on white at 11.2:1)
- * + gold #C9A050 (decorative — borders, badges, hover bg; NOT for text body).
- * Mirrors Swift `Color.asvabNavy` / `Color.asvabGold` en AppColors.
- */
-
 :root {
-  color-scheme: light dark;
-  /* ─── Light theme (default — Apple canon) ─── */
-
-  /* Backgrounds (Apple canon) */
-  --asvab-bg: #FFFFFF;
-  --asvab-bg-section: #F5F5F7;
-  --asvab-bg-card: #FBFBFD;
-  --asvab-bg-elevated: #FFFFFF;
-
-  /* Text (Apple canon) */
-  --asvab-text-primary: #1D1D1F;
-  --asvab-text-secondary: #6E6E73;
-  --asvab-text-tertiary: #86868B;
-  --asvab-text-disabled: #C7C7CC;
-
-  /* Accents — ASVAB Coach navy + gold signature (matches Icon Composer .icon bundle) */
-  --asvab-accent: #1E3A5F;            /* Navy CTA/link — matches icon bg top (WCAG AAA on white: 11.2:1) */
-  --asvab-accent-strong: #0F1F36;     /* Hover/active darker navy — matches icon bg bottom */
-  --asvab-accent-soft: #E3E8EF;       /* Pale blue-gray subtle backgrounds */
-  --asvab-on-accent: #FFFFFF;         /* texto SOBRE el acento — 11,2:1 en claro */
-  --asvab-accent-bright: #C9A050;     /* Gold decorative — matches icon symbol (borders/badges, NOT body text — does not pass AA) */
-
-  /* Borders (Apple hairline) */
-  --asvab-border: #D2D2D7;
-  --asvab-border-strong: #86868B;
-
-  /* Status (Apple system colors) */
-  --asvab-success: #34C759;
-  --asvab-warning: #FF9500;
-  --asvab-danger: #FF3B30;
-
-  /* ─── Re-bind a Layer 1 token names so primitives.css works ─── */
-  --khassinx-bg: var(--asvab-bg);
-  --khassinx-bg-section: var(--asvab-bg-section);
-  --khassinx-bg-card: var(--asvab-bg-card);
-  --khassinx-bg-elevated: var(--asvab-bg-elevated);
-  --khassinx-text-primary: var(--asvab-text-primary);
-  --khassinx-text-secondary: var(--asvab-text-secondary);
-  --khassinx-text-tertiary: var(--asvab-text-tertiary);
-  --khassinx-text-disabled: var(--asvab-text-disabled);
-  --khassinx-accent: var(--asvab-accent);
-  --khassinx-accent-strong: var(--asvab-accent-strong);
-  --khassinx-accent-soft: var(--asvab-accent-soft);
-  --khassinx-on-accent: var(--asvab-on-accent);
-  --khassinx-border: var(--asvab-border);
-  --khassinx-border-strong: var(--asvab-border-strong);
-  --khassinx-success: var(--asvab-success);
-  --khassinx-warning: var(--asvab-warning);
-  --khassinx-danger: var(--asvab-danger);
-
-  /* Spacing scale (Layer 3 — heredamos Apple-grade scale) */
-  --space-xs: 4px;
-  --space-s: 8px;
-  --space-m: 12px;
-  --space-md: 16px;
-  --space-lg: 20px;
-  --space-xl: 24px;
-  --space-2xl: 32px;
-  --space-3xl: 48px;
-  --space-4xl: 64px;
-  --space-5xl: 96px;
-  --space-6xl: 128px;
-  --space-7xl: 160px;
-  --space-8xl: 200px;
-
-  /* Container max-widths (Apple-canonical 980px) */
-  --container-narrow: 640px;
-  --container-default: 980px;
-  --container-wide: 1280px;
-
-  /* Border radius (Apple soft corners) */
-  --radius-s: 6px;
-  --radius-m: 8px;
-  --radius-md: 12px;
-  --radius-lg: 18px;
-  --radius-xl: 22px;
-  --radius-2xl: 28px;
-  --radius-pill: 999px;
-
-  /* Typography (Layer 3 Apple canon) */
-  --font-stack: -apple-system, BlinkMacSystemFont, "Geist Sans", system-ui, "Helvetica Neue", Arial, sans-serif;
-  --font-mono: ui-monospace, "Geist Mono", Menlo, Consolas, monospace;
-
-  --fs-display-xl: 80px;
-  --fs-display-l: 56px;
-  --fs-display-m: 40px;
-  --fs-h1: 32px;
-  --fs-h2: 28px;
-  --fs-h3: 22px;
-  --fs-body-l: 21px;
-  --fs-body: 17px;
-  --fs-small: 14px;
-  --fs-caption: 12px;
-
-  /* Transitions (Apple cubic-bezier) */
-  --transition-fast: 120ms cubic-bezier(0.32, 0, 0.67, 0);
-  --transition-base: 200ms cubic-bezier(0.32, 0, 0.67, 0);
-  --transition-slow: 320ms cubic-bezier(0.32, 0, 0.67, 0);
+  --asvab-gold: #E5C079;
+  --asvab-gold-deep: #7F622A;
+  --asvab-navy-deep: #0F1F36;
+  --khassinx-accent: var(--asvab-gold);
+  --khassinx-accent-ink: var(--asvab-navy-deep);
+  --khassinx-accent-text: var(--asvab-gold);
+  --khassinx-focus: var(--asvab-gold);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    /* ─── Dark theme — Apple OLED + cyan dark ─── */
-
-    --asvab-bg: #000000;
-    --asvab-bg-section: #1D1D1F;
-    --asvab-bg-card: #2C2C2E;
-    --asvab-bg-elevated: #2C2C2E;
-
-    --asvab-text-primary: #F5F5F7;
-    --asvab-text-secondary: #A1A1A6;
-    --asvab-text-tertiary: #8E8E93;
-    --asvab-text-disabled: #48484A;
-
-    /* 7,66:1 es el acento COMO TEXTO SOBRE NEGRO — que no es el par que envia
-       .btn-primary. Ese par es blanco SOBRE este color y daba 2,7:1 (medido
-       7-sep-2026). Por eso el boton en oscuro usa --asvab-on-accent, no blanco.
-       Ver NORMA-UI-UX W-1.1: el contraste se mide sobre el par que se envia. */
-    --asvab-accent: #6BA0D9;
-    --asvab-on-accent: #0B1220;         /* ~8:1 sobre el acento; 4,62:1 sobre el del hover */
-    --asvab-accent-strong: #4A82BD;     /* Medium navy hover */
-    --asvab-accent-soft: #1F2D45;       /* Deep navy subtle bg */
-    --asvab-accent-bright: #E5C079;     /* Brighter gold for dark — matches icon symbol top color */
-
-    --asvab-border: #38383A;
-    --asvab-border-strong: #48484A;
-
-    --asvab-success: #30D158;
-    --asvab-warning: #FF9F0A;
-    --asvab-danger: #FF453A;
-  }
+:root[data-theme="light"] {
+  --khassinx-accent-text: var(--asvab-gold-deep);
+  --khassinx-focus: var(--asvab-gold-deep);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --khassinx-accent-text: var(--asvab-gold-deep);
+    --khassinx-focus: var(--asvab-gold-deep);
   }
 }

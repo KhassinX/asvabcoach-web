@@ -1,242 +1,102 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{%- assign lang_key = page.lang | default: 'en' -%}
+{%- assign nav_items = site.nav[lang_key] | default: site.nav.en -%}
+{%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
+{%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
+{%- assign full_title = site.title -%}
+{%- if page.title %}{%- assign full_title = page.title | append: ' — ' | append: site.title -%}{%- endif -%}
+{%- assign og_image = page.og_image | default: site.og_image_default[lang_key] | default: site.og_image_default.en -%}
+{%- assign og_alt = page.og_image_alt | default: site.og_image_alt[lang_key] | default: site.og_image_alt.en -%}
+{%- if lang_key == 'es' -%}{%- assign og_locale = 'es_MX' -%}{%- assign og_locale_alt = 'en_US' -%}{%- assign logo_home = '/es/' -%}{%- else -%}{%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'es_MX' -%}{%- assign logo_home = '/' -%}{%- endif -%}
+<html lang="{{ lang_key }}">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; base-uri 'self'; form-action 'self'">
+  <meta name="color-scheme" content="dark light">
 
-  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <title>{{ full_title }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="robots" content="{{ page.robots | default: 'index,follow' }}">
 
-  <meta name="color-scheme" content="light dark">
-  <meta name="theme-color" content="#0E0E11" media="(prefers-color-scheme: dark)">
-  <meta name="theme-color" content="#FAFAF7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#060607" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#F7F7F4" media="(prefers-color-scheme: light)">
 
-  <!-- Open Graph (Facebook, LinkedIn, iMessage, Slack) -->
   <meta property="og:site_name" content="{{ site.title }}">
-  <meta property="og:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:title" content="{{ full_title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-  {%- assign og_lang = page.lang | default: 'en' -%}
-  {%- comment -%} La tarjeta social sigue el idioma de la página; `| default:` cae al
-  inglés si mañana aparece un locale que nadie agregó al mapa, en vez de imprimir vacío.
-  {%- endcomment -%}
-  {% assign og_image_path = page.og_image | default: site.og_image_default[og_lang] | default: site.og_image_default.en %}
-  {% assign og_alt = page.og_image_alt | default: site.og_image_alt[og_lang] | default: site.og_image_alt.en %}
-  {% if og_image_path %}
-  <meta property="og:image" content="{{ site.url }}{{ og_image_path }}">
-  <meta property="og:image:secure_url" content="{{ site.url }}{{ og_image_path }}">
+  <meta property="og:locale" content="{{ og_locale }}">
+  <meta property="og:locale:alternate" content="{{ og_locale_alt }}">
+  <meta property="og:image" content="{{ site.url }}{{ og_image }}">
+  <meta property="og:image:secure_url" content="{{ site.url }}{{ og_image }}">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="{{ og_alt }}">
-  {% endif %}
-  {% if page.lang == 'es' %}
-  <meta property="og:locale" content="es_MX">
-  <meta property="og:locale:alternate" content="en_US">
-  {% else %}
-  <meta property="og:locale" content="en_US">
-  <meta property="og:locale:alternate" content="es_MX">
-  {% endif %}
 
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta name="twitter:title" content="{{ full_title }}">
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
-  {% if og_image_path %}
-  <meta name="twitter:image" content="{{ site.url }}{{ og_image_path }}">
+  <meta name="twitter:image" content="{{ site.url }}{{ og_image }}">
   <meta name="twitter:image:alt" content="{{ og_alt }}">
-  {% endif %}
 
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
-
-  {%- comment -%} hreflang for locale alternates (see WEB_PROPERTY_SPEC.md §7.5) {%- endcomment -%}
   {% if page.canonical_en %}<link rel="alternate" hreflang="en" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
   {% if page.canonical_es %}<link rel="alternate" hreflang="es" href="{{ site.url }}{{ page.canonical_es }}">{% endif %}
   {% if page.canonical_en %}<link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ page.canonical_en }}">{% endif %}
 
-  {%- comment -%}
-    CSP fallback via meta http-equiv. Real headers vienen de CF Transform Rules.
-  {%- endcomment -%}
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'">
-
-  {% if site.favicon_svg %}<link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg }}">{% endif %}
-  {% if site.favicon_32 %}<link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">{% endif %}
-  {% if site.favicon_16 %}<link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">{% endif %}
-  {% if site.apple_touch_icon %}<link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">{% endif %}
   <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any">
-
-  <!-- PWA manifest -->
+  <link rel="icon" type="image/svg+xml" href="{{ site.favicon_svg }}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.favicon_32 }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.favicon_16 }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.apple_touch_icon }}">
   <link rel="manifest" href="/manifest.json">
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
 
-  <!-- Apple PWA / iOS web-app -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="ASVAB">
-  <meta name="application-name" content="ASVAB Coach">
-
-  <!-- Microsoft Tile (legacy but cheap) -->
+  <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-TileColor" content="#1E3A5F">
   <meta name="msapplication-TileImage" content="/assets/favicons/mstile-150x150.png">
 
-  <!-- Sitemap discovery hint -->
-  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-
-  {%- comment -%}
-    Sólo en las DOS homes: este bloque describe la app, y Google pide el structured data
-    en la página que describe («Put the structured data on the page that it describes»,
-    developers.google.com/search/docs/appearance/structured-data/sd-policies). Las
-    páginas de /scores/ y /test/ describen el examen, no la app.
-    La condición se escribe por la propiedad —«esta página ES la landing de la app»— y
-    no enumerando las que hay que excluir: una lista de exclusiones deja verde para
-    siempre a la página que nadie agregue.
-  {%- endcomment -%}
-  {%- assign es_landing = false -%}
-  {%- if page.url == '/' or page.url == '/es/' -%}{%- assign es_landing = true -%}{%- endif -%}
-  {% if es_landing %}
-  <!-- JSON-LD structured data — MobileApplication (Google Rich Results) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "MobileApplication",
-    "name": "ASVAB Coach: AFQT Practice",
-    "alternateName": ["ASVAB Coach", "ASVAB Coach — Private AI Tutor"],
-    "operatingSystem": "iOS 26.4, iPadOS 26.4, watchOS 26.4, macOS 26.4",
-    "applicationCategory": "EducationalApplication",
-    "applicationSubCategory": "Test Prep",
-    "description": "{{ site.description }}",
-    "url": "{{ site.url }}",
-    "downloadUrl": "https://apps.apple.com/us/app/asvab-coach/id6761384966",
-    "installUrl": "https://apps.apple.com/us/app/asvab-coach/id6761384966",
-    "image": "{{ site.url }}{{ og_image_path }}",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "category": "FreeWithInAppPurchase"
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "ratingCount": "1",
-      "bestRating": "5",
-      "worstRating": "1"
-    },
-    "inLanguage": ["en-US", "es-MX"],
-    "isAccessibleForFree": true,
-    "publisher": {
-      "@type": "Organization",
-      "name": "KhassinX",
-      "legalName": "KHASSINX LLC",
-      "url": "https://khassinx.com",
-      "logo": "https://khassinx.com/assets/favicons/icon-512.png",
-      "foundingDate": "2026-06-01"
-    },
-    "featureList": [
-      "Apple Intelligence on-device AI tutor",
-      "Momentum — Daily Goal ring, forgiving streaks with a grace day, 17 achievements, exam-date countdown",
-      "Native Apple Watch app — Quick 10 on your wrist",
-      "Native Mac app — not Catalyst",
-      "725 curated questions across 9 ASVAB subtests",
-      "Smart Review (SM-2 algorithm, per-category calibrated)",
-      "AFQT Sprint timed practice",
-      "Smart Exam (full CAT-ASVAB simulation)",
-      "Math step-by-step solver",
-      "Zero tracking · no account required",
-      "Family Sharing included"
-    ]
-  }
-  </script>
-  {% endif %}
-
-  {% comment %}
-    CSS loading order matters: Layer 1 (umbrella tokens) optional → Layer 3 (primitives,
-    uses Layer 1 token names) → Layer 2 (per-app tokens, rebinds Layer 1 names to app palette).
-    For per-app sites: skip Layer 1 (set site.umbrella_tokens = false). For umbrella sites
-    (apex khassinx.com): include Layer 1 (set site.umbrella_tokens = true).
-  {% endcomment %}
   <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
-  {% if site.umbrella_tokens %}<link rel="stylesheet" href="{{ '/assets/css/tokens.css' | relative_url }}">{% endif %}
-  <link rel="stylesheet" href="{{ '/assets/css/primitives.css' | relative_url }}">
-  {% if site.app_tokens_css %}<link rel="stylesheet" href="{{ site.app_tokens_css | relative_url }}">{% endif %}
-  {% if page.extra_css %}{% for css in page.extra_css %}<link rel="stylesheet" href="{{ css | relative_url }}">{% endfor %}{% endif %}
+  <link rel="stylesheet" href="/assets/css/tokens.css">
+  <link rel="stylesheet" href="/assets/css/primitives.css">
+  <link rel="stylesheet" href="{{ site.app_tokens_css }}">
+  <link rel="stylesheet" href="/assets/css/app.css">
+  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}">{% endfor %}
+  <script src="/assets/js/theme.js"></script>
 </head>
 <body>
-  {%- comment -%}
-    Locale-aware navigation:
-    - lang_key resuelve a 'en' o 'es' (fallback a 'en')
-    - site.nav y site.footer_nav están keyed por locale
-    - site.ui_strings provee strings cortos (skip link, nota de ecosistema del footer)
-    - logo_home apunta al home del locale actual
-  {%- endcomment -%}
-  {%- assign lang_key = page.lang | default: 'en' -%}
-  {%- assign nav_items = site.nav[lang_key] | default: site.nav.en -%}
-  {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
-  {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
-  {%- if lang_key == 'es' -%}
-    {%- assign logo_home = '/es/' -%}
-  {%- else -%}
-    {%- assign logo_home = '/' -%}
-  {%- endif -%}
-
-  <a href="#main" class="skip-link">{{ ui.skip_to_main }}</a>
-
-  <header class="site-header">
-    <div class="container">
-      <a href="{{ logo_home | relative_url }}" class="logo">
-        {% if site.logo %}<img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">{% endif %}
-        <span>{{ site.title }}<span class="tm" aria-hidden="true">™</span></span>
-      </a>
-      <nav class="site-nav" aria-label="Primary">
-        {% for item in nav_items %}
-          <a href="{{ item.url | relative_url }}"{% if item.external %} target="_blank" rel="noopener"{% endif %}>{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-    </div>
-  </header>
-
-  <main id="main">
-    {{ content }}
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div>© {{ 'now' | date: '%Y' }} KHASSINX LLC</div>
-      <nav aria-label="Footer">
-        {% for item in footer_items %}
-          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endfor %}
-      </nav>
-      <div class="locale-switcher" aria-label="Language selector">
-        {%- if lang_key == 'es' -%}
-          <a href="{{ page.canonical_en | default: '/' | relative_url }}" hreflang="en" lang="en">EN</a>
-          <span aria-hidden="true">·</span>
-          <span aria-current="true" lang="es">ES</span>
-        {%- else -%}
-          <span aria-current="true" lang="en">EN</span>
-          <span aria-hidden="true">·</span>
-          <a href="{{ page.canonical_es | default: '/es/' | relative_url }}" hreflang="es" lang="es">ES</a>
-        {%- endif -%}
-      </div>
-      <small class="footer-ecosystem"><a href="{{ ui.ecosystem_url }}">{{ ui.ecosystem_label }}</a></small>
-      {%- comment -%}
-        El disclaimer sigue al USO de la marca, no a la página que lo explica: «ASVAB» aparece
-        en el título, el H1 y el dominio de todas las páginas, así que el aviso vive donde
-        también viven ellas — este footer, del que cuelgan las 14.
-      {%- endcomment -%}
-      <small class="footer-disclaimer">{{ ui.disclaimer }}</small>
-    </div>
-  </footer>
-
-  {%- comment -%}
-    Igual que `page.extra_css` de arriba: un script que sólo una página necesita no se
-    les carga a las demás. Va al final del body y con `defer` para no bloquear el render.
-    Tiene que ser un ARCHIVO servido, nunca un bloque inline: el CSP del sitio es
-    `default-src 'self'` sin `script-src`, así que un `<script>` en el Markdown se
-    parsea y no se ejecuta.
-  {%- endcomment -%}
-  {% if page.extra_js %}{% for js in page.extra_js %}<script src="{{ js | relative_url }}" defer></script>{% endfor %}{% endif %}
+<a class="skip" href="#main">{{ ui.skip_to_main }}</a>
+<header class="head wrap">
+  <a class="wordmark" href="{{ logo_home }}"><img src="/assets/favicons/icon-192.png" width="192" height="192" alt=""><span>{{ site.title }}<span aria-hidden="true">™</span></span></a>
+  <nav aria-label="{{ ui.nav_primary }}">{% for item in nav_items %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}</nav>
+</header>
+<main id="main">
+{{ content }}
+</main>
+<footer class="foot">
+  <div class="wrap foot-row">
+    <p>© {{ 'now' | date: '%Y' }} {{ site.org_legal_name }} · <a href="{{ ui.umbrella_url }}">{{ ui.part_of }}</a></p>
+    <nav aria-label="{{ ui.nav_footer }}">
+      {%- for item in footer_items %}
+      <a href="{{ item.url }}">{{ item.title }}</a>
+      {%- endfor %}
+    </nav>
+    <p class="theme" hidden><label for="theme">{{ ui.theme }}</label><select id="theme" autocomplete="off"><option value="system">{{ ui.theme_system }}</option><option value="light">{{ ui.theme_light }}</option><option value="dark">{{ ui.theme_dark }}</option></select></p>
+    {% if lang_key == 'es' -%}
+    <p class="lang"><a href="{{ page.canonical_en | default: '/' }}" hreflang="en" lang="en">EN</a> · <span aria-current="true">ES</span></p>
+    {%- else -%}
+    <p class="lang"><span aria-current="true">EN</span> · <a href="{{ page.canonical_es | default: '/es/' }}" hreflang="es" lang="es">ES</a></p>
+    {%- endif %}
+    <p class="disclaimer">{{ ui.disclaimer }}</p>
+  </div>
+</footer>
+{% for js in page.extra_js %}<script src="{{ js }}" defer></script>{% endfor %}
 </body>
 </html>

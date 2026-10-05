@@ -9,8 +9,6 @@ canonical_es: /es/scores/
 updated: 2026-09-13
 ---
 
-# Puntajes del ASVAB
-
 El ASVAB produce más de un número, y cada uno contesta una pregunta distinta. El AFQT
 decide si puedes alistarte; los line scores deciden qué puedes hacer una vez adentro.
 

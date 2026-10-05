@@ -7,8 +7,10 @@ lang: en
 org_legal_name: "KHASSINX LLC"
 org_founding_date: "2026-06-01"
 
-# Layer 2 brand tokens (ASVAB Coach specific) extending Layer 3 primitives
+# Layer 2: the ASVAB Coach palette, re-bound over the Layer 1 tokens
 app_tokens_css: /assets/css/asvab-tokens.css
+
+app_store_url: https://apps.apple.com/us/app/asvab-coach/id6761384966
 
 # Favicons (derived from official Icon Composer .icon bundle — brand pack 2026-06)
 # Brand icon: navy gradient #1E3A5F→#0F1F36 background + gold service star + R/W/B ribbon (Icon Composer .icon)
@@ -77,72 +79,92 @@ breadcrumbs:
     security: Seguridad
     contact: Contacto
 
-# Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
+  en:
+    - title: Support
+      url: /support/
+    - title: Privacy
+      url: /legal/privacy/
+  es:
+    - title: Soporte
+      url: /es/support/
+    - title: Privacidad
+      url: /es/legal/privacy/
+
+footer_nav:
   en:
     - title: Test Format
       url: /test/
     - title: Scores
       url: /scores/
-    - title: Legal
-      url: /legal/
     - title: Support
       url: /support/
-    - title: App Store
-      url: https://apps.apple.com/us/app/asvab-coach/id6761384966
-      external: true
+    - title: Privacy
+      url: /legal/privacy/
+    - title: Terms
+      url: /legal/terms/
+    - title: Rights Center
+      url: https://khassinx.com/legal/your-rights/
+    - title: Legal
+      url: /legal/
+    - title: Security
+      url: /security/
+    - title: Contact
+      url: /contact/
   es:
     - title: Examen
       url: /es/test/
     - title: Puntajes
       url: /es/scores/
-    - title: Legal
-      url: /es/legal/
     - title: Soporte
       url: /es/support/
-    - title: App Store
-      url: https://apps.apple.com/us/app/asvab-coach/id6761384966
-      external: true
-
-footer_nav:
-  en:
-    - title: Privacy
-      url: /legal/privacy/
-    - title: Terms
-      url: /legal/terms/
-    - title: Legal
-      url: /legal/
-    - title: Security
-      url: /security/
-    - title: Support
-      url: /support/
-    - title: Contact
-      url: /contact/
-  es:
     - title: Privacidad
       url: /es/legal/privacy/
     - title: Términos
       url: /es/legal/terms/
+    - title: Centro de derechos
+      url: https://khassinx.com/es/legal/your-rights/
     - title: Legal
       url: /es/legal/
     - title: Seguridad
       url: /es/security/
-    - title: Soporte
-      url: /es/support/
     - title: Contacto
       url: /es/contact/
 
-# Skip-link y nota de ecosistema del footer, copy por locale (lo consume base.html)
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
-    ecosystem_label: "A KhassinX app"
-    ecosystem_url: "https://khassinx.com"
+    nav_primary: "Primary"
+    nav_footer: "Footer"
+    part_of: "Part of KHASSINX"
+    umbrella_url: "https://khassinx.com/"
+    last_updated: "Last updated"
+    effective: "Effective"
+    version: "Version"
+    in_short: "In short"
+    on_this_page: "On this page"
+    related: "Related"
+    theme: "Theme"
+    theme_system: "System"
+    theme_light: "Light"
+    theme_dark: "Dark"
     disclaimer: "ASVAB Coach is an independent educational tool. NOT affiliated with, endorsed by, or connected to the U.S. Department of Defense or any military branch. ASVAB® is a registered trademark of the U.S. Department of Defense, used nominatively."
   es:
     skip_to_main: "Saltar al contenido principal"
-    ecosystem_label: "Una app de KhassinX"
-    ecosystem_url: "https://khassinx.com/es/"
+    nav_primary: "Principal"
+    nav_footer: "Pie de página"
+    part_of: "Parte de KHASSINX"
+    umbrella_url: "https://khassinx.com/es/"
+    last_updated: "Última actualización"
+    effective: "Vigente desde el"
+    version: "Versión"
+    in_short: "En resumen"
+    on_this_page: "En esta página"
+    related: "Relacionado"
+    theme: "Tema"
+    theme_system: "Sistema"
+    theme_light: "Claro"
+    theme_dark: "Oscuro"
     disclaimer: "ASVAB Coach es una herramienta educativa independiente. NO está afiliada, respaldada ni conectada al Departamento de Defensa de EE.UU. ni a ninguna rama militar. ASVAB® es marca registrada del Departamento de Defensa de EE.UU., usada de manera nominativa."
 
 # Jekyll config

@@ -1,55 +1,55 @@
 ---
 layout: base
 ---
-
-{%- comment -%}
-  El <h1> lo pone el CUERPO en markdown (`# ...`), no este layout: emitir los dos
-  daba DOS <h1> por página en las seis páginas de prosa, y quien navega por
-  encabezados con lector de pantalla encontraba dos títulos casi idénticos.
-  NORMA-UI-UX W-1.6(b), medido el 7-sep-2026.
-{%- endcomment -%}
-
-{%- assign es = false -%}
-{% if page.lang == 'es' %}{% assign es = true %}{% endif %}
-
-<article class="container container-narrow prose" style="padding-top: var(--space-3xl); padding-bottom: var(--space-3xl);">
-  {% if page.updated %}<p class="text-tertiary"><small>{% if es %}Última actualización:{% else %}Last updated:{% endif %} {{ page.updated }}</small></p>{% endif %}
-
-  {{ content }}
+{%- assign ui = site.ui_strings[page.lang] | default: site.ui_strings.en -%}
+{%- assign es = false -%}{%- if page.lang == 'es' %}{%- assign es = true -%}{%- endif -%}
+<article class="doc wrap">
+  <h1>{{ page.h1 | default: page.title }}</h1>
+  {%- if page.version %}
+  {%- capture day %}{% include legal-date.html d=page.updated lang=page.lang %}{% endcapture %}
+  <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}</p>
+  {%- elsif page.updated %}
+  <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
+  {%- endif %}
+  {%- if page.summary %}
+  <section class="brief" aria-labelledby="brief-h">
+    <h2 id="brief-h">{{ ui.in_short }}</h2>
+    <ul>
+      {%- for s in page.summary %}
+      <li>{{ s }}</li>
+      {%- endfor %}
+    </ul>
+  </section>
+  {%- endif %}
+  {%- assign heads = content | split: '<h2 id="' -%}
+  {%- if page.version and heads.size > 2 %}
+  <nav class="toc" aria-labelledby="toc-h">
+    <h2 id="toc-h">{{ ui.on_this_page }}</h2>
+    <ol>
+      {%- for h in heads offset: 1 %}
+      {%- assign id = h | split: '"' | first %}
+      <li><a href="#{{ id }}">{{ h | split: '</h2>' | first | remove_first: id | remove_first: '">' | strip_html }}</a></li>
+      {%- endfor %}
+    </ol>
+  </nav>
+  {%- endif %}
+  <div class="doc-body prose">
+{{ content }}
+  </div>
+  {%- if page.related %}
+  <nav class="related" aria-labelledby="related-h">
+    <h2 id="related-h">{{ ui.related }}</h2>
+    <ul>
+      {%- for u in page.related %}
+      {%- assign r = site.pages | where: "url", u | first %}
+      <li><a href="{{ u }}">{{ r.title }}</a></li>
+      {%- endfor %}
+    </ul>
+  </nav>
+  {%- endif %}
 </article>
-
-{%- comment -%}
-  W-5.3 — la miga le dice al resultado de búsqueda la RUTA de la página en vez de su URL
-  cruda. La regla es una sola: **el nivel intermedio nombra la sección en la que la página
-  de verdad vive, o el bloque no se emite.**
-
-  🔴 Hasta el 2026-09-13 este layout horneaba «Legal» como nivel 2 para toda página que lo
-  usara. Con las seis páginas legales de hoy la afirmación salía cierta por accidente —las
-  seis cuelgan de `/legal/`—, y ese accidente es justo lo que la hacía invisible: la primera
-  página de contenido fuera de `/legal/` habría publicado una miga que dice que cuelga de
-  Legal, con el gate del JSON-LD en verde, porque un bloque falso parsea igual que uno
-  cierto. La constante se reemplazó por el primer segmento de la URL de la propia página.
-
-  Tres casos, y el tercero es el que evita inventar:
-    · un solo segmento (`/legal/`, `/support/`) → índice de sección: sería un escalón, sin miga.
-    · dos o más y la sección tiene nombre en `site.breadcrumbs` → miga de tres niveles.
-    · dos o más y la sección NO tiene nombre → sin miga. Nombrarla capitalizando el
-      segmento publicaría una etiqueta que nadie redactó, en un idioma que nadie eligió.
-
-  Lo vigila `_scripts/verify_jsonld_web.py`: todo `item` de la miga tiene que ser un PREFIJO
-  de la URL de la página que la publica. Escrito así, un `/legal/` colgado de una página de
-  `/scores/` lo acusa el gate sin que nadie tenga que acordarse de mirar este archivo.
-{%- endcomment -%}
 {%- assign ruta = page.url -%}
 {%- if es %}{%- assign ruta = ruta | remove_first: '/es' -%}{%- endif -%}
-{%- comment -%}
-  `'/legal/privacy/' | split: '/'` devuelve ['', 'legal', 'privacy'] — el primer
-  elemento es la cadena vacía que hay ANTES de la barra inicial, así que `partes[0]`
-  era '' y ninguna sección se encontraba nunca en el mapa. Escrito así apagó en
-  silencio las cuatro migas que el sitio ya publicaba, y el gate salió VERDE porque
-  medía las migas que había, no las que faltaban. Lo cazó volcar las migas del sitio
-  compilado; el gate ahora también lo mide (propiedad 5).
-{%- endcomment -%}
 {%- assign partes = ruta | remove_first: '/' | split: '/' -%}
 {%- assign idioma = 'en' -%}{%- if es %}{%- assign idioma = 'es' -%}{%- endif -%}
 {%- assign seccion = partes[0] -%}

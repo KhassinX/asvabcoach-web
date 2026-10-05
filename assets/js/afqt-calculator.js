@@ -15,8 +15,6 @@
 (function () {
   'use strict';
 
-  // `jsonify` escapa solo. De `afqt_scale` entra SÓLO lo que la página usa: la fórmula
-  // y las bandas de categoría.
   var TABLA = {{ site.data.afqt_official_conversion | jsonify }};
   var CATEGORIAS = {{ site.data.afqt_scale.categories | jsonify }};
   var FORMULA = {{ site.data.afqt_scale.formula | jsonify }};
@@ -26,15 +24,6 @@
   var POR_COMPUESTO = {};
   TABLA.rows.forEach(function (f) { POR_COMPUESTO[f.composite] = f.afqt; });
 
-  // ── el motor ────────────────────────────────────────────────────────────────
-  // Va ANTES del enganche al DOM y fuera de él, para que el Audit 60 pueda correr
-  // exactamente esta función contra la Tabla 2.5. Un gate que mide una copia del
-  // algoritmo mide la copia.
-
-  /**
-   * La Tabla 2.5 leída tal cual: fila por fila entre los extremos, y saturada fuera
-   * de ellos (compuesto ≤ floor → su percentil, ≥ ceiling → el suyo). Sin piso propio.
-   */
   function percentil(compuesto) {
     if (compuesto <= TABLA.floor.composite) { return TABLA.floor.afqt; }
     if (compuesto >= TABLA.ceiling.composite) { return TABLA.ceiling.afqt; }
@@ -49,8 +38,6 @@
     return null;
   }
 
-  // ── el enganche al DOM ──────────────────────────────────────────────────────
-
   function montar() {
     var caja = document.getElementById('afqt-calc');
     if (!caja) { return; }
@@ -64,8 +51,6 @@
     var salida = document.getElementById('afqt-result');
     if (campos.indexOf(null) !== -1 || !salida) { return; }
 
-    // El rango que se ACEPTA por casilla, no el de la escala: la escala '97 no se
-    // trunca, y la tabla satura en los extremos. El porqué está en el generador.
     var PISO = TABLA.input.min;
     var TECHO = TABLA.input.max;
 
@@ -89,8 +74,6 @@
       return e;
     }
 
-    // La marca de estimación, oculta al lector de pantalla: VoiceOver la leería «tilde»,
-    // que no dice «estimación».
     function marcaOculta() {
       var marca = elemento('span', MINIMOS.estimate_mark);
       marca.setAttribute('aria-hidden', 'true');
@@ -138,9 +121,6 @@
         salida.appendChild(banda);
       }
 
-      // El cruce con los pisos por rama sale del MISMO YAML que publica la tabla de
-      // mínimos: dos páginas que digan cosas distintas sobre la misma rama es el
-      // defecto que este sitio ya pagó una vez.
       var tabla = elemento('table');
       var thead = elemento('thead');
       var filaCab = elemento('tr');
@@ -153,17 +133,15 @@
       var tbody = elemento('tbody');
       MINIMOS.branches.forEach(function (b) {
         var fila = elemento('tr');
-        fila.appendChild(elemento('td', nombreRama(b)));
-        // El símbolo va ACOMPAÑADO del texto y nunca solo: un ✓ contra una ✗ en color
-        // deja sin información a quien no distingue los dos (NORMA-UI-UX W-4).
-        // Se compara el NÚMERO; el GED que la rama no publica lleva su marca, igual que en
-        // la tabla de mínimos. La marca se le oculta al lector de pantalla —VoiceOver diría
-        // «tilde»— y al lado va, oculto a la vista, el sufijo «(estimated)».
+        var celdaRama = elemento('td', nombreRama(b));
+        celdaRama.setAttribute('data-label', t('col-branch'));
+        fila.appendChild(celdaRama);
         [[b.min_afqt, false], [b.min_afqt_ged, b.min_afqt_ged_is_estimate]]
-          .forEach(function (par) {
+          .forEach(function (par, i) {
             var piso = par[0];
             var celda = elemento('td',
               (p >= piso ? '✓ ' : '✗ ') + (p >= piso ? t('meets') : t('short')) + ' (');
+            celda.setAttribute('data-label', i === 0 ? t('col-diploma') : t('col-ged'));
             if (par[1]) { celda.appendChild(marcaOculta()); }
             celda.appendChild(document.createTextNode(String(piso)));
             if (par[1]) {
@@ -178,11 +156,9 @@
       tabla.appendChild(tbody);
       salida.appendChild(tabla);
 
-      // La nota de cada cifra marcada: quién no la publica y con quién confirmarla. La
-      // marca que la abre también va oculta al lector.
       MINIMOS.branches.forEach(function (b) {
         if (!b.min_afqt_ged_is_estimate) { return; }
-        var nota = elemento('p', null, 'text-tertiary');
+        var nota = elemento('p', null, 'meta');
         t('ged-estimate')
           .replace('{branch}', nombreRama(b))
           .replace('{value}', String(b.min_afqt_ged))
@@ -194,7 +170,7 @@
         salida.appendChild(nota);
       });
 
-      salida.appendChild(elemento('p', t('disclaimer'), 'text-tertiary'));
+      salida.appendChild(elemento('p', t('disclaimer'), 'meta'));
     }
 
     campos.forEach(function (campo) {
@@ -210,9 +186,6 @@
     }
   }
 
-  // El navegador entra por acá; el Audit 60 entra por `module.exports`, que sólo existe
-  // bajo node. Exportar es lo que permite medir la función que la página EJECUTA en vez
-  // de una reimplementación en el gate.
   if (typeof module !== 'undefined' && module.exports) {
     module.exports = { percentil: percentil, categoria: categoria, TABLA: TABLA };
   }

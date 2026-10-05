@@ -1,0 +1,88 @@
+en:
+  h1: "Private AI Tutor for the ASVAB."
+  lead: "iPhone, iPad, Mac, Apple Watch. Free to start. One‑time unlock, no subscription."
+  badge_alt: "Download on the App Store"
+  privacy_h: "Privacy"
+  manifest:
+    - { k: "Data collected", v: "None. App Store label: “Data Not Collected”" }
+    - { k: "Account", v: "None" }
+    - { k: "Where your data lives", v: "On your device, synced through your iCloud" }
+    - { k: "Tracking", v: "None" }
+    - { k: "AI", v: "Apple’s on‑device model, on iPhone, iPad and Mac with Apple Intelligence" }
+    - { k: "Price", v: "Free to start; one‑time Full Access unlock" }
+  policy: "Privacy Policy"
+  reach: "What does reach us: crash reports and usage information, if you chose in your device settings to share them with app developers (Apple passes them on), and the emails you send us."
+  inside_h: "What’s inside"
+  inside:
+    - "Adaptive diagnostic — 20 questions to estimate your AFQT baseline"
+    - "Momentum — a single Daily Goal ring (Gentle, Standard, or Intense), respectful streaks with a built-in grace day, 17 achievements, and an optional exam-date countdown. Build the habit without the pressure."
+    - "Smart Review study plan (SM-2 algorithm, ASVAB-calibrated per category) — review what you forget, not what you know"
+    - "725 curated questions across all 9 ASVAB score areas, with worked solutions, built from public U.S. Department of Defense materials"
+    - "AFQT Sprint — timed practice to build test-taking endurance"
+    - "Smart Exam — full-length simulated CAT-ASVAB"
+    - "Apple Watch companion — vocab review and quick-10 sessions on your wrist"
+    - "Mac NATIVE app — Cmd+, Preferences, always-visible menu bar indicator with streak + AFQT, keyboard shortcuts (Cmd+N Quick 10, Cmd+D Diagnostic, Cmd+R Review)"
+    - "Math step-by-step solver with worked solutions"
+  recruits_h: "Built for serious recruits"
+  recruits_lead: "For high school graduates and adult learners targeting all six U.S. military branches: Army, Navy, Marines, Air Force, Coast Guard, and Space Force."
+  # audit-allow:N22 superficie publica: el numero se imprime a proposito. Verificado contra ASVABCoach/BranchManager.swift el 2026-09-01. Si cambia un piso, esta linea se reescribe a mano.
+  recruits_body: "Branch-neutral by design — no Army-only or Navy-only bias. Whether you’re aiming for a minimum AFQT (Army 31, Navy 31, Marines 31, Air Force 31, Space Force 31, Coast Guard 32) or chasing a competitive score for a specific MOS or rating, the app adapts to your level via spaced repetition and Apple Intelligence-powered explanations."
+  faq_h: "Frequently asked questions"
+  # audit-allow:N22 FAQ publica: la primera respuesta enumera los pisos a proposito (rich result de Google). Verificada contra BranchManager.swift el 2026-09-01.
+  faq:
+    - q: "What AFQT score do I need to enlist?"
+      a: "The AFQT is a percentile from 1 to 99, calculated from four ASVAB subtests — Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, and Mathematics Knowledge. Current branch minimums are Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 and Coast Guard 32 (verified against each branch’s own recruiting site, August 2026); competitive jobs usually need more. ASVAB Coach estimates your AFQT from a 20-question diagnostic and tracks it as you study."
+    - q: "Is ASVAB Coach free?"
+      a: "Yes — free to start, with no account and no subscription. You can answer 50 questions from any category, take a complete diagnostic and the Quick 10 (neither counts against the 50), and use the on‑device AI tutor for free. A single one‑time unlock (never a subscription) adds all 725 questions, the full CAT-ASVAB mock exam, unlimited AI tutoring, and the Apple Watch and Mac apps. Family Sharing is included."
+    - q: "How long should I study for the ASVAB?"
+      a: "It depends on your starting point and target score, but most candidates prepare over a few weeks. ASVAB Coach builds a spaced-repetition plan (the SM-2 algorithm) that brings back what you’re about to forget, and the Momentum system — a Daily Goal ring and forgiving streaks with a grace day — helps you keep a steady habit instead of cramming."
+    - q: "What does the ASVAB cover?"
+      a: "The ASVAB is 10 separately timed tests, reported as nine scores: Auto Information and Shop Information are given as separate tests and combined into a single Auto & Shop (AS) score. Four of those scores make up your AFQT (Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, Mathematics Knowledge); the others — General Science, Electronics Information, Auto & Shop Information, Mechanical Comprehension, and Assembling Objects — set the line scores for specific jobs. ASVAB Coach covers all nine with 725 curated questions and worked solutions."
+    - q: "Is my study data private?"
+      a: "Yes. ASVAB Coach has no account, no analytics SDKs, and no tracking. The AI tutor runs on your device with Apple Intelligence. Your progress lives on your device and syncs through your own iCloud."
+    - q: "Does it work on Apple Watch and Mac?"
+      a: "Yes. ASVAB Coach is native on iPhone, iPad, Apple Watch, and Mac. Do Quick 10 reviews on your wrist, and use the native Mac app with a menu-bar streak and AFQT indicator plus keyboard shortcuts. Your progress syncs across devices through your private iCloud — included with the one‑time unlock."
+es:
+  h1: "Tutor de IA privado para el ASVAB."
+  lead: "iPhone, iPad, Mac, Apple Watch. Gratis para empezar. Desbloqueo único, sin suscripción."
+  badge_alt: "Descarga en el App Store"
+  privacy_h: "Privacidad"
+  manifest:
+    - { k: "Datos recolectados", v: "Ninguno. Etiqueta del App Store: «Data Not Collected»" }
+    - { k: "Cuenta", v: "Ninguna" }
+    - { k: "Dónde viven tus datos", v: "En tu dispositivo, sincronizados por tu iCloud" }
+    - { k: "Rastreo", v: "Ninguno" }
+    - { k: "IA", v: "El modelo de Apple en el dispositivo, en iPhone, iPad y Mac con Apple Intelligence" }
+    - { k: "Precio", v: "Gratis para empezar; desbloqueo único Full Access" }
+  policy: "Política de Privacidad"
+  reach: "Lo que sí nos llega: informes de fallos e información de uso, si en los ajustes de tu aparato elegiste compartirlos con los desarrolladores (Apple nos los pasa), y los correos que nos envías."
+  inside_h: "Lo que incluye"
+  inside:
+    - "Diagnóstico adaptativo — 20 preguntas para estimar tu nivel base AFQT"
+    - "Momentum — un único anillo de meta diaria (Suave, Estándar o Intensa), rachas respetuosas con día de gracia, 17 logros y una cuenta regresiva opcional para tu examen. Crea el hábito sin presión."
+    - "Plan de estudio Repaso inteligente (algoritmo SM-2, calibrado por categoría ASVAB) — repasa lo que olvidas, no lo que ya dominas"
+    - "725 preguntas seleccionadas en las 9 áreas de score del ASVAB, con soluciones explicadas paso a paso, elaboradas a partir de materiales públicos del Departamento de Defensa de EE.UU."
+    - "AFQT Sprint — práctica cronometrada para entrenar resistencia de examen"
+    - "Smart Exam — simulacro CAT-ASVAB completo"
+    - "Apple Watch — repaso de vocabulario y sesiones rápidas de 10 preguntas en la muñeca"
+    - "App NATIVA de Mac — Preferencias con Cmd+, indicador siempre visible en barra de menús con racha + AFQT, atajos de teclado (Cmd+N Quick 10, Cmd+D Diagnóstico, Cmd+R Repaso)"
+    - "Resolución de matemáticas paso a paso con explicaciones detalladas"
+  recruits_h: "Hecha para reclutas serios"
+  recruits_lead: "Para graduados de secundaria y adultos que apuntan a las seis ramas militares de EE.UU.: Army, Navy, Marines, Air Force, Coast Guard y Space Force."
+  # audit-allow:N22 superficie publica: el numero se imprime a proposito. Verificado contra ASVABCoach/BranchManager.swift el 2026-09-01. Si cambia un piso, esta linea se reescribe a mano.
+  recruits_body: "Neutral por diseño — sin sesgo hacia ninguna rama. Ya sea que apuntes al mínimo AFQT (Army 31, Navy 31, Marines 31, Air Force 31, Space Force 31, Coast Guard 32) o estés persiguiendo un puntaje competitivo para un MOS o rating específico, la app se adapta a tu nivel vía repetición espaciada y explicaciones generadas con Apple Intelligence."
+  faq_h: "Preguntas frecuentes"
+  # audit-allow:N22 FAQ publica: la primera respuesta enumera los pisos a proposito (rich result de Google). Verificada contra BranchManager.swift el 2026-09-01.
+  faq:
+    - q: "¿Qué puntaje AFQT necesito para enlistarme?"
+      a: "El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos y Conocimiento de Matemáticas. Los mínimos por rama son Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 y Coast Guard 32 (verificados contra el sitio de reclutamiento de cada rama, agosto 2026); los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias."
+    - q: "¿ASVAB Coach es gratis?"
+      a: "Sí — gratis para empezar, sin cuenta y sin suscripción. Puedes responder 50 preguntas de cualquier categoría, hacer un diagnóstico completo y el Quick 10 (ninguno descuenta de las 50), y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 725 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido."
+    - q: "¿Cuánto tiempo debo estudiar para el ASVAB?"
+      a: "Depende de tu punto de partida y tu puntaje objetivo, pero la mayoría se prepara durante algunas semanas. ASVAB Coach arma un plan de repetición espaciada (el algoritmo SM-2) que trae de vuelta lo que estás por olvidar, y el sistema Momentum — un anillo de meta diaria y rachas que perdonan con día de gracia — te ayuda a mantener un hábito constante en vez de estudiar a último momento."
+    - q: "¿Qué cubre el ASVAB?"
+      a: "El ASVAB son 10 tests cronometrados por separado, y se reportan como nueve scores: Información de Automóviles e Información de Taller se rinden aparte y se combinan en un único score de Auto y Taller (AS). Cuatro de esos scores forman tu AFQT (Razonamiento Aritmético, Conocimiento de Palabras, Comprensión de Párrafos, Conocimiento de Matemáticas); los demás — Ciencia General, Información Electrónica, Información de Autos y Taller, Comprensión Mecánica y Ensamblaje de Objetos — definen los line scores para empleos específicos. ASVAB Coach cubre los nueve con 725 preguntas seleccionadas y soluciones explicadas."
+    - q: "¿Mis datos de estudio son privados?"
+      a: "Sí. ASVAB Coach no tiene cuenta, ni SDKs de analytics, ni rastreo. El tutor de IA corre en tu dispositivo con Apple Intelligence. Tu progreso vive en tu dispositivo y se sincroniza por tu propio iCloud."
+    - q: "¿Funciona en Apple Watch y Mac?"
+      a: "Sí. ASVAB Coach es nativa en iPhone, iPad, Apple Watch y Mac. Haz repasos rápidos de 10 preguntas en tu muñeca, y usa la app nativa de Mac con indicador de racha y AFQT en la barra de menús y atajos de teclado. Tu progreso se sincroniza entre dispositivos por tu iCloud privado — incluido con el desbloqueo único."

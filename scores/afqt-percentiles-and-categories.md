@@ -9,8 +9,6 @@ canonical_es: /es/scores/afqt-percentiles-and-categories/
 updated: 2026-09-29
 ---
 
-# AFQT Percentiles and Categories
-
 {%- assign escala = site.data.afqt_scale %}
 {%- assign minimos = site.data.afqt_minimums %}
 {%- assign tabla = site.data.afqt_official_conversion %}
@@ -48,11 +46,16 @@ was never out of 100.
 The DoD sorts AFQT percentiles into categories. Recruiters use them as shorthand, and some
 incentives are written in terms of them rather than raw percentiles.
 
-| Category | Percentile | What it means |
-|---|---|---|
+<table>
+<thead>
+<tr><th>Category</th><th>Percentile</th><th>What it means</th></tr>
+</thead>
+<tbody>
 {% for c in escala.categories -%}
-| **{{ c.name }}** | {{ c.min }}–{{ c.max }} | {{ c.description_en }} |
+<tr><td data-label="Category" markdown="span">**{{ c.name }}**</td><td data-label="Percentile" markdown="span">{{ c.min }}–{{ c.max }}</td><td data-label="What it means" markdown="span">{{ c.description_en }}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 
 Two notes on how to read that table.
 
@@ -101,14 +104,19 @@ them”.
 **Which job?** The AFQT does not decide that. Line scores do, and they are built from
 subtests the AFQT never touches.
 
-| Your percentile | What it opens |
-|---|---|
-| Below {{ minimos.summary.floor_min }} | No branch, with a diploma. |
+<table>
+<thead>
+<tr><th>Your percentile</th><th>What it opens</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="Your percentile" markdown="span">Below {{ minimos.summary.floor_min }}</td><td data-label="What it opens" markdown="span">No branch, with a diploma.</td></tr>
 {% if minimos.summary.floor_is_uniform == false -%}
-| {% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %} | {{ ramas_al_piso }} of {{ ramas_total }}. {% for rama in minimos.summary.highest_floor_branches %}{{ rama }}{% unless forloop.last %} and {% endunless %}{% endfor %} still out of reach. |
+<tr><td data-label="Your percentile" markdown="span">{% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %}</td><td data-label="What it opens" markdown="span">{{ ramas_al_piso }} of {{ ramas_total }}. {% for rama in minimos.summary.highest_floor_branches %}{{ rama }}{% unless forloop.last %} and {% endunless %}{% endfor %} still out of reach.</td></tr>
 {% endif -%}
-| {{ minimos.summary.floor_max }} and up | All {{ ramas_total }} branches meet you here. |
-| {{ minimos.summary.recommended_min }} and up{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} for some branches){% endunless %} | Competitive: an observation, not a published requirement — and where incentives start appearing in the conversation. |
+<tr><td data-label="Your percentile" markdown="span">{{ minimos.summary.floor_max }} and up</td><td data-label="What it opens" markdown="span">All {{ ramas_total }} branches meet you here.</td></tr>
+<tr><td data-label="Your percentile" markdown="span">{{ minimos.summary.recommended_min }} and up{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} for some branches){% endunless %}</td><td data-label="What it opens" markdown="span">Competitive: an observation, not a published requirement — and where incentives start appearing in the conversation.</td></tr>
+</tbody>
+</table>
 
 Two things that table cannot tell you, and no table can.
 
@@ -168,4 +176,4 @@ result is an estimate.
 Everything runs on your device: no account, no tracking. Your progress lives on your
 devices and, if you use iCloud, in your own iCloud — never on our servers.
 
-[See ASVAB Coach](/){:.button}
+[See ASVAB Coach](/){:.action}

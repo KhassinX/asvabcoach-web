@@ -7,9 +7,8 @@ lang: es
 canonical_en: /legal/
 canonical_es: /es/legal/
 updated: 2026-07-11
+h1: "Legal"
 ---
-
-# Legal
 
 Documentos legales públicos de **[ASVAB Coach](https://apps.apple.com/us/app/asvab-coach/id6761384966)**.
 

@@ -7,9 +7,18 @@ lang: es
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
 updated: 2026-07-11
+h1: "Términos de Uso — ASVAB Coach"
+version: "1.2"
+related:
+  - /es/legal/privacy/
+  - /es/support/
+summary:
+  - "ASVAB Coach es una herramienta educativa independiente: no estamos afiliados, respaldados ni conectados al Departamento de Defensa de EE.UU. ni a ninguna rama militar."
+  - "No garantizamos que usar la app te haga aprobar el ASVAB ni calificar para una rama, un MOS o un rating."
+  - "Las explicaciones de IA pueden ser inexactas. La explicación oficial hecha a mano de cada pregunta es la verdad de referencia."
+  - "ASVAB Coach es gratuita para empezar. Una única compra desbloquea el acceso completo, sin suscripción ni renovación automática."
+  - "Verifica los requisitos vigentes con un reclutador oficial antes de tomar decisiones de alistamiento."
 ---
-
-# Términos de Uso — ASVAB Coach
 
 **Fecha de vigencia**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
@@ -51,7 +60,7 @@ Aplicamos un wrapper `TutorSafety` a toda salida de IA que rechaza respuestas qu
 
 ## 4. Puntajes por rama (mínimos AFQT)
 
-<!-- audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01. -->
+{% comment %}audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01.{% endcomment %}
 ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, Marines: 31, Coast Guard: 32"). Estos reflejan la **política vigente del DoD** a la fecha de la última actualización de la app.
 
 - La política del DoD sobre mínimos AFQT **cambia periódicamente**. Actualizamos la app trimestralmente para reflejar los cambios, pero puede haber un retraso entre el cambio de política y nuestra actualización.

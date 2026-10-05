@@ -12,9 +12,18 @@ redirect_from:
   - /terms
   - /terms/
 updated: 2026-07-11
+h1: "Terms of Use — ASVAB Coach"
+version: "1.2"
+related:
+  - /legal/privacy/
+  - /support/
+summary:
+  - "ASVAB Coach is an independent educational tool, not affiliated with, endorsed by, or connected to the U.S. Department of Defense or any military branch."
+  - "We do not guarantee that using the app will get you a passing ASVAB score or qualify you for any branch, MOS or rating."
+  - "AI explanations can be wrong. The hand-curated official explanation in each question is the ground truth."
+  - "ASVAB Coach is free to start. A single one-time purchase unlocks full access, with no subscription and no auto-renewal."
+  - "Verify current AFQT minimums with an official recruiter before making enlistment decisions."
 ---
-
-# Terms of Use — ASVAB Coach
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
@@ -56,7 +65,7 @@ We apply a `TutorSafety` wrapper to all AI output that rejects responses violati
 
 ## 4. Branch-specific scores (AFQT minimums)
 
-<!-- audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01. -->
+{% comment %}audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01.{% endcomment %}
 ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 31, Coast Guard: 32"). These reflect **current DoD policy** as of the app's last update.
 
 - DoD policy on minimum AFQT scores **changes periodically**. We update the app quarterly to track changes, but there may be a lag between a policy change and our update.

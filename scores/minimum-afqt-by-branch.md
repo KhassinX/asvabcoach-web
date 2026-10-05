@@ -9,8 +9,6 @@ canonical_es: /es/scores/minimum-afqt-by-branch/
 updated: 2026-09-26
 ---
 
-# Minimum ASVAB Score by Branch
-
 The number a recruiter checks first is not your ASVAB score. It is your **AFQT**: a
 percentile from 1 to 99 built from four of the ten ASVAB subtests. An AFQT of 50 means
 you scored as well as or better than 50 % of a national reference sample — not that you answered half
@@ -43,11 +41,16 @@ comes from.
 {%- assign sufijo = site.data.afqt_minimums.estimate_spoken_suffix.en %}
 Verified {{ site.data.afqt_minimums.verified }}{% if estimadas.size > 0 %}<span aria-hidden="true">, except values marked {{ marca }}</span><span class="visually-hidden">, except estimated values</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} of the {{ ramas.size }} sources are service regulations rather than recruiting pages: {% for b in bloqueadas %}{{ b.name }}{% unless forloop.last %} and {% endunless %}{% endfor %} carr{% if bloqueadas.size == 1 %}ies{% else %}y{% endif %} the date the figure was last confirmed against the regulation.{% endif %}
 
-| Branch | With a high school diploma | With a GED | Competitive |
-|---|---|---|---|
+<table>
+<thead>
+<tr><th>Branch</th><th>With a high school diploma</th><th>With a GED</th><th>Competitive</th></tr>
+</thead>
+<tbody>
 {% for b in site.data.afqt_minimums.branches -%}
-| {{ b.name }} | {{ b.min_afqt }} | {% if b.min_afqt_ged_is_estimate %}<span aria-hidden="true">{{ marca }}</span>{{ b.min_afqt_ged }}<span class="visually-hidden">{{ sufijo }}</span>{% else %}{{ b.min_afqt_ged }}{% endif %} | {{ b.recommended_afqt }} |
+<tr><td data-label="Branch" markdown="span">{{ b.name }}</td><td data-label="With a high school diploma" markdown="span">{{ b.min_afqt }}</td><td data-label="With a GED" markdown="span">{% if b.min_afqt_ged_is_estimate %}<span aria-hidden="true">{{ marca }}</span>{{ b.min_afqt_ged }}<span class="visually-hidden">{{ sufijo }}</span>{% else %}{{ b.min_afqt_ged }}{% endif %}</td><td data-label="Competitive" markdown="span">{{ b.recommended_afqt }}</td></tr>
 {% endfor %}
+</tbody>
+</table>
 {%- for b in estimadas %}
 
 <span aria-hidden="true">{{ marca }}</span> {{ b.name }} doesn’t publish its minimum for GED holders; {{ b.min_afqt_ged }} is an estimate. Confirm it with your recruiter.
@@ -154,4 +157,4 @@ ASVAB Coach drills the four AFQT subtests and estimates where you stand, on iPho
 Apple Watch and Mac. Everything runs on your device: no account, no tracking. Your progress
 lives on your devices and, if you use iCloud, in your own iCloud — never on our servers.
 
-[See ASVAB Coach](/){:.button}
+[See ASVAB Coach](/){:.action}

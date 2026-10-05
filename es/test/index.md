@@ -9,8 +9,6 @@ canonical_es: /es/test/
 updated: 2026-09-13
 ---
 
-# El examen ASVAB
-
 Antes de estudiar para él conviene saber qué es: cuántas secciones tiene, cuánto duran y
 cuáles deciden algo de verdad.
 

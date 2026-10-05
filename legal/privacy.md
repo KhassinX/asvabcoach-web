@@ -12,9 +12,18 @@ redirect_from:
   - /privacy
   - /privacy/
 updated: 2026-09-06
+h1: "Privacy Policy — ASVAB Coach"
+version: "1.6"
+related:
+  - /legal/terms/
+  - /contact/
+summary:
+  - "ASVAB Coach collects nothing: no account, no analytics, no tracking and no ads."
+  - "Your progress is stored on your device and, optionally, synced through your own iCloud. There is no copy on any server we control."
+  - "The AI tutor runs on your device with Apple Intelligence. No question you ask it, and no answer it gives, leaves your device."
+  - "The app has no third-party SDKs."
+  - "If you email us, we receive your address and message and use them only to reply and fix what you reported; you can ask us to delete them."
 ---
-
-# Privacy Policy — ASVAB Coach
 
 **Effective date**: 2026-05-18
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
@@ -35,17 +44,22 @@ We are an **independent educational app**. We have zero servers that store user 
 
 **Nothing.** Specifically:
 
-| Data category | Do we collect? |
-|---|---|
-| Personal identifiers (name, email, phone, address) | ❌ No |
-| Device identifiers (IDFA, IDFV, device ID) | ❌ No |
-| Location | ❌ No |
-| Contacts | ❌ No |
-| Health data | ❌ No |
-| Financial info | ❌ No (purchases handled by Apple StoreKit) |
-| Usage analytics | ❌ No |
-| Crash logs | ❌ No — nothing reaches us. Apple's own crash reporting is opt-in by you in iOS Settings, not by us. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them. |
-| Cookies / tracking pixels | ❌ N/A (we are a native app, not a website) |
+<table>
+<thead>
+<tr><th>Data category</th><th>Do we collect?</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="Data category" markdown="span">Personal identifiers (name, email, phone, address)</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Device identifiers (IDFA, IDFV, device ID)</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Location</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Contacts</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Health data</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Financial info</td><td data-label="Do we collect?" markdown="span">❌ No (purchases handled by Apple StoreKit)</td></tr>
+<tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">❌ No — nothing reaches us. Apple's own crash reporting is opt-in by you in iOS Settings, not by us. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
+<tr><td data-label="Data category" markdown="span">Cookies / tracking pixels</td><td data-label="Do we collect?" markdown="span">❌ N/A (we are a native app, not a website)</td></tr>
+</tbody>
+</table>
 
 The `PrivacyInfo.xcprivacy` manifest in the app declares `NSPrivacyTracking: false` and an empty `NSPrivacyCollectedDataTypes` array. Apple verifies this during app review.
 
@@ -53,14 +67,19 @@ The `PrivacyInfo.xcprivacy` manifest in the app declares `NSPrivacyTracking: fal
 
 Everything you do in ASVAB Coach is stored **locally on your device** and (optionally) synced via your personal **iCloud** account:
 
-| What | Where |
-|---|---|
-| Your study progress (correct/incorrect counts per category) | `UserDefaults` on device + `NSUbiquitousKeyValueStore` (iCloud Key-Value Store) for sync between your iPhone, iPad, and Apple Watch |
-| Your branch selection (Army, Navy, etc.) | `UserDefaults` + iCloud KV |
-| Spaced-repetition cards (which questions you've missed, when to review) | `UserDefaults` + iCloud KV |
-| Diagnostic results | `UserDefaults` + iCloud KV |
-| Momentum — your daily goal level, credits earned today, banked grace days, whether the ring is shown, and **your exam date if you set one** (optional; leave it empty and Momentum is a plain daily habit) | `UserDefaults` + iCloud KV |
-| Which of the 17 achievements you have earned | `UserDefaults` + iCloud KV |
+<table>
+<thead>
+<tr><th>What</th><th>Where</th></tr>
+</thead>
+<tbody>
+<tr><td data-label="What" markdown="span">Your study progress (correct/incorrect counts per category)</td><td data-label="Where" markdown="span">`UserDefaults` on device + `NSUbiquitousKeyValueStore` (iCloud Key-Value Store) for sync between your iPhone, iPad, and Apple Watch</td></tr>
+<tr><td data-label="What" markdown="span">Your branch selection (Army, Navy, etc.)</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="What" markdown="span">Spaced-repetition cards (which questions you've missed, when to review)</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="What" markdown="span">Diagnostic results</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="What" markdown="span">Momentum — your daily goal level, credits earned today, banked grace days, whether the ring is shown, and **your exam date if you set one** (optional; leave it empty and Momentum is a plain daily habit)</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="What" markdown="span">Which of the 17 achievements you have earned</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+</tbody>
+</table>
 
 iCloud sync uses **your** Apple Account. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
 
