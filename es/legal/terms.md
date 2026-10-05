@@ -159,4 +159,4 @@ Tiempo de respuesta esperado: 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-10-05 · Versión 1.3*
+*Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*

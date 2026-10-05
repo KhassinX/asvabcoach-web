@@ -237,7 +237,7 @@ Procuramos responder dentro de 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-09-06 · Versión 1.6*
+*Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
 
 *Qué cambió en la 1.6 — una sección que existía en la 1.4 no sobrevivió a la 1.5.* La sección
 «Los enlaces que tocas y lo que decides compartir» cubría dos cosas; la 1.5 metió la mitad de los

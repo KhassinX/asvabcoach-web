@@ -164,4 +164,4 @@ Expected response time: 7 business days.
 
 ---
 
-*Last updated: 2026-10-05 · Version 1.3*
+*Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*

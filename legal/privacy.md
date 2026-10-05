@@ -225,7 +225,7 @@ We aim to respond within 7 business days.
 
 ---
 
-*Last updated: 2026-09-06 · Version 1.6*
+*Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*
 
 *What changed in 1.6 — a section that existed in 1.4 did not survive into 1.5.* The old section
 "Links you tap, and things you choose to share" covered two things; 1.5 folded the links half into
