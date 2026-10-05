@@ -6,7 +6,7 @@ permalink: /es/scores/minimum-afqt-by-branch/
 lang: es
 canonical_en: /scores/minimum-afqt-by-branch/
 canonical_es: /es/scores/minimum-afqt-by-branch/
-updated: 2026-09-26
+updated: 2026-10-05
 ---
 
 Lo primero que mira un reclutador no es tu puntaje del ASVAB. Es tu **AFQT**: un

@@ -6,7 +6,7 @@ permalink: /es/scores/afqt-percentiles-and-categories/
 lang: es
 canonical_en: /scores/afqt-percentiles-and-categories/
 canonical_es: /es/scores/afqt-percentiles-and-categories/
-updated: 2026-09-29
+updated: 2026-10-05
 ---
 
 {%- assign escala = site.data.afqt_scale %}

@@ -6,7 +6,7 @@ permalink: /scores/minimum-afqt-by-branch/
 lang: en
 canonical_en: /scores/minimum-afqt-by-branch/
 canonical_es: /es/scores/minimum-afqt-by-branch/
-updated: 2026-09-26
+updated: 2026-10-05
 ---
 
 The number a recruiter checks first is not your ASVAB score. It is your **AFQT**: a

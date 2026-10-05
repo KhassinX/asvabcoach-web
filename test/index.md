@@ -6,7 +6,7 @@ permalink: /test/
 lang: en
 canonical_en: /test/
 canonical_es: /es/test/
-updated: 2026-09-13
+updated: 2026-10-05
 ---
 
 Before you can study for it, it helps to know what it is: how many sections, how long

@@ -6,7 +6,7 @@ permalink: /es/scores/afqt-score-calculator/
 lang: es
 canonical_en: /scores/afqt-score-calculator/
 canonical_es: /es/scores/afqt-score-calculator/
-updated: 2026-09-26
+updated: 2026-10-05
 extra_css:
   - /assets/css/afqt-calculator.css
 extra_js:

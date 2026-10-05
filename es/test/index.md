@@ -6,7 +6,7 @@ permalink: /es/test/
 lang: es
 canonical_en: /test/
 canonical_es: /es/test/
-updated: 2026-09-13
+updated: 2026-10-05
 ---
 
 Antes de estudiar para él conviene saber qué es: cuántas secciones tiene, cuánto duran y

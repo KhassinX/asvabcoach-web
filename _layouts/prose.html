@@ -6,8 +6,10 @@ layout: base
 <article class="doc wrap">
   <h1>{{ page.h1 | default: page.title }}</h1>
   {%- if page.version %}
-  {%- capture day %}{% include legal-date.html d=page.updated lang=page.lang %}{% endcapture %}
-  <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}</p>
+  {%- assign eff = page.effective | default: page.updated -%}
+  {%- capture day %}{% include legal-date.html d=eff lang=page.lang %}{% endcapture -%}
+  {%- capture upd %}{% include legal-date.html d=page.updated lang=page.lang %}{% endcapture %}
+  <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}{% if upd != day %} · {{ ui.last_updated }} {{ upd }}{% endif %}</p>
   {%- elsif page.updated %}
   <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
   {%- endif %}

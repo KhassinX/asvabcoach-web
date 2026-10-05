@@ -11,7 +11,8 @@ redirect_from:
   - /PRIVACY_POLICY/
   - /privacy
   - /privacy/
-updated: 2026-09-06
+updated: 2026-10-05
+effective: 2026-09-06
 h1: "Privacy Policy — ASVAB Coach"
 version: "1.6"
 related:

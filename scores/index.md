@@ -6,7 +6,7 @@ permalink: /scores/
 lang: en
 canonical_en: /scores/
 canonical_es: /es/scores/
-updated: 2026-09-13
+updated: 2026-10-05
 ---
 
 The ASVAB produces more than one number, and they answer different questions. The AFQT

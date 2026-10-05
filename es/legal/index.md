@@ -6,7 +6,7 @@ permalink: /es/legal/
 lang: es
 canonical_en: /legal/
 canonical_es: /es/legal/
-updated: 2026-07-11
+updated: 2026-10-05
 h1: "Legal"
 ---
 

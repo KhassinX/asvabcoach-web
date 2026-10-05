@@ -6,7 +6,8 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-09-06
+updated: 2026-10-05
+effective: 2026-09-06
 h1: "Política de Privacidad — ASVAB Coach"
 version: "1.6"
 related:

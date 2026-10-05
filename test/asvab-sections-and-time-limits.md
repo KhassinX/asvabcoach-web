@@ -6,7 +6,7 @@ permalink: /test/asvab-sections-and-time-limits/
 lang: en
 canonical_en: /test/asvab-sections-and-time-limits/
 canonical_es: /es/test/asvab-sections-and-time-limits/
-updated: 2026-09-29
+updated: 2026-10-05
 ---
 
 {% assign cat = site.data.cat_subtests -%}
