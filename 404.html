@@ -1,31 +1,64 @@
 ---
 layout: base
 title: Not Found
-description: "The page you were looking for doesn't exist. Return to ASVAB Coach home."
+description: "The page you were looking for doesn’t exist. Return to ASVAB Coach home."
 lang: en
 permalink: /404.html
 sitemap: false
+extra_js:
+  - /assets/js/not-found-locale.js
 ---
+
+{%- comment -%}
+GitHub Pages sirve UN SOLO 404 para todo el sitio, incluido el arbol /es/: no
+existe /es/404.html ni puede existir. Por eso esta pagina lleva los dos idiomas
+y `/assets/js/not-found-locale.js` esconde el que no corresponde segun el path.
+Tiene que ser un archivo servido: el CSP del sitio no ejecuta scripts inline
+(`_layouts/base.html` §extra_js). Sin JS se ven
+ambos, que es la degradacion correcta: nunca deja a un visitante de /es/ frente
+a una pagina 100% en ingles, que era el estado hasta el 2026-09-20.
+{%- endcomment -%}
 
 <section class="section section-tinted" style="min-height: 60vh; display: flex; align-items: center;">
   <div class="container" style="text-align: center;">
     <h1 style="font-size: clamp(64px, 12vw, 144px); font-weight: 800; margin-bottom: var(--space-md); color: var(--asvab-text-primary);">404</h1>
 
-    <p style="font-size: var(--fs-body-l); color: var(--asvab-text-primary); max-width: 540px; margin: 0 auto var(--space-md);">
-      Page not found.
-    </p>
+    <div class="nf-en" data-nf-lang="en">
+      <p style="font-size: var(--fs-body-l); color: var(--asvab-text-primary); max-width: 540px; margin: 0 auto var(--space-md);">
+        Page not found.
+      </p>
 
-    <p style="color: var(--asvab-text-secondary); max-width: 540px; margin: 0 auto var(--space-2xl);">
-      The page you were looking for doesn't exist or was moved. Try the homepage or the App Store.
-    </p>
+      <p style="color: var(--asvab-text-secondary); max-width: 540px; margin: 0 auto var(--space-2xl);">
+        The page you were looking for doesn’t exist or was moved. Try the homepage or the App Store.
+      </p>
 
-    <div class="cta" style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
-      <a class="btn btn-primary" href="/">Go home</a>
-      <a class="btn" href="https://apps.apple.com/us/app/asvab-coach/id6761384966" target="_blank" rel="noopener">App Store</a>
+      <div class="cta" style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="/">Go home</a>
+        <a class="btn" href="https://apps.apple.com/us/app/asvab-coach/id6761384966" target="_blank" rel="noopener">App Store</a>
+      </div>
+
+      <p style="margin-top: var(--space-2xl); font-size: var(--fs-body-s); color: var(--asvab-text-secondary);">
+        <a href="/es/" style="color: var(--asvab-text-secondary);" hreflang="es" lang="es">Español →</a>
+      </p>
     </div>
 
-    <p style="margin-top: var(--space-2xl); font-size: var(--fs-body-s); color: var(--asvab-text-secondary);">
-      <a href="/es/" style="color: var(--asvab-text-secondary);">Español →</a>
-    </p>
+    <div class="nf-es" data-nf-lang="es" lang="es">
+      <p style="font-size: var(--fs-body-l); color: var(--asvab-text-primary); max-width: 540px; margin: 0 auto var(--space-md);">
+        Página no encontrada.
+      </p>
+
+      <p style="color: var(--asvab-text-secondary); max-width: 540px; margin: 0 auto var(--space-2xl);">
+        La página que buscabas no existe o se movió. Prueba con el inicio o con el App Store.
+      </p>
+
+      <div class="cta" style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
+        <a class="btn btn-primary" href="/es/">Ir al inicio</a>
+        <a class="btn" href="https://apps.apple.com/us/app/asvab-coach/id6761384966" target="_blank" rel="noopener">App Store</a>
+      </div>
+
+      <p style="margin-top: var(--space-2xl); font-size: var(--fs-body-s); color: var(--asvab-text-secondary);">
+        <a href="/" style="color: var(--asvab-text-secondary);" hreflang="en" lang="en">English →</a>
+      </p>
+    </div>
   </div>
 </section>

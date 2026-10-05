@@ -1,0 +1,181 @@
+# GENERADO — no editar a mano.
+#   fuente: https://www.officialasvab.com/wp-content/uploads/2019/08/1997score_scale.pdf (md5 452f35142bf30fb4d9eb76b8a5269632), Tabla 2.5, pp. 14–15
+#   regenerar: python3 _scripts/export_afqt_official_conversion.py --pdf <ruta al PDF> --write
+# El Audit 60 revalida estas filas y compara contra ellas el JS que la página publica.
+source:
+  url: 'https://www.officialasvab.com/wp-content/uploads/2019/08/1997score_scale.pdf'
+  md5: '452f35142bf30fb4d9eb76b8a5269632'
+  title: 'Development and Evaluation of the 1997 ASVAB Score Scale'
+  publisher: 'Defense Manpower Data Center'
+  year: 2004
+  table: '2.5'
+  pages: '14–15'
+  formula_section: '2.4'
+# Lo que la calculadora acepta por casilla: decisión de la web, explicada en el generador.
+input:
+  min: 0
+  max: 100
+# compuesto ≤ 109 → 1
+floor: { composite: 109, cum: 1.39, afqt: 1 }
+# compuesto ≥ 269 → 99
+ceiling: { composite: 269, cum: 98.52, afqt: 99 }
+rows:
+  - { composite: 110, cum: 1.54, afqt: 2 }
+  - { composite: 111, cum: 1.66, afqt: 2 }
+  - { composite: 112, cum: 1.76, afqt: 2 }
+  - { composite: 113, cum: 1.81, afqt: 2 }
+  - { composite: 114, cum: 1.85, afqt: 2 }
+  - { composite: 115, cum: 2.00, afqt: 2 }
+  - { composite: 116, cum: 2.04, afqt: 2 }
+  - { composite: 117, cum: 2.14, afqt: 2 }
+  - { composite: 118, cum: 2.34, afqt: 2 }
+  - { composite: 119, cum: 2.72, afqt: 3 }
+  - { composite: 120, cum: 2.92, afqt: 3 }
+  - { composite: 121, cum: 3.05, afqt: 3 }
+  - { composite: 122, cum: 3.15, afqt: 3 }
+  - { composite: 123, cum: 3.22, afqt: 3 }
+  - { composite: 124, cum: 3.36, afqt: 3 }
+  - { composite: 125, cum: 3.54, afqt: 4 }
+  - { composite: 126, cum: 3.69, afqt: 4 }
+  - { composite: 127, cum: 3.73, afqt: 4 }
+  - { composite: 128, cum: 3.83, afqt: 4 }
+  - { composite: 129, cum: 3.95, afqt: 4 }
+  - { composite: 130, cum: 4.07, afqt: 4 }
+  - { composite: 131, cum: 4.23, afqt: 4 }
+  - { composite: 132, cum: 4.27, afqt: 4 }
+  - { composite: 133, cum: 4.47, afqt: 4 }
+  - { composite: 134, cum: 4.59, afqt: 5 }
+  - { composite: 135, cum: 4.93, afqt: 5 }
+  - { composite: 136, cum: 5.12, afqt: 5 }
+  - { composite: 137, cum: 5.33, afqt: 5 }
+  - { composite: 138, cum: 5.70, afqt: 6 }
+  - { composite: 139, cum: 5.90, afqt: 6 }
+  - { composite: 140, cum: 6.14, afqt: 6 }
+  - { composite: 141, cum: 6.32, afqt: 6 }
+  - { composite: 142, cum: 6.70, afqt: 7 }
+  - { composite: 143, cum: 6.95, afqt: 7 }
+  - { composite: 144, cum: 7.22, afqt: 7 }
+  - { composite: 145, cum: 7.43, afqt: 7 }
+  - { composite: 146, cum: 7.72, afqt: 8 }
+  - { composite: 147, cum: 8.13, afqt: 8 }
+  - { composite: 148, cum: 8.57, afqt: 9 }
+  - { composite: 149, cum: 8.90, afqt: 9 }
+  - { composite: 150, cum: 9.21, afqt: 9 }
+  - { composite: 151, cum: 9.41, afqt: 9 }
+  - { composite: 152, cum: 9.91, afqt: 10 }
+  - { composite: 153, cum: 10.33, afqt: 10 }
+  - { composite: 154, cum: 10.75, afqt: 11 }
+  - { composite: 155, cum: 11.12, afqt: 11 }
+  - { composite: 156, cum: 11.49, afqt: 11 }
+  - { composite: 157, cum: 12.16, afqt: 12 }
+  - { composite: 158, cum: 12.65, afqt: 13 }
+  - { composite: 159, cum: 13.30, afqt: 13 }
+  - { composite: 160, cum: 13.97, afqt: 14 }
+  - { composite: 161, cum: 14.61, afqt: 15 }
+  - { composite: 162, cum: 15.11, afqt: 15 }
+  - { composite: 163, cum: 15.74, afqt: 16 }
+  - { composite: 164, cum: 16.24, afqt: 16 }
+  - { composite: 165, cum: 16.60, afqt: 17 }
+  - { composite: 166, cum: 17.20, afqt: 17 }
+  - { composite: 167, cum: 17.94, afqt: 18 }
+  - { composite: 168, cum: 18.57, afqt: 19 }
+  - { composite: 169, cum: 19.37, afqt: 19 }
+  - { composite: 170, cum: 20.17, afqt: 20 }
+  - { composite: 171, cum: 20.66, afqt: 21 }
+  - { composite: 172, cum: 21.56, afqt: 22 }
+  - { composite: 173, cum: 21.98, afqt: 22 }
+  - { composite: 174, cum: 22.82, afqt: 23 }
+  - { composite: 175, cum: 23.71, afqt: 24 }
+  - { composite: 176, cum: 24.71, afqt: 25 }
+  - { composite: 177, cum: 25.37, afqt: 25 }
+  - { composite: 178, cum: 26.22, afqt: 26 }
+  - { composite: 179, cum: 27.07, afqt: 27 }
+  - { composite: 180, cum: 28.18, afqt: 28 }
+  - { composite: 181, cum: 29.31, afqt: 29 }
+  - { composite: 182, cum: 30.15, afqt: 30 }
+  - { composite: 183, cum: 30.95, afqt: 31 }
+  - { composite: 184, cum: 31.76, afqt: 32 }
+  - { composite: 185, cum: 32.69, afqt: 33 }
+  - { composite: 186, cum: 33.67, afqt: 34 }
+  - { composite: 187, cum: 34.58, afqt: 35 }
+  - { composite: 188, cum: 35.42, afqt: 35 }
+  - { composite: 189, cum: 36.47, afqt: 36 }
+  - { composite: 190, cum: 37.64, afqt: 38 }
+  - { composite: 191, cum: 39.00, afqt: 39 }
+  - { composite: 192, cum: 40.12, afqt: 40 }
+  - { composite: 193, cum: 41.15, afqt: 41 }
+  - { composite: 194, cum: 42.10, afqt: 42 }
+  - { composite: 195, cum: 43.29, afqt: 43 }
+  - { composite: 196, cum: 44.33, afqt: 44 }
+  - { composite: 197, cum: 45.13, afqt: 45 }
+  - { composite: 198, cum: 46.19, afqt: 46 }
+  - { composite: 199, cum: 47.14, afqt: 47 }
+  - { composite: 200, cum: 47.80, afqt: 48 }
+  - { composite: 201, cum: 48.93, afqt: 49 }
+  - { composite: 202, cum: 49.77, afqt: 50 }
+  - { composite: 203, cum: 51.09, afqt: 51 }
+  - { composite: 204, cum: 51.93, afqt: 52 }
+  - { composite: 205, cum: 52.89, afqt: 53 }
+  - { composite: 206, cum: 54.04, afqt: 54 }
+  - { composite: 207, cum: 55.22, afqt: 55 }
+  - { composite: 208, cum: 56.29, afqt: 56 }
+  - { composite: 209, cum: 57.44, afqt: 57 }
+  - { composite: 210, cum: 58.54, afqt: 59 }
+  - { composite: 211, cum: 59.50, afqt: 60 }
+  - { composite: 212, cum: 60.94, afqt: 61 }
+  - { composite: 213, cum: 62.22, afqt: 62 }
+  - { composite: 214, cum: 63.36, afqt: 63 }
+  - { composite: 215, cum: 64.48, afqt: 64 }
+  - { composite: 216, cum: 65.50, afqt: 66 }
+  - { composite: 217, cum: 66.73, afqt: 67 }
+  - { composite: 218, cum: 67.53, afqt: 68 }
+  - { composite: 219, cum: 68.57, afqt: 69 }
+  - { composite: 220, cum: 69.58, afqt: 70 }
+  - { composite: 221, cum: 70.37, afqt: 70 }
+  - { composite: 222, cum: 71.40, afqt: 71 }
+  - { composite: 223, cum: 72.35, afqt: 72 }
+  - { composite: 224, cum: 73.32, afqt: 73 }
+  - { composite: 225, cum: 74.49, afqt: 74 }
+  - { composite: 226, cum: 75.26, afqt: 75 }
+  - { composite: 227, cum: 76.39, afqt: 76 }
+  - { composite: 228, cum: 77.28, afqt: 77 }
+  - { composite: 229, cum: 78.19, afqt: 78 }
+  - { composite: 230, cum: 78.88, afqt: 79 }
+  - { composite: 231, cum: 79.81, afqt: 80 }
+  - { composite: 232, cum: 80.75, afqt: 81 }
+  - { composite: 233, cum: 81.52, afqt: 82 }
+  - { composite: 234, cum: 82.34, afqt: 82 }
+  - { composite: 235, cum: 83.07, afqt: 83 }
+  - { composite: 236, cum: 83.83, afqt: 84 }
+  - { composite: 237, cum: 84.57, afqt: 85 }
+  - { composite: 238, cum: 85.12, afqt: 85 }
+  - { composite: 239, cum: 86.04, afqt: 86 }
+  - { composite: 240, cum: 86.76, afqt: 87 }
+  - { composite: 241, cum: 87.67, afqt: 88 }
+  - { composite: 242, cum: 88.23, afqt: 88 }
+  - { composite: 243, cum: 88.97, afqt: 89 }
+  - { composite: 244, cum: 89.79, afqt: 90 }
+  - { composite: 245, cum: 90.38, afqt: 90 }
+  - { composite: 246, cum: 90.97, afqt: 91 }
+  - { composite: 247, cum: 91.55, afqt: 92 }
+  - { composite: 248, cum: 92.14, afqt: 92 }
+  - { composite: 249, cum: 92.66, afqt: 93 }
+  - { composite: 250, cum: 93.04, afqt: 93 }
+  - { composite: 251, cum: 93.35, afqt: 93 }
+  - { composite: 252, cum: 93.82, afqt: 94 }
+  - { composite: 253, cum: 94.32, afqt: 94 }
+  - { composite: 254, cum: 94.70, afqt: 95 }
+  - { composite: 255, cum: 94.90, afqt: 95 }
+  - { composite: 256, cum: 95.21, afqt: 95 }
+  - { composite: 257, cum: 95.58, afqt: 96 }
+  - { composite: 258, cum: 95.95, afqt: 96 }
+  - { composite: 259, cum: 96.39, afqt: 96 }
+  - { composite: 260, cum: 96.73, afqt: 97 }
+  - { composite: 261, cum: 96.89, afqt: 97 }
+  - { composite: 262, cum: 97.24, afqt: 97 }
+  - { composite: 263, cum: 97.47, afqt: 97 }
+  - { composite: 264, cum: 97.67, afqt: 98 }
+  - { composite: 265, cum: 97.96, afqt: 98 }
+  - { composite: 266, cum: 98.06, afqt: 98 }
+  - { composite: 267, cum: 98.31, afqt: 98 }
+  - { composite: 268, cum: 98.45, afqt: 98 }

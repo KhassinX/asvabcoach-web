@@ -18,12 +18,72 @@ favicon_16: /assets/favicons/favicon-16.png
 apple_touch_icon: /assets/favicons/apple-touch-icon.png
 
 # Open Graph image (1200×630 Apple-canon white + icon + tagline) — overridable per page
-og_image_default: /assets/social/EN/og-image.png
-og_image_alt: "ASVAB Coach app icon on Apple-canon white background — Private AI Tutor for the ASVAB"
+# 🔴 Por LOCALE, y no lo era hasta el 2026-09-13. Era un único valor global en inglés,
+# así que TODA página en español salvo la landing `/es/` —la única que lo sobreescribía
+# en su front matter— publicaba la imagen en inglés y un `og:image:alt` en inglés al
+# lado de un `og:locale content="es_MX"` en la misma etiqueta. Quien comparte la página
+# en español en Slack o Mensajes ve una tarjeta en inglés.
+#
+# Hacerlo un mapa keyed por locale es el mismo patrón que ya usan `nav` y `footer_nav`:
+# la alternativa —que cada página de prosa se acuerde de sobreescribirlo— es justamente
+# la que falló, y falla en silencio, porque una tarjeta social no la mira ningún gate
+# hasta que alguien comparte el enlace.
+og_image_default:
+  en: /assets/social/EN/og-image.png
+  es: /assets/social/ES/og-image.png
+og_image_alt:
+  en: "ASVAB Coach app icon on Apple-canon white background — Private AI Tutor for the ASVAB"
+  es: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA privado para el ASVAB"
+
+# Miga de pan (BreadcrumbList) — el NOMBRE de cada sección, por locale.
+#
+# 🔴 Existe porque `prose.html` horneaba «Legal» como nivel 2 para TODA página que usara
+# el layout. Con las seis páginas legales de hoy la afirmación es cierta por accidente:
+# la primera página de contenido fuera de `/legal/` publicaría una miga que dice que
+# cuelga de Legal, y una miga falsa es peor que ninguna (W-5.3 — Google la muestra como
+# la ruta del resultado). El nivel 2 ahora sale de la URL de la propia página y su nombre
+# de este mapa; una sección que no esté acá NO publica miga, en vez de heredar la ajena.
+#
+# Deliberadamente separado de `nav:`, aunque hoy digan lo mismo: el menú es una decisión
+# de UI (cuántos ítems entran) y la miga es una afirmación estructural sobre la URL.
+# Acoplarlos haría que sacar un ítem del menú apague una miga correcta sin que nadie lo note.
+# Nombre en español de cada rama, SÓLO para el render de la web en ES.
+# La app y `afqt_minimums.yml` publican el nombre oficial en inglés (`shortName` de
+# BranchManager.swift) y eso NO se toca: es el dato. Esto es presentación — un
+# hispanohablante busca «fuerza aérea», no «Air Force», y la página tiene que aparecer
+# en esa búsqueda sin inventar un segundo dato. Si mañana aparece una rama y nadie la
+# agrega acá, el Liquid cae al nombre inglés (`| default:`) en vez de imprimir vacío.
+branch_names_es:
+  army: Ejército
+  navy: Marina
+  marines: Marines
+  airForce: Fuerza Aérea
+  coastGuard: Guardia Costera
+  spaceForce: Fuerza Espacial
+
+breadcrumbs:
+  en:
+    legal: Legal
+    scores: Scores
+    test: Test Format
+    support: Support
+    security: Security
+    contact: Contact
+  es:
+    legal: Legal
+    scores: Puntajes
+    test: Examen
+    support: Soporte
+    security: Seguridad
+    contact: Contacto
 
 # Navigation — keyed por locale. El layout selecciona via page.lang con fallback a 'en'.
 nav:
   en:
+    - title: Test Format
+      url: /test/
+    - title: Scores
+      url: /scores/
     - title: Legal
       url: /legal/
     - title: Support
@@ -32,6 +92,10 @@ nav:
       url: https://apps.apple.com/us/app/asvab-coach/id6761384966
       external: true
   es:
+    - title: Examen
+      url: /es/test/
+    - title: Puntajes
+      url: /es/scores/
     - title: Legal
       url: /es/legal/
     - title: Soporte

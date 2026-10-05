@@ -1,0 +1,160 @@
+# GENERADO — no editar a mano.
+#   fuente: ASVABCoach/CATSubtestTable.swift
+#   regenerar: python3 _scripts/export_cat_subtests.py --write
+# El pre-commit bloquea si este archivo y el Swift no dicen lo mismo.
+verified: '2026-09-01'
+source_url: 'https://www.officialasvab.com/wp-content/uploads/2025/04/ASVAB-Fact_Sheet.pdf'
+source_title: 'ASVAB Fact Sheet (official ASVAB program)'
+# Agregados derivados de las filas — para que el texto no dependa del ORDEN.
+summary:
+  printed_rows: 10
+  reported_scores: 9
+  total_questions: 135
+  total_minutes: 197
+  average_seconds_per_question: 88
+  afqt_count: 4
+  afqt_abbrs: ['AR', 'WK', 'PC', 'MK']
+  afqt_questions: 55
+  afqt_minutes: 122
+  fastest_abbr: 'WK'
+  fastest_seconds: 36
+  slowest_abbr: 'AR'
+  slowest_seconds: 220
+# Las DIEZ filas tal como están impresas en la columna CAT-ASVAB de la fuente.
+printed:
+  - abbr: GS
+    name_en: 'General Science'
+    name_es: 'Ciencias Generales'
+    questions: 15
+    minutes: 12
+    seconds_per_question: 48
+    is_afqt: false
+  - abbr: AR
+    name_en: 'Arithmetic Reasoning'
+    name_es: 'Razonamiento Aritmético'
+    questions: 15
+    minutes: 55
+    seconds_per_question: 220
+    is_afqt: true
+  - abbr: WK
+    name_en: 'Word Knowledge'
+    name_es: 'Conocimiento de Vocabulario'
+    questions: 15
+    minutes: 9
+    seconds_per_question: 36
+    is_afqt: true
+  - abbr: PC
+    name_en: 'Paragraph Comprehension'
+    name_es: 'Comprensión de Lectura'
+    questions: 10
+    minutes: 27
+    seconds_per_question: 162
+    is_afqt: true
+  - abbr: MK
+    name_en: 'Mathematics Knowledge'
+    name_es: 'Conocimiento Matemático'
+    questions: 15
+    minutes: 31
+    seconds_per_question: 124
+    is_afqt: true
+  - abbr: EI
+    name_en: 'Electronics Information'
+    name_es: 'Información de Electrónica'
+    questions: 15
+    minutes: 10
+    seconds_per_question: 40
+    is_afqt: false
+  - abbr: AI
+    name_en: 'Auto Information'
+    name_es: 'Información de Automóviles'
+    questions: 10
+    minutes: 7
+    seconds_per_question: 42
+    is_afqt: false
+  - abbr: SI
+    name_en: 'Shop Information'
+    name_es: 'Información de Taller'
+    questions: 10
+    minutes: 6
+    seconds_per_question: 36
+    is_afqt: false
+  - abbr: MC
+    name_en: 'Mechanical Comprehension'
+    name_es: 'Comprensión Mecánica'
+    questions: 15
+    minutes: 22
+    seconds_per_question: 88
+    is_afqt: false
+  - abbr: AO
+    name_en: 'Assembling Objects'
+    name_es: 'Ensamblaje de Objetos'
+    questions: 15
+    minutes: 18
+    seconds_per_question: 72
+    is_afqt: false
+# Los NUEVE scores que el recluta ve en su hoja: AI y SI se combinan en «AS».
+# La fuente NO imprime una fila «AS» — es una suma, y acá se ve que lo es.
+reported:
+  - abbr: AR
+    name_en: 'Arithmetic Reasoning'
+    name_es: 'Razonamiento Aritmético'
+    questions: 15
+    minutes: 55
+    seconds_per_question: 220
+    is_afqt: true
+  - abbr: WK
+    name_en: 'Word Knowledge'
+    name_es: 'Conocimiento de Vocabulario'
+    questions: 15
+    minutes: 9
+    seconds_per_question: 36
+    is_afqt: true
+  - abbr: PC
+    name_en: 'Paragraph Comprehension'
+    name_es: 'Comprensión de Lectura'
+    questions: 10
+    minutes: 27
+    seconds_per_question: 162
+    is_afqt: true
+  - abbr: MK
+    name_en: 'Mathematics Knowledge'
+    name_es: 'Conocimiento Matemático'
+    questions: 15
+    minutes: 31
+    seconds_per_question: 124
+    is_afqt: true
+  - abbr: GS
+    name_en: 'General Science'
+    name_es: 'Ciencias Generales'
+    questions: 15
+    minutes: 12
+    seconds_per_question: 48
+    is_afqt: false
+  - abbr: EI
+    name_en: 'Electronics Information'
+    name_es: 'Información de Electrónica'
+    questions: 15
+    minutes: 10
+    seconds_per_question: 40
+    is_afqt: false
+  - abbr: AS
+    name_en: 'Auto & Shop Information'
+    name_es: 'Información de Auto y Taller'
+    questions: 20
+    minutes: 13
+    seconds_per_question: 39
+    is_afqt: false
+  - abbr: MC
+    name_en: 'Mechanical Comprehension'
+    name_es: 'Comprensión Mecánica'
+    questions: 15
+    minutes: 22
+    seconds_per_question: 88
+    is_afqt: false
+  - abbr: AO
+    name_en: 'Assembling Objects'
+    name_es: 'Ensamblaje de Objetos'
+    questions: 15
+    minutes: 18
+    seconds_per_question: 72
+    is_afqt: false

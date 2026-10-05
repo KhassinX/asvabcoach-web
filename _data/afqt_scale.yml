@@ -1,0 +1,48 @@
+# SUBCONJUNTO del export del monorepo (`web/_data/afqt_scale.yml` @ d011d339):
+# sólo lo que las páginas /scores/ y la calculadora publican — la fórmula del DoD y
+# las seis bandas de categoría con su descripción. Las demás claves de ese export
+# (la curva interna con la que la app estima, su rango y su frase de procedencia)
+# describen la app que todavía no salió y no las lee ninguna página de este sitio.
+# El próximo export completo del monorepo reemplaza este archivo.
+
+# El paso 2 de la fórmula del DoD: el único público, y el único que la web suma.
+formula: '2 × VE + AR + MK'
+
+# Bandas de categoría del DoD (tabla de 6 filas, la del aspirante).
+categories:
+  - id: I
+    name: 'Category I'
+    min: 93
+    max: 99
+    description_en: 'The highest range on the exam'
+    description_es: 'El rango más alto del examen'
+  - id: II
+    name: 'Category II'
+    min: 65
+    max: 92
+    description_en: 'Above average'
+    description_es: 'Por encima del promedio'
+  - id: IIIA
+    name: 'Category IIIA'
+    min: 50
+    max: 64
+    description_en: 'May qualify for enlistment incentives'
+    description_es: 'Puede calificar para incentivos de alistamiento'
+  - id: IIIB
+    name: 'Category IIIB'
+    min: 31
+    max: 49
+    description_en: 'Within the average range'
+    description_es: 'Dentro del promedio'
+  - id: IV
+    name: 'Category IV'
+    min: 10
+    max: 30
+    description_en: 'Below every branch’s published minimum; the law allows a capped share'
+    description_es: 'Por debajo del mínimo publicado de cada rama; la ley admite un cupo limitado'
+  - id: V
+    name: 'Category V'
+    min: 1
+    max: 9
+    description_en: 'Below the DoD enlistment minimum'
+    description_es: 'Por debajo del mínimo de alistamiento del DoD'

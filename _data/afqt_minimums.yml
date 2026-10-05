@@ -1,0 +1,95 @@
+# GENERADO — no editar a mano.
+#   fuente: ASVABCoach/BranchManager.swift — los mínimos, las citas y los sellos
+#   `verified:` es el MÍNIMO de las citas de 2 sello(s) (afqtVerifiedOn, afqtVerifiedOnGED), no un literal de la vista
+#   2 cita(s) por rama (afqtSourceCitation, afqtSourceCitationGED) — se descubren por su forma, no se enumeran
+#   la marca de estimación sale de `minAFQT_GEDIsEstimate` y de `AFQTMinimum.description` (L10n.swift); una celda marcada no fecha el sello
+#   lo que dice el lector de pantalla en su lugar sale de `L10n.afqtMinimumSpoken`
+#   regenerar: python3 _scripts/export_afqt_minimums.py --write
+# El pre-commit bloquea si este archivo y el Swift no dicen lo mismo.
+verified: '2026-09-05'
+estimate_mark: '~'
+# Lo que el lector de pantalla dice después del número marcado: la página le
+# oculta la marca y pone esto al lado, oculto a la vista.
+estimate_spoken_suffix:
+  en: ' (estimated)'
+  es: ' (estimado)'
+# Agregados derivados de la tabla — para que el texto no dependa del ORDEN de la lista.
+summary:
+  floor_min: 31
+  floor_max: 32
+  floor_is_uniform: false
+  highest_floor_branches: ['Coast Guard']
+  ged_min: 47
+  ged_max: 50
+  ged_is_uniform: false
+  ged_gap_min: 15
+  ged_gap_max: 19
+  recommended_min: 50
+  recommended_max: 55
+branches:
+  - id: army
+    name: 'Army'
+    min_afqt: 31
+    min_afqt_ged: 50
+    min_afqt_ged_is_estimate: true
+    recommended_afqt: 50
+    ged_gap: 19
+    source: 'goarmy.com'
+    source_ged: ''
+    verified_on: '2026-09-05'
+    verified_on_ged: 'bloqueado:2026-09-23'
+  - id: navy
+    name: 'Navy'
+    min_afqt: 31
+    min_afqt_ged: 50
+    min_afqt_ged_is_estimate: false
+    recommended_afqt: 50
+    ged_gap: 19
+    source: 'COMNAVCRUITCOMINST 1130.8S'
+    source_ged: 'COMNAVCRUITCOMINST 1130.8S'
+    verified_on: 'bloqueado:2026-09-05'
+    verified_on_ged: 'bloqueado:2026-09-13'
+  - id: marines
+    name: 'Marines'
+    min_afqt: 31
+    min_afqt_ged: 50
+    min_afqt_ged_is_estimate: false
+    recommended_afqt: 50
+    ged_gap: 19
+    source: 'marines.com'
+    source_ged: 'marines.com'
+    verified_on: '2026-09-05'
+    verified_on_ged: '2026-09-13'
+  - id: airForce
+    name: 'Air Force'
+    min_afqt: 31
+    min_afqt_ged: 50
+    min_afqt_ged_is_estimate: false
+    recommended_afqt: 50
+    ged_gap: 19
+    source: 'airforce.com/asvab'
+    source_ged: 'airforce.com/asvab'
+    verified_on: '2026-09-05'
+    verified_on_ged: '2026-09-13'
+  - id: coastGuard
+    name: 'Coast Guard'
+    min_afqt: 32
+    min_afqt_ged: 47
+    min_afqt_ged_is_estimate: false
+    recommended_afqt: 55
+    ged_gap: 15
+    source: 'gocoastguard.com'
+    source_ged: 'COMDTINST 1100.2I'
+    verified_on: '2026-09-05'
+    verified_on_ged: 'bloqueado:2026-09-23'
+  - id: spaceForce
+    name: 'Space Force'
+    min_afqt: 31
+    min_afqt_ged: 50
+    min_afqt_ged_is_estimate: false
+    recommended_afqt: 55
+    ged_gap: 19
+    source: 'airforce.com/asvab + DAFMAN 36-2032'
+    source_ged: 'airforce.com/asvab'
+    verified_on: 'bloqueado:2026-09-05'
+    verified_on_ged: '2026-09-13'

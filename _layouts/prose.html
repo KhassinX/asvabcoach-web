@@ -19,11 +19,42 @@ layout: base
 </article>
 
 {%- comment -%}
-  W-5.3 — las páginas legales cuelgan de /legal/ (o /es/legal/) y sin esto el
-  resultado de búsqueda muestra la URL cruda en vez de la ruta.
-  El índice de la sección no lleva miga: sería un solo escalón.
+  W-5.3 — la miga le dice al resultado de búsqueda la RUTA de la página en vez de su URL
+  cruda. La regla es una sola: **el nivel intermedio nombra la sección en la que la página
+  de verdad vive, o el bloque no se emite.**
+
+  🔴 Hasta el 2026-09-13 este layout horneaba «Legal» como nivel 2 para toda página que lo
+  usara. Con las seis páginas legales de hoy la afirmación salía cierta por accidente —las
+  seis cuelgan de `/legal/`—, y ese accidente es justo lo que la hacía invisible: la primera
+  página de contenido fuera de `/legal/` habría publicado una miga que dice que cuelga de
+  Legal, con el gate del JSON-LD en verde, porque un bloque falso parsea igual que uno
+  cierto. La constante se reemplazó por el primer segmento de la URL de la propia página.
+
+  Tres casos, y el tercero es el que evita inventar:
+    · un solo segmento (`/legal/`, `/support/`) → índice de sección: sería un escalón, sin miga.
+    · dos o más y la sección tiene nombre en `site.breadcrumbs` → miga de tres niveles.
+    · dos o más y la sección NO tiene nombre → sin miga. Nombrarla capitalizando el
+      segmento publicaría una etiqueta que nadie redactó, en un idioma que nadie eligió.
+
+  Lo vigila `_scripts/verify_jsonld_web.py`: todo `item` de la miga tiene que ser un PREFIJO
+  de la URL de la página que la publica. Escrito así, un `/legal/` colgado de una página de
+  `/scores/` lo acusa el gate sin que nadie tenga que acordarse de mirar este archivo.
 {%- endcomment -%}
-{% unless page.url == '/legal/' or page.url == '/es/legal/' %}
+{%- assign ruta = page.url -%}
+{%- if es %}{%- assign ruta = ruta | remove_first: '/es' -%}{%- endif -%}
+{%- comment -%}
+  `'/legal/privacy/' | split: '/'` devuelve ['', 'legal', 'privacy'] — el primer
+  elemento es la cadena vacía que hay ANTES de la barra inicial, así que `partes[0]`
+  era '' y ninguna sección se encontraba nunca en el mapa. Escrito así apagó en
+  silencio las cuatro migas que el sitio ya publicaba, y el gate salió VERDE porque
+  medía las migas que había, no las que faltaban. Lo cazó volcar las migas del sitio
+  compilado; el gate ahora también lo mide (propiedad 5).
+{%- endcomment -%}
+{%- assign partes = ruta | remove_first: '/' | split: '/' -%}
+{%- assign idioma = 'en' -%}{%- if es %}{%- assign idioma = 'es' -%}{%- endif -%}
+{%- assign seccion = partes[0] -%}
+{%- assign nombre_seccion = site.breadcrumbs[idioma][seccion] -%}
+{% if partes.size > 1 and nombre_seccion %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,8 +69,8 @@ layout: base
     {
       "@type": "ListItem",
       "position": 2,
-      "name": "Legal",
-      "item": "{{ site.url }}{% if es %}/es/legal/{% else %}/legal/{% endif %}"
+      "name": {{ nombre_seccion | jsonify }},
+      "item": "{{ site.url }}{% if es %}/es{% endif %}/{{ seccion }}/"
     },
     {
       "@type": "ListItem",
@@ -50,4 +81,4 @@ layout: base
   ]
 }
 </script>
-{% endunless %}
+{% endif %}

@@ -105,6 +105,34 @@ a:hover {
   text-underline-offset: 2px;
 }
 
+/* 🔴 Un enlace DENTRO de un párrafo no puede distinguirse sólo por el color.
+   Medido el 2026-09-13 con Lighthouse sobre las páginas de contenido, y después a
+   mano sobre los tokens — el contraste del enlace contra el TEXTO QUE LO RODEA
+   (WCAG 1.4.1, mínimo 3:1) es:
+
+       oscuro   #6BA0D9 sobre #F5F5F7  →  2,52:1
+       claro    #1E3A5F sobre #1D1D1F  →  1,46:1   ← el peor, y no es el que se mide solo
+
+   Lighthouse corrió en oscuro y acusó 2,51:1; en claro es casi el doble de malo, un
+   navy sobre texto casi negro. Quien no distingue matices no ve que ahí hay un enlace.
+
+   El arreglo NO es tocar la paleta —contra el FONDO los dos pasan de sobra: #6BA0D9
+   sobre #1D1D1F da 6,14:1 y #1E3A5F sobre #F5F5F7 da 10,56:1, mínimo 4,5:1, y el
+   acento viene del icono de la app— sino subrayar, que es la salida que WCAG acepta
+   (técnica G183). Vale en los dos modos y no toca la marca.
+
+   `:not([class])` acota a la prosa sin enumerar clases: medido sobre el sitio
+   compilado, los 73 enlaces de prosa no llevan clase y la única que aparece ahí es
+   `.button`, que se distingue por su forma y no necesita subrayado. */
+main p a:not([class]),
+main li a:not([class]),
+main td a:not([class]),
+main th a:not([class]),
+main blockquote a:not([class]) {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
 strong { font-weight: 600; }
 em { font-style: italic; }
 
@@ -162,6 +190,21 @@ pre code {
 .skip-link:focus {
   left: 0;
   top: 0;
+}
+
+/* Texto que sólo oye el lector de pantalla: sigue en el árbol de accesibilidad, a
+   diferencia de `display: none`, que también lo borraría de ahí. Lo usa el mínimo AFQT
+   marcado con `~` para decir «(estimated)» donde la vista sólo muestra la marca. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
 }
 
 /* ─── Container ─── */

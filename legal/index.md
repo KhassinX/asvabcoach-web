@@ -13,8 +13,8 @@ updated: 2026-07-11
 
 Public legal documents for **[ASVAB Coach](https://apps.apple.com/us/app/asvab-coach/id6761384966)**.
 
-- **[Privacy Policy](/legal/privacy)** — what data we collect (spoiler: nothing)
-- **[Terms of Use](/legal/terms)** — terms of using the app
+- **[Privacy Policy](/legal/privacy/)** — what data we collect (spoiler: nothing)
+- **[Terms of Use](/legal/terms/)** — terms of using the app
 
 Short aliases: [/privacy](/privacy) · [/terms](/terms)
 
