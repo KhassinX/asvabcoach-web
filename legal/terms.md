@@ -45,7 +45,7 @@ The app is **free to download and use** with a permanent free tier. Unlocking fu
 ASVAB Coach is an **independent educational tool**.
 
 - We are **NOT affiliated with**, endorsed by, or connected to the U.S. Department of Defense, the U.S. Army, Navy, Marine Corps, Air Force, Coast Guard, Space Force, or any official ASVAB testing authority.
-- **ASVAB®** is a registered trademark of the U.S. Department of Defense. Our use of the term is purely for educational purposes (nominative fair use to describe what test the app prepares users for).
+- Our use of the name **ASVAB** is purely for educational purposes, to describe what test the app prepares users for.
 - **We do not guarantee** that using ASVAB Coach will result in passing the ASVAB exam, qualifying for any specific military branch, qualifying for any specific MOS/rating, or any other outcome. Your performance on the actual ASVAB depends on many factors outside our control, including your effort, prior education, test-day conditions, and current DoD policy.
 - Practice questions in the app are **modeled after** ASVAB question formats but are **not** actual exam questions. The official ASVAB is administered by the U.S. Military Entrance Processing Stations (MEPS) using questions from the DoD-controlled item bank.
 
@@ -96,7 +96,7 @@ Attempts to circumvent the in-app purchase verification trigger our `Transaction
 ## 7. Intellectual property
 
 - The ASVAB Coach app (code, design, assets, question bank curation) is **copyright © 2026 KHASSINX LLC**, all rights reserved
-- **ASVAB®** is a trademark of the U.S. Department of Defense, used nominatively
+- The name **ASVAB** is used only to identify the test the app prepares users for
 - Branch insignia, military terminology, and any official seal references are property of the respective branches, used for descriptive purposes only
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store, and related marks are trademarks of Apple Inc.
 

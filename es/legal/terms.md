@@ -40,7 +40,7 @@ La app es **gratuita de descargar y usar**, con un tier gratuito permanente. Des
 ASVAB Coach es una **herramienta educativa independiente**.
 
 - **NO estamos afiliados** con, respaldados por, ni conectados al Departamento de Defensa de EE.UU., al Army, Navy, Marine Corps, Air Force, Coast Guard, Space Force, ni a ninguna autoridad oficial del examen ASVAB.
-- **ASVAB®** es marca registrada del Departamento de Defensa de EE.UU. Nuestro uso del término es puramente educativo (uso nominativo justo para describir qué examen prepara la app).
+- Nuestro uso del nombre **ASVAB** es puramente educativo, para describir qué examen prepara la app.
 - **No garantizamos** que usar ASVAB Coach resulte en aprobar el examen ASVAB, calificar para una rama militar específica, calificar para un MOS o rating específico, ni ningún otro resultado. Tu desempeño en el ASVAB real depende de muchos factores fuera de nuestro control, incluyendo tu esfuerzo, educación previa, condiciones el día del examen y la política vigente del DoD.
 - Las preguntas de práctica en la app están **modeladas** en los formatos del ASVAB pero **no** son preguntas reales del examen. El ASVAB oficial lo administran los Military Entrance Processing Stations (MEPS) usando preguntas del banco controlado por el DoD.
 
@@ -91,7 +91,7 @@ Los intentos de saltar la verificación de la compra in-app disparan nuestra rev
 ## 7. Propiedad intelectual
 
 - La app ASVAB Coach (código, diseño, assets, curaduría del banco de preguntas) es **copyright © 2026 KHASSINX LLC**, todos los derechos reservados
-- **ASVAB®** es marca registrada del Departamento de Defensa de EE.UU., usada de manera nominativa
+- El nombre **ASVAB** se usa solo para identificar el examen para el que prepara la app
 - Las insignias de rama, terminología militar y cualquier referencia a sellos oficiales son propiedad de las respectivas ramas, usadas solo para fines descriptivos
 - Apple, iPhone, iPad, Apple Watch, Apple Intelligence, App Store y marcas relacionadas son marcas de Apple Inc.
 

@@ -190,7 +190,7 @@ We collect no data from anyone, at any age. That includes children under 13: the
 
 ## Your rights
 
-For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGDD, California's CCPA/CPRA, other US state laws, and elsewhere — and how to exercise them — see KhassinX's [Privacy Rights center](https://khassinx.com/legal/your-rights/).
+For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGDD, California's CCPA/CPRA, other US state laws, and elsewhere — and how to exercise them — see KHASSINX's [Privacy Rights center](https://khassinx.com/legal/your-rights/).
 
 Because we hold no data about you, most such requests are moot: there is nothing to delete, export, correct, or transfer at our end. To exercise any right for ASVAB Coach, reset your data in-app or email legal@khassinx.com. You also retain full control through Apple's mechanisms:
 

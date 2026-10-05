@@ -36,4 +36,4 @@ The ASVAB Coach app itself is **proprietary** and not covered by this CC0 dedica
 
 ## Trademarks
 
-Apple, iPhone, iPad, Mac, Apple Watch, App Store, iCloud, iPadOS, macOS, and watchOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence is a trademark of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. KhassinX and ASVAB Coach are trademarks of KHASSINX LLC. All other trademarks are the property of their respective owners.
+Apple, the Apple logo, iPhone, iPad, Mac, Apple Watch, App Store, iCloud, iPadOS, macOS, and watchOS are trademarks of Apple Inc., registered in the U.S. and other countries. Apple Intelligence is a trademark of Apple Inc. IOS is a trademark or registered trademark of Cisco in the U.S. and other countries and is used under license. KHASSINX and ASVAB Coach are trademarks of KHASSINX LLC. All other trademarks are the property of their respective owners.
