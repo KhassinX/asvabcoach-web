@@ -11,7 +11,7 @@ redirect_from:
   - /TERMS_OF_USE/
   - /terms
   - /terms/
-updated: 2026-07-11
+updated: 2026-10-05
 h1: "Terms of Use — ASVAB Coach"
 version: "1.2"
 related:
@@ -25,7 +25,7 @@ summary:
   - "Verify current AFQT minimums with an official recruiter before making enlistment decisions."
 ---
 
-**Effective date**: 2026-05-18
+**Effective date**: 2026-10-05
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator**: KHASSINX LLC, a Florida limited liability company
 **Contact**: legal@khassinx.com
@@ -164,4 +164,4 @@ Expected response time: 7 business days.
 
 ---
 
-*Last updated: 2026-06-08 · Version 1.2*
+*Last updated: 2026-10-05 · Version 1.2*

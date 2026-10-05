@@ -25,7 +25,7 @@ summary:
   - "If you email us, we receive your address and message and use them only to reply and fix what you reported; you can ask us to delete them."
 ---
 
-**Effective date**: 2026-05-18
+**Effective date**: 2026-09-06
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator / Data controller**: KHASSINX LLC, a Florida limited liability company
 **Contact**: legal@khassinx.com

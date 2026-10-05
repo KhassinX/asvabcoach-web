@@ -6,7 +6,7 @@ permalink: /es/legal/terms/
 lang: es
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-07-11
+updated: 2026-10-05
 h1: "Términos de Uso — ASVAB Coach"
 version: "1.2"
 related:
@@ -20,7 +20,7 @@ summary:
   - "Verifica los requisitos vigentes con un reclutador oficial antes de tomar decisiones de alistamiento."
 ---
 
-**Fecha de vigencia**: 2026-05-18
+**Fecha de vigencia**: 2026-10-05
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
@@ -159,4 +159,4 @@ Tiempo de respuesta esperado: 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-06-08 · Versión 1.2*
+*Última actualización: 2026-10-05 · Versión 1.2*

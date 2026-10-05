@@ -20,7 +20,7 @@ summary:
   - "Si nos escribes, recibimos tu dirección y tu mensaje y los usamos solo para responderte y arreglar lo que reportaste; puedes pedirnos borrarlos."
 ---
 
-**Fecha de vigencia**: 2026-05-18
+**Fecha de vigencia**: 2026-09-06
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador / Responsable del tratamiento**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
