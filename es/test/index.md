@@ -12,7 +12,7 @@ updated: 2026-09-13
 Antes de estudiar para él conviene saber qué es: cuántas secciones tiene, cuánto duran y
 cuáles deciden algo de verdad.
 
-{% assign paginas = site.pages | where_exp: "p", "p.url contains '/test/' and p.lang == page.lang" | sort: "title" -%}
+{% assign paginas = site.pages | where_exp: "p", "p.url contains '/test/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
 - **[{{ p.title }}]({{ p.url }})** — {{ p.description }}

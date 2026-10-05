@@ -12,7 +12,7 @@ updated: 2026-09-13
 Before you can study for it, it helps to know what it is: how many sections, how long
 they run, and which ones actually decide something.
 
-{% assign paginas = site.pages | where_exp: "p", "p.url contains '/test/' and p.lang == page.lang" | sort: "title" -%}
+{% assign paginas = site.pages | where_exp: "p", "p.url contains '/test/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
 - **[{{ p.title }}]({{ p.url }})** — {{ p.description }}

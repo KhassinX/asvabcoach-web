@@ -12,7 +12,7 @@ updated: 2026-09-13
 The ASVAB produces more than one number, and they answer different questions. The AFQT
 decides whether you can enlist; the line scores decide what you can do once you are in.
 
-{% assign paginas = site.pages | where_exp: "p", "p.url contains '/scores/' and p.lang == page.lang" | sort: "title" -%}
+{% assign paginas = site.pages | where_exp: "p", "p.url contains '/scores/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
 - **[{{ p.title }}]({{ p.url }})** — {{ p.description }}
