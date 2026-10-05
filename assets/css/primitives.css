@@ -128,8 +128,9 @@ a:hover { text-decoration-thickness: 2px; }
   min-width: 44px;
   min-height: 44px;
 }
-nav a, .lang a { justify-content: center; }
-.lang span { display: inline-block; min-width: 44px; text-align: center; }
+nav a { justify-content: center; }
+.lang span { display: inline-block; min-width: 44px; }
+.lang > :last-child { justify-content: flex-end; text-align: right; }
 
 .doc { padding-block: var(--khassinx-s-7) var(--khassinx-s-8); }
 .doc h1 { max-width: 20em; font-size: var(--khassinx-t-title); line-height: 1.08; letter-spacing: -0.03em; overflow-wrap: break-word; }

@@ -15,7 +15,7 @@
   <div>
     <dl class="manifest">
       {%- for r in h.manifest %}
-      <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+      <div><dt class="mono">{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
       {%- endfor %}
     </dl>
     <p class="policy meta"><a class="more" href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include legal-date.html d=pp.updated lang=L %}</span><span>{{ ui.version }} {{ pp.version }}</span></p>

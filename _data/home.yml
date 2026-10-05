@@ -45,7 +45,7 @@ en:
 es:
   h1: "Tutor de IA privado para el ASVAB."
   lead: "iPhone, iPad, Mac, Apple Watch. Gratis para empezar. Desbloqueo único, sin suscripción."
-  badge_alt: "Descarga en el App Store"
+  badge_alt: "Descárgalo en el App Store"
   privacy_h: "Privacidad"
   manifest:
     - { k: "Datos recolectados", v: "Ninguno. Etiqueta del App Store: «Data Not Collected»" }

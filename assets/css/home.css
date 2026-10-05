@@ -28,10 +28,11 @@
   padding-block: var(--khassinx-s-3);
   border-bottom: 1px solid var(--khassinx-rule);
 }
-.manifest dt { font-family: var(--font-mono); font-size: var(--khassinx-t-small); color: var(--khassinx-ink-2); padding-top: 0.15em; }
+.manifest dt { font-size: var(--khassinx-t-small); color: var(--khassinx-ink-2); padding-top: 0.15em; }
 .manifest dd { text-wrap: pretty; }
 .policy { display: flex; flex-wrap: wrap; align-items: center; gap: 0 var(--khassinx-s-4); margin-top: var(--khassinx-s-3); }
 .reach { margin-top: var(--khassinx-s-5); max-width: var(--khassinx-measure); font-size: var(--khassinx-t-small); color: var(--khassinx-ink-2); }
+.measure > p + p { margin-top: var(--khassinx-s-4); }
 .rows { max-width: var(--khassinx-doc); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--khassinx-rule); }
 .rows li { padding-block: var(--khassinx-s-4); border-bottom: 1px solid var(--khassinx-rule); }
 .faq { max-width: var(--khassinx-doc); }

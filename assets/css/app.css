@@ -1,6 +1,6 @@
 .wordmark { gap: var(--khassinx-s-3); font-weight: 600; }
 .wordmark img { display: block; width: 32px; height: 32px; }
-.disclaimer { flex-basis: 100%; max-width: var(--khassinx-doc); font-size: var(--khassinx-t-meta); }
+.disclaimer { max-width: var(--khassinx-doc); margin-top: var(--khassinx-s-5); font-size: var(--khassinx-t-meta); }
 .visually-hidden {
   position: absolute;
   width: 1px;
