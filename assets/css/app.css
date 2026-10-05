@@ -14,3 +14,4 @@
 }
 .store { --badge-h: 44px; justify-self: start; display: block; width: fit-content; margin: var(--khassinx-s-3) 0 0 calc(var(--badge-h) / -4); padding: calc(var(--badge-h) / 4); }
 .store img { display: block; width: auto; height: var(--badge-h); }
+.toc ol { list-style: none; padding-left: 0; }

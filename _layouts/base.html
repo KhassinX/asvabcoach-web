@@ -64,12 +64,12 @@
   <meta name="msapplication-TileImage" content="/assets/favicons/mstile-150x150.png">
 
   <link rel="preload" href="/assets/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/assets/css/tokens.css">
-  <link rel="stylesheet" href="/assets/css/primitives.css">
-  <link rel="stylesheet" href="{{ site.app_tokens_css }}">
-  <link rel="stylesheet" href="/assets/css/app.css">
-  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}">{% endfor %}
-  <script src="/assets/js/theme.js"></script>
+  <link rel="stylesheet" href="/assets/css/tokens.css?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="/assets/css/primitives.css?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="{{ site.app_tokens_css }}?v={{ site.time | date: '%s' }}">
+  <link rel="stylesheet" href="/assets/css/app.css?v={{ site.time | date: '%s' }}">
+  {% for css in page.extra_css %}<link rel="stylesheet" href="{{ css }}?v={{ site.time | date: '%s' }}">{% endfor %}
+  <script src="/assets/js/theme.js?v={{ site.time | date: '%s' }}"></script>
 </head>
 <body>
 <a class="skip" href="#main">{{ ui.skip_to_main }}</a>
@@ -99,6 +99,6 @@
     <p class="disclaimer">{{ ui.disclaimer }}</p>
   </div>
 </footer>
-{% for js in page.extra_js %}<script src="{{ js }}" defer></script>{% endfor %}
+{% for js in page.extra_js %}<script src="{{ js }}?v={{ site.time | date: '%s' }}" defer></script>{% endfor %}
 </body>
 </html>

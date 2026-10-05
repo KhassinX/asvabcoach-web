@@ -50,7 +50,7 @@ algunos incentivos están escritos en términos de ellas y no del percentil crud
 </thead>
 <tbody>
 {% for c in escala.categories -%}
-<tr><td data-label="Categoría" markdown="span">**{{ c.name }}**</td><td data-label="Percentil" markdown="span">{{ c.min }}–{{ c.max }}</td><td data-label="Qué significa" markdown="span">{{ c.description_es }}</td></tr>
+<tr><td data-label="Categoría" markdown="span">**{{ c.name | replace: 'Category', 'Categoría' }}**</td><td data-label="Percentil" markdown="span">{{ c.min }}–{{ c.max }}</td><td data-label="Qué significa" markdown="span">{{ c.description_es }}</td></tr>
 {% endfor %}
 </tbody>
 </table>
