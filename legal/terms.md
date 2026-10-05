@@ -13,7 +13,7 @@ redirect_from:
   - /terms/
 updated: 2026-10-05
 h1: "Terms of Use — ASVAB Coach"
-version: "1.2"
+version: "1.3"
 related:
   - /legal/privacy/
   - /support/
@@ -164,4 +164,4 @@ Expected response time: 7 business days.
 
 ---
 
-*Last updated: 2026-10-05 · Version 1.2*
+*Last updated: 2026-10-05 · Version 1.3*

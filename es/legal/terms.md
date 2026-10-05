@@ -8,7 +8,7 @@ canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
 updated: 2026-10-05
 h1: "Términos de Uso — ASVAB Coach"
-version: "1.2"
+version: "1.3"
 related:
   - /es/legal/privacy/
   - /es/support/
@@ -159,4 +159,4 @@ Tiempo de respuesta esperado: 7 días hábiles.
 
 ---
 
-*Última actualización: 2026-10-05 · Versión 1.2*
+*Última actualización: 2026-10-05 · Versión 1.3*
