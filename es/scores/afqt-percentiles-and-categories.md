@@ -60,7 +60,7 @@ Dos aclaraciones sobre cómo leer esa tabla.
 **Describen una banda de puntaje, no a una persona.** Una categoría es una posición en una
 escala, igual que un percentil. No dice nada sobre lo que alguien puede aprender.
 
-**La {{ escala.categories[2].name }} es la línea que casi todos persiguen de verdad.**
+**La {{ escala.categories[2].name | replace: 'Category', 'Categoría' }} es la línea que casi todos persiguen de verdad.**
 Pasar el piso de una rama te hace elegible; llegar a
 {{ escala.categories[2].min }} es donde los incentivos de alistamiento empiezan a aparecer
 en la conversación. Los pisos son más bajos: mira
@@ -68,11 +68,11 @@ en la conversación. Los pisos son más bajos: mira
 {% if minimos.summary.floor_is_uniform %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }} o {{ minimos.summary.floor_max }}{% endif %}
 con diploma.
 
-**La {{ escala.categories[4].name }} tiene tope, no está prohibida.** Por ley, la Categoría IV
+**La {{ escala.categories[4].name | replace: 'Category', 'Categoría' }} tiene tope, no está prohibida.** Por ley, la Categoría IV
 no puede pasar del 4 % de los alistamientos anuales a servicio activo de una rama, y el
 Secretario de Defensa puede subir ese tope al 20 % (10 U.S.C. §520(a)).
 
-**La {{ escala.categories[5].name }} es la banda más baja.** Por debajo del percentil
+**La {{ escala.categories[5].name | replace: 'Category', 'Categoría' }} es la banda más baja.** Por debajo del percentil
 {{ escala.categories[4].min }} la política del DoD prohíbe el alistamiento
 (DoDI 1145.01, ¶3.c(1)).
 
