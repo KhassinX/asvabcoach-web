@@ -31,7 +31,7 @@ summary:
 **Operator / Data controller**: KHASSINX LLC, a Florida limited liability company
 **Contact**: legal@khassinx.com
 
-**ASVAB Coach for Mac is still at version 3.4.0**, so nothing marked "From version 3.5.0" below applies to it yet.
+**On every device**, what's marked "From version 3.5.0" applies once that device has version 3.5.0 or later.
 
 ---
 
@@ -240,7 +240,7 @@ We aim to respond within 7 business days.
 
 *Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*
 
-*1.7 — 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple's age-range check is a third network connection, also Apple's; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that ASVAB Coach for Mac is still at version 3.4.0. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
+*1.7 — 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple's age-range check is a third network connection, also Apple's; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that what is marked applies on each device once it has version 3.5.0 or later. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
 
 *1.6 — 9 Sep 2026.* Added the "Sharing" section (the recruiter card and the cheat sheet, through Apple's share sheet), and added Momentum — daily goal level, credits earned today, banked grace days, achievements and the optional exam date — to "Where your data lives". Nothing about the app changed.
 

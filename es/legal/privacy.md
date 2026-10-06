@@ -29,7 +29,7 @@ summary:
 **Operador / Responsable del tratamiento**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
 
-**ASVAB Coach para Mac sigue en la versión 3.4.0**, así que nada de lo que abajo dice «Desde la versión 3.5.0» aplica todavía a ella.
+**En cada dispositivo**, lo que dice «Desde la versión 3.5.0» aplica cuando ese dispositivo tiene la versión 3.5.0 o posterior.
 
 ---
 
@@ -255,7 +255,7 @@ Procuramos responder dentro de 7 días hábiles.
 
 *Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
 
-*1.7 — 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que ASVAB Coach para Mac sigue en la versión 3.4.0. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
+*1.7 — 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que lo marcado aplica en cada dispositivo cuando tiene la versión 3.5.0 o posterior. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
 
 *1.6 — 9 sep 2026.* Se agregó la sección «Compartir» (la tarjeta para el reclutador y el resumen de estudio, a través de la hoja de compartir de Apple), y se agregó Momentum —nivel de meta diaria, créditos del día, días de gracia acumulados, logros y la fecha de examen opcional— a «Dónde viven tus datos». Nada de la app cambió.
 
