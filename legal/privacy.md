@@ -90,6 +90,8 @@ Everything you do in ASVAB Coach is stored **locally on your device** and (optio
 
 iCloud sync uses **your** Apple Account. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
 
+On iPad and Mac, and on iPhone when the app uses the same sidebar layout, the app tells the system which section you have open (for example, "Vocabulary"): its name and an internal identifier — never your answers or your progress. The system uses it for two things: **Handoff**, which offers to continue that section on your other devices, and **Spotlight**, which adds it to that device's own search index so a search can take you back to it. Both are Apple's: the system handles them, the app opens no connection of its own for them, and nothing reaches us. The app never makes these entries public (it doesn't turn on Spotlight's public indexing). Up to version 3.4.0 this can include the name of a section you haven't unlocked. **From version 3.5.0**, only sections you have unlocked are shared this way; entries indexed before are not removed. The in-app reset doesn't remove them from Spotlight either; they hold only a section's name and its internal identifier.
+
 ## AI Tutor — Apple Intelligence on-device only
 
 ASVAB Coach uses **Apple Intelligence (FoundationModels)** to generate adaptive explanations and step-by-step math solutions for ASVAB practice questions.
@@ -109,11 +111,8 @@ guide sections and the question bank. **Nothing is sent anywhere.** There is no 
 behind it, no third party, and no network call of any kind — what you type never leaves the device.
 
 Up to version 3.3.3 this screen worked the other way: it prefixed what you typed with `ASVAB` and
-handed it to Safari as a Google search. **That stopped in 3.4.0, and this policy kept describing
-the old behaviour until 2026-09-05.** We are naming the gap rather than quietly deleting the
-paragraph, because the old screen also carried a footer promising your searches were private while
-your text was travelling to Google — and a privacy policy that only ever gets more flattering is
-not one you can check.
+handed it to Safari as a Google search. **That stopped in 3.4.0.** The old screen also carried a footer promising your searches were
+private while your text was sent to Google.
 
 The one thing that still reaches the internet on your behalf is a link **you** tap:
 
@@ -143,12 +142,6 @@ The share sheet is Apple's, it runs on your device, and **you** pick the destina
 Mail, Files, print, AirDrop, whatever you choose. The app never picks one for you, never shares in
 the background, and never keeps or receives a copy. What you send goes where you sent it, and
 nowhere else — we are not told that you shared, and nothing reaches us.
-
-This section was missing from version 1.5 of this policy, published 2026-09-05, and from 1.4 it was
-only half-missing: 1.5 kept the "links you tap" half and dropped the sharing half. We are saying so
-rather than adding the section quietly, for the same reason the rest of this document names its own
-gaps — an omission that makes the app look more private than it is, is the kind of error that has
-to be pointed at, not just fixed.
 
 ## In-App Purchases
 
@@ -207,7 +200,7 @@ For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGD
 
 Because we hold no data about you, most such requests are moot: there is nothing to delete, export, correct, or transfer at our end. To exercise any right for ASVAB Coach, reset your data in-app or email legal@khassinx.com. You also retain full control through Apple's mechanisms:
 
-- **Delete all app data**: delete the app from your device. Open Settings → your name → iCloud → Manage Storage → ASVAB Coach → Delete Data to also remove the iCloud KV copy
+- **Delete all app data**: reset in-app first (below) — that is the step that also erases the iCloud copy — and then delete the app from each of your devices. Deleting the app alone leaves the iCloud copy in place, and your progress comes back if you install the app again
 - **In-app reset, up to version 3.4.0**: open About (on iPhone it is under "See all features"; on iPad, in the sidebar) and tap "Reset all progress"; the same button is also in My Progress. Once you confirm, it wipes your progress on the device and in iCloud KV
 - **In-app reset, from version 3.5.0**: open Settings → About (Settings is in the sidebar whenever the app shows one, as on iPad and Mac, and otherwise under "See all features", as on iPhone; on Apple Watch, it's More → About) and tap "Reset all progress"; the same button is also in My Progress. If the app detects your iCloud account, it erases your progress on this device and, through iCloud, on your other devices as they sync; to let them know, it leaves the date and time of the reset in your iCloud. A device that already had the app when you reset erases its whole copy, including anything studied on it since the reset. On iPhone, iPad and Mac it does this only if it detects a connection when you tap the button; otherwise it erases nothing and asks you to connect first. On Apple Watch it doesn't check the connection: it erases the watch right away and passes the reset on to your other devices once the watch syncs. If the app doesn't detect an account, it erases your progress on this device. Either way, a reset isn't guaranteed to reach or hold on every device: a device with an older version of the app keeps its copy, and in some cases erased progress can come back from another device — for example, if you use iCloud but the app hadn't detected your account. Your purchase isn't affected
 
@@ -219,7 +212,7 @@ Until version 3.3.3 this section also covered an optional web search that handed
 
 ## Changes to this policy
 
-If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. As of this revision (2026-09-06), no change is planned because we genuinely do not collect data and we have no business model that benefits from collecting it (one-time purchase, no advertising).
+If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. No change is planned: we do not collect data, and we have no business model that benefits from collecting it (one-time purchase, no advertising).
 
 ## Jurisdiction
 
@@ -240,7 +233,7 @@ We aim to respond within 7 business days.
 
 *Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*
 
-*1.7 — 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple's age-range check is a third network connection, also Apple's; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that what is marked applies on each device once it has version 3.5.0 or later. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
+*1.7 — 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple's age-range check is a third network connection, also Apple's; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that what is marked applies on each device once it has version 3.5.0 or later. Describes the section name the app hands to Handoff and Spotlight. Replaces the route through iCloud's Manage Storage with the in-app reset, because we could not confirm that the route reaches this app's copy, and states that deleting the app does not erase the iCloud copy. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
 
 *1.6 — 9 Sep 2026.* Added the "Sharing" section (the recruiter card and the cheat sheet, through Apple's share sheet), and added Momentum — daily goal level, credits earned today, banked grace days, achievements and the optional exam date — to "Where your data lives". Nothing about the app changed.
 

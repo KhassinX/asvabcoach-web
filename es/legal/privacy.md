@@ -88,6 +88,8 @@ Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (o
 
 La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
 
+En iPad y Mac, y en iPhone cuando la app usa esa misma disposición con barra lateral, la app le dice al sistema qué sección tienes abierta (por ejemplo, «Vocabulario»): su nombre y un identificador interno — nunca tus respuestas ni tu progreso. El sistema lo usa para dos cosas: **Handoff**, que te ofrece continuar esa sección en tus otros dispositivos, y **Spotlight**, que la agrega al índice de búsqueda propio de ese dispositivo para que una búsqueda te lleve de vuelta a ella. Las dos son de Apple: las maneja el sistema, la app no abre ninguna conexión propia para ellas, y nada de esto nos llega. La app nunca hace públicas estas entradas (no activa la indexación pública de Spotlight). Hasta la versión 3.4.0 esto puede incluir el nombre de una sección que no has desbloqueado. **Desde la versión 3.5.0**, solo se comparten así las secciones que desbloqueaste; lo que ya estaba indexado no se borra. El reinicio de la app tampoco las quita de Spotlight; solo llevan el nombre de una sección y su identificador interno.
+
 ## Tutor de IA — solo Apple Intelligence en el dispositivo
 
 ASVAB Coach usa **Apple Intelligence (FoundationModels)** para generar explicaciones adaptativas y soluciones de matemática paso a paso para las preguntas de práctica del ASVAB.
@@ -108,11 +110,8 @@ un buscador detrás, no hay terceros y no hay ninguna llamada de red — lo que 
 dispositivo.
 
 Hasta la versión 3.3.3 esta pantalla funcionaba al revés: le anteponía `ASVAB` a lo que escribías y
-se lo entregaba a Safari como una búsqueda de Google. **Eso terminó en la 3.4.0, y esta política
-siguió describiendo el comportamiento viejo hasta el 2026-09-05.** Lo decimos en vez de borrar el
-párrafo sin más, porque aquella pantalla además llevaba al pie una promesa de que tus búsquedas eran
-privadas mientras tu texto viajaba a Google — y una política de privacidad que sólo se vuelve más
-favorable no es una política que se pueda verificar.
+se lo entregaba a Safari como una búsqueda de Google. **Eso terminó en la 3.4.0.** Aquella pantalla además llevaba al pie una promesa de que tus
+búsquedas eran privadas mientras tu texto se enviaba a Google.
 
 Lo único que todavía llega a internet en tu nombre es un enlace que **tú** tocas:
 
@@ -142,12 +141,6 @@ La hoja de compartir es de Apple, corre en tu dispositivo y **tú** eliges el de
 Mail, Archivos, imprimir, AirDrop, lo que quieras. La app nunca elige por ti, nunca comparte en
 segundo plano y nunca guarda ni recibe una copia. Lo que envías llega a donde lo enviaste y a
 ningún otro lado — a nosotros nadie nos avisa que compartiste, y no nos llega nada.
-
-Esta sección faltaba en la versión 1.5 de esta política, publicada el 2026-09-05, y en la 1.4
-faltaba a medias: la 1.5 se quedó con la mitad de «los enlaces que tocas» y dejó afuera la mitad de
-compartir. Lo decimos en vez de agregar la sección en silencio, por la misma razón por la que el
-resto de este documento nombra sus propios huecos — una omisión que hace ver a la app más privada
-de lo que es, es de los errores que hay que señalar, no sólo corregir.
 
 ## Compras dentro de la app
 
@@ -222,7 +215,7 @@ Como no tenemos ningún dato sobre ti, la mayoría de esas solicitudes son irrel
 
 También mantienes control total a través de los mecanismos de Apple:
 
-- **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → tu nombre → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
+- **Borrar todos los datos de la app**: primero reinicia dentro de la app (más abajo) —ése es el paso que borra también la copia de iCloud— y después borra la app de cada uno de tus dispositivos. Borrar solo la app deja la copia de iCloud donde está, y tu progreso vuelve si instalas la app de nuevo
 - **Reinicio dentro de la app, hasta la versión 3.4.0**: abre Acerca de (en el iPhone está en "Ver todas las funciones"; en el iPad, en la barra lateral) y toca "Reiniciar progreso"; el mismo botón está también en Mi Progreso. Cuando lo confirmas, borra tu progreso en el dispositivo y en iCloud KV
 - **Reinicio dentro de la app, desde la versión 3.5.0**: abre Ajustes → Acerca de (Ajustes está en la barra lateral cuando la app la muestra, como en el iPad y el Mac, y si no, en "Ver todas las funciones", como en el iPhone; en el Apple Watch, es Más → Acerca de) y toca "Reiniciar progreso"; el mismo botón está también en Mi progreso. Si la app detecta tu cuenta de iCloud, borra tu progreso en este dispositivo y, a través de iCloud, en tus otros dispositivos a medida que se sincronizan; para avisarles, deja en tu iCloud la fecha y hora del reinicio. Un dispositivo que ya tenía la app cuando reiniciaste borra su copia entera, incluido lo que hayas estudiado en él desde el reinicio. En el iPhone, el iPad y el Mac solo lo hace si detecta conexión cuando tocas el botón; si no, no borra nada y te pide que te conectes primero. En el Apple Watch no revisa la conexión: borra el reloj en el acto y pasa el reinicio a tus otros dispositivos cuando el reloj se sincroniza. Si la app no detecta una cuenta, borra tu progreso en este dispositivo. En cualquier caso, no se garantiza que un reinicio llegue a todos los dispositivos ni que se sostenga en todos: un dispositivo con una versión anterior de la app conserva su copia, y en algunos casos lo borrado puede volver desde otro dispositivo — por ejemplo, si usas iCloud pero la app no había detectado tu cuenta. No afecta tu compra
 
@@ -234,7 +227,7 @@ Hasta la versión 3.3.3 esta sección cubría además una búsqueda web opcional
 
 ## Cambios a esta política
 
-Si alguna vez modificamos materialmente nuestras prácticas de datos, actualizaremos este documento con una nueva fecha de vigencia y publicaremos un aviso dentro de la app. Al día de esta revisión (2026-09-06), no hay cambios previstos porque genuinamente no recopilamos datos y nuestro modelo de negocio (pago único, sin publicidad) no se beneficia de recopilarlos.
+Si alguna vez modificamos materialmente nuestras prácticas de datos, actualizaremos este documento con una nueva fecha de vigencia y publicaremos un aviso dentro de la app. No hay cambios previstos: no recopilamos datos, y nuestro modelo de negocio (pago único, sin publicidad) no se beneficia de recopilarlos.
 
 ## Jurisdicción
 
@@ -255,7 +248,7 @@ Procuramos responder dentro de 7 días hábiles.
 
 *Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
 
-*1.7 — 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que lo marcado aplica en cada dispositivo cuando tiene la versión 3.5.0 o posterior. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
+*1.7 — 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que lo marcado aplica en cada dispositivo cuando tiene la versión 3.5.0 o posterior. Describe el nombre de sección que la app le pasa a Handoff y a Spotlight. Reemplaza la ruta por Administrar almacenamiento de iCloud con el reinicio dentro de la app, porque no pudimos confirmar que esa ruta llegue a la copia de esta app, e indica que borrar la app no borra la copia de iCloud. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
 
 *1.6 — 9 sep 2026.* Se agregó la sección «Compartir» (la tarjeta para el reclutador y el resumen de estudio, a través de la hoja de compartir de Apple), y se agregó Momentum —nivel de meta diaria, créditos del día, días de gracia acumulados, logros y la fecha de examen opcional— a «Dónde viven tus datos». Nada de la app cambió.
 
