@@ -66,7 +66,7 @@ We apply a `TutorSafety` wrapper to all AI output that rejects responses violati
 ## 4. Branch-specific scores (AFQT minimums)
 
 {% comment %}audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01.{% endcomment %}
-ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 31, Coast Guard: 32"). These reflect **current DoD policy** as of the app's last update.
+ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 31, Coast Guard: 32"). These reflect **current DoD policy** as of the app’s last update.
 
 - DoD policy on minimum AFQT scores **changes periodically**. We update the app when we learn of a change, but there may be a lag between a policy change and our update.
 - The displayed minimums are **baseline requirements**. Specific jobs (MOS/rating) within each branch have their own additional score requirements (line scores) that may be higher.
@@ -74,7 +74,7 @@ ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., 
 
 ## 5. Free tier and one-time unlock
 
-- ASVAB Coach is **free to download and use**, with a **permanent free tier** — no account, no trial, no countdown clock. The free tier includes **50 questions from any category** of the question bank, each with the on-device AI Tutor's explanation; one full diagnostic (estimated AFQT) and the Quick 10, neither of which counts against those 50; and the per-branch AFQT minimums table.
+- ASVAB Coach is **free to download and use**, with a **permanent free tier** — no account, no trial, no countdown clock. The free tier includes **50 questions from any category** of the question bank, each with the on-device AI Tutor’s explanation; one full diagnostic (estimated AFQT) and the Quick 10, neither of which counts against those 50; and the per-branch AFQT minimums table.
 - Full access is unlocked by a **single one-time purchase** (product `com.khassinx.asvabcoach.fullaccess`) at the one-time purchase price as listed on the App Store (or local equivalent set by Apple). It unlocks the entire 725-question bank, the mock CAT-ASVAB, unlimited AI Tutor, SM-2 spaced repetition, Apple Watch, and Mac.
 - The purchase is a **non-consumable in-app purchase** — once bought, it persists for the same Apple Account forever, restorable via the "Restore Purchases" button, and shared through **Family Sharing**.
 - **No subscription**. No auto-renewal. No trial that converts to a charge. Anyone who previously purchased Full Access keeps all of their access.
@@ -89,7 +89,7 @@ You agree to use ASVAB Coach for personal, lawful educational purposes only. You
 - Extract the question bank for redistribution
 - Use any automated system to scrape, mine, or extract data from the app
 - Bypass the full-access feature gate or purchase verification (e.g., by jailbreak, app modification, or fraudulent IAP receipts)
-- Use the app in any way that violates Apple's App Store policies
+- Use the app in any way that violates Apple’s App Store policies
 
 Attempts to circumvent the in-app purchase verification trigger our `Transaction.currentEntitlements` check + `revocationDate` honoring. Detected fraud results in access revocation and is reported to Apple.
 
@@ -155,7 +155,7 @@ If part of these terms is found unenforceable, the rest remains in effect. Our f
 
 ## 12. Contact
 
-Questions, concerns, refund disputes (after exhausting Apple's process), or accessibility feedback:
+Questions, concerns, refund disputes (after exhausting Apple’s process), or accessibility feedback:
 
 - **Email**: legal@khassinx.com
 - **Mail**: Available on written request via email
