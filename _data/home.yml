@@ -48,7 +48,7 @@ es:
   badge_alt: "Descárgalo en el App Store"
   privacy_h: "Privacidad"
   manifest:
-    - { k: "Datos recolectados", v: "Ninguno. Etiqueta del App Store: «Data Not Collected»" }
+    - { k: "Datos recopilados", v: "Ninguno. Etiqueta del App Store: «Data Not Collected»" }
     - { k: "Cuenta", v: "Ninguna" }
     - { k: "Dónde viven tus datos", v: "En tu dispositivo, sincronizados por tu iCloud" }
     - { k: "Rastreo", v: "Ninguno" }

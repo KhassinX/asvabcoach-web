@@ -6,10 +6,13 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
+redirect_from:
+  - /es/privacy
+  - /es/privacy/
 updated: 2026-10-06
 effective: 2026-09-06
 h1: "Política de Privacidad — ASVAB Coach"
-version: "1.6"
+version: "1.7"
 related:
   - /es/legal/terms/
   - /es/contact/
@@ -25,6 +28,8 @@ summary:
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador / Responsable del tratamiento**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
+
+**ASVAB Coach para Mac sigue en la versión 3.4.0**, así que nada de lo que abajo dice «Desde la versión 3.5.0» aplica todavía a ella.
 
 ---
 
@@ -54,6 +59,7 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 <tr><td data-label="Categoría de datos" markdown="span">Analytics de uso</td><td data-label="¿Recopilamos?" markdown="span">Sin analíticas propias ni SDK de analíticas. Apple nos pasa datos de uso agregados solo si en los Ajustes de tu aparato elegiste compartir con los desarrolladores.</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Registros de fallos (crash logs)</td><td data-label="¿Recopilamos?" markdown="span">Solo si tú lo eliges — si en los Ajustes de tu aparato elegiste compartir con los desarrolladores, Apple nos pasa los informes de fallos. Esa elección es tuya, en Ajustes, no nuestra. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos.</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Cookies / píxeles de tracking</td><td data-label="¿Recopilamos?" markdown="span">❌ N/A (somos una app nativa, no un sitio web)</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Rango de edad</td><td data-label="¿Recopilamos?" markdown="span">❌ No. **Desde la versión 3.5.0:** donde la ley lo exige, la app lo lee en tu dispositivo y lo descarta; ver «Tu rango de edad».</td></tr>
 </tbody>
 </table>
 
@@ -74,8 +80,11 @@ Todo lo que haces en ASVAB Coach se guarda **localmente en tu dispositivo** y (o
 <tr><td data-label="Qué" markdown="span">Resultados del diagnóstico</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
 <tr><td data-label="Qué" markdown="span">Momentum — tu nivel de meta diaria, los créditos de hoy, los días de gracia acumulados, si el anillo se muestra, y **tu fecha de examen si la cargaste** (es opcional; si la dejas vacía, Momentum es un hábito diario y nada más)</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
 <tr><td data-label="Qué" markdown="span">Cuáles de los 17 logros conseguiste</td><td data-label="Dónde" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="Qué" markdown="span">**Desde la versión 3.5.0:** un simulacro completo que dejaste a medias, para retomarlo (iPhone, iPad y Mac)</td><td data-label="Dónde" markdown="span">`UserDefaults`, solo en ese dispositivo</td></tr>
 </tbody>
 </table>
+
+**Desde la versión 3.5.0**, la app guarda además en el dispositivo las marcas de las que depende el reinicio — entre ellas, un token opaco que Apple le entrega a la app para la cuenta de iCloud que tiene la sesión iniciada en el dispositivo, y que la app guarda solo para notar cuándo esa cuenta cambia. Nada de esto nos llega.
 
 La sincronización iCloud usa **tu** Cuenta de Apple. Nunca vemos, accedemos ni tenemos forma de recuperar estos datos. Apple los cifra en tránsito y en reposo. Si borras la app y deshabilitas iCloud para ella, los datos desaparecen. No hay copia en ningún servidor controlado por nosotros.
 
@@ -89,7 +98,7 @@ Apple Intelligence requiere un dispositivo Apple reciente con Apple Intelligence
 
 Para los compromisos de privacidad de Apple, ver la documentación de [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/). ASVAB Coach usa **solo** inferencia de Apple Intelligence on-device — nunca Private Cloud Compute, y nunca IA en la nube.
 
-La inferencia de Apple Intelligence es local — sin red. La app abre por su cuenta exactamente dos tipos de conexión de red: **Apple StoreKit**, para tu compra única, y el **almacenamiento clave-valor de iCloud**, que lleva tu progreso y tu rama entre tus propios dispositivos, bajo tu propia cuenta de Apple. Nunca abre una hacia nosotros, porque no tenemos servidor. Cualquier otra cosa que llegue a internet lo hace porque tocaste un enlace y tu navegador lo siguió — se describe abajo.
+La inferencia de Apple Intelligence es local — sin red. La app abre por su cuenta conexiones de red para dos cosas nada más, las dos de Apple: **Apple StoreKit**, para tu compra única, y el **almacenamiento clave-valor de iCloud**, que lleva tu progreso y tu rama entre tus propios dispositivos, bajo tu propia cuenta de Apple. **Desde la versión 3.5.0** hay una tercera, también de Apple: la **comprobación de rango de edad de Apple**, que corre cada vez que arranca la app y para la que el sistema de Apple puede comunicarse con Apple (ver «Tu rango de edad»). Nunca abre una hacia nosotros, porque no tenemos servidor. Cualquier otra cosa que llegue a internet lo hace porque tocaste un enlace y tu navegador lo siguió — se describe abajo.
 
 ## Búsqueda — corre en tu dispositivo
 
@@ -167,18 +176,18 @@ Una verificación automática en nuestro proceso de publicación lo asegura: se 
 Este sitio es estático y no tiene formularios. Nosotros no le agregamos analytics, ni tracking, ni
 píxeles, ni ningún script de terceros, y no fijamos ninguna cookie propia. No rastreamos a nadie, así
 que no hay nada que una señal "Do Not Track" pueda apagar, y ningún tercero está autorizado a
-recolectar información sobre tu actividad en otros sitios a través de este sitio web.
+recopilar información sobre tu actividad en otros sitios a través de este sitio web.
 
-Ahora, lo que sí verás si abres "Ver código fuente" de esta misma página: **Cloudflare inserta dos
+Ahora, lo que sí verás si abres "Ver código fuente" de esta misma página: **Cloudflare puede insertar
 scripts suyos al entregarla.** No están en el HTML que escribimos —los agrega Cloudflare en el
 camino— y se sirven desde este mismo dominio, bajo `/cdn-cgi/`:
 
 - `/cdn-cgi/challenge-platform/scripts/jsd/main.js` — la detección de bots de Cloudflare. Hace
   comprobaciones en tu navegador para distinguir a una persona del tráfico automatizado, y en ese
   proceso Cloudflare puede fijar una cookie técnica de seguridad. Es protección del sitio: no es
-  analytics, no es publicidad y no sigue tu actividad en otros sitios.
+  analytics, no es publicidad y no sigue tu actividad en otros sitios. La Política de Seguridad de Contenido (CSP) de este sitio bloquea el cargador en línea que Cloudflare agrega para él, así que en nuestra prueba del 2026-10-06 no se ejecutó.
 - `/cdn-cgi/scripts/…/cloudflare-static/email-decode.min.js` — descifra las direcciones de correo que
-  Cloudflare ofusca en la página, para que los recolectores de spam no las levanten.
+  Cloudflare ofusca en la página, para que los programas que buscan correos para enviar spam no las levanten.
 
 Ninguno de los dos es nuestro, ninguno nos reporta nada y de ninguno recibimos dato alguno. Lo
 decimos con este detalle porque una política que niegue lo que cualquiera puede comprobar con "Ver
@@ -197,7 +206,13 @@ Si nos escribes, recibimos tu dirección de email y tu mensaje. Los usamos solo 
 
 ASVAB Coach tiene clasificación **4+** en el App Store. No contiene material restringido por edad y no muestra publicidad. Aquello con lo que enseña —la guía de estudio y el banco de preguntas— viene adentro de la app y se busca en tu dispositivo. La Búsqueda también corre en tu dispositivo, sobre ese mismo contenido. Nada llega a la web abierta salvo que toques un enlace tú: nuestro sitio, o la página oficial de reclutamiento de la rama que elegiste — y ahí lo abre tu navegador. La app está hecha para quien se prepara para el ASVAB, en general estudiantes de secundaria en adelante, pero nada dentro de ella está limitado por edad.
 
-No recopilamos datos de nadie, a ninguna edad. Eso incluye a los menores de 13 años: no hay cuenta, no hay registro, no hay analíticas propias y no nos llega nada de tu dispositivo salvo lo que Apple nos pasa si elegiste compartir con los desarrolladores — así que no hay información personal de un menor que podamos recolectar, a sabiendas ni de ningún otro modo, ni que podamos divulgar a nadie. Como no recopilamos nada, no hay nada que requiera el consentimiento parental verificable que exige la COPPA.
+No recopilamos datos de nadie, a ninguna edad. Eso incluye a los menores de 13 años: no hay cuenta, no hay registro, no hay analíticas propias y no nos llega nada de tu dispositivo salvo lo que Apple nos pasa si elegiste compartir con los desarrolladores — así que no hay información personal de un menor que podamos recopilar, a sabiendas ni de ningún otro modo, ni que podamos divulgar a nadie. Como no recopilamos nada, no hay nada que requiera el consentimiento parental verificable que exige la COPPA. **Desde la versión 3.5.0**, donde la ley lo exige, la app sí lee tu rango de edad a través de Apple, y lo descarta; ver «Tu rango de edad».
+
+## Tu rango de edad — sólo donde la ley lo exige
+
+**Desde la versión 3.5.0.** Algunos lugares, como Texas, ahora exigen que las apps comprueben la categoría de edad de quien las usa. Donde el sistema de Apple le indica a la app que tu región lo exige, ASVAB Coach le pide a Apple tu **rango de edad**, el que administra la función «Rango de edad para apps» de Apple: menos de 13, de 13 a 15, de 16 a 17, o 18 o más — nunca tu edad ni tu fecha de nacimiento. Junto con el rango, la respuesta de Apple puede indicar cómo se confirmó la edad (por ti, por tu padre, madre o tutor, o por otra comprobación) y si están activos ciertos controles parentales de Apple; la app no usa nada de eso. Si Apple te pregunta antes, lo comparte por su cuenta o no lo comparte depende de tu región y de tu configuración de «Rango de edad para apps» (o la de tu padre, madre o tutor, en un grupo familiar), y la aplica la función de Apple, no la app: en algunas regiones la ley hace que se comparta de forma automática con las apps que lo piden. Esa función, y lo que guarda sobre lo que compartiste, son de Apple, no nuestros. La app funciona igual con cualquier respuesta, y también si el rango no se comparte o el sistema no contesta: tiene clasificación 4+ y nada que limitar por edad, así que un menor y un adulto reciben la misma app. La respuesta —el rango y lo que viene con él— se lee en tu dispositivo y se descarta en cuanto llega: la app no la guarda en el dispositivo, no la sincroniza con iCloud, no la escribe en ningún archivo de registro y nunca nos la envía. Cada vez que arranca (y, si el sistema no contestó, otra vez al abrirse otra ventana), la app le pregunta al sistema de Apple si tu región lo exige, y sólo pide el rango si la respuesta es sí; el sistema de Apple atiende las dos preguntas y puede necesitar comunicarse con Apple para contestarlas. El Apple Watch no tiene forma de pedirlo, así que la app del reloj nunca lo hace.
+
+Hasta la versión 3.4.0, la app no pide tu rango de edad en ningún caso.
 
 ## Tus derechos
 
@@ -208,11 +223,12 @@ Como no tenemos ningún dato sobre ti, la mayoría de esas solicitudes son irrel
 También mantienes control total a través de los mecanismos de Apple:
 
 - **Borrar todos los datos de la app**: borra la app de tu dispositivo. Abre Ajustes → tu nombre → iCloud → Administrar almacenamiento → ASVAB Coach → Borrar datos para eliminar también la copia de iCloud KV
-- **Reinicio dentro de la app**: abre la app → Menú → Acerca de → "Reiniciar todo el progreso" — borra local + iCloud KV en un toque
+- **Reinicio dentro de la app, hasta la versión 3.4.0**: abre Acerca de (en el iPhone está en "Ver todas las funciones"; en el iPad, en la barra lateral) y toca "Reiniciar progreso"; el mismo botón está también en Mi Progreso. Cuando lo confirmas, borra tu progreso en el dispositivo y en iCloud KV
+- **Reinicio dentro de la app, desde la versión 3.5.0**: abre Ajustes → Acerca de (Ajustes está en la barra lateral cuando la app la muestra, como en el iPad y el Mac, y si no, en "Ver todas las funciones", como en el iPhone; en el Apple Watch, es Más → Acerca de) y toca "Reiniciar progreso"; el mismo botón está también en Mi progreso. Si la app detecta tu cuenta de iCloud, borra tu progreso en este dispositivo y, a través de iCloud, en tus otros dispositivos a medida que se sincronizan; para avisarles, deja en tu iCloud la fecha y hora del reinicio. Un dispositivo que ya tenía la app cuando reiniciaste borra su copia entera, incluido lo que hayas estudiado en él desde el reinicio. En el iPhone, el iPad y el Mac solo lo hace si detecta conexión cuando tocas el botón; si no, no borra nada y te pide que te conectes primero. En el Apple Watch no revisa la conexión: borra el reloj en el acto y pasa el reinicio a tus otros dispositivos cuando el reloj se sincroniza. Si la app no detecta una cuenta, borra tu progreso en este dispositivo. En cualquier caso, no se garantiza que un reinicio llegue a todos los dispositivos ni que se sostenga en todos: un dispositivo con una versión anterior de la app conserva su copia, y en algunos casos lo borrado puede volver desde otro dispositivo — por ejemplo, si usas iCloud pero la app no había detectado tu cuenta. No afecta tu compra
 
 ## Etiquetas de Privacidad del App Store
 
-En la página de ASVAB Coach en el App Store declaramos **"Datos no recopilados"** en todas las categorías. Eso se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app (`NSPrivacyTracking: false`, `NSPrivacyCollectedDataTypes` vacío) y contra el código mismo: cero SDKs de terceros de cualquier tipo, y las únicas conexiones de red que la app abre por su cuenta son Apple StoreKit y el almacenamiento clave-valor de iCloud, que lleva tu progreso entre tus propios dispositivos bajo tu propia cuenta de Apple y que nosotros no podemos leer nunca. El tutor de IA es Apple Intelligence on-device y no hace ninguna llamada de red.
+En la página de ASVAB Coach en el App Store declaramos **"Datos no recopilados"** en todas las categorías. Eso se verifica contra el manifiesto `PrivacyInfo.xcprivacy` dentro de la app (`NSPrivacyTracking: false`, `NSPrivacyCollectedDataTypes` vacío) y contra el código mismo: cero SDKs de terceros de cualquier tipo, y las únicas conexiones de red que la app abre por su cuenta son Apple StoreKit y el almacenamiento clave-valor de iCloud, que lleva tu progreso entre tus propios dispositivos bajo tu propia cuenta de Apple y que nosotros no podemos leer nunca — y, **desde la versión 3.5.0**, la comprobación de rango de edad de Apple, para la que el sistema de Apple puede comunicarse con Apple y que nunca nos llega (ver «Tu rango de edad»). El tutor de IA es Apple Intelligence on-device y no hace ninguna llamada de red.
 
 Hasta la versión 3.3.3 esta sección cubría además una búsqueda web opcional que le entregaba a Safari lo que escribías, como una búsqueda de Google. **Esa pantalla ahora busca en tu dispositivo y no abre ninguna conexión de red**, así que ya no hay nada que aclarar aparte. Apple define "recopilar" como transmitir datos fuera del dispositivo **de un modo en que el desarrollador o sus socios puedan acceder a ellos**; los enlaces que tocas siguen abriéndose en tu navegador, y lo que le entregas a la hoja de compartir sigue yendo a donde tú lo mandes — ni lo uno ni lo otro nos llega. Los seguimos describiendo completos más arriba, porque mereces saber a dónde van tus palabras, no sólo quién tiene permitido leerlas.
 
@@ -239,41 +255,12 @@ Procuramos responder dentro de 7 días hábiles.
 
 *Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
 
-*Qué cambió en la 1.6 — una sección que existía en la 1.4 no sobrevivió a la 1.5.* La sección
-«Los enlaces que tocas y lo que decides compartir» cubría dos cosas; la 1.5 metió la mitad de los
-enlaces dentro de «Búsqueda» y perdió la mitad de compartir en el camino. Y la app sí comparte
-cuando se lo pides: la tarjeta para el reclutador y el resumen de estudio abren los dos la hoja de
-compartir de Apple. Una política que omite una salida de datos se equivoca en la dirección
-favorable, que es la que este documento ya tuvo que corregir dos veces. Vuelve, como sección
-propia.
+*1.7 — 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que ASVAB Coach para Mac sigue en la versión 3.4.0. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
 
-*También en la 1.6 — «Dónde viven tus datos» enumeraba cuatro cosas y la app guarda seis.* Momentum
-no estaba en esa tabla: ni el nivel de meta diaria, ni los créditos del día, ni los días de gracia
-acumulados, ni cuáles de los 17 logros conseguiste, ni **la fecha de tu examen, si la cargaste**.
-Todo eso vive en `UserDefaults` con espejo en iCloud, igual que las cuatro filas que ya estaban —
-nada nuevo nos llega, y nada de la app cambió. Lo que estaba mal era la lista. La fecha del examen
-merece nombrarse aparte: es lo único que la app guarda que es un hecho de tu vida y no un registro
-de cómo estudias, y una tabla que la omitía hacía parecer que esta app tiene menos tuyo del que
-tiene. Ésa es la dirección favorable, que es en la que este documento no tiene permitido
-equivocarse.
+*1.6 — 9 sep 2026.* Se agregó la sección «Compartir» (la tarjeta para el reclutador y el resumen de estudio, a través de la hoja de compartir de Apple), y se agregó Momentum —nivel de meta diaria, créditos del día, días de gracia acumulados, logros y la fecha de examen opcional— a «Dónde viven tus datos». Nada de la app cambió.
 
-*Qué cambió en la 1.5 — la app dejó de hacer algo, y este documento tardó tres versiones
-en decirlo.* Hasta la 3.3.3 la pantalla de Búsqueda le entregaba a Safari lo que escribías, como una
-búsqueda de Google. La versión 3.4.0 la movió al dispositivo, y esta política siguió describiendo el
-comportamiento viejo — en cuatro lugares, incluidas la sección de Menores y la salvedad de las
-etiquetas de privacidad. Todos ellos nos hacían quedar mejor de lo que nos correspondía, que es la
-dirección que un error en una política de privacidad no puede tomar nunca. Aquí quedan corregidos, y
-el comportamiento viejo se nombra en vez de borrarse sin más. También corregimos el conteo de
-conexiones de red que la app abre por su cuenta: decía una, y la sincronización clave-valor de
-iCloud la vuelve dos.
+*1.5 — 6 sep 2026.* Desde la versión 3.4.0, la Búsqueda corre en el dispositivo; hasta la 3.3.3 le entregaba a Safari lo que escribías, como una búsqueda de Google. La política ahora lo dice en los cuatro lugares que describían el comportamiento anterior, incluidas «Menores» y «Etiquetas de Privacidad del App Store», y cuenta dos conexiones de red que la app abre por su cuenta: Apple StoreKit y el almacenamiento clave-valor de iCloud.
 
-*Qué cambió en la 1.4 — nada sobre cómo se comporta la app ni sobre qué datos recibimos.* Corregimos
-la sección «Este sitio web». Decía que el sitio no incrusta scripts de terceros, y la página que se
-sirve lleva dos que Cloudflare inserta al entregarla: ahora están nombrados uno por uno, con lo que
-hace cada uno. La afirmación anterior era falsa justo en el punto que cualquiera puede comprobar solo.
+*1.4 — 6 sep 2026.* «Este sitio web» ahora nombra los dos scripts que Cloudflare inserta al entregar el sitio, y lo que hace cada uno. Nada de la app cambió.
 
-*Qué cambió en la 1.3 — nada sobre cómo se comporta la app.* Describimos la búsqueda web opcional,
-que siempre estuvo en la app pero faltaba en este documento, y retiramos tres frases que afirmaban de
-más: un absoluto que no podemos sostener es peor que un límite honesto. También corregimos la fila de
-registros de fallos para mencionar los diagnósticos que la app guarda en el dispositivo y nunca
-envía, y arreglamos tres fechas contradictorias y un párrafo duplicado.
+*1.3 — 23 ago 2026.* Se describió la búsqueda web opcional que la app tenía entonces, se retiraron tres afirmaciones que iban más allá de lo que podíamos garantizar, se agregaron los diagnósticos que quedan en el dispositivo a la fila de registros de fallos, y se corrigieron tres fechas contradictorias y un párrafo duplicado. Nada de la app cambió.

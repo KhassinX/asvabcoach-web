@@ -70,7 +70,8 @@ con diploma.
 
 **La {{ escala.categories[4].name | replace: 'Category', 'Categoría' }} tiene tope, no está prohibida.** Por ley, la Categoría IV
 no puede pasar del 4 % de los alistamientos anuales a servicio activo de una rama, y el
-Secretario de Defensa puede subir ese tope al 20 % (10 U.S.C. §520(a)).
+Secretario de Defensa, a solicitud del secretario de la rama, puede subir ese tope al
+20 % (10 U.S.C. §520(a)(2)).
 
 **La {{ escala.categories[5].name | replace: 'Category', 'Categoría' }} es la banda más baja.** Por debajo del percentil
 {{ escala.categories[4].min }} la política del DoD prohíbe el alistamiento
@@ -112,7 +113,7 @@ con subtests que el AFQT ni toca.
 {% if minimos.summary.floor_is_uniform == false -%}
 <tr><td data-label="Tu percentil" markdown="span">{% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %}</td><td data-label="Qué te abre" markdown="span">{{ ramas_al_piso }} de {{ ramas_total }}. {% for b in ramas_altas_lista %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless forloop.last %} y {% endunless %}{% endfor %} todavía fuera de alcance.</td></tr>
 {% endif -%}
-<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.floor_max }} o más</td><td data-label="Qué te abre" markdown="span">Las {{ ramas_total }} ramas te aceptan acá.</td></tr>
+<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.floor_max }} o más</td><td data-label="Qué te abre" markdown="span">Las {{ ramas_total }} ramas te aceptan aquí.</td></tr>
 <tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.recommended_min }} o más{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} en algunas ramas){% endunless %}</td><td data-label="Qué te abre" markdown="span">Competitivo: una observación, no un requisito publicado — y donde los incentivos empiezan a aparecer en la conversación.</td></tr>
 </tbody>
 </table>

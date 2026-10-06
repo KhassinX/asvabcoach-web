@@ -6,6 +6,9 @@ permalink: /es/legal/terms/
 lang: es
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
+redirect_from:
+  - /es/terms
+  - /es/terms/
 updated: 2026-10-06
 h1: "Términos de Uso — ASVAB Coach"
 version: "1.3"

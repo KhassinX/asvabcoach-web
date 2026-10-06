@@ -81,8 +81,8 @@ sets its floor, and what a GED changes.
 is no returning to it, no flagging it for later, no changing your mind at the end. Read
 each one before you commit, and then commit.
 
-**Guessing at the end costs you.** The CAT-ASVAB does penalize guessing, and what hurts
-is a run of wrong answers near the end of a section. If you are short on time, the
+**Guessing costs you.** The official Fact Sheet says the CAT-ASVAB has a penalty for
+guessing. If you are short on time, the
 official guidance is to keep answering as well as you can rather than filling the rest at
 random — eliminating options and choosing deliberately still helps you.
 
