@@ -72,6 +72,7 @@
   <script src="/assets/js/theme.js?v={{ site.time | date: '%s' }}"></script>
 </head>
 <body>
+<!--email_off-->
 <a class="skip" href="#main">{{ ui.skip_to_main }}</a>
 <header class="head wrap">
   <a class="wordmark" href="{{ logo_home }}"><img src="/assets/favicons/icon-192.png" width="192" height="192" alt=""><span>{{ site.title }}<span aria-hidden="true">™</span></span></a>
@@ -100,5 +101,6 @@
   </div>
 </footer>
 {% for js in page.extra_js %}<script src="{{ js }}?v={{ site.time | date: '%s' }}" defer></script>{% endfor %}
+<!--email_on-->
 </body>
 </html>
