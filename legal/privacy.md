@@ -56,7 +56,7 @@ We are an **independent educational app**. We have zero servers that store user 
 <tr><td data-label="Data category" markdown="span">Contacts</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Data category" markdown="span">Health data</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Data category" markdown="span">Financial info</td><td data-label="Do we collect?" markdown="span">❌ No (purchases handled by Apple StoreKit)</td></tr>
-<tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">No analytics of our own and no analytics SDK. Apple passes us aggregated usage data only if you chose in your device's Settings to share with app developers.</td></tr>
 <tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">Only if you opt in — if you chose in your device's Settings to share with app developers, Apple passes crash reports on to us. That choice is yours, in Settings, not ours. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
 <tr><td data-label="Data category" markdown="span">Cookies / tracking pixels</td><td data-label="Do we collect?" markdown="span">❌ N/A (we are a native app, not a website)</td></tr>
 </tbody>
@@ -187,7 +187,7 @@ If you email us, we receive your email address and your message. We use them onl
 
 ASVAB Coach is rated **4+** in the App Store. It contains no age-restricted material and shows no advertising. What it teaches from — the study guide and the question bank — ships inside the app and is matched on your device. Search runs on your device too, over that same content. Nothing reaches the open web unless you tap a link yourself — our website, or the official recruiting page of the branch you picked — and then it is your browser that opens it. The app is built for people preparing for the ASVAB, typically high school students and older, but nothing inside it is gated by age.
 
-We collect no data from anyone, at any age. That includes children under 13: there is no account, no sign-up, no analytics, and nothing that leaves your device and reaches us — so there is no personal information from a child for us to collect, knowingly or otherwise, and none to disclose to anyone. Because we collect nothing, there is nothing for which COPPA's verifiable parental consent would be required.
+We collect no data from anyone, at any age. That includes children under 13: there is no account, no sign-up, no analytics of our own, and nothing that reaches us from your device except what Apple passes on if you chose to share with app developers — so there is no personal information from a child for us to collect, knowingly or otherwise, and none to disclose to anyone. Because we collect nothing, there is nothing for which COPPA's verifiable parental consent would be required.
 
 ## Your rights
 

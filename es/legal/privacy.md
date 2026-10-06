@@ -51,7 +51,7 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 <tr><td data-label="Categoría de datos" markdown="span">Contactos</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Datos de salud</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Información financiera</td><td data-label="¿Recopilamos?" markdown="span">❌ No (las compras las maneja Apple StoreKit)</td></tr>
-<tr><td data-label="Categoría de datos" markdown="span">Analytics de uso</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Analytics de uso</td><td data-label="¿Recopilamos?" markdown="span">Sin analíticas propias ni SDK de analíticas. Apple nos pasa datos de uso agregados solo si en los Ajustes de tu aparato elegiste compartir con los desarrolladores.</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Registros de fallos (crash logs)</td><td data-label="¿Recopilamos?" markdown="span">Solo si tú lo eliges — si en los Ajustes de tu aparato elegiste compartir con los desarrolladores, Apple nos pasa los informes de fallos. Esa elección es tuya, en Ajustes, no nuestra. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos.</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Cookies / píxeles de tracking</td><td data-label="¿Recopilamos?" markdown="span">❌ N/A (somos una app nativa, no un sitio web)</td></tr>
 </tbody>
@@ -197,7 +197,7 @@ Si nos escribes, recibimos tu dirección de email y tu mensaje. Los usamos solo 
 
 ASVAB Coach tiene clasificación **4+** en el App Store. No contiene material restringido por edad y no muestra publicidad. Aquello con lo que enseña —la guía de estudio y el banco de preguntas— viene adentro de la app y se busca en tu dispositivo. La Búsqueda también corre en tu dispositivo, sobre ese mismo contenido. Nada llega a la web abierta salvo que toques un enlace tú: nuestro sitio, o la página oficial de reclutamiento de la rama que elegiste — y ahí lo abre tu navegador. La app está hecha para quien se prepara para el ASVAB, en general estudiantes de secundaria en adelante, pero nada dentro de ella está limitado por edad.
 
-No recopilamos datos de nadie, a ninguna edad. Eso incluye a los menores de 13 años: no hay cuenta, no hay registro, no hay analytics y nada sale de tu dispositivo hacia nosotros — así que no hay información personal de un menor que podamos recolectar, a sabiendas ni de ningún otro modo, ni que podamos divulgar a nadie. Como no recopilamos nada, no hay nada que requiera el consentimiento parental verificable que exige la COPPA.
+No recopilamos datos de nadie, a ninguna edad. Eso incluye a los menores de 13 años: no hay cuenta, no hay registro, no hay analíticas propias y no nos llega nada de tu dispositivo salvo lo que Apple nos pasa si elegiste compartir con los desarrolladores — así que no hay información personal de un menor que podamos recolectar, a sabiendas ni de ningún otro modo, ni que podamos divulgar a nadie. Como no recopilamos nada, no hay nada que requiera el consentimiento parental verificable que exige la COPPA.
 
 ## Tus derechos
 
