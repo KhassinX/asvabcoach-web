@@ -34,8 +34,8 @@ og_image_default:
   en: /assets/social/EN/og-image.png
   es: /assets/social/ES/og-image.png
 og_image_alt:
-  en: "ASVAB Coach app icon on Apple-canon white background — Private AI Tutor for the ASVAB"
-  es: "Icono de ASVAB Coach sobre fondo blanco Apple — Tutor de IA privado para el ASVAB"
+  en: "ASVAB Coach app icon beside the name and the line “Earn your star.” — asvab.khassinx.com"
+  es: "Icono de ASVAB Coach junto al nombre y la frase «Gánate tu estrella.» — asvab.khassinx.com"
 
 # Miga de pan (BreadcrumbList) — el NOMBRE de cada sección, por locale.
 #

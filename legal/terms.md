@@ -11,7 +11,7 @@ redirect_from:
   - /TERMS_OF_USE/
   - /terms
   - /terms/
-updated: 2026-10-05
+updated: 2026-10-06
 h1: "Terms of Use — ASVAB Coach"
 version: "1.3"
 related:
@@ -68,7 +68,7 @@ We apply a `TutorSafety` wrapper to all AI output that rejects responses violati
 {% comment %}audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01.{% endcomment %}
 ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., "Army: 31, Marines: 31, Coast Guard: 32"). These reflect **current DoD policy** as of the app's last update.
 
-- DoD policy on minimum AFQT scores **changes periodically**. We update the app quarterly to track changes, but there may be a lag between a policy change and our update.
+- DoD policy on minimum AFQT scores **changes periodically**. We update the app when we learn of a change, but there may be a lag between a policy change and our update.
 - The displayed minimums are **baseline requirements**. Specific jobs (MOS/rating) within each branch have their own additional score requirements (line scores) that may be higher.
 - Always **verify current requirements with an official recruiter** of your chosen branch before making enlistment decisions based on app data.
 

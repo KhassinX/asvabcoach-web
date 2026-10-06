@@ -82,8 +82,8 @@ el piso cada rama y qué cambia si tienes GED en vez de diploma.
 cerrada. No hay volver a ella, ni marcarla para después, ni cambiar de opinión al final.
 Léela antes de decidir, y después decide.
 
-**Adivinar al final te cuesta.** El CAT-ASVAB sí penaliza adivinar, y lo que pesa en
-contra es una racha de respuestas incorrectas cerca del cierre de una sección. Si te
+**Adivinar te cuesta.** La hoja informativa oficial (Fact Sheet) dice que el CAT-ASVAB
+penaliza adivinar. Si te
 queda poco tiempo, la guía oficial dice que sigas contestando lo mejor que puedas en vez
 de rellenar el resto al azar — descartar opciones y elegir a conciencia todavía te ayuda.
 

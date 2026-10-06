@@ -71,8 +71,9 @@ the conversation. The floors themselves are lower — see
 with a diploma.
 
 **{{ escala.categories[4].name }} is capped, not barred.** By law, Category IV may not
-exceed 4 percent of a branch’s yearly active-duty enlistments, and the Secretary of Defense
-can raise that to 20 percent (10 U.S.C. §520(a)).
+exceed 4 percent of a branch’s yearly active-duty enlistments, and the Secretary of Defense,
+upon the request of the Secretary concerned, can raise that to 20 percent
+(10 U.S.C. §520(a)(2)).
 
 **{{ escala.categories[5].name }} is the bottom band.** Below percentile
 {{ escala.categories[4].min }}, DoD policy bars enlistment (DoDI 1145.01, ¶3.c(1)).

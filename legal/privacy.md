@@ -11,10 +11,10 @@ redirect_from:
   - /PRIVACY_POLICY/
   - /privacy
   - /privacy/
-updated: 2026-10-05
+updated: 2026-10-06
 effective: 2026-09-06
 h1: "Privacy Policy — ASVAB Coach"
-version: "1.6"
+version: "1.7"
 related:
   - /legal/terms/
   - /contact/
@@ -30,6 +30,8 @@ summary:
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator / Data controller**: KHASSINX LLC, a Florida limited liability company
 **Contact**: legal@khassinx.com
+
+**On every device**, what's marked "From version 3.5.0" applies once that device has version 3.5.0 or later.
 
 ---
 
@@ -56,9 +58,10 @@ We are an **independent educational app**. We have zero servers that store user 
 <tr><td data-label="Data category" markdown="span">Contacts</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Data category" markdown="span">Health data</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Data category" markdown="span">Financial info</td><td data-label="Do we collect?" markdown="span">❌ No (purchases handled by Apple StoreKit)</td></tr>
-<tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
-<tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">❌ No — nothing reaches us. Apple's own crash reporting is opt-in by you in iOS Settings, not by us. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
+<tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">No analytics of our own and no analytics SDK. Apple passes us aggregated usage data only if you chose in your device's Settings to share with app developers.</td></tr>
+<tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">Only if you opt in — if you chose in your device's Settings to share with app developers, Apple passes crash reports on to us. That choice is yours, in Settings, not ours. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
 <tr><td data-label="Data category" markdown="span">Cookies / tracking pixels</td><td data-label="Do we collect?" markdown="span">❌ N/A (we are a native app, not a website)</td></tr>
+<tr><td data-label="Data category" markdown="span">Age range</td><td data-label="Do we collect?" markdown="span">❌ No. **From version 3.5.0:** where the law requires it, the app reads it on your device and discards it — see "Your age range".</td></tr>
 </tbody>
 </table>
 
@@ -79,10 +82,15 @@ Everything you do in ASVAB Coach is stored **locally on your device** and (optio
 <tr><td data-label="What" markdown="span">Diagnostic results</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
 <tr><td data-label="What" markdown="span">Momentum — your daily goal level, credits earned today, banked grace days, whether the ring is shown, and **your exam date if you set one** (optional; leave it empty and Momentum is a plain daily habit)</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
 <tr><td data-label="What" markdown="span">Which of the 17 achievements you have earned</td><td data-label="Where" markdown="span">`UserDefaults` + iCloud KV</td></tr>
+<tr><td data-label="What" markdown="span">**From version 3.5.0:** a full practice exam you left unfinished, so you can resume it (iPhone, iPad and Mac)</td><td data-label="Where" markdown="span">`UserDefaults`, on that device only</td></tr>
 </tbody>
 </table>
 
+**From version 3.5.0**, the app also keeps on the device the markers its reset relies on — among them an opaque token Apple gives the app for the iCloud account signed in on the device, which the app keeps only to notice when that account changes. None of this is sent to us.
+
 iCloud sync uses **your** Apple Account. We never see, access, or have any way to retrieve this data. It is encrypted in transit and at rest by Apple. If you delete the app and disable iCloud for it, the data is gone. There is no copy on any server we control.
+
+On iPad and Mac, and on iPhone when the app uses the same sidebar layout, the app tells the system which section you have open (for example, "Vocabulary"): its name and an internal identifier — never your answers or your progress. The system uses it for two things: **Handoff**, which offers to continue that section on your other devices, and **Spotlight**, which adds it to that device's own search index so a search can take you back to it. Both are Apple's: the system handles them, the app opens no connection of its own for them, and nothing reaches us. The app never makes these entries public (it doesn't turn on Spotlight's public indexing). Up to version 3.4.0 this can include the name of a section you haven't unlocked. **From version 3.5.0**, only sections you have unlocked are shared this way; entries indexed before are not removed. The in-app reset doesn't remove them from Spotlight either; they hold only a section's name and its internal identifier.
 
 ## AI Tutor — Apple Intelligence on-device only
 
@@ -94,7 +102,7 @@ Apple Intelligence requires a recent Apple device with Apple Intelligence enable
 
 For Apple's own privacy commitments, see Apple's [Private Cloud Compute](https://security.apple.com/blog/private-cloud-compute/) documentation. ASVAB Coach uses **only on-device** Apple Intelligence inference — never Private Cloud Compute, and never any cloud AI.
 
-Apple Intelligence inference is local — no network. The app itself opens exactly two kinds of network connection on its own: **Apple StoreKit**, for your one-time purchase, and **iCloud key-value storage**, which carries your progress and your branch between your own devices under your own Apple Account. It never opens one to us, because we have no server. Anything else that reaches the internet does so because you tapped a link and your browser followed it — see below.
+Apple Intelligence inference is local — no network. The app itself opens network connections on its own for two things only, both of them Apple's: **Apple StoreKit**, for your one-time purchase, and **iCloud key-value storage**, which carries your progress and your branch between your own devices under your own Apple Account. **From version 3.5.0** there is a third, also Apple's: **Apple's age-range check**, which runs each time the app starts and for which Apple's system may contact Apple (see "Your age range"). It never opens one to us, because we have no server. Anything else that reaches the internet does so because you tapped a link and your browser followed it — see below.
 
 ## Search — it runs on your device
 
@@ -103,11 +111,8 @@ guide sections and the question bank. **Nothing is sent anywhere.** There is no 
 behind it, no third party, and no network call of any kind — what you type never leaves the device.
 
 Up to version 3.3.3 this screen worked the other way: it prefixed what you typed with `ASVAB` and
-handed it to Safari as a Google search. **That stopped in 3.4.0, and this policy kept describing
-the old behaviour until 2026-09-05.** We are naming the gap rather than quietly deleting the
-paragraph, because the old screen also carried a footer promising your searches were private while
-your text was travelling to Google — and a privacy policy that only ever gets more flattering is
-not one you can check.
+handed it to Safari as a Google search. **That stopped in 3.4.0.** The old screen also carried a footer promising your searches were
+private while your text was sent to Google.
 
 The one thing that still reaches the internet on your behalf is a link **you** tap:
 
@@ -138,12 +143,6 @@ Mail, Files, print, AirDrop, whatever you choose. The app never picks one for yo
 the background, and never keeps or receives a copy. What you send goes where you sent it, and
 nowhere else — we are not told that you shared, and nothing reaches us.
 
-This section was missing from version 1.5 of this policy, published 2026-09-05, and from 1.4 it was
-only half-missing: 1.5 kept the "links you tap" half and dropped the sharing half. We are saying so
-rather than adding the section quietly, for the same reason the rest of this document names its own
-gaps — an omission that makes the app look more private than it is, is the kind of error that has
-to be pointed at, not just fixed.
-
 ## In-App Purchases
 
 Purchases are handled by **Apple StoreKit 2**. We see only:
@@ -164,15 +163,15 @@ We use a **one-time purchase** model — no recurring subscriptions, no auto-ren
 - No A/B testing platforms
 - No attribution SDKs (no AppsFlyer, no Adjust)
 
-Our automated CI gates enforce this: any pull request that imports a known analytics SDK is rejected.
+An automated check in our release process enforces this: a build that imports a known analytics SDK is rejected.
 
 ## This website
 
 This site is static and has no forms. We add no analytics, no tracking, no pixels and no third-party scripts of our own, and we set no cookies of our own. We do not track anyone, so there is nothing for a "Do Not Track" signal to turn off, and no third party is permitted to collect information about your activity across sites through this website.
 
-Now, here is what you will see if you open "View Source" on this very page: **Cloudflare inserts two scripts of its own as it delivers it.** They are not in the HTML we write — Cloudflare adds them on the way out — and they are served from this same domain, under `/cdn-cgi/`:
+Now, here is what you will see if you open "View Source" on this very page: **Cloudflare may insert scripts of its own as it delivers it.** They are not in the HTML we write — Cloudflare adds them on the way out — and they are served from this same domain, under `/cdn-cgi/`:
 
-- `/cdn-cgi/challenge-platform/scripts/jsd/main.js` — Cloudflare's bot detection. It runs checks in your browser to tell a person apart from automated traffic, and in that process Cloudflare may set a technical security cookie. It is site protection: not analytics, not advertising, and it does not follow your activity across other sites.
+- `/cdn-cgi/challenge-platform/scripts/jsd/main.js` — Cloudflare's bot detection. It runs checks in your browser to tell a person apart from automated traffic, and in that process Cloudflare may set a technical security cookie. It is site protection: not analytics, not advertising, and it does not follow your activity across other sites. This site\'s Content Security Policy blocks the inline loader Cloudflare adds for it, so in our test on 2026-10-06 it did not run.
 - `/cdn-cgi/scripts/…/cloudflare-static/email-decode.min.js` — it decodes the email addresses Cloudflare obfuscates on the page, so spam harvesters cannot lift them.
 
 Neither one is ours, neither reports anything to us, and we receive no data from either. We spell it out in this detail because a policy that denies what anyone can check with "View Source" is worth nothing.
@@ -187,7 +186,13 @@ If you email us, we receive your email address and your message. We use them onl
 
 ASVAB Coach is rated **4+** in the App Store. It contains no age-restricted material and shows no advertising. What it teaches from — the study guide and the question bank — ships inside the app and is matched on your device. Search runs on your device too, over that same content. Nothing reaches the open web unless you tap a link yourself — our website, or the official recruiting page of the branch you picked — and then it is your browser that opens it. The app is built for people preparing for the ASVAB, typically high school students and older, but nothing inside it is gated by age.
 
-We collect no data from anyone, at any age. That includes children under 13: there is no account, no sign-up, no analytics, and nothing that leaves your device and reaches us — so there is no personal information from a child for us to collect, knowingly or otherwise, and none to disclose to anyone. Because we collect nothing, there is nothing for which COPPA's verifiable parental consent would be required.
+We collect no data from anyone, at any age. That includes children under 13: there is no account, no sign-up, no analytics of our own, and nothing that reaches us from your device except what Apple passes on if you chose to share with app developers — so there is no personal information from a child for us to collect, knowingly or otherwise, and none to disclose to anyone. Because we collect nothing, there is nothing for which COPPA's verifiable parental consent would be required. **From version 3.5.0**, where the law requires it, the app does read your age range from Apple, and discards it; see "Your age range".
+
+## Your age range — only where the law requires it
+
+**From version 3.5.0.** Some places, such as Texas, now require apps to check the age category of the person using them. Where Apple's system tells the app that your region requires it, ASVAB Coach asks Apple for your **age range**, the one Apple's Age Range for Apps feature manages: under 13, 13 to 15, 16 to 17, or 18 and over — never your age or your birthdate. Along with the range, Apple's answer can say how the age was confirmed (by you, by a parent or guardian, or by another check) and whether certain Apple parental controls are on; the app doesn't use any of it. Whether Apple asks you first, shares it on its own, or doesn't share it depends on your region and on your Age Range for Apps settings (or a parent's or guardian's, in a family group), and Apple's feature applies them, not the app: in some regions the law has it shared automatically with apps that ask. That feature, and what it keeps about what you shared, are Apple's, not ours. The app works the same whatever the answer, and also if the range isn't shared or the system doesn't answer: it is rated 4+ and has nothing to restrict by age, so a minor and an adult get the same app. The answer — the range and what comes with it — is read on your device and discarded as soon as it arrives: the app doesn't store it on the device, doesn't sync it to iCloud, doesn't write it to any log, and never sends it to us. Each time it starts (and, if the system didn't answer, again when another window opens), the app asks Apple's system whether your region requires it, and asks for the range only if the answer is yes; Apple's system handles both questions and may need to contact Apple to answer them. Apple Watch has no way to ask, so the watch app never does.
+
+Up to version 3.4.0 the app doesn't ask for your age range at all.
 
 ## Your rights
 
@@ -195,18 +200,19 @@ For the privacy rights you have under the GDPR (EU/EEA), UK GDPR, Spain's LOPDGD
 
 Because we hold no data about you, most such requests are moot: there is nothing to delete, export, correct, or transfer at our end. To exercise any right for ASVAB Coach, reset your data in-app or email legal@khassinx.com. You also retain full control through Apple's mechanisms:
 
-- **Delete all app data**: delete the app from your device. Open Settings → your name → iCloud → Manage Storage → ASVAB Coach → Delete Data to also remove the iCloud KV copy
-- **In-app reset**: open the app → Menu → About → "Reset all progress" — wipes local + iCloud KV in one tap
+- **Delete all app data**: reset in-app first (below; from version 3.5.0, on iPhone, iPad and Mac it needs a connection and your iCloud account) — that is the step that also erases the iCloud copy — and then delete the app from each of your devices. Deleting the app alone leaves the iCloud copy in place, and your progress comes back if you install the app again
+- **In-app reset, up to version 3.4.0**: open About (on iPhone it is under "See all features"; on iPad, in the sidebar) and tap "Reset all progress"; the same button is also in My Progress. Once you confirm, it wipes your progress on the device and in iCloud KV
+- **In-app reset, from version 3.5.0**: open Settings → About (Settings is in the sidebar whenever the app shows one, as on iPad and Mac, and otherwise under "See all features", as on iPhone; on Apple Watch, it's More → About) and tap "Reset all progress"; the same button is also in My Progress. If the app detects your iCloud account, it erases your progress on this device and, through iCloud, on your other devices as they sync; to let them know, it leaves the date and time of the reset in your iCloud. A device that already had the app when you reset erases its whole copy, including anything studied on it since the reset. On iPhone, iPad and Mac it does this only if it detects a connection when you tap the button; otherwise it erases nothing and asks you to connect first. On Apple Watch it doesn't check the connection: it erases the watch right away and passes the reset on to your other devices once the watch syncs. If the app doesn't detect an account, it erases your progress on this device. Either way, a reset isn't guaranteed to reach or hold on every device: a device with an older version of the app keeps its copy, and in some cases erased progress can come back from another device — for example, if you use iCloud but the app hadn't detected your account. Your purchase isn't affected
 
 ## Apple App Privacy Nutrition Labels
 
-In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in every category. That is verified against the in-app `PrivacyInfo.xcprivacy` manifest (`NSPrivacyTracking: false`, empty `NSPrivacyCollectedDataTypes`) and against the code itself: zero third-party SDKs of any kind, and the only network connections the app opens on its own are Apple StoreKit and iCloud key-value storage, which carries your progress between your own devices under your own Apple Account and which we can never read. The AI tutor is on-device Apple Intelligence and makes no network calls.
+In the App Store listing, ASVAB Coach declares **"Data Not Collected"** in every category. That is verified against the in-app `PrivacyInfo.xcprivacy` manifest (`NSPrivacyTracking: false`, empty `NSPrivacyCollectedDataTypes`) and against the code itself: zero third-party SDKs of any kind, and the only network connections the app opens on its own are Apple StoreKit and iCloud key-value storage, which carries your progress between your own devices under your own Apple Account and which we can never read — and, **from version 3.5.0**, Apple's age-range check, for which Apple's system may contact Apple and which never reaches us (see "Your age range"). The AI tutor is on-device Apple Intelligence and makes no network calls.
 
 Until version 3.3.3 this section also covered an optional web search that handed what you typed to Safari as a Google search. **That screen now searches on your device and opens no network connection at all**, so there is nothing left to carve out. Apple defines "collect" as transmitting data off the device **in a way the developer or its partners can access**; the links you tap still open in your browser, and what you hand to the share sheet still goes wherever you send it — we never receive either one. We keep describing both in full above anyway, because you deserve to know where your words go, not only who is allowed to read them.
 
 ## Changes to this policy
 
-If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. As of this revision (2026-09-06), no change is planned because we genuinely do not collect data and we have no business model that benefits from collecting it (one-time purchase, no advertising).
+If we ever materially change our data practices, we will update this document with a new effective date and post a notice in the app. No change is planned: we do not collect data, and we have no business model that benefits from collecting it (one-time purchase, no advertising).
 
 ## Jurisdiction
 
@@ -227,39 +233,12 @@ We aim to respond within 7 business days.
 
 *Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*
 
-*What changed in 1.6 — a section that existed in 1.4 did not survive into 1.5.* The old section
-"Links you tap, and things you choose to share" covered two things; 1.5 folded the links half into
-"Search" and lost the sharing half on the way. Meanwhile the app does share when you ask it to: the
-recruiter card and the cheat sheet both open Apple's share sheet. A policy that omits an outbound
-path is wrong in the flattering direction, which is the one this document has already had to
-correct twice. It is back, as its own section.
+*1.7 — 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple's age-range check is a third network connection, also Apple's; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that what is marked applies on each device once it has version 3.5.0 or later. Describes the section name the app hands to Handoff and Spotlight. Replaces the route through iCloud's Manage Storage with the in-app reset, because we could not confirm that the route reaches this app's copy, and states that deleting the app does not erase the iCloud copy. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
 
-*Also in 1.6 — "Where your data lives" listed four things and the app stores six.* Momentum was
-missing from that table entirely: the daily goal level, the credits earned today, the banked grace
-days, which of the 17 achievements you have earned, and **the exam date, if you set one**. All of
-it lives in `UserDefaults` with an iCloud key-value mirror, exactly like the four rows that were
-already there — nothing new reaches us, and nothing about the app changed. What was wrong was the
-list. The exam date is worth naming on its own: it is the only thing the app keeps that is a fact
-about your life rather than a record of your studying, and a table that omitted it made this app
-look like it holds less of you than it does. That is the flattering direction, which is the one
-this document does not get to err in.
+*1.6 — 9 Sep 2026.* Added the "Sharing" section (the recruiter card and the cheat sheet, through Apple's share sheet), and added Momentum — daily goal level, credits earned today, banked grace days, achievements and the optional exam date — to "Where your data lives". Nothing about the app changed.
 
-*What changed in 1.5 — the app stopped doing something, and this document was three
-versions late in saying so.* Up to 3.3.3 the Search screen handed what you typed to Safari as a
-Google search. Version 3.4.0 moved it on-device, and this policy went on describing the old
-behaviour — in four places, including the Children section and the nutrition-label carve-out. Every
-one of them made us look better than we were entitled to, which is the direction an error in a
-privacy policy must never take. They are corrected here, and the old behaviour is named rather than
-quietly deleted. We also corrected the count of network connections the app opens on its own: it
-was one, and iCloud key-value sync makes it two.
+*1.5 — 6 Sep 2026.* Since version 3.4.0, Search runs on the device; up to 3.3.3 it handed what you typed to Safari as a Google search. The policy now says so in the four places that described the old behaviour, including "Children" and "Apple App Privacy Nutrition Labels", and counts two network connections the app opens on its own: Apple StoreKit and iCloud key-value storage.
 
-*What changed in 1.4 — nothing about how the app behaves or what data reaches us.* We corrected the
-"This website" section. It said the site embeds no third-party scripts, and the page that is served
-carries two that Cloudflare inserts on the way out: they are now named one by one, with what each
-one does. The previous claim was false at exactly the point anyone can check for themselves.
+*1.4 — 6 Sep 2026.* "This website" now names the two scripts Cloudflare inserts when it delivers the site, and what each one does. Nothing about the app changed.
 
-*What changed in 1.3 — nothing about how the app behaves.* We described the optional web search,
-which has always been in the app but was missing from this document, and we retired three sentences
-that overstated the case: an absolute we cannot keep is worse than an honest limit. We also corrected
-the crash-log row to mention the on-device diagnostics the app keeps and never sends, and fixed three
-conflicting dates and a duplicated paragraph.
+*1.3 — 23 Aug 2026.* Described the optional web search the app had at the time, removed three statements that went further than we could guarantee, added the on-device diagnostics to the crash-log row, and fixed three conflicting dates and a duplicated paragraph. Nothing about the app changed.

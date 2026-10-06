@@ -6,7 +6,10 @@ permalink: /es/legal/terms/
 lang: es
 canonical_en: /legal/terms/
 canonical_es: /es/legal/terms/
-updated: 2026-10-05
+redirect_from:
+  - /es/terms
+  - /es/terms/
+updated: 2026-10-06
 h1: "Términos de Uso — ASVAB Coach"
 version: "1.3"
 related:
@@ -63,7 +66,7 @@ Aplicamos un wrapper `TutorSafety` a toda salida de IA que rechaza respuestas qu
 {% comment %}audit-allow:N22 texto legal: el ejemplo cita literalmente lo que la app muestra, y esa cita es el objeto de la clausula. Verificado el 2026-09-01.{% endcomment %}
 ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, Marines: 31, Coast Guard: 32"). Estos reflejan la **política vigente del DoD** a la fecha de la última actualización de la app.
 
-- La política del DoD sobre mínimos AFQT **cambia periódicamente**. Actualizamos la app trimestralmente para reflejar los cambios, pero puede haber un retraso entre el cambio de política y nuestra actualización.
+- La política del DoD sobre mínimos AFQT **cambia periódicamente**. Actualizamos la app cuando sabemos de un cambio, pero puede haber un retraso entre el cambio de política y nuestra actualización.
 - Los mínimos mostrados son **requisitos base**. Los trabajos específicos (MOS/rating) dentro de cada rama tienen requisitos adicionales (line scores) que pueden ser más altos.
 - **Verifica siempre los requisitos vigentes con un reclutador oficial** de tu rama elegida antes de tomar decisiones de alistamiento basadas en datos de la app.
 
