@@ -11,7 +11,7 @@ redirect_from:
   - /PRIVACY_POLICY/
   - /privacy
   - /privacy/
-updated: 2026-10-05
+updated: 2026-10-06
 effective: 2026-09-06
 h1: "Privacy Policy — ASVAB Coach"
 version: "1.6"
@@ -57,7 +57,7 @@ We are an **independent educational app**. We have zero servers that store user 
 <tr><td data-label="Data category" markdown="span">Health data</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Data category" markdown="span">Financial info</td><td data-label="Do we collect?" markdown="span">❌ No (purchases handled by Apple StoreKit)</td></tr>
 <tr><td data-label="Data category" markdown="span">Usage analytics</td><td data-label="Do we collect?" markdown="span">❌ No</td></tr>
-<tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">❌ No — nothing reaches us. Apple's own crash reporting is opt-in by you in iOS Settings, not by us. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
+<tr><td data-label="Data category" markdown="span">Crash logs</td><td data-label="Do we collect?" markdown="span">Only if you opt in — if you chose in your device's Settings to share with app developers, Apple passes crash reports on to us. That choice is yours, in Settings, not ours. Separately, the app keeps Apple's MetricKit diagnostics **in a folder on your device** (capped at 30 files, oldest overwritten first) so a crash can be looked at on the device it happened on. They are never transmitted, and there is no code path that could transmit them.</td></tr>
 <tr><td data-label="Data category" markdown="span">Cookies / tracking pixels</td><td data-label="Do we collect?" markdown="span">❌ N/A (we are a native app, not a website)</td></tr>
 </tbody>
 </table>
@@ -164,7 +164,7 @@ We use a **one-time purchase** model — no recurring subscriptions, no auto-ren
 - No A/B testing platforms
 - No attribution SDKs (no AppsFlyer, no Adjust)
 
-Our automated CI gates enforce this: any pull request that imports a known analytics SDK is rejected.
+An automated check in our release process enforces this: a build that imports a known analytics SDK is rejected.
 
 ## This website
 

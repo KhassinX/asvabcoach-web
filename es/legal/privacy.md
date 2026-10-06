@@ -6,7 +6,7 @@ permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
 canonical_es: /es/legal/privacy/
-updated: 2026-10-05
+updated: 2026-10-06
 effective: 2026-09-06
 h1: "Política de Privacidad — ASVAB Coach"
 version: "1.6"
@@ -52,7 +52,7 @@ Somos una **app educativa independiente**. No tenemos servidores que almacenen d
 <tr><td data-label="Categoría de datos" markdown="span">Datos de salud</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Información financiera</td><td data-label="¿Recopilamos?" markdown="span">❌ No (las compras las maneja Apple StoreKit)</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Analytics de uso</td><td data-label="¿Recopilamos?" markdown="span">❌ No</td></tr>
-<tr><td data-label="Categoría de datos" markdown="span">Registros de fallos (crash logs)</td><td data-label="¿Recopilamos?" markdown="span">❌ No — no nos llega nada. El reporte opcional de fallos de Apple lo controlas tú en Ajustes de iOS, no nosotros. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos.</td></tr>
+<tr><td data-label="Categoría de datos" markdown="span">Registros de fallos (crash logs)</td><td data-label="¿Recopilamos?" markdown="span">Solo si tú lo eliges — si en los Ajustes de tu aparato elegiste compartir con los desarrolladores, Apple nos pasa los informes de fallos. Esa elección es tuya, en Ajustes, no nuestra. Aparte de eso, la app guarda los diagnósticos de MetricKit **en una carpeta de tu dispositivo** (máximo 30 archivos, se sobrescribe el más viejo) para que un fallo pueda revisarse en el aparato donde ocurrió. Nunca se transmiten, y no existe ninguna ruta de código que pudiera transmitirlos.</td></tr>
 <tr><td data-label="Categoría de datos" markdown="span">Cookies / píxeles de tracking</td><td data-label="¿Recopilamos?" markdown="span">❌ N/A (somos una app nativa, no un sitio web)</td></tr>
 </tbody>
 </table>
@@ -160,7 +160,7 @@ Usamos un modelo de **pago único** — sin suscripciones recurrentes, sin renov
 - Sin plataformas de A/B testing
 - Sin SDKs de atribución (sin AppsFlyer, sin Adjust)
 
-Nuestros gates automáticos de CI lo aseguran: cualquier pull request que importe un SDK de analytics conocido es rechazado.
+Una verificación automática en nuestro proceso de publicación lo asegura: se rechaza cualquier build que importe un SDK de analytics conocido.
 
 ## Este sitio web
 

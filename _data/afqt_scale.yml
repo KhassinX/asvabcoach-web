@@ -26,8 +26,8 @@ categories:
     name: 'Category IIIA'
     min: 50
     max: 64
-    description_en: 'May qualify for enlistment incentives'
-    description_es: 'Puede calificar para incentivos de alistamiento'
+    description_en: 'At or above the 50th percentile'
+    description_es: 'En el percentil 50 o más'
   - id: IIIB
     name: 'Category IIIB'
     min: 31
