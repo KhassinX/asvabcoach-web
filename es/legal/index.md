@@ -1,7 +1,7 @@
 ---
 layout: prose
 description: "Política de Privacidad y Términos de Uso de ASVAB Coach, de KHASSINX LLC. Cero rastreo, sin cuenta, nada que vender."
-title: Legal — Privacidad y Términos
+title: "Legal: Privacidad y Términos"
 permalink: /es/legal/
 lang: es
 canonical_en: /legal/
@@ -12,8 +12,8 @@ h1: "Legal"
 
 Documentos legales públicos de **[ASVAB Coach](https://apps.apple.com/us/app/asvab-coach/id6761384966)**.
 
-- **[Política de Privacidad](/es/legal/privacy/)** — qué datos recopilamos (spoiler: ninguno)
-- **[Términos de Uso](/es/legal/terms/)** — términos del uso de la app
+- **[Política de Privacidad](/es/legal/privacy/)**: qué datos recopilamos (spoiler: ninguno)
+- **[Términos de Uso](/es/legal/terms/)**: términos del uso de la app
 
 ---
 
@@ -28,7 +28,7 @@ Para preguntas sobre privacidad o términos:
 
 ## Licencia
 
-Estos documentos legales se publican bajo **CC0 1.0** (dedicación al dominio público) — siéntete libre de adaptarlos para tu propia app iOS independiente. Reflejan una arquitectura privacy-first, sin cuenta y sin tracking que puede no aplicar a apps con prácticas de datos diferentes.
+Estos documentos legales se publican bajo **CC0 1.0** (dedicación al dominio público): siéntete libre de adaptarlos para tu propia app iOS independiente. Reflejan una arquitectura privacy-first, sin cuenta y sin tracking que puede no aplicar a apps con prácticas de datos diferentes.
 
 La app ASVAB Coach en sí es **propietaria** y no está cubierta por esta dedicación CC0.
 

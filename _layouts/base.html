@@ -4,7 +4,7 @@
 {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en -%}
 {%- assign ui = site.ui_strings[lang_key] | default: site.ui_strings.en -%}
 {%- assign full_title = site.title -%}
-{%- if page.title %}{%- assign full_title = page.title | append: ' — ' | append: site.title -%}{%- endif -%}
+{%- if page.title %}{%- assign full_title = page.title | append: ' · ' | append: site.title -%}{%- endif -%}
 {%- assign og_image = page.og_image | default: site.og_image_default[lang_key] | default: site.og_image_default.en -%}
 {%- assign og_alt = page.og_image_alt | default: site.og_image_alt[lang_key] | default: site.og_image_alt.en -%}
 {%- if lang_key == 'es' -%}{%- assign og_locale = 'es_419' -%}{%- assign og_locale_alt = 'en_US' -%}{%- assign logo_home = '/es/' -%}{%- else -%}{%- assign og_locale = 'en_US' -%}{%- assign og_locale_alt = 'es_MX' -%}{%- assign logo_home = '/' -%}{%- endif -%}

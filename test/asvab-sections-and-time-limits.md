@@ -15,13 +15,13 @@ updated: 2026-10-05
 About 70% of military applicants take the **CAT-ASVAB**, the computer version, according
 to the official ASVAB Fact Sheet. The CAT-ASVAB
 has {{ s.printed_rows }} sections, {{ s.total_questions }} questions and
-{{ s.total_minutes }} minutes of testing time — a little over three hours, before the
+{{ s.total_minutes }} minutes of testing time: a little over three hours, before the
 paperwork around it.
 
 That averages {{ s.average_seconds_per_question }} seconds per question, and the average
 is the least useful number on this page. The sections are nowhere near evenly paced: the
 fastest gives you {{ s.fastest_seconds }} seconds per question and the slowest gives you
-{{ s.slowest_seconds }} — {{ s.fastest_abbr }} against {{ s.slowest_abbr }}. Walking in
+{{ s.slowest_seconds }}, {{ s.fastest_abbr }} against {{ s.slowest_abbr }}. Walking in
 expecting one pace and meeting the other is how people lose a section they knew the
 material for.
 
@@ -40,7 +40,7 @@ Verified {{ cat.verified }} against the official Fact Sheet.
 </tbody>
 </table>
 
-**Source.** [{{ cat.source_title }}]({{ cat.source_url }}) — CAT-ASVAB column.
+**Source.** [{{ cat.source_title }}]({{ cat.source_url }}): CAT-ASVAB column.
 
 ## Why the recruiter’s sheet shows nine, not {{ s.printed_rows }}
 
@@ -54,25 +54,25 @@ combined into a single reported score labeled **AS**. So you sit for
 That one is worth knowing before test day: AI is {{ a.questions }} questions in
 {{ a.minutes }} minutes and SI is {{ b.questions }} in {{ b.minutes }}, but the number
 that reaches your record is the combined {{ as.questions }} questions in
-{{ as.minutes }} minutes. Nothing about the combination is a penalty — it is simply how
+{{ as.minutes }} minutes. Nothing about the combination is a penalty: it is simply how
 the score is reported.
 
 ## Only {{ s.afqt_count }} of these decide whether you can enlist
 
 {% assign afqt = cat.printed | where: "is_afqt", true -%}
 {% for t in afqt -%}
-- **{{ t.name_en }}** ({{ t.abbr }}) — {{ t.questions }} questions, {{ t.minutes }} minutes.
+- **{{ t.name_en }}** ({{ t.abbr }}): {{ t.questions }} questions, {{ t.minutes }} minutes.
 {% endfor %}
 
 Those {{ s.afqt_count }} build your **AFQT**, the percentile a branch checks against its
 minimum. They are {{ s.afqt_questions }} of the {{ s.total_questions }} questions and
-{{ s.afqt_minutes }} of the {{ s.total_minutes }} minutes — the majority of your time in
+{{ s.afqt_minutes }} of the {{ s.total_minutes }} minutes: the majority of your time in
 the chair, which is not an accident.
 
 The other sections are not filler. They feed the **line scores** that decide which jobs
 open up for you. But if your problem is qualifying at all, the AFQT is the whole problem.
 
-→ [Minimum ASVAB score by branch](/scores/minimum-afqt-by-branch/) — where each branch
+→ [Minimum ASVAB score by branch](/scores/minimum-afqt-by-branch/): where each branch
 sets its floor, and what a GED changes.
 
 ## Two rules of the computer version that the paper one does not have
@@ -84,7 +84,7 @@ each one before you commit, and then commit.
 **Guessing costs you.** The official Fact Sheet says the CAT-ASVAB has a penalty for
 guessing. If you are short on time, the
 official guidance is to keep answering as well as you can rather than filling the rest at
-random — eliminating options and choosing deliberately still helps you.
+random: eliminating options and choosing deliberately still helps you.
 
 The paper version (P&P-ASVAB) works the opposite way on the second point: there is no
 guessing penalty, so you leave nothing blank. Advice written for one version is wrong for
@@ -93,12 +93,12 @@ the other, which is why it pays to know which one you are sitting.
 ## What to do with the table above
 
 Pick the {{ s.afqt_count }} rows marked *Yes* and look at their seconds-per-question
-column. That column is your practice target — not a study plan, a pacing target. Knowing
+column. That column is your practice target: not a study plan, a pacing target. Knowing
 algebra and running out of clock produces the same score as not knowing algebra.
 
 ASVAB Coach drills the {{ s.afqt_count }} AFQT sections at their real pace and estimates
 where you stand, on iPhone, iPad, Apple Watch and Mac. Everything runs on your device: no
 account, no tracking. Your progress lives on your devices and, if you use iCloud, in your
-own iCloud — never on our servers.
+own iCloud, never on our servers.
 
 [See ASVAB Coach](/){:.action}

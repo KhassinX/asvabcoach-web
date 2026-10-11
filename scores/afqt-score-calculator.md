@@ -16,7 +16,7 @@ extra_js:
 {%- assign escala = site.data.afqt_scale %}
 {%- assign tabla = site.data.afqt_official_conversion %}
 
-Enter three standard scores from your ASVAB results — **VE**, **AR** and **MK** — and this
+Enter three standard scores from your ASVAB results (**VE**, **AR** and **MK**) and this
 page applies the DoD composite, `{{ escala.formula }}`, then looks that composite up in the
 DoD’s own percentile table:
 [Table {{ tabla.source.table }} of *{{ tabla.source.title }}*]({{ tabla.source.url }})
@@ -44,17 +44,17 @@ up for.
       <legend>Your standard scores</legend>
       <div class="afqt-calc__fields">
         <div class="afqt-calc__field">
-          <label for="afqt-ve">VE — Verbal Expression</label>
+          <label for="afqt-ve">VE: Verbal Expression</label>
           <input type="number" id="afqt-ve" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-ar">AR — Arithmetic Reasoning</label>
+          <label for="afqt-ar">AR: Arithmetic Reasoning</label>
           <input type="number" id="afqt-ar" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-mk">MK — Mathematics Knowledge</label>
+          <label for="afqt-mk">MK: Mathematics Knowledge</label>
           <input type="number" id="afqt-mk" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
@@ -73,7 +73,7 @@ Then this page cannot finish the job, and it is worth knowing why.
 VE is not a subtest you sat. It is a composite of your Word Knowledge and Paragraph
 Comprehension scores, and the same DoD report publishes how it is built (section 2.3). The
 catch is that the formula runs on unrounded scores, and your sheet shows rounded ones.
-Rebuilt from the rounded WK and PC, VE can land one point off — and one point of VE moves
+Rebuilt from the rounded WK and PC, VE can land one point off, and one point of VE moves
 the composite by two.
 
 This page does not guess. If your sheet gives VE, the arithmetic from there is exact. If it
@@ -103,14 +103,14 @@ Look at the formula again: VE is multiplied by two, AR and MK are not. One point
 moves the composite as much as two points of math.
 
 That is a fact about this specific number, not about the ASVAB as a whole. It is worth
-knowing when you are deciding where an hour of study goes — and it is the reason
+knowing when you are deciding where an hour of study goes, and it is the reason
 [the AFQT percentile page](/scores/afqt-percentiles-and-categories/) spends as much time
 on Word Knowledge as on algebra.
 
 ## Practice the four subtests behind it
 
 ASVAB Coach drills Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge and
-Paragraph Comprehension, and estimates where you stand after each run — on iPhone, iPad,
+Paragraph Comprehension, and estimates where you stand after each run, on iPhone, iPad,
 Apple Watch and Mac. Everything runs on your device.
 
 [See ASVAB Coach](/){:.action}

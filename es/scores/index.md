@@ -15,6 +15,6 @@ decide si puedes alistarte; los line scores deciden qué puedes hacer una vez ad
 {% assign paginas = site.pages | where_exp: "p", "p.url contains '/scores/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
-- **[{{ p.title }}]({{ p.url }})** — {{ p.description }}
+- **[{{ p.title }}]({{ p.url }})**: {{ p.description }}
 {% endunless -%}
 {%- endfor %}
