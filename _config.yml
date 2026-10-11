@@ -9,6 +9,34 @@ org_founding_date: "2026-06-01"
 
 app_store_url: https://apps.apple.com/us/app/asvab-coach/id6761384966
 
+# Nombre corto bajo el ícono al agregar a la pantalla de inicio (apple-mobile-web-app-title).
+short_name: ASVAB
+
+# JSON-LD MobileApplication de la portada (_includes/home.html). Datos de la app, no de la web.
+app_schema:
+  name: "ASVAB Coach: AFQT Practice"
+  alternate_name: ["ASVAB Coach", "ASVAB Coach: Private AI Tutor"]
+  operating_system: "iOS 26.4, iPadOS 26.4, watchOS 26.4, macOS 26.4"
+  category: EducationalApplication
+  subcategory: Test Prep
+  price: "0"
+  price_currency: USD
+  offer_category: FreeWithInAppPurchase
+  languages: ["en-US", "es-419"]
+  free: true
+  features:
+    - "Apple Intelligence on-device AI tutor"
+    - "Momentum: Daily Goal ring, forgiving streaks with a grace day, 17 achievements, exam-date countdown"
+    - "Native Apple Watch app: Quick 10 on your wrist"
+    - "Native Mac app, not Catalyst"
+    - "725 curated questions across 9 ASVAB score areas"
+    - "Smart Review (SM-2 algorithm, per-category calibrated)"
+    - "AFQT Sprint timed practice"
+    - "Smart Exam (full CAT-ASVAB simulation)"
+    - "Math step-by-step solver"
+    - "Zero tracking · no account required"
+    - "Family Sharing included"
+
 # Favicons (derived from official Icon Composer .icon bundle — brand pack 2026-06)
 # Brand icon: navy gradient #1E3A5F→#0F1F36 background + gold service star + R/W/B ribbon (Icon Composer .icon)
 favicon_svg: /assets/favicons/favicon.svg

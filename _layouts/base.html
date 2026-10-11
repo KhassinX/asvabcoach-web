@@ -56,7 +56,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="ASVAB">
+  <meta name="apple-mobile-web-app-title" content="{{ site.short_name | default: site.title }}">
   <meta name="application-name" content="{{ site.title }}">
   <meta name="msapplication-TileColor" content="#060607">
   <meta name="msapplication-TileImage" content="/assets/favicons/mstile-150x150.png">
@@ -74,7 +74,7 @@
 </header>
 <main id="main">
 {{ content }}
-<p class="wrap note">{{ ui.disclaimer }}</p>
+{% if ui.disclaimer %}<p class="wrap note">{{ ui.disclaimer }}</p>{% endif %}
 </main>
 <footer class="foot">
   {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en %}

@@ -1,0 +1,20 @@
+{%- comment -%} Columna derecha del hero: propia de cada app (L, h y ui vienen de home.html). {%- endcomment -%}
+  <figure class="scores">
+    <div>
+      <p class="scores-label">{{ h.afqt_label }}</p>
+      <dl class="afqt">
+        {%- for t in site.data.cat_subtests.reported %}{% if t.is_afqt %}
+        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
+        {%- endif %}{% endfor %}
+      </dl>
+    </div>
+    <div>
+      <p class="scores-label">{{ h.line_label }}</p>
+      <dl class="line">
+        {%- for t in site.data.cat_subtests.reported %}{% unless t.is_afqt %}
+        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
+        {%- endunless %}{% endfor %}
+      </dl>
+    </div>
+    <figcaption>{{ h.scores_caption }}</figcaption>
+  </figure>
