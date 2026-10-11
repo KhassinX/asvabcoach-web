@@ -13,7 +13,11 @@ App development repo: [khassinx/ASVABCoach](https://github.com/khassinx/ASVABCoa
 
 ## Hosting
 
-Served via **GitHub Pages** with custom domain `asvab.khassinx.com`. CNAME record in Cloudflare zone `khassinx.com` with **proxy ON**, which provides security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options) via Transform Rules, WAF, edge caching. SSL/TLS mode: Full (strict).
+Served via **GitHub Pages** with custom domain `asvab.khassinx.com`.
+
+## Template layer
+
+`_layouts/`, `_includes/date.html`, `_includes/home.html` and `sitemap.xml` are the template every KHASSINX app site shares, and this repo is their source. Keep app content out of them: it goes in `_config.yml` (`short_name`, `app_schema`, `ui_strings`), `_data/home.yml` (`bands`) and `_includes/hero-aside.html`.
 
 ## Legacy URLs
 

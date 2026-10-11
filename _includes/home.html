@@ -17,25 +17,7 @@
       {%- endfor %}
     </ul>
   </div>
-  <figure class="scores">
-    <div>
-      <p class="scores-label">{{ h.afqt_label }}</p>
-      <dl class="afqt">
-        {%- for t in site.data.cat_subtests.reported %}{% if t.is_afqt %}
-        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
-        {%- endif %}{% endfor %}
-      </dl>
-    </div>
-    <div>
-      <p class="scores-label">{{ h.line_label }}</p>
-      <dl class="line">
-        {%- for t in site.data.cat_subtests.reported %}{% unless t.is_afqt %}
-        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
-        {%- endunless %}{% endfor %}
-      </dl>
-    </div>
-    <figcaption>{{ h.scores_caption }}</figcaption>
-  </figure>
+  {% include hero-aside.html %}
 </section>
 
 <section class="wrap band" aria-labelledby="privacy-h">
@@ -62,13 +44,17 @@
   </div>
 </section>
 
-<section class="wrap band" aria-labelledby="recruits-h">
-  <div class="band-head"><h2 id="recruits-h">{{ h.recruits_h }}</h2></div>
+{%- for b in h.bands %}
+<section class="wrap band" aria-labelledby="{{ b.id }}-h">
+  <div class="band-head"><h2 id="{{ b.id }}-h">{{ b.h }}</h2></div>
   <div class="band-body">
-    <p>{{ h.recruits_lead }}</p>
-    <p class="muted">{{ h.recruits_body }}</p>
+    <p>{{ b.lead }}</p>
+    {%- if b.body %}
+    <p class="muted">{{ b.body }}</p>
+    {%- endif %}
   </div>
 </section>
+{% endfor %}
 
 <section id="faq" class="wrap band" aria-labelledby="faq-h">
   <div class="band-head"><h2 id="faq-h">{{ h.faq_h }}</h2></div>
@@ -78,15 +64,20 @@
     {%- endfor %}
   </div>
 </section>
+{%- assign app = site.app_schema %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "MobileApplication",
-  "name": "ASVAB Coach: AFQT Practice",
-  "alternateName": ["ASVAB Coach", "ASVAB Coach: Private AI Tutor"],
-  "operatingSystem": "iOS 26.4, iPadOS 26.4, watchOS 26.4, macOS 26.4",
-  "applicationCategory": "EducationalApplication",
-  "applicationSubCategory": "Test Prep",
+  "name": {{ app.name | jsonify }},
+  {%- if app.alternate_name %}
+  "alternateName": {{ app.alternate_name | jsonify }},
+  {%- endif %}
+  "operatingSystem": {{ app.operating_system | jsonify }},
+  "applicationCategory": {{ app.category | jsonify }},
+  {%- if app.subcategory %}
+  "applicationSubCategory": {{ app.subcategory | jsonify }},
+  {%- endif %}
   "description": {{ site.description | jsonify }},
   "url": {{ site.url | jsonify }},
   "downloadUrl": {{ site.app_store_url | jsonify }},
@@ -94,12 +85,12 @@
   "image": {{ site.url | append: site.og_image_default.en | jsonify }},
   "offers": {
     "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "category": "FreeWithInAppPurchase"
+    "price": {{ app.price | jsonify }},
+    "priceCurrency": {{ app.price_currency | jsonify }},
+    "category": {{ app.offer_category | jsonify }}
   },
-  "inLanguage": ["en-US", "es-419"],
-  "isAccessibleForFree": true,
+  "inLanguage": {{ app.languages | jsonify }},
+  "isAccessibleForFree": {{ app.free | jsonify }},
   "publisher": {
     "@type": "Organization",
     "name": "KHASSINX",
@@ -108,19 +99,7 @@
     "logo": "https://khassinx.com/assets/favicons/icon-512.png",
     "foundingDate": {{ site.org_founding_date | jsonify }}
   },
-  "featureList": [
-    "Apple Intelligence on-device AI tutor",
-    "Momentum: Daily Goal ring, forgiving streaks with a grace day, 17 achievements, exam-date countdown",
-    "Native Apple Watch app: Quick 10 on your wrist",
-    "Native Mac app, not Catalyst",
-    "725 curated questions across 9 ASVAB score areas",
-    "Smart Review (SM-2 algorithm, per-category calibrated)",
-    "AFQT Sprint timed practice",
-    "Smart Exam (full CAT-ASVAB simulation)",
-    "Math step-by-step solver",
-    "Zero tracking · no account required",
-    "Family Sharing included"
-  ]
+  "featureList": {{ app.features | jsonify }}
 }
 </script>
 <script type="application/ld+json">
