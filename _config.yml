@@ -7,9 +7,6 @@ lang: en
 org_legal_name: "KHASSINX LLC"
 org_founding_date: "2026-06-01"
 
-# Layer 2: the ASVAB Coach palette, re-bound over the Layer 1 tokens
-app_tokens_css: /assets/css/asvab-tokens.css
-
 app_store_url: https://apps.apple.com/us/app/asvab-coach/id6761384966
 
 # Favicons (derived from official Icon Composer .icon bundle — brand pack 2026-06)
@@ -46,9 +43,9 @@ og_image_alt:
 # la ruta del resultado). El nivel 2 ahora sale de la URL de la propia página y su nombre
 # de este mapa; una sección que no esté acá NO publica miga, en vez de heredar la ajena.
 #
-# Deliberadamente separado de `nav:`, aunque hoy digan lo mismo: el menú es una decisión
-# de UI (cuántos ítems entran) y la miga es una afirmación estructural sobre la URL.
-# Acoplarlos haría que sacar un ítem del menú apague una miga correcta sin que nadie lo note.
+# Deliberadamente separado de `footer_nav:`: el menú es una decisión de UI (cuántos ítems
+# entran) y la miga es una afirmación estructural sobre la URL. Acoplarlos haría que sacar
+# un ítem del menú apague una miga correcta sin que nadie lo note.
 # Nombre en español de cada rama, SÓLO para el render de la web en ES.
 # La app y `afqt_minimums.yml` publican el nombre oficial en inglés (`shortName` de
 # BranchManager.swift) y eso NO se toca: es el dato. Esto es presentación — un
@@ -79,17 +76,6 @@ breadcrumbs:
     security: Seguridad
     contact: Contacto
 
-nav:
-  en:
-    - title: Support
-      url: /support/
-    - title: Privacy
-      url: /legal/privacy/
-  es:
-    - title: Soporte
-      url: /es/support/
-    - title: Privacidad
-      url: /es/legal/privacy/
 
 footer_nav:
   en:
@@ -134,9 +120,7 @@ footer_nav:
 ui_strings:
   en:
     skip_to_main: "Skip to main content"
-    nav_primary: "Primary"
     nav_footer: "Footer"
-    part_of: "Part of KHASSINX"
     umbrella_url: "https://khassinx.com/"
     last_updated: "Last updated"
     effective: "Effective"
@@ -144,6 +128,7 @@ ui_strings:
     in_short: "In short"
     on_this_page: "On this page"
     related: "Related"
+    language: "Language"
     theme: "Theme"
     theme_system: "System"
     theme_light: "Light"
@@ -151,9 +136,7 @@ ui_strings:
     disclaimer: "ASVAB Coach is an independent educational tool. NOT affiliated with, endorsed by, or connected to the U.S. Department of Defense or any military branch. The name ASVAB is used only to identify the exam the app prepares you for."
   es:
     skip_to_main: "Saltar al contenido principal"
-    nav_primary: "Principal"
     nav_footer: "Pie de página"
-    part_of: "Parte de KHASSINX"
     umbrella_url: "https://khassinx.com/es/"
     last_updated: "Última actualización"
     effective: "Vigente desde el"
@@ -161,6 +144,7 @@ ui_strings:
     in_short: "En resumen"
     on_this_page: "En esta página"
     related: "Relacionado"
+    language: "Idioma"
     theme: "Tema"
     theme_system: "Sistema"
     theme_light: "Claro"
