@@ -27,7 +27,7 @@ material for.
 
 ## Every section, with its clock
 
-Verified {{ cat.verified }} against the official Fact Sheet.
+Verified on {% include date.html d=cat.verified %} against the official Fact Sheet.
 
 <table>
 <thead>

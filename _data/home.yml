@@ -39,7 +39,7 @@ en:
   # audit-allow:N22 FAQ publica: la primera respuesta enumera los pisos a proposito (rich result de Google). Verificada contra BranchManager.swift el 2026-09-01.
   faq:
     - q: "What AFQT score do I need to enlist?"
-      a: "The AFQT is a percentile from 1 to 99, calculated from four ASVAB subtests: Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, and Mathematics Knowledge. Current branch minimums are Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 and Coast Guard 32 (checked 2026-09-05 against each branch’s published requirements); competitive jobs usually need more. ASVAB Coach estimates your AFQT from a 20-question diagnostic and tracks it as you study."
+      a: "The AFQT is a percentile from 1 to 99, calculated from four ASVAB subtests: Arithmetic Reasoning, Word Knowledge, Paragraph Comprehension, and Mathematics Knowledge. Current branch minimums are Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 and Coast Guard 32 (checked on 5 September 2026 against each branch’s published requirements); competitive jobs usually need more. ASVAB Coach estimates your AFQT from a 20-question diagnostic and tracks it as you study."
     - q: "Is ASVAB Coach free?"
       a: "Yes, free to start, with no account and no subscription. You can answer 50 questions from any category, take a complete diagnostic and the Quick 10 (neither counts against the 50), and use the on‑device AI tutor for free. A single one‑time unlock (never a subscription) adds all 725 questions, the full CAT-ASVAB mock exam, unlimited AI tutoring, and the Apple Watch and Mac apps. Family Sharing is included."
     - q: "How long should I study for the ASVAB?"
@@ -70,7 +70,7 @@ es:
     - { k: "Rastreo", v: "Ninguno" }
     - { k: "IA", v: "El modelo de Apple en el dispositivo, en iPhone, iPad y Mac con Apple Intelligence" }
     - { k: "Precio", v: "Gratis para empezar; desbloqueo único Full Access" }
-  policy: "Política de Privacidad"
+  policy: "Política de privacidad"
   reach: "Lo que sí nos llega: informes de fallos e información de uso, si en los ajustes de tu aparato elegiste compartirlos con los desarrolladores (Apple nos los pasa), y los correos que nos envías."
   inside_h: "Lo que incluye"
   inside:
@@ -91,7 +91,7 @@ es:
   # audit-allow:N22 FAQ publica: la primera respuesta enumera los pisos a proposito (rich result de Google). Verificada contra BranchManager.swift el 2026-09-01.
   faq:
     - q: "¿Qué puntaje AFQT necesito para enlistarme?"
-      a: "El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Vocabulario, Comprensión de Lectura y Conocimiento Matemático. Los mínimos por rama son Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 y Coast Guard 32 (revisados el 2026-09-05 contra los requisitos publicados de cada rama); los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias."
+      a: "El AFQT es un percentil del 1 al 99, calculado a partir de cuatro subtests del ASVAB: Razonamiento Aritmético, Conocimiento de Vocabulario, Comprensión de Lectura y Conocimiento Matemático. Los mínimos por rama son Army 31, Navy 31, Marine Corps 31, Air Force 31, Space Force 31 y Coast Guard 32 (revisados el 5 de septiembre de 2026 contra los requisitos publicados de cada rama); los empleos competitivos suelen pedir más. ASVAB Coach estima tu AFQT con un diagnóstico de 20 preguntas y lo sigue a medida que estudias."
     - q: "¿ASVAB Coach es gratis?"
       a: "Sí, gratis para empezar, sin cuenta y sin suscripción. Puedes responder 50 preguntas de cualquier categoría, hacer un diagnóstico completo y el Quick 10 (ninguno descuenta de las 50), y usar el tutor de IA en el dispositivo gratis. Un único desbloqueo (nunca una suscripción) agrega las 725 preguntas, el simulacro CAT-ASVAB completo, el tutor de IA ilimitado y las apps de Apple Watch y Mac. Family Sharing incluido."
     - q: "¿Cuánto tiempo debo estudiar para el ASVAB?"

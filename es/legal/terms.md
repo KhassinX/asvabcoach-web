@@ -1,7 +1,7 @@
 ---
 layout: prose
-description: "Términos de Uso de ASVAB Coach: licencia, desbloqueo único, sin garantías sobre ningún puntaje del ASVAB y cómo se resuelven las disputas."
-title: Términos de Uso
+description: "Términos de uso de ASVAB Coach: licencia, desbloqueo único, sin garantías sobre ningún puntaje del ASVAB y cómo se resuelven las disputas."
+title: Términos de uso
 permalink: /es/legal/terms/
 lang: es
 canonical_en: /legal/terms/
@@ -10,7 +10,8 @@ redirect_from:
   - /es/terms
   - /es/terms/
 updated: 2026-10-06
-h1: "Términos de Uso: ASVAB Coach"
+effective: 2026-10-05
+h1: "Términos de uso: ASVAB Coach"
 version: "1.3"
 related:
   - /es/legal/privacy/
@@ -23,7 +24,7 @@ summary:
   - "Verifica los requisitos vigentes con un reclutador oficial antes de tomar decisiones de alistamiento."
 ---
 
-**Fecha de vigencia**: 2026-10-05
+**Fecha de vigencia**: {% include date.html d=page.effective lang=page.lang %}
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
@@ -162,4 +163,4 @@ Tiempo de respuesta esperado: 7 días hábiles.
 
 ---
 
-*Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
+*Última actualización: {% include date.html d=page.updated lang=page.lang %} · Versión {{ page.version }}*

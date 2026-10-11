@@ -10,11 +10,11 @@ layout: base
   <h1>{{ page.h1 | default: page.title }}</h1>
   {%- if page.version %}
   {%- assign eff = page.effective | default: page.updated -%}
-  {%- capture day %}{% include legal-date.html d=eff lang=page.lang %}{% endcapture -%}
-  {%- capture upd %}{% include legal-date.html d=page.updated lang=page.lang %}{% endcapture %}
+  {%- capture day %}{% include date.html d=eff lang=page.lang %}{% endcapture -%}
+  {%- capture upd %}{% include date.html d=page.updated lang=page.lang %}{% endcapture %}
   <p class="meta">{{ ui.effective }} {{ day }} · {{ ui.version }} {{ page.version }}{% if upd != day %} · {{ ui.last_updated }} {{ upd }}{% endif %}</p>
   {%- elsif page.updated %}
-  <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
+  <p class="meta">{{ ui.last_updated }}: {% include date.html d=page.updated lang=page.lang %}</p>
   {%- endif %}
 </header>
 <div class="wrap band doc-main {% if toc %}has-toc{% else %}no-toc{% endif %}">

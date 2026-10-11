@@ -1,7 +1,7 @@
 ---
 layout: prose
 description: "ASVAB Coach no recopila nada: sin SDKs de analytics, sin cuenta, sin IA en la nube. Qué guarda la app, dónde vive y cómo borrarlo."
-title: Política de Privacidad
+title: Política de privacidad
 permalink: /es/legal/privacy/
 lang: es
 canonical_en: /legal/privacy/
@@ -11,7 +11,7 @@ redirect_from:
   - /es/privacy/
 updated: 2026-10-06
 effective: 2026-09-06
-h1: "Política de Privacidad: ASVAB Coach"
+h1: "Política de privacidad: ASVAB Coach"
 version: "1.7"
 related:
   - /es/legal/terms/
@@ -24,7 +24,7 @@ summary:
   - "Si nos escribes, recibimos tu dirección y tu mensaje y los usamos solo para responderte y arreglar lo que reportaste; puedes pedirnos borrarlos."
 ---
 
-**Fecha de vigencia**: 2026-09-06
+**Fecha de vigencia**: {% include date.html d=page.effective lang=page.lang %}
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operador / Responsable del tratamiento**: KHASSINX LLC, una sociedad de responsabilidad limitada de Florida
 **Contacto**: legal@khassinx.com
@@ -178,7 +178,7 @@ camino) y se sirven desde este mismo dominio, bajo `/cdn-cgi/`:
 - `/cdn-cgi/challenge-platform/scripts/jsd/main.js`: la detección de bots de Cloudflare. Hace
   comprobaciones en tu navegador para distinguir a una persona del tráfico automatizado, y en ese
   proceso Cloudflare puede fijar una cookie técnica de seguridad. Es protección del sitio: no es
-  analytics, no es publicidad y no sigue tu actividad en otros sitios. La Política de Seguridad de Contenido (CSP) de este sitio bloquea el cargador en línea que Cloudflare agrega para él, así que en nuestra prueba del 2026-10-06 no se ejecutó.
+  analytics, no es publicidad y no sigue tu actividad en otros sitios. La Política de Seguridad de Contenido (CSP) de este sitio bloquea el cargador en línea que Cloudflare agrega para él, así que en nuestra prueba del 6 de octubre de 2026 no se ejecutó.
 - `/cdn-cgi/scripts/…/cloudflare-static/email-decode.min.js`: descifra las direcciones de correo que
   Cloudflare ofusca en la página, para que los programas que buscan correos para enviar spam no las levanten.
 
@@ -246,7 +246,7 @@ Procuramos responder dentro de 7 días hábiles.
 
 ---
 
-*Última actualización: {{ page.updated | date: "%Y-%m-%d" }} · Versión {{ page.version }}*
+*Última actualización: {% include date.html d=page.updated lang=page.lang %} · Versión {{ page.version }}*
 
 *1.7: 6 oct 2026.* Describe lo que cambia con la versión 3.5.0 de la app, marcado «Desde la versión 3.5.0» donde aparece: donde la ley lo exige, la app lee tu rango de edad a través de Apple en tu dispositivo y lo descarta (sección nueva «Tu rango de edad»); la comprobación de rango de edad de Apple es una tercera conexión de red, también de Apple; un simulacro completo que dejaste a medias se guarda en el dispositivo para que lo retomes; y el reinicio dentro de la app pasa a Ajustes → Acerca de y funciona como se describe en «Tus derechos». Indica que lo marcado aplica en cada dispositivo cuando tiene la versión 3.5.0 o posterior. Describe el nombre de sección que la app le pasa a Handoff y a Spotlight. Reemplaza la ruta por Administrar almacenamiento de iCloud con el reinicio dentro de la app, porque no pudimos confirmar que esa ruta llegue a la copia de esta app, e indica que borrar la app no borra la copia de iCloud. Aclara que los informes de fallos y los datos de uso agregados nos llegan solo a través de Apple, y solo si elegiste compartir con los desarrolladores. Lo que la app recopila no cambió.
 

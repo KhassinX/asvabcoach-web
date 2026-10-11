@@ -26,7 +26,7 @@ summary:
   - "If you email us, we receive your address and message and use them only to reply and fix what you reported; you can ask us to delete them."
 ---
 
-**Effective date**: 2026-09-06
+**Effective date**: {% include date.html d=page.effective lang=page.lang %}
 **App**: ASVAB Coach ([App Store](https://apps.apple.com/us/app/asvab-coach/id6761384966))
 **Operator / Data controller**: KHASSINX LLC, a Florida limited liability company
 **Contact**: legal@khassinx.com
@@ -171,7 +171,7 @@ This site is static and has no forms. We add no analytics, no tracking, no pixel
 
 Now, here is what you will see if you open "View Source" on this very page: **Cloudflare may insert scripts of its own as it delivers it.** They are not in the HTML we write (Cloudflare adds them on the way out), and they are served from this same domain, under `/cdn-cgi/`:
 
-- `/cdn-cgi/challenge-platform/scripts/jsd/main.js`: Cloudflare’s bot detection. It runs checks in your browser to tell a person apart from automated traffic, and in that process Cloudflare may set a technical security cookie. It is site protection: not analytics, not advertising, and it does not follow your activity across other sites. This site\'s Content Security Policy blocks the inline loader Cloudflare adds for it, so in our test on 2026-10-06 it did not run.
+- `/cdn-cgi/challenge-platform/scripts/jsd/main.js`: Cloudflare’s bot detection. It runs checks in your browser to tell a person apart from automated traffic, and in that process Cloudflare may set a technical security cookie. It is site protection: not analytics, not advertising, and it does not follow your activity across other sites. This site’s Content Security Policy blocks the inline loader Cloudflare adds for it, so in our test on 6 October 2026 it did not run.
 - `/cdn-cgi/scripts/…/cloudflare-static/email-decode.min.js`: it decodes the email addresses Cloudflare obfuscates on the page, so spam harvesters cannot lift them.
 
 Neither one is ours, neither reports anything to us, and we receive no data from either. We spell it out in this detail because a policy that denies what anyone can check with "View Source" is worth nothing.
@@ -231,7 +231,7 @@ We aim to respond within 7 business days.
 
 ---
 
-*Last updated: {{ page.updated | date: "%Y-%m-%d" }} · Version {{ page.version }}*
+*Last updated: {% include date.html d=page.updated lang=page.lang %} · Version {{ page.version }}*
 
 *1.7: 6 Oct 2026.* Describes what changes with version 3.5.0 of the app, marked "From version 3.5.0" wherever it appears: where the law requires it, the app reads your age range from Apple on your device and discards it (new section "Your age range"); Apple’s age-range check is a third network connection, also Apple’s; a full practice exam left unfinished is kept on the device so you can resume it; and the in-app reset moves to Settings → About and works as described under "Your rights". Notes that what is marked applies on each device once it has version 3.5.0 or later. Describes the section name the app hands to Handoff and Spotlight. Replaces the route through iCloud’s Manage Storage with the in-app reset, because we could not confirm that the route reaches this app’s copy, and states that deleting the app does not erase the iCloud copy. States that crash reports and aggregated usage data reach us only through Apple, and only if you chose to share with app developers. What the app collects did not change.
 
