@@ -89,7 +89,7 @@ Secretario de Defensa, a solicitud del secretario de la rama, puede subir ese to
 mismo puntaje puede aprobar una y reprobar otra.
 
 **¿Puedes alistarte, para empezar?** Por debajo de {{ minimos.summary.floor_min }} ninguna
-rama te puede tomar con diploma de secundaria — no por cómo te fue, sino porque
+rama te puede tomar con diploma de secundaria: no por cómo te fue, sino porque
 {{ minimos.summary.floor_min }} es el piso más bajo que alguna de ellas publica.
 
 **¿En cuáles ramas?** Acá es donde los pisos dejan de coincidir entre sí.
@@ -114,7 +114,7 @@ con subtests que el AFQT ni toca.
 <tr><td data-label="Tu percentil" markdown="span">{% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %}</td><td data-label="Qué te abre" markdown="span">{{ ramas_al_piso }} de {{ ramas_total }}. {% for b in ramas_altas_lista %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless forloop.last %} y {% endunless %}{% endfor %} todavía fuera de alcance.</td></tr>
 {% endif -%}
 <tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.floor_max }} o más</td><td data-label="Qué te abre" markdown="span">Las {{ ramas_total }} ramas te aceptan aquí.</td></tr>
-<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.recommended_min }} o más{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} en algunas ramas){% endunless %}</td><td data-label="Qué te abre" markdown="span">Competitivo: una observación, no un requisito publicado — y donde los incentivos empiezan a aparecer en la conversación.</td></tr>
+<tr><td data-label="Tu percentil" markdown="span">{{ minimos.summary.recommended_min }} o más{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} en algunas ramas){% endunless %}</td><td data-label="Qué te abre" markdown="span">Competitivo: una observación, no un requisito publicado, y donde los incentivos empiezan a aparecer en la conversación.</td></tr>
 </tbody>
 </table>
 
@@ -126,7 +126,7 @@ entras, y eso no es un número que nadie publique.
 
 **El GED cambia el cuadro entero.** Sin diploma, cada rama pide
 {% if minimos.summary.ged_is_uniform %}{{ minimos.summary.ged_min }}{% else %}entre {{ minimos.summary.ged_min }} y {{ minimos.summary.ged_max }}{% endif %}
-en su lugar — un salto de {% if minimos.summary.ged_gap_min == minimos.summary.ged_gap_max %}{{ minimos.summary.ged_gap_min }}{% else %}{{ minimos.summary.ged_gap_min }} a {{ minimos.summary.ged_gap_max }}{% endif %}
+en su lugar: un salto de {% if minimos.summary.ged_gap_min == minimos.summary.ged_gap_max %}{{ minimos.summary.ged_gap_min }}{% else %}{{ minimos.summary.ged_gap_min }} a {{ minimos.summary.ged_gap_max }}{% endif %}
 puntos de percentil. La
 [tabla rama por rama](/es/scores/minimum-afqt-by-branch/) trae las dos columnas.
 
@@ -163,8 +163,8 @@ hace más eficiente **para este número en particular**, que es el que decide si
 alistarte.
 
 Los cuatro subtests que construyen el AFQT son Arithmetic Reasoning, Mathematics
-Knowledge, Word Knowledge y Paragraph Comprehension. El resto del ASVAB —mira
-[el formato completo del examen](/es/test/asvab-sections-and-time-limits/)— no mueve este
+Knowledge, Word Knowledge y Paragraph Comprehension. El resto del ASVAB (mira
+[el formato completo del examen](/es/test/asvab-sections-and-time-limits/)) no mueve este
 número ni un punto. Mueve tus line scores, que deciden qué trabajo puedes tener.
 
 ## Estima dónde estás parado
@@ -174,6 +174,6 @@ Apple Watch y Mac a partir de tus respuestas de práctica, y dice en pantalla qu
 resultado es una estimación.
 
 Todo corre en tu dispositivo: sin cuenta, sin rastreo. Tu progreso vive en tus dispositivos
-y, si usas iCloud, en tu propio iCloud — nunca en nuestros servidores.
+y, si usas iCloud, en tu propio iCloud, nunca en nuestros servidores.
 
 [Ver ASVAB Coach](/es/){:.action}

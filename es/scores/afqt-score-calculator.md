@@ -16,7 +16,7 @@ extra_js:
 {%- assign escala = site.data.afqt_scale %}
 {%- assign tabla = site.data.afqt_official_conversion %}
 
-Escribe tres puntajes estándar de tu informe del ASVAB —**VE**, **AR** y **MK**— y esta
+Escribe tres puntajes estándar de tu informe del ASVAB (**VE**, **AR** y **MK**) y esta
 página aplica el compuesto del DoD, `{{ escala.formula }}`, y busca ese compuesto en la
 tabla de percentiles del propio DoD:
 [la Tabla {{ tabla.source.table }} de *{{ tabla.source.title }}*]({{ tabla.source.url }})
@@ -43,17 +43,17 @@ Corre entero en tu navegador. No se envía nada a ningún lado y no hay que regi
       <legend>Tus puntajes estándar</legend>
       <div class="afqt-calc__fields">
         <div class="afqt-calc__field">
-          <label for="afqt-ve">VE — Verbal Expression</label>
+          <label for="afqt-ve">VE: Verbal Expression</label>
           <input type="number" id="afqt-ve" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-ar">AR — Arithmetic Reasoning</label>
+          <label for="afqt-ar">AR: Arithmetic Reasoning</label>
           <input type="number" id="afqt-ar" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-mk">MK — Mathematics Knowledge</label>
+          <label for="afqt-mk">MK: Mathematics Knowledge</label>
           <input type="number" id="afqt-mk" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>

@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: AFQT Percentiles and Categories
-description: "What an AFQT percentile actually measures, the six DoD categories, and whether your score is good enough — for which branch, and for what."
+description: "What an AFQT percentile actually measures, the six DoD categories, and whether your score is good enough: for which branch, and for what."
 permalink: /scores/afqt-percentiles-and-categories/
 lang: en
 canonical_en: /scores/afqt-percentiles-and-categories/
@@ -15,7 +15,7 @@ updated: 2026-10-05
 
 An AFQT of {{ escala.categories[2].min }} does not mean you answered
 {{ escala.categories[2].min }} % of the questions correctly. It means you scored as well as
-or better than {{ escala.categories[2].min }} % of a national reference sample — the same
+or better than {{ escala.categories[2].min }} % of a national reference sample: the same
 18-to-23-year-olds the Department of Defense has used as its yardstick since 1997.
 
 That distinction is worth a minute of your time, because it changes what the number can
@@ -65,7 +65,7 @@ same way a percentile is. It is not a statement about what anyone can learn.
 **{{ escala.categories[2].name }} is the line most people are actually chasing.** Clearing
 a branch floor makes you eligible;
 reaching {{ escala.categories[2].min }} is where enlistment incentives start appearing in
-the conversation. The floors themselves are lower — see
+the conversation. The floors themselves are lower: see
 [minimum AFQT by branch](/scores/minimum-afqt-by-branch/), where every branch sits at
 {% if minimos.summary.floor_is_uniform %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }} or {{ minimos.summary.floor_max }}{% endif %}
 with a diploma.
@@ -89,7 +89,7 @@ upon the request of the Secretary concerned, can raise that to 20 percent
 the same score can pass one and fail another.
 
 **Can you enlist at all?** Below {{ minimos.summary.floor_min }}, no branch can take you
-with a high school diploma — not because of how you did, but because
+with a high school diploma: not because of how you did, but because
 {{ minimos.summary.floor_min }} is the lowest floor any of them publishes.
 
 **Which branches?** This is where the floors stop agreeing with each other.
@@ -115,7 +115,7 @@ subtests the AFQT never touches.
 <tr><td data-label="Your percentile" markdown="span">{% if minimos.summary.floor_min == bajo_el_techo %}{{ minimos.summary.floor_min }}{% else %}{{ minimos.summary.floor_min }}–{{ bajo_el_techo }}{% endif %}</td><td data-label="What it opens" markdown="span">{{ ramas_al_piso }} of {{ ramas_total }}. {% for rama in minimos.summary.highest_floor_branches %}{{ rama }}{% unless forloop.last %} and {% endunless %}{% endfor %} still out of reach.</td></tr>
 {% endif -%}
 <tr><td data-label="Your percentile" markdown="span">{{ minimos.summary.floor_max }} and up</td><td data-label="What it opens" markdown="span">All {{ ramas_total }} branches meet you here.</td></tr>
-<tr><td data-label="Your percentile" markdown="span">{{ minimos.summary.recommended_min }} and up{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} for some branches){% endunless %}</td><td data-label="What it opens" markdown="span">Competitive: an observation, not a published requirement — and where incentives start appearing in the conversation.</td></tr>
+<tr><td data-label="Your percentile" markdown="span">{{ minimos.summary.recommended_min }} and up{% unless minimos.summary.recommended_min == minimos.summary.recommended_max %} ({{ minimos.summary.recommended_max }} for some branches){% endunless %}</td><td data-label="What it opens" markdown="span">Competitive: an observation, not a published requirement, and where incentives start appearing in the conversation.</td></tr>
 </tbody>
 </table>
 
@@ -127,7 +127,7 @@ walk in, which is not a number anyone publishes.
 
 **A GED changes the whole picture.** Without a diploma every branch asks for
 {% if minimos.summary.ged_is_uniform %}{{ minimos.summary.ged_min }}{% else %}{{ minimos.summary.ged_min }}–{{ minimos.summary.ged_max }}{% endif %}
-instead — a jump of {% if minimos.summary.ged_gap_min == minimos.summary.ged_gap_max %}{{ minimos.summary.ged_gap_min }}{% else %}{{ minimos.summary.ged_gap_min }} to {{ minimos.summary.ged_gap_max }}{% endif %}
+instead: a jump of {% if minimos.summary.ged_gap_min == minimos.summary.ged_gap_max %}{{ minimos.summary.ged_gap_min }}{% else %}{{ minimos.summary.ged_gap_min }} to {{ minimos.summary.ged_gap_max }}{% endif %}
 percentile points. The
 [branch-by-branch table](/scores/minimum-afqt-by-branch/) has both columns.
 
@@ -141,7 +141,7 @@ Three steps. The DoD publishes the last two, and the first one happens inside th
 
 1. **Each subtest becomes a standard score.** The test scores your answers with an
    item-response model, which weighs which questions you got right and not only how
-   many — so a count of right answers cannot be turned into a standard score by hand.
+   many, so a count of right answers cannot be turned into a standard score by hand.
    The scores it produces have a mean of 50 and a standard deviation of 10 in the 1997
    reference sample, and they are not cut off at 20 or 80.
 2. **The four are combined:** `{{ escala.formula }}`, where VE is the verbal score
@@ -159,22 +159,22 @@ claiming otherwise is guessing with more confidence than the data allows.
 ## What this means for studying
 
 Because VE enters the formula twice, a point of verbal is worth two points of math in the
-composite. That does not make vocabulary more important than algebra in general — it makes
+composite. That does not make vocabulary more important than algebra in general: it makes
 it more efficient *for this particular number*, which is the number that decides whether
 you can enlist at all.
 
 The four subtests that build the AFQT are Arithmetic Reasoning, Mathematics Knowledge,
-Word Knowledge and Paragraph Comprehension. The rest of the ASVAB — see
-[the full test format](/test/asvab-sections-and-time-limits/) — does not move this number
+Word Knowledge and Paragraph Comprehension. The rest of the ASVAB (see
+[the full test format](/test/asvab-sections-and-time-limits/)) does not move this number
 by a single point. It moves your line scores, which decide what job you can hold.
 
 ## Estimate where you stand
 
 ASVAB Coach runs the four AFQT subtests and estimates your percentile on iPhone, iPad,
-Apple Watch and Mac, starting from your practice answers — and it says on screen that the
+Apple Watch and Mac, starting from your practice answers, and it says on screen that the
 result is an estimate.
 
 Everything runs on your device: no account, no tracking. Your progress lives on your
-devices and, if you use iCloud, in your own iCloud — never on our servers.
+devices and, if you use iCloud, in your own iCloud, never on our servers.
 
 [See ASVAB Coach](/){:.action}

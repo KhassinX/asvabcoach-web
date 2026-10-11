@@ -15,6 +15,6 @@ cuáles deciden algo de verdad.
 {% assign paginas = site.pages | where_exp: "p", "p.url contains '/test/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
-- **[{{ p.title }}]({{ p.url }})** — {{ p.description }}
+- **[{{ p.title }}]({{ p.url }})**: {{ p.description }}
 {% endunless -%}
 {%- endfor %}

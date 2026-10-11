@@ -10,13 +10,13 @@ redirect_from:
   - /es/terms
   - /es/terms/
 updated: 2026-10-06
-h1: "Términos de Uso — ASVAB Coach"
+h1: "Términos de Uso: ASVAB Coach"
 version: "1.3"
 related:
   - /es/legal/privacy/
   - /es/support/
 summary:
-  - "ASVAB Coach es una herramienta educativa independiente: no estamos afiliados, respaldados ni conectados al Departamento de Defensa de EE.UU. ni a ninguna rama militar."
+  - "ASVAB Coach es una herramienta educativa independiente: no estamos afiliados, respaldados ni conectados al Departamento de Defensa de EE. UU. ni a ninguna rama militar."
   - "No garantizamos que usar la app te haga aprobar el ASVAB ni calificar para una rama, un MOS o un rating."
   - "Las explicaciones de IA pueden ser inexactas. La explicación oficial hecha a mano de cada pregunta es la verdad de referencia."
   - "ASVAB Coach es gratuita para empezar. Una única compra desbloquea el acceso completo, sin suscripción ni renovación automática."
@@ -42,7 +42,7 @@ La app es **gratuita de descargar y usar**, con un tier gratuito permanente. Des
 
 ASVAB Coach es una **herramienta educativa independiente**.
 
-- **NO estamos afiliados** con, respaldados por, ni conectados al Departamento de Defensa de EE.UU., al Army, Navy, Marine Corps, Air Force, Coast Guard, Space Force, ni a ninguna autoridad oficial del examen ASVAB.
+- **NO estamos afiliados** con, respaldados por, ni conectados al Departamento de Defensa de EE. UU., al Army, Navy, Marine Corps, Air Force, Coast Guard, Space Force, ni a ninguna autoridad oficial del examen ASVAB.
 - Nuestro uso del nombre **ASVAB** es puramente educativo, para describir qué examen prepara la app.
 - **No garantizamos** que usar ASVAB Coach resulte en aprobar el examen ASVAB, calificar para una rama militar específica, calificar para un MOS o rating específico, ni ningún otro resultado. Tu desempeño en el ASVAB real depende de muchos factores fuera de nuestro control, incluyendo tu esfuerzo, educación previa, condiciones el día del examen y la política vigente del DoD.
 - Las preguntas de práctica en la app están **modeladas** en los formatos del ASVAB pero **no** son preguntas reales del examen. El ASVAB oficial lo administran los Military Entrance Processing Stations (MEPS) usando preguntas del banco controlado por el DoD.
@@ -72,12 +72,12 @@ ASVAB Coach muestra los puntajes mínimos AFQT por rama militar (ej. "Army: 31, 
 
 ## 5. Tier gratuito y desbloqueo único
 
-- ASVAB Coach es **gratuita de descargar y usar**, con un **tier gratuito permanente** — sin cuenta, sin prueba, sin reloj de cuenta regresiva. El tier gratuito incluye **50 preguntas de cualquier categoría** del banco, cada una con la explicación del Tutor de IA en el dispositivo; un diagnóstico completo (AFQT estimado) y el Quick 10, que no descuentan de esas 50; y la tabla de mínimos AFQT por rama.
+- ASVAB Coach es **gratuita de descargar y usar**, con un **tier gratuito permanente**: sin cuenta, sin prueba, sin reloj de cuenta regresiva. El tier gratuito incluye **50 preguntas de cualquier categoría** del banco, cada una con la explicación del Tutor de IA en el dispositivo; un diagnóstico completo (AFQT estimado) y el Quick 10, que no descuentan de esas 50; y la tabla de mínimos AFQT por rama.
 - El acceso completo se desbloquea con una **única compra** (producto `com.khassinx.asvabcoach.fullaccess`) al precio de la compra única indicado en el App Store (o el equivalente local fijado por Apple). Desbloquea el banco completo de 725 preguntas, el simulacro CAT-ASVAB, el Tutor de IA ilimitado, la repetición espaciada SM-2, Apple Watch y Mac.
-- La compra es una **compra in-app no consumible** — una vez adquirida, persiste para la misma Cuenta de Apple para siempre, restaurable con el botón "Restaurar compras", y se comparte mediante **Compartir en familia**.
+- La compra es una **compra in-app no consumible**: una vez adquirida, persiste para la misma Cuenta de Apple para siempre, restaurable con el botón "Restaurar compras", y se comparte mediante **Compartir en familia**.
 - **Sin suscripción**. Sin renovación automática. Sin prueba que se convierta en cargo. Quien ya haya comprado el Acceso Completo conserva todo su acceso.
 
-Los reembolsos los rige Apple en su totalidad — solicítalos a través de tu historial de compras del App Store. No tenemos la capacidad de aprobar ni denegar reembolsos directamente porque no procesamos pagos.
+Los reembolsos los rige Apple en su totalidad: solicítalos a través de tu historial de compras del App Store. No tenemos la capacidad de aprobar ni denegar reembolsos directamente porque no procesamos pagos.
 
 ## 6. Uso aceptable
 
@@ -108,7 +108,7 @@ En la máxima extensión permitida por la ley, KHASSINX LLC **no será responsab
 - Imposibilidad de enlistarse en una rama o MOS deseado
 - Tiempo de estudio perdido u otro tiempo personal
 - Daños al dispositivo atribuidos a la app
-- Pérdida de datos (tus datos viven en tu iCloud — no tenemos copia para perder ni para entregar)
+- Pérdida de datos (tus datos viven en tu iCloud: no tenemos copia para perder ni para entregar)
 
 Nuestra responsabilidad acumulada total ante ti por cualquier reclamo derivado de estos términos o de tu uso de ASVAB Coach está **limitada al monto que pagaste por la app** (el precio de la compra única fijado por Apple, o equivalente local), o $0 si no realizaste la compra dentro de la app.
 
@@ -131,7 +131,7 @@ Los cambios materiales se reflejarán con una nueva "Fecha de vigencia" en la pa
 
 ## 11. Ley aplicable y disputas
 
-Estos términos se rigen por las leyes del **Estado de Florida, EE.UU.**, sin consideración a los principios de conflicto de leyes.
+Estos términos se rigen por las leyes del **Estado de Florida, EE. UU.**, sin consideración a los principios de conflicto de leyes.
 
 - Las disputas se resolverán en los tribunales del Estado de Florida
 - Ambas partes renuncian al derecho a juicio por jurado para cualquier disputa
@@ -141,7 +141,7 @@ Si alguna provisión de estos términos resulta inejecutable, el resto permanece
 
 ## Disponibilidad e instalaciones no oficiales
 
-ASVAB Coach se distribuye exclusivamente a través del App Store, y solo en los territorios donde decidimos ofrecerla. Si obtienes, instalas o usas la app por cualquier otro canal — incluyendo sideloading, dispositivos con jailbreak, o la evasión de la seguridad o de las restricciones regionales del App Store — ese uso no está autorizado ni tiene soporte: no somos responsables de él, no ofrecemos garantía ni soporte para él, y cumplir las leyes que te aplican es responsabilidad exclusivamente tuya.
+ASVAB Coach se distribuye exclusivamente a través del App Store, y solo en los territorios donde decidimos ofrecerla. Si obtienes, instalas o usas la app por cualquier otro canal (incluyendo sideloading, dispositivos con jailbreak, o la evasión de la seguridad o de las restricciones regionales del App Store), ese uso no está autorizado ni tiene soporte: no somos responsables de él, no ofrecemos garantía ni soporte para él, y cumplir las leyes que te aplican es responsabilidad exclusivamente tuya.
 
 ## Indemnización
 

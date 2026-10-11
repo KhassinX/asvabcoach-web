@@ -115,7 +115,7 @@
         var banda = elemento('p');
         banda.appendChild(elemento('strong', (es ? cat.name.replace('Category', 'Categoría') : cat.name) + ' '));
         banda.appendChild(document.createTextNode(
-          '(' + cat.min + '–' + cat.max + ') — ' +
+          '(' + cat.min + '–' + cat.max + '): ' +
           (es ? cat.description_es : cat.description_en)
         ));
         salida.appendChild(banda);

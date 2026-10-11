@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Secciones del ASVAB y límites de tiempo
-description: "Cada sección del ASVAB por computadora: cuántas preguntas, cuántos minutos y cuáles cuatro deciden si puedes enlistarte. Del Fact Sheet oficial."
+description: "Cada sección del ASVAB por computadora: cuántas preguntas, cuántos minutos y cuáles cuatro deciden si puedes enlistarte. De la hoja informativa oficial del ASVAB."
 permalink: /es/test/asvab-sections-and-time-limits/
 lang: es
 canonical_en: /test/asvab-sections-and-time-limits/
@@ -14,19 +14,19 @@ updated: 2026-10-05
 
 Alrededor del 70 % de los postulantes militares rinde el **CAT-ASVAB**, la versión por
 computadora, según la hoja informativa oficial del ASVAB. El CAT-ASVAB tiene {{ s.printed_rows }} secciones,
-{{ s.total_questions }} preguntas y {{ s.total_minutes }} minutos de examen — poco más de
+{{ s.total_questions }} preguntas y {{ s.total_minutes }} minutos de examen: poco más de
 tres horas, sin contar el trámite que lo rodea.
 
 El promedio da {{ s.average_seconds_per_question }} segundos por pregunta, y es el número
 menos útil de esta página. Las secciones no van al mismo ritmo ni de lejos: la más rápida
 te da {{ s.fastest_seconds }} segundos por pregunta y la más lenta te da
-{{ s.slowest_seconds }} — {{ s.fastest_abbr }} contra {{ s.slowest_abbr }}. Entrar
+{{ s.slowest_seconds }}, {{ s.fastest_abbr }} contra {{ s.slowest_abbr }}. Entrar
 esperando un ritmo y encontrarte con el otro es la forma más común de perder una sección
 cuyo contenido sabías.
 
 ## Cada sección, con su reloj
 
-Verificado el {{ cat.verified }} contra el Fact Sheet oficial.
+Verificado el {{ cat.verified }} contra la hoja informativa oficial (Fact Sheet).
 
 <table>
 <thead>
@@ -39,7 +39,7 @@ Verificado el {{ cat.verified }} contra el Fact Sheet oficial.
 </tbody>
 </table>
 
-**Fuente.** [{{ cat.source_title }}]({{ cat.source_url }}) — columna CAT-ASVAB. El examen
+**Fuente.** [Hoja informativa del ASVAB (programa oficial del ASVAB, en inglés)]({{ cat.source_url }}): columna CAT-ASVAB. El examen
 se rinde en inglés y la hoja de resultados llega con los nombres y las siglas en inglés;
 por eso van entre paréntesis en la tabla.
 
@@ -54,26 +54,26 @@ se combinan en un solo puntaje reportado: **AS**. O sea que te sientas a rendir
 {% assign as = cat.reported | where: "abbr", "AS" | first -%}
 Conviene saberlo antes del día del examen: AI son {{ a.questions }} preguntas en
 {{ a.minutes }} minutos y SI son {{ b.questions }} en {{ b.minutes }}, pero el número que
-llega a tu expediente es el combinado — {{ as.questions }} preguntas en
-{{ as.minutes }} minutos. La combinación no te castiga en nada: es simplemente la forma
+llega a tu expediente es el combinado ({{ as.questions }} preguntas en
+{{ as.minutes }} minutos). La combinación no te castiga en nada: es simplemente la forma
 en que se reporta ese puntaje.
 
 ## Sólo {{ s.afqt_count }} de estas deciden si puedes enlistarte
 
 {% assign afqt = cat.printed | where: "is_afqt", true -%}
 {% for t in afqt -%}
-- **{{ t.name_es }}** ({{ t.name_en }}, {{ t.abbr }}) — {{ t.questions }} preguntas, {{ t.minutes }} minutos.
+- **{{ t.name_es }}** ({{ t.name_en }}, {{ t.abbr }}): {{ t.questions }} preguntas, {{ t.minutes }} minutos.
 {% endfor %}
 
 Esas {{ s.afqt_count }} construyen tu **AFQT**, el percentil que cada rama compara contra
 su mínimo. Son {{ s.afqt_questions }} de las {{ s.total_questions }} preguntas y
-{{ s.afqt_minutes }} de los {{ s.total_minutes }} minutos — la mayor parte de tu tiempo
+{{ s.afqt_minutes }} de los {{ s.total_minutes }} minutos: la mayor parte de tu tiempo
 sentado ahí, y eso no es casualidad.
 
 Las demás secciones no son relleno. Alimentan los **line scores**, que deciden qué
 trabajos se te abren. Pero si tu problema es calificar, el AFQT es todo el problema.
 
-→ [Puntaje mínimo del ASVAB por rama](/es/scores/minimum-afqt-by-branch/) — dónde pone
+→ [Puntaje mínimo del ASVAB por rama](/es/scores/minimum-afqt-by-branch/): dónde pone
 el piso cada rama y qué cambia si tienes GED en vez de diploma.
 
 ## Dos reglas de la versión por computadora que la de papel no tiene
@@ -85,7 +85,7 @@ Léela antes de decidir, y después decide.
 **Adivinar te cuesta.** La hoja informativa oficial (Fact Sheet) dice que el CAT-ASVAB
 penaliza adivinar. Si te
 queda poco tiempo, la guía oficial dice que sigas contestando lo mejor que puedas en vez
-de rellenar el resto al azar — descartar opciones y elegir a conciencia todavía te ayuda.
+de rellenar el resto al azar: descartar opciones y elegir a conciencia todavía te ayuda.
 
 La versión en papel (P&P-ASVAB) funciona al revés en el segundo punto: ahí no hay
 penalización por adivinar, así que no dejas ningún casillero vacío. Un consejo escrito
@@ -94,12 +94,12 @@ para una versión es incorrecto para la otra, y por eso conviene saber cuál vas
 ## Qué hacer con la tabla de arriba
 
 Toma las {{ s.afqt_count }} filas marcadas con *Sí* y mira su columna de segundos por
-pregunta. Esa columna es tu objetivo de práctica — no un plan de estudio, un objetivo de
+pregunta. Esa columna es tu objetivo de práctica: no un plan de estudio, un objetivo de
 ritmo. Saber álgebra y quedarte sin reloj da el mismo puntaje que no saber álgebra.
 
 ASVAB Coach practica las {{ s.afqt_count }} secciones del AFQT a su ritmo real y estima
 dónde estás parado, en iPhone, iPad, Apple Watch y Mac. Todo corre en tu dispositivo: sin
 cuenta, sin rastreo. Tu progreso vive en tus dispositivos y, si usas iCloud, en tu propio
-iCloud — nunca en nuestros servidores.
+iCloud, nunca en nuestros servidores.
 
 [Ver ASVAB Coach](/es/){:.action}

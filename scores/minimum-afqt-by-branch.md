@@ -1,7 +1,7 @@
 ---
 layout: prose
 title: Minimum ASVAB Score by Branch
-description: "The minimum AFQT score each U.S. military branch requires, with a diploma and with a GED — Army, Navy, Marines, Air Force, Coast Guard and Space Force."
+description: "The minimum AFQT score each U.S. military branch requires, with a diploma and with a GED: Army, Navy, Marines, Air Force, Coast Guard and Space Force."
 permalink: /scores/minimum-afqt-by-branch/
 lang: en
 canonical_en: /scores/minimum-afqt-by-branch/
@@ -11,7 +11,7 @@ updated: 2026-10-05
 
 The number a recruiter checks first is not your ASVAB score. It is your **AFQT**: a
 percentile from 1 to 99 built from four of the ten ASVAB subtests. An AFQT of 50 means
-you scored as well as or better than 50 % of a national reference sample — not that you answered half
+you scored as well as or better than 50 % of a national reference sample: not that you answered half
 the questions correctly.
 
 Every branch sets its own floor. Here is where each one stands, and where the number
@@ -24,7 +24,7 @@ comes from.
   `bloqueado:` es el prefijo con el que `verified_on` marca la rama cuya
   fuente NO se pudo abrir: un documento de servicio en un `.mil` que devuelve 403 desde
   afuera. Sin esta frase, el sello de arriba afirma una frescura global sobre seis filas de
-  las que dos nunca se pudieron releer — y el lector no tiene forma de saber cuáles.
+  las que dos nunca se pudieron releer, y el lector no tiene forma de saber cuáles.
   El bloque se calcula, así que el día que esa fuente se abra desaparece solo.
 {%- endcomment %}
 {%- assign bloqueadas = ramas | where_exp: "b", "b.verified_on contains 'bloqueado:'" %}
@@ -32,8 +32,8 @@ comes from.
   La cifra que la rama no publica sale MARCADA: la celda dibuja la marca, la nota va
   debajo de la tabla y el sello dice que no la cubre. Qué celda, con qué signo y qué oye
   el lector de pantalla lo dice `_data/afqt_minimums.yml`: acá no se escribe ni el `~`,
-  ni la rama, ni el sufijo. La marca va SIEMPRE con `aria-hidden` —VoiceOver diría
-  «tilde»—, en la celda, en la nota y en el sello. Al lado de la celda va, oculto a la
+  ni la rama, ni el sufijo. La marca va SIEMPRE con `aria-hidden` (VoiceOver diría
+  «tilde»), en la celda, en la nota y en el sello. Al lado de la celda va, oculto a la
   vista, el sufijo hablado; el sello le dice al lector con palabras qué exceptúa.
 {%- endcomment %}
 {%- assign estimadas = ramas | where_exp: "b", "b.min_afqt_ged_is_estimate" %}
@@ -57,10 +57,10 @@ Verified {{ site.data.afqt_minimums.verified }}{% if estimadas.size > 0 %}<span 
 {%- endfor %}
 
 **Sources.**
-{%- for b in ramas %} {{ b.name }} — {{ b.source }}{% if b.verified_on contains 'bloqueado:' %} (service regulation){% endif %}{% unless forloop.last %} ·{% endunless %}
+{%- for b in ramas %} {{ b.name }}: {{ b.source }}{% if b.verified_on contains 'bloqueado:' %} (service regulation){% endif %}{% unless forloop.last %} ·{% endunless %}
 {%- endfor %}
 
-Three columns, three different questions — and mixing them up is the most common way to
+Three columns, three different questions, and mixing them up is the most common way to
 talk yourself out of a branch you already qualify for.
 
 ## What each column actually means
@@ -68,9 +68,9 @@ talk yourself out of a branch you already qualify for.
 **With a high school diploma.** The hard floor. Below it, the application does not move
 forward at all.
 {%- assign s = site.data.afqt_minimums.summary %}
-{% if s.floor_is_uniform %}All six branches sit at {{ s.floor_min }}.{% else %}Most sit at {{ s.floor_min }}. The highest floor is {{ s.floor_max }} — {{ s.highest_floor_branches | join: " and " }}.{% endif %}
+{% if s.floor_is_uniform %}All six branches sit at {{ s.floor_min }}.{% else %}Most sit at {{ s.floor_min }}. The highest floor is {{ s.floor_max }}: {{ s.highest_floor_branches | join: " and " }}.{% endif %}
 
-**With a GED.** Every branch raises the bar when there is no diploma —
+**With a GED.** Every branch raises the bar when there is no diploma:
 {% if s.ged_is_uniform %}all six land on {{ s.ged_min }}{% else %}they land between {{ s.ged_min }} and {{ s.ged_max }}{% endif %}.
 That is a jump of {% if s.ged_gap_min == s.ged_gap_max %}{{ s.ged_gap_min }}{% else %}{{ s.ged_gap_min }} to {{ s.ged_gap_max }}{% endif %} points,
 and it is the single largest swing on this page. A GED is not a disqualifier; it is a
@@ -79,7 +79,7 @@ higher floor, and often a smaller quota of slots.
 {%- comment %}
   El sello del GED es SUYO, no el del piso: una rama puede tener el 31 comprobado en una
   página pública y el 50 sólo en una regulación de servicio que no abre desde afuera. El
-  bloque de arriba usa `verified_on`, que es el sello del PISO — si se reusara acá, esta
+  bloque de arriba usa `verified_on`, que es el sello del PISO: si se reusara acá, esta
   sección nombraría las ramas equivocadas. Guarda a propósito: mientras el exportador no
   publique `verified_on_ged`, `con_sello_ged` sale vacío y no se imprime nada, en vez de
   imprimir una salvedad falsa. El día que el campo exista, el párrafo aparece solo.
@@ -95,12 +95,12 @@ state{% if ged_reglamento.size == 1 %}s{% endif %} it in a recruiting regulation
 {% for b in ged_sin_fuente %}{{ b.name }}{% unless forloop.last %} and {% endunless %}{% endfor %}:
 we found no official document that states its GED floor; the figure on this table is the
 one third-party guides report.{% endif %} The figures stay on this table **marked, not
-withdrawn** — remove one and someone with a GED reads the diploma floor as if it applied
+withdrawn**: remove one and someone with a GED reads the diploma floor as if it applied
 to them, which is the more expensive mistake of the two. Ask a recruiter to confirm your
 GED floor before you plan around it.
 {% endif %}
 
-**Competitive.** Not a rule — an observation. Clearing the floor makes you eligible.
+**Competitive.** Not a rule: an observation. Clearing the floor makes you eligible.
 Clearing {{ s.recommended_min }} or more is where the list of jobs open to you stops
 being short. Nobody publishes this as a requirement, and you should not treat it as one.
 
@@ -112,7 +112,7 @@ does **not** decide what you will do.
 That comes from **line scores**: different combinations of ASVAB subtests, weighted
 differently by each branch, one per job family. An intelligence job and a mechanical one
 read the same test and arrive at different numbers. You can clear the AFQT floor
-comfortably and still be short for the one specialty you actually want — or the other way
+comfortably and still be short for the one specialty you actually want, or the other way
 around.
 
 So the honest planning order is:
@@ -128,33 +128,34 @@ cyber operations job than for an aircraft mechanic.
 
 Four, and only four:
 
-- **Arithmetic Reasoning** (AR) — word problems.
-- **Mathematics Knowledge** (MK) — algebra and geometry.
-- **Word Knowledge** (WK) — vocabulary.
-- **Paragraph Comprehension** (PC) — reading.
+- **Arithmetic Reasoning** (AR): word problems.
+- **Mathematics Knowledge** (MK): algebra and geometry.
+- **Word Knowledge** (WK): vocabulary.
+- **Paragraph Comprehension** (PC): reading.
 
 The verbal half (WK and PC) is combined first, then weighted alongside the two math
-sections. The practical consequence: the six remaining subtests — General Science,
-Electronics, Auto and Shop, Mechanical Comprehension, and Assembling Objects — do not
+sections. The practical consequence: the six remaining subtests (General Science,
+Electronics, Auto Information, Shop Information, Mechanical Comprehension, and
+Assembling Objects) do not
 move your AFQT at all. They move your line scores, which is a different fight.
 
 If your AFQT is what stands between you and enlisting, those four are the whole job.
 
 ## Before you use these numbers
 
-Recruiting policy moves, and it moves quietly — and a table like this one can simply be
+Recruiting policy moves, and it moves quietly, and a table like this one can simply be
 wrong. Three figures on this page were corrected after checking them against the source:
 the Air Force GED floor came down from 65, the Space Force diploma floor from 36, and the
 Coast Guard GED floor from 50.
 
 The date above the table is the day each figure was last checked against the source named
-beside it — not the day this page was written. Verify with a recruiter before you make a
+beside it: not the day this page was written. Verify with a recruiter before you make a
 decision that depends on a single point.
 
 ## Practice the four that count
 
 ASVAB Coach drills the four AFQT subtests and estimates where you stand, on iPhone, iPad,
 Apple Watch and Mac. Everything runs on your device: no account, no tracking. Your progress
-lives on your devices and, if you use iCloud, in your own iCloud — never on our servers.
+lives on your devices and, if you use iCloud, in your own iCloud, never on our servers.
 
 [See ASVAB Coach](/){:.action}

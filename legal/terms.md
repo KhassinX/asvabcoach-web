@@ -12,7 +12,7 @@ redirect_from:
   - /terms
   - /terms/
 updated: 2026-10-06
-h1: "Terms of Use — ASVAB Coach"
+h1: "Terms of Use: ASVAB Coach"
 version: "1.3"
 related:
   - /legal/privacy/
@@ -74,12 +74,12 @@ ASVAB Coach displays minimum AFQT score requirements per military branch (e.g., 
 
 ## 5. Free tier and one-time unlock
 
-- ASVAB Coach is **free to download and use**, with a **permanent free tier** — no account, no trial, no countdown clock. The free tier includes **50 questions from any category** of the question bank, each with the on-device AI Tutor’s explanation; one full diagnostic (estimated AFQT) and the Quick 10, neither of which counts against those 50; and the per-branch AFQT minimums table.
+- ASVAB Coach is **free to download and use**, with a **permanent free tier**: no account, no trial, no countdown clock. The free tier includes **50 questions from any category** of the question bank, each with the on-device AI Tutor’s explanation; one full diagnostic (estimated AFQT) and the Quick 10, neither of which counts against those 50; and the per-branch AFQT minimums table.
 - Full access is unlocked by a **single one-time purchase** (product `com.khassinx.asvabcoach.fullaccess`) at the one-time purchase price as listed on the App Store (or local equivalent set by Apple). It unlocks the entire 725-question bank, the mock CAT-ASVAB, unlimited AI Tutor, SM-2 spaced repetition, Apple Watch, and Mac.
-- The purchase is a **non-consumable in-app purchase** — once bought, it persists for the same Apple Account forever, restorable via the "Restore Purchases" button, and shared through **Family Sharing**.
+- The purchase is a **non-consumable in-app purchase**: once bought, it persists for the same Apple Account forever, restorable via the "Restore Purchases" button, and shared through **Family Sharing**.
 - **No subscription**. No auto-renewal. No trial that converts to a charge. Anyone who previously purchased Full Access keeps all of their access.
 
-Refunds are governed entirely by Apple — request them through your App Store purchase history. We have no ability to grant or deny refunds directly because we do not process payments.
+Refunds are governed entirely by Apple: request them through your App Store purchase history. We have no ability to grant or deny refunds directly because we do not process payments.
 
 ## 6. Acceptable use
 
@@ -110,7 +110,7 @@ To the maximum extent permitted by law, KHASSINX LLC shall **not be liable** for
 - Inability to enlist in a desired branch or MOS
 - Lost study time or other personal time
 - Device damage attributed to the app
-- Loss of data (your data lives in your iCloud — we have no copy to lose or to provide)
+- Loss of data (your data lives in your iCloud: we have no copy to lose or to provide)
 
 Our total cumulative liability to you for any claim arising from these terms or your use of ASVAB Coach is **limited to the amount you paid for the app** (the one-time purchase price set by Apple, or local equivalent), or $0 if you have not made the in-app purchase.
 
@@ -143,7 +143,7 @@ If any provision of these terms is found unenforceable, the rest remains in effe
 
 ## Availability and unofficial installs
 
-ASVAB Coach is distributed exclusively through the App Store, and only in the territories where we choose to offer it. If you obtain, install, or use the app through any other channel — including sideloading, jailbroken devices, or circumventing App Store security or regional restrictions — that use is unauthorized and unsupported: we are not responsible for it, we provide no warranty or support for it, and complying with the laws that apply to you is solely your responsibility.
+ASVAB Coach is distributed exclusively through the App Store, and only in the territories where we choose to offer it. If you obtain, install, or use the app through any other channel (including sideloading, jailbroken devices, or circumventing App Store security or regional restrictions), that use is unauthorized and unsupported: we are not responsible for it, we provide no warranty or support for it, and complying with the laws that apply to you is solely your responsibility.
 
 ## Indemnification
 
