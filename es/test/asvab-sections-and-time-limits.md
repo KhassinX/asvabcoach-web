@@ -45,7 +45,7 @@ por eso van entre paréntesis en la tabla.
 
 ## Por qué la hoja del reclutador muestra nueve y no {{ s.printed_rows }}
 
-Auto Information y Shop Information se administran como dos pruebas separadas y después
+Información de Automóviles e Información de Taller (Auto Information y Shop Information) se administran como dos pruebas separadas y después
 se combinan en un solo puntaje reportado: **AS**. O sea que te sientas a rendir
 {{ s.printed_rows }} secciones y sales con {{ s.reported_scores }} puntajes.
 
@@ -58,7 +58,7 @@ llega a tu expediente es el combinado ({{ as.questions }} preguntas en
 {{ as.minutes }} minutos). La combinación no te castiga en nada: es simplemente la forma
 en que se reporta ese puntaje.
 
-## Sólo {{ s.afqt_count }} de estas deciden si puedes enlistarte
+## Solo {{ s.afqt_count }} de estas deciden si puedes enlistarte
 
 {% assign afqt = cat.printed | where: "is_afqt", true -%}
 {% for t in afqt -%}
