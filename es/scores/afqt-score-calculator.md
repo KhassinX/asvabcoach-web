@@ -7,8 +7,6 @@ lang: es
 canonical_en: /scores/afqt-score-calculator/
 canonical_es: /es/scores/afqt-score-calculator/
 updated: 2026-10-05
-extra_css:
-  - /assets/css/afqt-calculator.css
 extra_js:
   - /assets/js/afqt-calculator.js
 ---
@@ -113,4 +111,4 @@ ASVAB Coach entrena Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge 
 Paragraph Comprehension, y estima dónde estás parado después de cada corrida: en iPhone,
 iPad, Apple Watch y Mac. Todo corre en tu dispositivo.
 
-[Ver ASVAB Coach](/es/){:.action}
+[Ver ASVAB Coach](/es/){:.act}

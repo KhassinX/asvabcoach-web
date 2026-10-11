@@ -3,7 +3,10 @@ layout: base
 ---
 {%- assign ui = site.ui_strings[page.lang] | default: site.ui_strings.en -%}
 {%- assign es = false -%}{%- if page.lang == 'es' %}{%- assign es = true -%}{%- endif -%}
-<article class="doc wrap">
+{%- assign heads = content | split: '<h2 id="' -%}
+{%- assign toc = false -%}{%- if page.version and heads.size > 2 %}{%- assign toc = true -%}{%- endif %}
+<article class="doc">
+<header class="wrap doc-head">
   <h1>{{ page.h1 | default: page.title }}</h1>
   {%- if page.version %}
   {%- assign eff = page.effective | default: page.updated -%}
@@ -13,6 +16,8 @@ layout: base
   {%- elsif page.updated %}
   <p class="meta">{{ ui.last_updated }}: {{ page.updated | date: "%Y-%m-%d" }}</p>
   {%- endif %}
+</header>
+<div class="wrap band doc-main {% if toc %}has-toc{% else %}no-toc{% endif %}">
   {%- if page.summary %}
   <section class="brief" aria-labelledby="brief-h">
     <h2 id="brief-h">{{ ui.in_short }}</h2>
@@ -23,8 +28,7 @@ layout: base
     </ul>
   </section>
   {%- endif %}
-  {%- assign heads = content | split: '<h2 id="' -%}
-  {%- if page.version and heads.size > 2 %}
+  {%- if toc %}
   <nav class="toc" aria-labelledby="toc-h">
     <h2 id="toc-h">{{ ui.on_this_page }}</h2>
     <ol>
@@ -36,7 +40,7 @@ layout: base
   </nav>
   {%- endif %}
   <div class="doc-body prose">
-{{ content }}
+{{ content | replace: '<table', '<div class="table-wrap"><table' | replace: '</table>', '</table></div>' }}
   </div>
   {%- if page.related %}
   <nav class="related" aria-labelledby="related-h">
@@ -49,6 +53,7 @@ layout: base
     </ul>
   </nav>
   {%- endif %}
+</div>
 </article>
 {%- assign ruta = page.url -%}
 {%- if es %}{%- assign ruta = ruta | remove_first: '/es' -%}{%- endif -%}

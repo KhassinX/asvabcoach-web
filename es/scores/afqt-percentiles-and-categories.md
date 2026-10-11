@@ -176,4 +176,4 @@ resultado es una estimación.
 Todo corre en tu dispositivo: sin cuenta, sin rastreo. Tu progreso vive en tus dispositivos
 y, si usas iCloud, en tu propio iCloud, nunca en nuestros servidores.
 
-[Ver ASVAB Coach](/es/){:.action}
+[Ver ASVAB Coach](/es/){:.act}

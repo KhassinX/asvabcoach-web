@@ -177,4 +177,4 @@ result is an estimate.
 Everything runs on your device: no account, no tracking. Your progress lives on your
 devices and, if you use iCloud, in your own iCloud, never on our servers.
 
-[See ASVAB Coach](/){:.action}
+[See ASVAB Coach](/){:.act}

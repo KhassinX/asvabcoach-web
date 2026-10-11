@@ -3,46 +3,78 @@
 {%- assign ui = site.ui_strings[L] -%}
 {%- if L == 'es' %}{% assign policy_url = '/es/legal/privacy/' %}{% else %}{% assign policy_url = '/legal/privacy/' %}{% endif -%}
 {%- assign pp = site.pages | where: "url", policy_url | first -%}
-<section class="hero wrap" aria-labelledby="hero-h">
-  <img class="icon" src="/assets/favicons/icon-512.png" width="512" height="512" alt="" fetchpriority="high">
-  <p class="app-name">{{ site.title }}</p>
-  <h1 id="hero-h">{{ h.h1 }}</h1>
-  <p class="lead measure quiet">{{ h.lead }}</p>
-  <a class="store" href="{{ site.app_store_url }}"><img src="/assets/badges/app-store-{{ L }}.svg" width="120" height="40" alt="{{ h.badge_alt }}"></a>
+<section class="wrap hero" aria-labelledby="hero-h">
+  <div class="hero-text">
+    <img class="app-icon" src="/assets/favicons/icon-512.png" width="512" height="512" alt="" fetchpriority="high">
+    <h1 id="hero-h">{{ h.h1 }}</h1>
+    <p class="lead">{{ h.lead }}</p>
+    <div class="actions">
+      <a class="store" href="{{ site.app_store_url }}"><img src="/assets/badges/app-store-{{ L }}.svg" width="120" height="40" alt="{{ h.badge_alt }}"></a>
+    </div>
+    <ul class="facts" aria-label="{{ h.facts_label }}">
+      {%- for f in h.facts %}
+      <li>{{ f }}</li>
+      {%- endfor %}
+    </ul>
+  </div>
+  <figure class="scores">
+    <div>
+      <p class="scores-label">{{ h.afqt_label }}</p>
+      <dl class="afqt">
+        {%- for t in site.data.cat_subtests.reported %}{% if t.is_afqt %}
+        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
+        {%- endif %}{% endfor %}
+      </dl>
+    </div>
+    <div>
+      <p class="scores-label">{{ h.line_label }}</p>
+      <dl class="line">
+        {%- for t in site.data.cat_subtests.reported %}{% unless t.is_afqt %}
+        <div><dt>{{ t.abbr }}</dt><dd>{% if L == 'es' %}{{ t.name_es }}{% else %}{{ t.name_en | escape }}{% endif %}</dd></div>
+        {%- endunless %}{% endfor %}
+      </dl>
+    </div>
+    <figcaption>{{ h.scores_caption }}</figcaption>
+  </figure>
 </section>
-<section class="split wrap" aria-labelledby="privacy-h">
-  <h2 id="privacy-h">{{ h.privacy_h }}</h2>
-  <div>
-    <dl class="manifest">
+
+<section class="wrap band" aria-labelledby="privacy-h">
+  <div class="band-head"><h2 id="privacy-h">{{ h.privacy_h }}</h2></div>
+  <div class="band-body">
+    <dl class="defs">
       {%- for r in h.manifest %}
-      <div><dt class="mono">{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
+      <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
       {%- endfor %}
     </dl>
-    <p class="policy meta"><a class="more" href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include legal-date.html d=pp.updated lang=L %}</span><span>{{ ui.version }} {{ pp.version }}</span></p>
-    <p class="reach">{{ h.reach }}</p>
+    <p class="policy"><a href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include legal-date.html d=pp.updated lang=L %} · {{ ui.version }} {{ pp.version }}</span></p>
+    <p class="aside">{{ h.reach }}</p>
   </div>
 </section>
-<section class="split wrap" aria-labelledby="inside-h">
-  <h2 id="inside-h">{{ h.inside_h }}</h2>
-  <ul class="rows">
-    {%- for item in h.inside %}
-    <li>{{ item }}</li>
-    {%- endfor %}
-  </ul>
+
+<section class="wrap band" aria-labelledby="inside-h">
+  <div class="band-head"><h2 id="inside-h">{{ h.inside_h }}</h2></div>
+  <div class="band-body">
+    <dl class="defs features">
+      {%- for f in h.inside %}
+      <div><dt>{{ f.k }}</dt><dd>{{ f.v }}</dd></div>
+      {%- endfor %}
+    </dl>
+  </div>
 </section>
-<section class="split wrap" aria-labelledby="recruits-h">
-  <h2 id="recruits-h">{{ h.recruits_h }}</h2>
-  <div class="measure">
+
+<section class="wrap band" aria-labelledby="recruits-h">
+  <div class="band-head"><h2 id="recruits-h">{{ h.recruits_h }}</h2></div>
+  <div class="band-body">
     <p>{{ h.recruits_lead }}</p>
-    <p class="quiet">{{ h.recruits_body }}</p>
+    <p class="muted">{{ h.recruits_body }}</p>
   </div>
 </section>
-<section class="split wrap" id="faq" aria-labelledby="faq-h">
-  <h2 id="faq-h">{{ h.faq_h }}</h2>
-  <div class="faq">
+
+<section id="faq" class="wrap band" aria-labelledby="faq-h">
+  <div class="band-head"><h2 id="faq-h">{{ h.faq_h }}</h2></div>
+  <div class="band-body faq">
     {%- for f in h.faq %}
-    <h3>{{ f.q }}</h3>
-    <p class="quiet">{{ f.a }}</p>
+    <div><h3>{{ f.q }}</h3><p>{{ f.a }}</p></div>
     {%- endfor %}
   </div>
 </section>

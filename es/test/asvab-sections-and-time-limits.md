@@ -102,4 +102,4 @@ dónde estás parado, en iPhone, iPad, Apple Watch y Mac. Todo corre en tu dispo
 cuenta, sin rastreo. Tu progreso vive en tus dispositivos y, si usas iCloud, en tu propio
 iCloud, nunca en nuestros servidores.
 
-[Ver ASVAB Coach](/es/){:.action}
+[Ver ASVAB Coach](/es/){:.act}
