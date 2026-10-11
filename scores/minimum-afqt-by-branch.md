@@ -39,7 +39,7 @@ comes from.
 {%- assign estimadas = ramas | where_exp: "b", "b.min_afqt_ged_is_estimate" %}
 {%- assign marca = site.data.afqt_minimums.estimate_mark %}
 {%- assign sufijo = site.data.afqt_minimums.estimate_spoken_suffix.en %}
-Verified {{ site.data.afqt_minimums.verified }}{% if estimadas.size > 0 %}<span aria-hidden="true">, except values marked {{ marca }}</span><span class="visually-hidden">, except estimated values</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} of the {{ ramas.size }} sources are service regulations rather than recruiting pages: {% for b in bloqueadas %}{{ b.name }}{% unless forloop.last %} and {% endunless %}{% endfor %} carr{% if bloqueadas.size == 1 %}ies{% else %}y{% endif %} the date the figure was last confirmed against the regulation.{% endif %}
+Verified on {% include date.html d=site.data.afqt_minimums.verified %}{% if estimadas.size > 0 %}<span aria-hidden="true">, except values marked {{ marca }}</span><span class="visually-hidden">, except estimated values</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} of the {{ ramas.size }} sources are service regulations rather than recruiting pages: {% for b in bloqueadas %}{{ b.name }}{% unless forloop.last %} and {% endunless %}{% endfor %} carr{% if bloqueadas.size == 1 %}ies{% else %}y{% endif %} the date the figure was last confirmed against the regulation.{% endif %}
 
 <table>
 <thead>

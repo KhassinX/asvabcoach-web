@@ -144,8 +144,8 @@ Tres pasos. El DoD publica los dos últimos, y el primero ocurre dentro del exam
    estándar. Los puntajes que salen tienen media 50 y desviación estándar 10 en la muestra
    de referencia de 1997, y no se cortan en 20 ni en 80.
 2. **Los cuatro se combinan:** `{{ escala.formula }}`, donde VE es el puntaje verbal que
-   sale de Word Knowledge y Paragraph Comprehension, AR es Arithmetic Reasoning y MK es
-   Mathematics Knowledge. Lo verbal cuenta doble.
+   sale de Conocimiento de Vocabulario (WK) y Comprensión de Lectura (PC), AR es
+   Razonamiento Aritmético y MK es Conocimiento Matemático. Lo verbal cuenta doble.
 3. **El compuesto se convierte en percentil** con la
    [Tabla {{ tabla.source.table }}]({{ tabla.source.url }}) del informe del DoD sobre la
    escala de 1997: el porcentaje de la muestra de referencia que sacó ese compuesto o menos.
@@ -162,8 +162,8 @@ del compuesto. Eso no hace que el vocabulario importe más que el álgebra en ge
 hace más eficiente **para este número en particular**, que es el que decide si puedes
 alistarte.
 
-Los cuatro subtests que construyen el AFQT son Arithmetic Reasoning, Mathematics
-Knowledge, Word Knowledge y Paragraph Comprehension. El resto del ASVAB (mira
+Los cuatro subtests que construyen el AFQT son Razonamiento Aritmético, Conocimiento
+Matemático, Conocimiento de Vocabulario y Comprensión de Lectura. El resto del ASVAB (mira
 [el formato completo del examen](/es/test/asvab-sections-and-time-limits/)) no mueve este
 número ni un punto. Mueve tus line scores, que deciden qué trabajo puedes tener.
 

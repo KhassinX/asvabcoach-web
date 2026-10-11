@@ -1,7 +1,7 @@
 ---
 layout: prose
-description: "Política de Privacidad y Términos de Uso de ASVAB Coach, de KHASSINX LLC. Cero rastreo, sin cuenta, nada que vender."
-title: "Legal: Privacidad y Términos"
+description: "Política de privacidad y términos de uso de ASVAB Coach, de KHASSINX LLC. Cero rastreo, sin cuenta, nada que vender."
+title: "Legal: privacidad y términos"
 permalink: /es/legal/
 lang: es
 canonical_en: /legal/
@@ -12,8 +12,8 @@ h1: "Legal"
 
 Documentos legales públicos de **[ASVAB Coach](https://apps.apple.com/us/app/asvab-coach/id6761384966)**.
 
-- **[Política de Privacidad](/es/legal/privacy/)**: qué datos recopilamos (spoiler: ninguno)
-- **[Términos de Uso](/es/legal/terms/)**: términos del uso de la app
+- **[Política de privacidad](/es/legal/privacy/)**: qué datos recopilamos (spoiler: ninguno)
+- **[Términos de uso](/es/legal/terms/)**: términos del uso de la app
 
 ---
 

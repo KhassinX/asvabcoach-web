@@ -41,17 +41,17 @@ Corre entero en tu navegador. No se envía nada a ningún lado y no hay que regi
       <legend>Tus puntajes estándar</legend>
       <div class="afqt-calc__fields">
         <div class="afqt-calc__field">
-          <label for="afqt-ve">VE: Verbal Expression</label>
+          <label for="afqt-ve">VE: Expresión Verbal</label>
           <input type="number" id="afqt-ve" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-ar">AR: Arithmetic Reasoning</label>
+          <label for="afqt-ar">AR: Razonamiento Aritmético</label>
           <input type="number" id="afqt-ar" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
         <div class="afqt-calc__field">
-          <label for="afqt-mk">MK: Mathematics Knowledge</label>
+          <label for="afqt-mk">MK: Conocimiento Matemático</label>
           <input type="number" id="afqt-mk" inputmode="numeric" step="1"
                  min="{{ tabla.input.min }}" max="{{ tabla.input.max }}">
         </div>
@@ -67,8 +67,8 @@ Corre entero en tu navegador. No se envía nada a ningún lado y no hay que regi
 
 Entonces esta página no puede terminar el trabajo, y vale la pena saber por qué.
 
-El VE no es un subtest que hayas rendido. Es un compuesto de tus puntajes de Word Knowledge
-y Paragraph Comprehension, y el mismo informe del DoD publica cómo se arma (sección 2.3). El
+El VE no es un subtest que hayas rendido. Es un compuesto de tus puntajes de Conocimiento de
+Vocabulario (Word Knowledge, WK) y Comprensión de Lectura (Paragraph Comprehension, PC), y el mismo informe del DoD publica cómo se arma (sección 2.3). El
 problema es que la fórmula trabaja con puntajes sin redondear, y tu informe muestra
 puntajes redondeados. Rehecho a partir del WK y el PC redondeados, el VE puede quedar
 desviado en un punto, y un punto de VE mueve el compuesto en dos.
@@ -103,12 +103,12 @@ mueve el compuesto tanto como dos puntos de matemática.
 Eso es un hecho sobre este número en particular, no sobre el ASVAB entero. Conviene
 tenerlo presente al decidir dónde va una hora de estudio, y es la razón por la que
 [la página de percentiles del AFQT](/es/scores/afqt-percentiles-and-categories/) le dedica
-tanto espacio a Word Knowledge como al álgebra.
+tanto espacio al vocabulario como al álgebra.
 
 ## Entrena los cuatro subtests que lo construyen
 
-ASVAB Coach entrena Arithmetic Reasoning, Mathematics Knowledge, Word Knowledge y
-Paragraph Comprehension, y estima dónde estás parado después de cada corrida: en iPhone,
+ASVAB Coach entrena Razonamiento Aritmético, Conocimiento Matemático, Conocimiento de
+Vocabulario y Comprensión de Lectura, y estima dónde estás parado después de cada corrida: en iPhone,
 iPad, Apple Watch y Mac. Todo corre en tu dispositivo.
 
 [Ver ASVAB Coach](/es/){:.act}

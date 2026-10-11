@@ -33,7 +33,7 @@ Cada rama pone su propio piso. Aquí está dónde quedó cada una, y de dónde s
 {%- assign estimadas = ramas | where_exp: "b", "b.min_afqt_ged_is_estimate" %}
 {%- assign marca = site.data.afqt_minimums.estimate_mark %}
 {%- assign sufijo = site.data.afqt_minimums.estimate_spoken_suffix.es %}
-Verificado el {{ site.data.afqt_minimums.verified }}{% if estimadas.size > 0 %}<span aria-hidden="true">, salvo los valores marcados con {{ marca }}</span><span class="visually-hidden">, salvo los valores estimados</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} de las {{ ramas.size }} fuentes son regulaciones de servicio, no páginas de reclutamiento: {% for b in bloqueadas %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless n_es == b.name %} ({{ b.name }}){% endunless %}{% unless forloop.last %} y {% endunless %}{% endfor %} llevan la fecha en que el número se confirmó por última vez contra la regulación.{% endif %}
+Verificado el {% include date.html d=site.data.afqt_minimums.verified lang='es' %}{% if estimadas.size > 0 %}<span aria-hidden="true">, salvo los valores marcados con {{ marca }}</span><span class="visually-hidden">, salvo los valores estimados</span>{% endif %}.{% if bloqueadas.size > 0 %} {{ bloqueadas.size }} de las {{ ramas.size }} fuentes son regulaciones de servicio, no páginas de reclutamiento: {% for b in bloqueadas %}{% assign n_es = site.branch_names_es[b.id] | default: b.name %}{{ n_es }}{% unless n_es == b.name %} ({{ b.name }}){% endunless %}{% unless forloop.last %} y {% endunless %}{% endfor %} llevan la fecha en que el número se confirmó por última vez contra la regulación.{% endif %}
 
 <table>
 <thead>
@@ -121,17 +121,17 @@ operaciones cibernéticas que para mecánico de aeronaves.
 
 ## Qué subtests arman el AFQT
 
-Cuatro, y sólo cuatro:
+Cuatro, y solo cuatro:
 
-- **Arithmetic Reasoning** (AR): problemas con enunciado.
-- **Mathematics Knowledge** (MK): álgebra y geometría.
-- **Word Knowledge** (WK): vocabulario.
-- **Paragraph Comprehension** (PC): comprensión de lectura.
+- **Razonamiento Aritmético** (Arithmetic Reasoning, AR): problemas con enunciado.
+- **Conocimiento Matemático** (Mathematics Knowledge, MK): álgebra y geometría.
+- **Conocimiento de Vocabulario** (Word Knowledge, WK): vocabulario.
+- **Comprensión de Lectura** (Paragraph Comprehension, PC): comprensión de lectura.
 
 La mitad verbal (WK y PC) se combina primero y después se pondera junto a las dos de
-matemática. La consecuencia práctica: los otros seis subtests (General Science,
-Electronics, Auto Information, Shop Information, Mechanical Comprehension y Assembling
-Objects) no mueven tu
+matemática. La consecuencia práctica: los otros seis subtests (Ciencias Generales,
+Información de Electrónica, Información de Automóviles, Información de Taller, Comprensión
+Mecánica y Ensamblaje de Objetos) no mueven tu
 AFQT ni un punto. Mueven tus line scores, que es otra pelea.
 
 Si lo que te separa del alistamiento es el AFQT, esos cuatro son todo el trabajo.

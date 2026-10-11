@@ -26,7 +26,7 @@ cuyo contenido sabías.
 
 ## Cada sección, con su reloj
 
-Verificado el {{ cat.verified }} contra la hoja informativa oficial (Fact Sheet).
+Verificado el {% include date.html d=cat.verified lang='es' %} contra la hoja informativa oficial (Fact Sheet).
 
 <table>
 <thead>
