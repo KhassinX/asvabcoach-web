@@ -13,7 +13,7 @@ App development repo: [khassinx/ASVABCoach](https://github.com/khassinx/ASVABCoa
 
 ## Hosting
 
-Served via **GitHub Pages** with custom domain `asvab.khassinx.com`. CNAME record in Cloudflare zone `khassinx.com` with **proxy ON**: provides security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options) via Transform Rules, WAF, edge caching. SSL/TLS mode: Full (strict).
+Served via **GitHub Pages** with custom domain `asvab.khassinx.com`. CNAME record in Cloudflare zone `khassinx.com` with **proxy ON**, which provides security headers (HSTS, CSP, X-Frame-Options, Referrer-Policy, Permissions-Policy, X-Content-Type-Options) via Transform Rules, WAF, edge caching. SSL/TLS mode: Full (strict).
 
 ## Legacy URLs
 

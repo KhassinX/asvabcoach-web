@@ -15,6 +15,6 @@ decides whether you can enlist; the line scores decide what you can do once you 
 {% assign paginas = site.pages | where_exp: "p", "p.url contains '/scores/'" | where: "lang", page.lang | sort: "title" -%}
 {% for p in paginas -%}
 {%- unless p.url == page.url %}
-- **[{{ p.title }}]({{ p.url }})**: {{ p.description }}
+- **[{{ p.title }}]({{ p.url }})**. {{ p.description }}
 {% endunless -%}
 {%- endfor %}
