@@ -2,6 +2,7 @@
 {%- assign h = site.data.home[L] -%}
 {%- assign ui = site.ui_strings[L] -%}
 {%- if L == 'es' %}{% assign policy_url = '/es/legal/privacy/' %}{% else %}{% assign policy_url = '/legal/privacy/' %}{% endif -%}
+{%- assign policy_url = site.privacy_url[L] | default: policy_url -%}
 {%- assign pp = site.pages | where: "url", policy_url | first -%}
 <section class="wrap hero" aria-labelledby="hero-h">
   <div class="hero-text">
@@ -97,6 +98,9 @@
   },
   "inLanguage": {{ app.languages | jsonify }},
   "isAccessibleForFree": {{ app.free | jsonify }},
+  {%- if app.creator %}
+  "creator": { "@type": "Person", "name": {{ app.creator | jsonify }} },
+  {%- endif %}
   "publisher": {
     "@type": "Organization",
     "name": "KHASSINX",

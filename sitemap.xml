@@ -10,7 +10,7 @@ layout: null
     <loc>{{ site.url }}{{ p.url }}</loc>
     <xhtml:link rel="alternate" hreflang="en" href="{{ site.url }}{{ p.canonical_en }}"/>
     <xhtml:link rel="alternate" hreflang="es" href="{{ site.url }}{{ p.canonical_es }}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ p.canonical_en }}"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ site.url }}{% if site.lang == "es" %}{{ p.canonical_es }}{% else %}{{ p.canonical_en }}{% endif %}"/>
     {%- if p.updated %}
     <lastmod>{{ p.updated | date: "%Y-%m-%d" }}</lastmod>
     {%- endif %}
