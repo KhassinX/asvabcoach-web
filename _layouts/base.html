@@ -84,7 +84,7 @@
   {%- assign footer_items = site.footer_nav[lang_key] | default: site.footer_nav.en %}
   <nav class="foot-links" aria-label="{{ ui.nav_footer }}">{% for item in footer_items %}<a href="{{ item.url }}">{{ item.title }}</a>{% endfor %}</nav>
   <div class="foot-meta">
-    <p>© {{ 'now' | date: '%Y' }} <a href="{{ ui.umbrella_url }}">{{ site.org_legal_name }}</a></p>
+    <p>© {{ 'now' | date: '%Y' }} <a href="{{ ui.umbrella_url }}">{{ site.org_legal_name }}</a>{% if ui.credit %} · {{ ui.credit }}{% endif %}</p>
     <div class="tools">
       <span class="lang" role="group" aria-label="{{ ui.language }}">{% if lang_key == 'es' %}<a href="{{ page.canonical_en | default: home_en }}" hreflang="en" lang="en">EN</a><span aria-current="true">ES</span>{% else %}<span aria-current="true">EN</span><a href="{{ page.canonical_es | default: home_es }}" hreflang="es" lang="es">ES</a>{% endif %}</span>
       <div class="theme" role="radiogroup" aria-label="{{ ui.theme }}" data-theme-group>
