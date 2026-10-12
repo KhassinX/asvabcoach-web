@@ -51,7 +51,7 @@ en:
     - q: "Is my study data private?"
       a: "Yes. ASVAB Coach has no account, no analytics SDKs, and no tracking. The AI tutor runs on your device with Apple Intelligence, on supported iPhone and iPad models. Your progress lives on your device and syncs through your own iCloud."
     - q: "Does it work on Apple Watch and Mac?"
-      a: "Yes. The Apple Watch app works together with the iPhone app: do Quick 10 reviews on your wrist. On a Mac with Apple silicon, the iPad app runs in a window. The AI tutor runs on supported iPhone and iPad models. Your progress syncs across devices through your private iCloud (included with the one‑time unlock)."
+      a: "Yes. The Apple Watch app works together with the iPhone app: do Quick 10 reviews on your wrist. On a Mac with Apple silicon, the iPad app runs in a window. The AI tutor runs on supported iPhone and iPad models. Your progress syncs across devices through your private iCloud."
 es:
   h1: "Tutor de IA privado para el ASVAB."
   lead: "iPhone, iPad, Mac, Apple Watch. Gratis para empezar. Desbloqueo único, sin suscripción."
@@ -105,4 +105,4 @@ es:
     - q: "¿Mis datos de estudio son privados?"
       a: "Sí. ASVAB Coach no tiene cuenta, ni SDKs de analytics, ni rastreo. El tutor de IA corre en tu dispositivo con Apple Intelligence, en modelos compatibles de iPhone y iPad. Tu progreso vive en tu dispositivo y se sincroniza por tu propio iCloud."
     - q: "¿Funciona en Apple Watch y Mac?"
-      a: "Sí. La app de Apple Watch funciona junto con la app del iPhone: haz repasos rápidos de 10 preguntas en tu muñeca. En un Mac con Apple silicon, la app de iPad corre en una ventana. El tutor de IA corre en modelos compatibles de iPhone y iPad. Tu progreso se sincroniza entre dispositivos por tu iCloud privado (incluido con el desbloqueo único)."
+      a: "Sí. La app de Apple Watch funciona junto con la app del iPhone: haz repasos rápidos de 10 preguntas en tu muñeca. En un Mac con Apple silicon, la app de iPad corre en una ventana. El tutor de IA corre en modelos compatibles de iPhone y iPad. Tu progreso se sincroniza entre dispositivos por tu iCloud privado."
