@@ -9,7 +9,11 @@
     <h1 id="hero-h">{{ h.h1 }}</h1>
     <p class="lead">{{ h.lead }}</p>
     <div class="actions">
+      {%- if site.app_store_url %}
       <a class="store" href="{{ site.app_store_url }}"><img src="/assets/badges/app-store-{{ L }}.svg" width="120" height="40" alt="{{ h.badge_alt }}"></a>
+      {%- else %}
+      <p class="muted">{{ h.availability }}</p>
+      {%- endif %}
     </div>
     <ul class="facts" aria-label="{{ h.facts_label }}">
       {%- for f in h.facts %}
@@ -28,7 +32,7 @@
       <div><dt>{{ r.k }}</dt><dd>{{ r.v }}</dd></div>
       {%- endfor %}
     </dl>
-    <p class="policy"><a href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include date.html d=pp.updated lang=L %} · {{ ui.version }} {{ pp.version }}</span></p>
+    <p class="policy"><a href="{{ policy_url }}">{{ h.policy }}</a><span>{{ ui.last_updated }} {% include date.html d=pp.updated lang=L %}{% if pp.version %} · {{ ui.version }} {{ pp.version }}{% endif %}</span></p>
     <p class="aside">{{ h.reach }}</p>
   </div>
 </section>
@@ -80,8 +84,10 @@
   {%- endif %}
   "description": {{ site.description | jsonify }},
   "url": {{ site.url | jsonify }},
+  {%- if site.app_store_url %}
   "downloadUrl": {{ site.app_store_url | jsonify }},
   "installUrl": {{ site.app_store_url | jsonify }},
+  {%- endif %}
   "image": {{ site.url | append: site.og_image_default.en | jsonify }},
   "offers": {
     "@type": "Offer",
