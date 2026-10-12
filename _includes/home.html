@@ -61,10 +61,11 @@
 </section>
 {% endfor %}
 
+{%- assign faq = h.faq | where_exp: "f", "f.home != false" %}
 <section id="faq" class="wrap band" aria-labelledby="faq-h">
   <div class="band-head"><h2 id="faq-h">{{ h.faq_h }}</h2></div>
   <div class="band-body faq">
-    {%- for f in h.faq %}
+    {%- for f in faq %}
     <div><h3>{{ f.q }}</h3><p>{{ f.a }}</p></div>
     {%- endfor %}
   </div>
@@ -118,7 +119,7 @@
   "@type": "FAQPage",
   "inLanguage": {% if L == 'es' %}"es-419"{% else %}"en-US"{% endif %},
   "mainEntity": [
-    {%- for f in h.faq %}
+    {%- for f in faq %}
     {
       "@type": "Question",
       "name": {{ f.q | replace: "‑", "-" | jsonify }},
