@@ -16,7 +16,7 @@ short_name: ASVAB
 app_schema:
   name: "ASVAB Coach: AFQT Practice"
   alternate_name: ["ASVAB Coach", "ASVAB Coach: Private AI Tutor"]
-  operating_system: "iOS 26.4, iPadOS 26.4, watchOS 26.4, macOS 26.4"
+  operating_system: "iOS 27.0, iPadOS 27.0, watchOS 27.0, macOS 27.0"
   category: EducationalApplication
   subcategory: Test Prep
   price: "0"
