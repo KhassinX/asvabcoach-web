@@ -82,7 +82,7 @@
   {%- if app.subcategory %}
   "applicationSubCategory": {{ app.subcategory | jsonify }},
   {%- endif %}
-  "description": {{ site.description | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
   "url": {{ site.url | jsonify }},
   {%- if site.app_store_url %}
   "downloadUrl": {{ site.app_store_url | jsonify }},
@@ -104,8 +104,7 @@
     "url": "https://khassinx.com",
     "logo": "https://khassinx.com/assets/favicons/icon-512.png",
     "foundingDate": {{ site.org_founding_date | jsonify }}
-  },
-  "featureList": {{ app.features | jsonify }}
+  }
 }
 </script>
 <script type="application/ld+json">
