@@ -89,7 +89,8 @@
   "downloadUrl": {{ site.app_store_url | jsonify }},
   "installUrl": {{ site.app_store_url | jsonify }},
   {%- endif %}
-  "image": {{ site.url | append: site.og_image_default.en | jsonify }},
+  {%- assign og_image = page.og_image | default: site.og_image_default[L] | default: site.og_image_default.en %}
+  "image": {{ site.url | append: og_image | jsonify }},
   "offers": {
     "@type": "Offer",
     "price": {{ app.price | jsonify }},
